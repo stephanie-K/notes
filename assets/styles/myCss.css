@@ -11,6 +11,62 @@ body {
   min-height: 100%;
   position: relative; }
 
+body.home header {
+  background-color: #941100; }
+body.home a {
+  color: #941100; }
+body.home a:hover, body.home a:focus {
+  color: #5a5a5a; }
+body.home h1, body.home h2 {
+  color: #941100; }
+body.home button {
+  background-color: #941100; }
+body.home button:hover, body.home button:focus {
+  color: #941100;
+  border: solid 2px #941100; }
+
+body.ux header {
+  background-color: #800080; }
+body.ux a {
+  color: #800080; }
+body.ux a:hover, body.ux a:focus {
+  color: #5a5a5a; }
+body.ux h1, body.ux h2 {
+  color: #800080; }
+body.ux button {
+  background-color: #800080; }
+body.ux button:hover, body.ux button:focus {
+  color: #800080;
+  border: solid 2px #800080; }
+
+body.dev header {
+  background-color: #06609c; }
+body.dev a {
+  color: #06609c; }
+body.dev a:hover, body.dev a:focus {
+  color: #5a5a5a; }
+body.dev h1, body.dev h2 {
+  color: #06609c; }
+body.dev button {
+  background-color: #06609c; }
+body.dev button:hover, body.dev button:focus {
+  color: #06609c;
+  border: solid 2px #06609c; }
+
+body.a11y header {
+  background-color: #218341; }
+body.a11y a {
+  color: #218341; }
+body.a11y a:hover, body.a11y a:focus {
+  color: #5a5a5a; }
+body.a11y h1, body.a11y h2 {
+  color: #218341; }
+body.a11y button {
+  background-color: #218341; }
+body.a11y button:hover, body.a11y button:focus {
+  color: #218341;
+  border: solid 2px #218341; }
+
 p {
   padding-top: 0;
   padding-bottom: 0;
@@ -44,20 +100,9 @@ header {
     text-align: left;
     padding-left: 70px;
     font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-    color: #e3e3e3;
     font-weight: 300; }
-
-header.home {
-  background-color: #941100; }
-
-header.ux {
-  background-color: #800080; }
-
-header.dev {
-  background-color: #06609c; }
-
-header.a11y {
-  background-color: #218341; }
+  header h1.plain-color {
+    color: #e3e3e3; }
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 nav {
@@ -69,7 +114,7 @@ nav {
   height: 40px;
   background-color: #e3e3e3;
   border-bottom: solid 4px #e3e3e3; }
-  nav a {
+  nav a.ux-color, nav a.dev-color, nav a.a11y-color {
     float: left;
     display: block;
     text-align: center;
@@ -80,26 +125,27 @@ nav {
     padding: 12px 20px;
     /* for very small screen */ }
     @media only screen and (max-width: 313px) {
-      nav a {
+      nav a.ux-color, nav a.dev-color, nav a.a11y-color {
         padding: 12px 10px; } }
     @media only screen and (min-width: 490px) {
-      nav a {
+      nav a.ux-color, nav a.dev-color, nav a.a11y-color {
         font-size: 20px;
         height: 20px;
         padding: 10px 30px; } }
-  nav .on-the-page {
+  nav .on-the-page.dev-color {
+    color: #06609c;
     font-weight: 500; }
-  nav .on-the-page.dev {
-    color: #06609c; }
-  nav .on-the-page.ux {
-    color: #800080; }
-  nav .on-the-page.a11y {
-    color: #218341; }
-  nav a.ux:hover, nav a.ux.focus {
+  nav .on-the-page.ux-color {
+    color: #800080;
+    font-weight: 500; }
+  nav .on-the-page.a11y-color {
+    color: #218341;
+    font-weight: 500; }
+  nav a.ux-color:hover, nav a.ux-color.focus {
     border-bottom: solid 4px #800080; }
-  nav a.dev:hover, nav a.dev:focus {
+  nav a.dev-color:hover, nav a.dev-color:focus {
     border-bottom: solid 4px #06609c; }
-  nav a.a11y:hover, nav a.a11y:focus {
+  nav a.a11y-color:hover, nav a.a11y-color:focus {
     border-bottom: solid 4px #218341; }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
@@ -112,24 +158,6 @@ main {
   @media only screen and (min-width: 490px) {
     main {
       font-size: 18px; } }
-  main a.home {
-    color: #941100;
-    font-weight: 500;
-    text-decoration: underline #aaaaaa; }
-  main a.ux {
-    color: #800080;
-    font-weight: 500;
-    text-decoration: underline #aaaaaa; }
-  main a.dev {
-    color: #06609c;
-    font-weight: 500;
-    text-decoration: underline #aaaaaa; }
-  main a.a11y {
-    color: #218341;
-    font-weight: 500;
-    text-decoration: underline #aaaaaa; }
-  main a:hover, main a:focus {
-    color: #5a5a5a; }
   main p, main h1, main h2, main ul {
     margin-left: auto;
     margin-right: auto;
@@ -150,14 +178,6 @@ main {
     @media only screen and (min-width: 490px) {
       main h2 {
         font-size: 24px; } }
-  main h1.home, main h2.home {
-    color: #941100; }
-  main h1.ux, main h2.ux {
-    color: #800080; }
-  main h1.dev, main h2.dev {
-    color: #06609c; }
-  main h1.a11y, main h2.a11y {
-    color: #218341; }
   @media only screen and (min-width: 490px) {
     main p {
       font-size: 18px; } }
@@ -170,6 +190,12 @@ main {
     @media only screen and (min-width: 992px) {
       main ul {
         padding-left: 120px; } }
+  main a.plain-color {
+    color: #5a5a5a;
+    font-weight: 500;
+    text-decoration: underline #aaaaaa; }
+  main a.plain-color:hover, main a.plain-color:focus {
+    color: #aaaaaa; }
   main .icon {
     vertical-align: top;
     height: 40px;
@@ -207,14 +233,22 @@ footer {
   @media only screen and (min-width: 490px) {
     footer {
       padding: 10px 0 10px 40px; } }
-  footer a.home {
-    color: #941100; }
-  footer a.ux {
-    color: #800080; }
-  footer a.dev {
-    color: #06609c; }
-  footer a.a11y {
-    color: #218341; }
+  footer a.home-style {
+    color: #941100;
+    padding: 5px;
+    border: solid 1px #941100; }
+  footer a.ux-style {
+    color: #800080;
+    padding: 5px;
+    border: solid 1px #800080; }
+  footer a.dev-style {
+    color: #06609c;
+    padding: 5px;
+    border: solid 1px #06609c; }
+  footer a.a11y-style {
+    color: #218341;
+    padding: 5px;
+    border: solid 1px #218341; }
 
 .to-right {
   float: right;
@@ -222,18 +256,6 @@ footer {
   @media only screen and (min-width: 490px) {
     .to-right {
       margin-right: 40px; } }
-
-.with-border {
-  padding: 5px;
-  border: solid 1px; }
-  .with-border .with-border.home {
-    border-color: #941100; }
-  .with-border .with-border.dev {
-    border-color: #06609c; }
-  .with-border .with-border.ux {
-    border-color: #800080; }
-  .with-border .with-border.a11y {
-    border-color: #218341; }
 
 .clearfix::after {
   content: "";
@@ -265,14 +287,6 @@ button {
   button ::selection {
     background: #ffffff;
     color: #5a5a5a; }
-  button button.home {
-    background-color: #941100; }
-  button button.dev {
-    background-color: #06609c; }
-  button button.ux {
-    background-color: #800080; }
-  button button.a11y {
-    background-color: #218341; }
 
 button:hover, button:focus {
   background-color: #ffffff;
@@ -280,18 +294,6 @@ button:hover, button:focus {
   button:hover ::selection, button:focus ::selection {
     background: #ffffff;
     color: #5a5a5a; }
-  button:hover button.home, button:focus button.home {
-    color: #941100;
-    border: solid 2px #941100; }
-  button:hover button.dev, button:focus button.dev {
-    color: #06609c;
-    border: solid 2px #06609c; }
-  button:hover button.ux, button:focus button.ux {
-    color: #800080;
-    border: solid 2px #800080; }
-  button:hover button.a11y, button:focus button.a11y {
-    color: #218341;
-    border: solid 2px #218341; }
 
 .warning {
   color: #ffffff;

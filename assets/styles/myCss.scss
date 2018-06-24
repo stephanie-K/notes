@@ -15,6 +15,91 @@ body {
     min-height: 100%;
     position: relative;
 }
+body.home {
+    header {
+        background-color: $home-color;
+    } 
+    a {
+        color: $home-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    h1, h2 {
+        color: $home-color;
+    }
+    button {
+        background-color: $home-color;
+    }
+    button:hover, button:focus {
+        color: $home-color;
+        border: solid 2px $home-color;
+    }
+}
+body.ux {
+    header {
+        background-color: $ux-color;
+    }
+    a {
+        color: $ux-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    h1, h2 {
+        color: $ux-color;
+    }
+    button {
+        background-color: $ux-color;
+    }
+    button:hover, button:focus {
+        color: $ux-color;
+        border: solid 2px $ux-color;
+    }
+}
+body.dev {
+    header {
+        background-color: $dev-color;
+    }
+    a {
+        color: $dev-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    h1, h2 {
+        color: $dev-color;
+    }
+    button {
+        background-color: $dev-color;
+    }
+    button:hover, button:focus {
+        color: $dev-color;
+        border: solid 2px $dev-color;
+    }
+}
+body.a11y {
+    header {
+        background-color: $a11y-color;
+    }
+    a {
+        color: $a11y-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    h1, h2 {
+        color: $a11y-color;
+    }
+    button {
+        background-color: $a11y-color;
+    }
+    button:hover, button:focus {
+        color: $a11y-color;
+        border: solid 2px $a11y-color;
+    }
+}
+
 p {
     padding-top: 0;
     padding-bottom: 0;
@@ -51,22 +136,11 @@ header {
         text-align: left;
         padding-left: 70px; 
         font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-        color: #e3e3e3;
         font-weight: 300; 
     }
-}
-
-header.home {
-    background-color: $home-color;
-}
-header.ux {
-    background-color: $ux-color;
-}
-header.dev {
-    background-color: $dev-color;
-}
-header.a11y {
-    background-color: $a11y-color;
+    h1.plain-color {
+        color: #e3e3e3;
+    }
 }
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
@@ -79,8 +153,7 @@ nav {
     height: 40px;
     background-color: #e3e3e3 ;
     border-bottom: solid 4px #e3e3e3 ;
-
-    a {
+    a.ux-color, a.dev-color, a.a11y-color {
         float: left;
         display: block;
         text-align: center;
@@ -99,25 +172,26 @@ nav {
             padding: 10px 30px;
         }
     }
-    .on-the-page {
+
+    .on-the-page.dev-color {
+        color: $dev-color;
         font-weight: 500 ;
     }
-    .on-the-page.dev {
-        color: $dev-color;
-    }
-    .on-the-page.ux {
+    .on-the-page.ux-color {
         color: $ux-color;
+        font-weight: 500 ;
     }
-    .on-the-page.a11y {
+    .on-the-page.a11y-color {
         color: $a11y-color;
+        font-weight: 500 ;
     }
-    a.ux:hover, a.ux.focus {
+    a.ux-color:hover, a.ux-color.focus {
         border-bottom: solid 4px $ux-color;
     }
-    a.dev:hover, a.dev:focus {
+    a.dev-color:hover, a.dev-color:focus {
         border-bottom: solid 4px $dev-color;
     }
-    a.a11y:hover, a.a11y:focus {
+    a.a11y-color:hover, a.a11y-color:focus {
         border-bottom: solid 4px $a11y-color;
     }
 }
@@ -131,31 +205,6 @@ main {
     margin-bottom: 40px; /* to leave some room above the footer */
     @media only screen and (min-width: 490px) { 
         font-size: 18px;
-    }
-
-    a.home {
-        color: $home-color;
-        font-weight: 500;
-        text-decoration: underline #aaaaaa;
-    }
-    a.ux {
-        color: $ux-color;
-        font-weight: 500;
-        text-decoration: underline #aaaaaa;
-    }
-    a.dev {
-        color: $dev-color;
-        font-weight: 500;
-        text-decoration: underline #aaaaaa;
-    }
-    a.a11y {
-        color: $a11y-color;
-        font-weight: 500;
-        text-decoration: underline #aaaaaa;
-    }
-
-    a:hover, a:focus {
-        color: #5a5a5a;
     }
 
    // this is to avoid the line of text to be too long to read on big screens. Max 1200px (as it's for me) and same white space on both side of it
@@ -184,18 +233,6 @@ main {
             font-size: 24px;
         }
     }
-    h1.home, h2.home {
-        color: $home-color;
-    }
-    h1.ux, h2.ux {
-        color: $ux-color;
-    }
-    h1.dev, h2.dev {
-        color: $dev-color;
-    }
-    h1.a11y, h2.a11y {
-        color: $a11y-color;
-    }
 
     p {
         @media only screen and (min-width: 490px) {
@@ -212,6 +249,15 @@ main {
         @media only screen and (min-width: 992px) { 
             padding-left: 120px; 
         }
+    }
+
+    a.plain-color { 
+        color: #5a5a5a; 
+        font-weight: 500;
+        text-decoration: underline #aaaaaa;
+    }
+    a.plain-color:hover, a.plain-color:focus {
+        color: #aaaaaa;
     }
 
     .icon {
@@ -265,17 +311,25 @@ footer {
     @media only screen and (min-width: 490px) {
         padding: 10px 0 10px 40px;
     }
-    a.home {
+    a.home-style {
         color: $home-color;
+        padding: 5px;
+        border: solid 1px $home-color;
     }
-    a.ux {
+    a.ux-style {
         color: $ux-color;
+        padding: 5px;
+        border: solid 1px $ux-color;
     }
-    a.dev {
+    a.dev-style {
         color: $dev-color;
+        padding: 5px;
+        border: solid 1px $dev-color;
     }
-    a.a11y {
+    a.a11y-style {
         color: $a11y-color;
+        padding: 5px;
+        border: solid 1px $a11y-color;
     }
 }
 .to-right {
@@ -285,22 +339,7 @@ footer {
         margin-right: 40px;
     } 
 }
-.with-border {
-    padding: 5px;
-    border: solid 1px;
-    .with-border.home {
-        border-color: $home-color;
-    }
-    .with-border.dev {
-        border-color: $dev-color;
-    }
-    .with-border.ux {
-        border-color: $ux-color;
-    }
-    .with-border.a11y {
-        border-color: $a11y-color;
-    }
-}
+
 .clearfix::after { // to avoid element with to-right to overflow outside a container
     content: "";
     clear: both;
@@ -335,18 +374,6 @@ button {
         background: #ffffff;
         color: #5a5a5a;
     }
-    button.home {
-        background-color: $home-color;
-    }
-    button.dev {
-        background-color: $dev-color;
-    }
-    button.ux {
-        background-color: $ux-color;
-    }
-    button.a11y {
-        background-color: $a11y-color;
-    }
 }
 button:hover, button:focus {
     background-color: #ffffff;
@@ -354,22 +381,6 @@ button:hover, button:focus {
     ::selection {
         background: #ffffff;
         color: #5a5a5a;
-    }
-    button.home {
-        color: $home-color;
-        border: solid 2px $home-color;
-    }
-    button.dev {
-        color: $dev-color;
-        border: solid 2px $dev-color;
-    }
-    button.ux {
-        color: $ux-color;
-        border: solid 2px $ux-color;
-    }
-    button.a11y {
-        color: $a11y-color;
-        border: solid 2px $a11y-color;
     }
 }
 
