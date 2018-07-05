@@ -52,6 +52,13 @@ body.dev button {
 body.dev button:hover, body.dev button:focus {
   color: #06609c;
   border: solid 2px #06609c; }
+body.dev summary {
+  font-weight: 500;
+  color: white;
+  background-color: #06609c;
+  padding: 5px 0;
+  margin-bottom: 1em;
+  padding-left: 1em; }
 
 body.a11y header {
   background-color: #218341; }
@@ -79,6 +86,10 @@ p {
   padding-top: 4em;
   font-weight: 600;
   font-size: 18px; }
+
+.red {
+  color: red;
+  font-weight: 500; }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 header {
@@ -154,16 +165,16 @@ main {
   margin-top: 91px;
   /* size of banner  + navbar */
   margin-bottom: 40px;
-  /* to leave some room above the footer */ }
+  /* to leave some room above the footer */
+  padding-left: 30px;
+  padding-right: 30px; }
   @media only screen and (min-width: 490px) {
     main {
       font-size: 18px; } }
-  main p, main h1, main h2, main ul {
+  main p, main h1, main h2, main ul, main details {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: left; }
   main h1 {
     font-size: 22px;
@@ -211,11 +222,6 @@ main {
   main ::selection {
     background: #cccccc;
     color: #1a1a1a; }
-
-.work {
-  text-transform: uppercase;
-  padding-top: 3em;
-  color: #5a5a5a; }
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {

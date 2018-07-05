@@ -77,6 +77,15 @@ body.dev {
         color: $dev-color;
         border: solid 2px $dev-color;
     }
+    summary {
+        font-weight: 500;
+        color: white;
+        background-color: $dev-color;
+        padding: 5px 0;
+        //text-align: center;
+        margin-bottom: 1em;
+        padding-left: 1em;
+    }
 }
 body.a11y {
     header {
@@ -108,12 +117,16 @@ p {
     line-height: 1.5;
     font-weight: 400;
 }
+
 .lead {
     padding-top: 4em;
     font-weight:600;
     font-size: 18px;
 }
-
+.red { 
+color: red;
+font-weight: 500;
+}
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 
@@ -203,17 +216,17 @@ main {
     position: relative;
     margin-top: 91px; /* size of banner  + navbar */
     margin-bottom: 40px; /* to leave some room above the footer */
+    padding-left: 30px;
+    padding-right: 30px;
     @media only screen and (min-width: 490px) { 
         font-size: 18px;
     }
 
    // this is to avoid the line of text to be too long to read on big screens. Max 1200px (as it's for me) and same white space on both side of it
-    p, h1, h2, ul {
+    p, h1, h2, ul, details {
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
-        padding-left: 30px;
-        padding-right: 30px;
         // avoid difference of spacing between words while reading which can be a strain on the eye
         text-align: left;
     }
@@ -281,13 +294,6 @@ main {
         background: #cccccc;
         color: #1a1a1a;
     }
-}
-
-.work {
-    text-transform: uppercase;
-    padding-top: 3em;
-    color: #5a5a5a; 
-
 }
 
 
