@@ -17,7 +17,7 @@ body.home a {
   color: #941100; }
 body.home a:hover, body.home a:focus {
   color: #5a5a5a; }
-body.home h1, body.home h2 {
+body.home h1, body.home h2, body.home h3 {
   color: #941100; }
 body.home button {
   background-color: #941100; }
@@ -31,7 +31,7 @@ body.ux a {
   color: #800080; }
 body.ux a:hover, body.ux a:focus {
   color: #5a5a5a; }
-body.ux h1, body.ux h2 {
+body.ux h1, body.ux h2, body.ux h3 {
   color: #800080; }
 body.ux button {
   background-color: #800080; }
@@ -45,7 +45,7 @@ body.dev a {
   color: #06609c; }
 body.dev a:hover, body.dev a:focus {
   color: #5a5a5a; }
-body.dev h1, body.dev h2 {
+body.dev h1, body.dev h2, body.dev h3 {
   color: #06609c; }
 body.dev button {
   background-color: #06609c; }
@@ -59,6 +59,11 @@ body.dev summary {
   padding: 5px 0;
   margin-bottom: 1em;
   padding-left: 1em; }
+body.dev details p {
+  margin: 0.5em 0; }
+body.dev details hr {
+  margin: 2em 0;
+  border: 1.5px solid #06609c; }
 
 body.a11y header {
   background-color: #218341; }
@@ -66,7 +71,7 @@ body.a11y a {
   color: #218341; }
 body.a11y a:hover, body.a11y a:focus {
   color: #5a5a5a; }
-body.a11y h1, body.a11y h2 {
+body.a11y h1, body.a11y h2, body.a11y h3 {
   color: #218341; }
 body.a11y button {
   background-color: #218341; }
@@ -90,6 +95,10 @@ p {
 .red {
   color: red;
   font-weight: 500; }
+
+.code {
+  background-color: #dddddd;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New; }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 header {

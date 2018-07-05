@@ -25,7 +25,7 @@ body.home {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $home-color;
     }
     button {
@@ -46,7 +46,7 @@ body.ux {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $ux-color;
     }
     button {
@@ -67,7 +67,7 @@ body.dev {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $dev-color;
     }
     button {
@@ -86,6 +86,15 @@ body.dev {
         margin-bottom: 1em;
         padding-left: 1em;
     }
+    details  {
+        p {
+            margin: 0.5em 0;
+        }
+        hr {
+            margin: 2em 0;
+            border: 1.5px solid $dev-color;
+        }
+    }
 }
 body.a11y {
     header {
@@ -97,7 +106,7 @@ body.a11y {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $a11y-color;
     }
     button {
@@ -126,6 +135,11 @@ p {
 .red { 
 color: red;
 font-weight: 500;
+}
+
+.code {
+    background-color: #dddddd;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
