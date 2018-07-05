@@ -20,12 +20,10 @@
   </head>
 
    <body class="dev">
-
       <header >
         <a href="index.html"><img src="assets/images/icons/notes-icon.png" alt="profile picture"/></a>
         <h1 class="plain-color">Les notes de Stéphanie</h1>
       </header>
-
       <nav>
           <a href="ux.html" class="ux-color">UX</a>
           <a href="a11y.html" class="a11y-color">A11Y</a>
@@ -33,7 +31,6 @@
       </nav>
 
       <main>
-          
           <h1>Notes on DEV</h1>
 
           <h2>Sources - Regular reads</h2>
@@ -53,7 +50,179 @@
             <li><a href="https://medium.freecodecamp.org/tools-i-wish-i-had-known-about-when-i-started-coding-57849efd9248" target="_blank" rel="noopener">Tools</a></li>
             <li><a href="https://codeburst.io/the-front-end-checklist-8b2292fdda44" target="_blank" rel="noopener">Frontend checklist</a></li>
           </uL>
-          <p><span class="warning">under construction</span></p>
+
+          <details>
+            <summary class="css-color">BEM</summary>
+            <p><a href="http://getbem.com/introduction/" target="_blank" rel="noopener"><strong>Block Elements and Modifiers</strong></a></p>
+            <p><a href="https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849" target="_blank" rel="noopener"><strong>Naming conventions</strong></a></p>
+            <p>On smaller brochure sites, how you organize your styles isn’t usually a big concern. You get in there, write some CSS, or maybe even some SASS. You compile it all into a single stylesheet with SASS’s production settings, and then you aggregate it to get all the stylesheets from modules into a nice tidy package.</p>
+            <p>However, when it comes to larger, more complex projects, how you organize your code is the key to efficiency in at least these three ways: it affects how long it takes you to write code, how much of that code you’ll have to write and how much loading your browser will have to do. This becomes especially important when you’re working with teams of themers, and when high performance is essential.</p>
+            <p>There are plenty of methodologies out there aiming to reduce the CSS footprint, organize cooperation among programmers and maintain large CSS codebases.<br>
+              No matter what methodology you choose to use in your projects, you will benefit from the advantages of more structured CSS and UI. Some styles are less strict and more flexible, while others are easier to understand and adapt in a team.</p>
+            <a href="assets/images/dev/bem.png" target="_blank" rel="noopener"><img class ="img-three-quarters-width" src="assets/images/dev/bem.png"/></a>
+            <h3>Benefits</h3>
+            <p><strong>Modularity: </strong>Block styles are never dependent on other elements on a page, so you will never experience problems from cascading.</p>
+            <p><strong>Reusability: </strong>You also get the ability to transfer blocks from your finished projects to new ones.<br>
+            Composing independent blocks in different ways, and reusing them intelligently, reduces the amount of CSS code that you will have to maintain.<br>
+            With a set of style guidelines in place, you can build a library of blocks, making your CSS super effective.
+            </p>
+            <p><strong>Structure: </strong>BEM methodology gives your CSS code a solid structure that remains simple and easy to understand.</p>
+            <h3>Naming</h3>
+            <p><a href="http://getbem.com/naming/" target="_blank" rel="noopener"><strong>See here</strong></a></p>
+            <p>Element two underscore, and modifier: two dashes</p>
+            <a href="assets/images/dev/bem-example.png" target="_blank" rel="noopener"><img class ="img-three-quarters-width" src="assets/images/dev/bem-example.png"/></a>
+          </details>
+          
+          <details>
+            <summary class="dev-color">Chrome Dev Tools</summary>
+            <p class="red">notes to add here</p>
+          </details>
+
+        
+          <details>
+            <summary class="js-color">jQuery</summary>
+            <p><a href="https://app.pluralsight.com/library/courses/jquery-getting-started/table-of-contents" target="_blank" rel="noopener"><strong>Pluralsight</strong></a></p>
+            <p><a href="http://api.jquery.com/" target="_blank" rel="noopener"><strong>http://api.jquery.com/</strong></a></p>
+            <p><a href="https://app.pluralsight.com/library/courses/jqueryui/table-of-contents" target="_blank" rel="noopener"><strong>Pluralsight for jQuery UI</strong></a></p>
+            <p>More than just an API to work with the DOM.</p>
+            <p>jQuery is a JavaScript library that makes it easy to add dynamic behavior to HTML elements.</p>
+            <p><strong>jQuery is case sensitive</strong></p>
+            <p><span class ="red">$ is the same as jQuery, </span>so $ is a shortcut, so it tells we're accessing the Jquery library jQuery works in set: use a selector (# or . in quotes)  and than changes things.</p>
+            <p>CSS: pseudo class reflect a specific state of an element: :hover :first-child ....</p>
+            <p>jQuery.com library to makes the most of Javascript functions, lots of plugging for interactive webapps - <strong>it's a layer above javascript mostly used to manipulate the DOM</strong> (Document Object Model) easily. We can select / modify elements, attach event handlers and work with form.</p>
+            <em>When downloading JQuery, make sure it's the minified version (production one and not the development one) to avoid long uploading time for your page.</em>
+            <em>to add in the html: &lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt; or if you have downloaded the file: &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;</em>
+            <p>to select an element in the document: $(document).ready(function() { blabla;});</p>
+            <p>$('#name of div).property etc...</p>
+            <p>$('.name of class). etc....</p>
+            <p>regex, get , animation, fade etc..</p>
+            <p>jqueryui.com for widgets (just call like above):</p>
+            <p>&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js""&gt;&lt;/script&gt;</p>
+            <p>draggables, reziable, droppable, accordion (each div fold) and sortables (to move elements on screen).</p>
+            <p>jQuery component, web app on the client side</p>
+            <p>jQuery UI is above and deals with: effects, widgets, themes, date pickers, menu, progress bars, plugins...</p>
+            <p>above: customs libraries</p>
+          </details>
+
+          <details>
+            <summary class="js-color">JavaScript</summary>
+            <p><a href="https://medium.freecodecamp.org/learn-these-javascript-fundamentals-and-become-a-better-developer-2a031a0dc9cf" target="_blank" rel="noopener"><strong>Freecodecamp - fundamentals of JS</strong></a></p>
+            <p><a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener"><strong>https://github.com/airbnb/javascript</strong></a></p>
+            <p><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" rel="noopener"><strong>Kyle Simpsons books on JS</strong></a></p>
+          </details>
+
+          <details>
+            <summary class="js-color">JavaScript - Best practices</summary>
+            <p><a href="https://app.pluralsight.com/player?course=javascript-best-practices&author=jonathan-mills&name=javascript-best-practices-m0&clip=0&mode=live" target="_blank" rel="noopener">On Pluralsight</a></p>
+            <p class="red">notes to add here</p>
+          </details>
+
+          <details>
+            <summary class="js-color">JavaScript - Guidelines</summary>
+            <p class="red">notes to add here</p>
+          </details>
+
+          <details>
+            <summary class="js-color">JavaScript - Objects and Prototypes</summary>
+            <p><a href="https://app.pluralsight.com/player?course=javascript-objects-prototypes&author=jim-cooper&name=javascript-objects-prototypes-m1&clip=0&mode=live" target="_blank" rel="noopener">On Pluralsight</a></p>
+            <p class="red">notes to add here</p>
+          </details>
+
+          <details>
+            <summary class="js-color">JavaScript - Promises</summary>
+            <p><a href="https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html" target="_blank" rel="noopener">We have a problem with promises</a></p>
+            <p class="red">notes to add here</p>
+          </details>
+
+          <details>
+            <summary class="css-color">SASS</summary>
+            <p><a href="https://www.codecademy.com/learn/learn-sass" target="_blank" rel="noopener">Codecademy (3hours)</a></p>
+            <p class="red">notes to add here</p>
+          </details>
+          
+          <details>
+            <summary class="dev-color">Responsive Design</summary>
+            <p><a href="https://www.codecademy.com/courses/learn-responsive-design" target="_blank" rel="noopener">On Codecademy</a></p>
+            <p class="red">notes to add here</p>
+          </details>
+
+          <details>
+            <summary class="js-color">Templating languages for JS</summary>
+            <p><a href="http://handlebarsjs.com/" target="_blank" rel="noopener"><strong>HandlebarsJS</strong></a></p>
+            <p><a href="https://github.com/wycats/handlebars.js#differences-between-handlebarsjs-and-mustache" target="_blank" rel="noopener"><strong>Differences between HandlebarsJS and Mustache</strong></a></p>
+            <p><a href="https://github.com/janl/mustache.js" target="_blank" rel="noopener"><strong>Mustache</strong></a></p>
+            <p><a href="http://mustache.github.io/mustache.5.html" target="_blank" rel="noopener"><strong>http://mustache.github.io/mustache.5.html</strong></a></p>
+            <p><a href="http://ejs.co/" target="_blank" rel="noopener"><strong>EJS - Effective JavaScript Templating</strong></a></p>
+            <h3>EJS</h3>
+            <a href="assets/images/dev/ejs1.png" target="_blank" rel="noopener"><img class ="half-width" src="assets/images/dev/ejs1.png"/></a>
+            <a href="assets/images/dev/ejs2.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/ejs2.png"/></a>
+            <p class="red">notes to add here</p>
+          </details>
+
+          <details>
+            <summary class="dev-color">Unit Testing</summary>
+            <p class="red">notes to add here</p>
+          </details>
+
+          <details>
+            <summary class="dev-color">Miscellanous</summary>
+            <h3>CSFR</h3>
+            <p><a href="https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project" target="_blank" rel="noopener"><strong>Cross Site Request Forgery</strong></a></p>
+            <hr>
+            <h3>Head tag</h3>
+            <p><a href="https://github.com/joshbuchea/HEAD#apple-ios" target="_blank" rel="noopener">What to find in the &lt;head&gt;</a></p>
+            <hr>
+            <h3>hidden</h3>
+            <p>Form variables. These fields should not be rendered and provide a means for servers to store state information with a form. This will be passed back to the server when the form is submitted, using the name/value pair defined by the corresponding attributes. This is a work around for the statelessness of HTTP. Another approach is to use HTTP "Cookies".</p>
+            <p><span class="code">&lt;input type=hidden name=customerid value="c2415-345-8563"&gt;</span></p>
+            <hr>
+            <h3>HTML infographic</h3>
+            <a href="assets/images/dev/htmlinfographics.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/dev/htmlinfographics.png"/></a>
+            <hr>
+            <h3>JSON</h3>
+            <p><a href="https://spacetelescope.github.io/understanding-json-schema/" target="_blank" rel="noopener">Understanding the JSON Schema</a></p>
+            <hr>
+            <h3>Placeholder</h3>
+            <p><a href="https://www.smashingmagazine.com/2018/06/placeholder-attribute/" target="_blank" rel="noopener">Using the placeholder attribute</a></p>
+            <p>
+              The placeholder attribute:
+              <ul>
+                <li>can’t be automatically translated</li>
+                <li>is often used in place of a label, locking out assistive technology</li>
+                <li>can hide important information when content is entered</li>
+                <li>can be too light-colored to be legible</li>
+                <li>has limited styling options</li>
+                <li>may look like pre-filled information and be skipped over</li>
+              </ul>
+            </p>
+            <p>Solution: Move the placeholder content above the input, but below the label</p>
+            <hr>
+            <h3>SAML - Security Assertion Markup Language</h3>
+            <p>It's an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. Beyond what its name suggests, SAML is each of the following:</p>
+              <ul>
+                <li>an XML-based markup language (for assertions etc.)</li>
+                <li>a set of XML-based protocol messages</li>
+                <li>a set of protocol message bindings</li>
+                <li>a set of profiles (utilizing all of the above)</li>
+                <li>the single most important use case that SAML addresses is web browser single sign-on (SSO). Single sign-on is relatively easy to accomplish within a security domain (using cookies, for example) but extending SSO across security domains is more difficult and resulted in the proliferation of non-interoperable proprietary technologies. Hence the SAML Web Browser SSO profile was specified and standardized. (For comparison, the more recent OpenID Connect protocol[2] is an alternative approach to browser SSO.)</li>
+              </ul>  
+            <hr>
+            <h3>View vs redirect</h3>
+            <p>In the same controller just content then view. Redirect URL to the controller which will do the work.<br>
+              When you return a view you are responding to a uri. For example, when someone access the /about uri you respond by returning a view.<br>
+              A redirect is actually changing the uri which means you actually invoke another controller's method. The norm is to return a View when you use a GET request and to Redirect somewhere after you've sent a POST request.
+            </p>
+            <hr>
+            <h3>Z-index</h3>
+            <p><a href="https://medium.freecodecamp.org/z-index-explained-how-to-stack-elements-using-css-7c5aa0f179b3" target="_blank" rel="noopener">Z-index explained</a></p>
+            <p>A non-positioned element is an element with the default position value static. A positioned element is an element with any other position value. Examples of other values are: absolute, relative, sticky or fixed.</p>
+            <p><strong>Z-index only works with positioned elements.</strong></p>
+            <p>Adding a z-index value to an element forms what is called a stacking context.</p>
+            <p>An element with a z-index value other than auto forms a new stacking context.  And it affects how its child elements are being displayed.</p>
+            <p>It is possible to change the stacking order of child elements. However, their <strong>z-index only has a meaning within that stacking context.</strong></p>
+            <p>There are several other properties that cause elements to form stacking contexts. Some examples are: filter, opacity, and transform.</p>
+            
+          </details>
 
         </main>
       
@@ -69,3 +238,14 @@
 
   </body>
 </html>
+
+<!--   
+  <details>
+  <summary></summary>
+
+  <p></p>
+</details>
+
+<a href="assets/images/dev/bem.png" target="_blank" rel="noopener"><img class ="img-three-quarters-width" src="assets/images/dev/bem.png"/></a>
+
+-->

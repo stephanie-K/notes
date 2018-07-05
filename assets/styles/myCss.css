@@ -10,6 +10,8 @@ body {
   color: #5a5a5a;
   min-height: 100%;
   position: relative; }
+  body hr {
+    margin: 2em 0; }
 
 body.home header {
   background-color: #941100; }
@@ -17,13 +19,15 @@ body.home a {
   color: #941100; }
 body.home a:hover, body.home a:focus {
   color: #5a5a5a; }
-body.home h1, body.home h2 {
+body.home h1, body.home h2, body.home h3 {
   color: #941100; }
 body.home button {
   background-color: #941100; }
 body.home button:hover, body.home button:focus {
   color: #941100;
   border: solid 2px #941100; }
+body.home hr {
+  border: 1.5px solid #941100; }
 
 body.ux header {
   background-color: #800080; }
@@ -31,13 +35,15 @@ body.ux a {
   color: #800080; }
 body.ux a:hover, body.ux a:focus {
   color: #5a5a5a; }
-body.ux h1, body.ux h2 {
+body.ux h1, body.ux h2, body.ux h3 {
   color: #800080; }
 body.ux button {
   background-color: #800080; }
 body.ux button:hover, body.ux button:focus {
   color: #800080;
   border: solid 2px #800080; }
+body.ux hr {
+  border: 1.5px solid #800080; }
 
 body.dev header {
   background-color: #06609c; }
@@ -45,13 +51,32 @@ body.dev a {
   color: #06609c; }
 body.dev a:hover, body.dev a:focus {
   color: #5a5a5a; }
-body.dev h1, body.dev h2 {
+body.dev h1, body.dev h2, body.dev h3 {
   color: #06609c; }
 body.dev button {
   background-color: #06609c; }
 body.dev button:hover, body.dev button:focus {
   color: #06609c;
   border: solid 2px #06609c; }
+body.dev summary {
+  font-weight: 500;
+  color: white;
+  padding: 5px 0;
+  margin-bottom: 1em;
+  padding-left: 1em; }
+body.dev summary.css-color {
+  background-color: #440e4c; }
+body.dev summary.dev-color {
+  background-color: #06609c; }
+body.dev summary.js-color {
+  background-color: #0f4c0e; }
+body.dev details p, body.dev details ul {
+  margin: 0.5em 0; }
+  @media only screen and (min-width: 490px) {
+    body.dev details p, body.dev details ul {
+      font-size: 16px; } }
+body.dev details hr {
+  border: 1.5px solid #06609c; }
 
 body.a11y header {
   background-color: #218341; }
@@ -59,13 +84,15 @@ body.a11y a {
   color: #218341; }
 body.a11y a:hover, body.a11y a:focus {
   color: #5a5a5a; }
-body.a11y h1, body.a11y h2 {
+body.a11y h1, body.a11y h2, body.a11y h3 {
   color: #218341; }
 body.a11y button {
   background-color: #218341; }
 body.a11y button:hover, body.a11y button:focus {
   color: #218341;
   border: solid 2px #218341; }
+body.a11y hr {
+  border: 1.5px solid #218341; }
 
 p {
   padding-top: 0;
@@ -79,6 +106,15 @@ p {
   padding-top: 4em;
   font-weight: 600;
   font-size: 18px; }
+
+.red {
+  color: red;
+  font-weight: 500; }
+
+.code {
+  background-color: #eeeeee;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  color: black; }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 header {
@@ -154,16 +190,16 @@ main {
   margin-top: 91px;
   /* size of banner  + navbar */
   margin-bottom: 40px;
-  /* to leave some room above the footer */ }
+  /* to leave some room above the footer */
+  padding-left: 30px;
+  padding-right: 30px; }
   @media only screen and (min-width: 490px) {
     main {
       font-size: 18px; } }
-  main p, main h1, main h2, main ul {
+  main p, main h1, main h2, main ul, main details {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: left; }
   main h1 {
     font-size: 22px;
@@ -182,14 +218,7 @@ main {
     main p {
       font-size: 18px; } }
   main ul {
-    line-height: 1.5;
-    padding-left: 60px; }
-    @media only screen and (min-width: 768px) {
-      main ul {
-        padding-left: 90px; } }
-    @media only screen and (min-width: 992px) {
-      main ul {
-        padding-left: 120px; } }
+    line-height: 1.5; }
   main a.plain-color {
     color: #5a5a5a;
     font-weight: 500;
@@ -211,11 +240,6 @@ main {
   main ::selection {
     background: #cccccc;
     color: #1a1a1a; }
-
-.work {
-  text-transform: uppercase;
-  padding-top: 3em;
-  color: #5a5a5a; }
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {

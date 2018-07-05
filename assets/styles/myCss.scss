@@ -3,6 +3,8 @@ $home-color: #941100 ;
 $ux-color: #800080 ;
 $dev-color: #06609c;
 $a11y-color: rgb(33, 131, 65); 
+$css-color: #440e4c;
+$js-color: #0f4c0e;
 
 html{
     position: relative;
@@ -14,6 +16,9 @@ body {
     color: #5a5a5a; 
     min-height: 100%;
     position: relative;
+    hr {
+        margin: 2em 0;
+    } 
 }
 body.home {
     header {
@@ -25,7 +30,7 @@ body.home {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $home-color;
     }
     button {
@@ -35,6 +40,9 @@ body.home {
         color: $home-color;
         border: solid 2px $home-color;
     }
+    hr {
+        border: 1.5px solid $home-color;
+    } 
 }
 body.ux {
     header {
@@ -46,7 +54,7 @@ body.ux {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $ux-color;
     }
     button {
@@ -56,6 +64,9 @@ body.ux {
         color: $ux-color;
         border: solid 2px $ux-color;
     }
+    hr {
+        border: 1.5px solid $ux-color;
+    } 
 }
 body.dev {
     header {
@@ -67,7 +78,7 @@ body.dev {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $dev-color;
     }
     button {
@@ -76,6 +87,33 @@ body.dev {
     button:hover, button:focus {
         color: $dev-color;
         border: solid 2px $dev-color;
+    }
+    summary {
+        font-weight: 500;
+        color: white;
+        padding: 5px 0;
+        margin-bottom: 1em;
+        padding-left: 1em;
+    }
+    summary.css-color {
+        background-color: $css-color;
+    }
+    summary.dev-color {
+        background-color:  $dev-color;
+    }
+    summary.js-color {
+        background-color: $js-color;
+    }
+    details  {
+        p, ul {
+            margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
+        }
+        hr {
+            border: 1.5px solid $dev-color;
+        }      
     }
 }
 body.a11y {
@@ -88,7 +126,7 @@ body.a11y {
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2 {
+    h1, h2, h3 {
         color: $a11y-color;
     }
     button {
@@ -98,6 +136,9 @@ body.a11y {
         color: $a11y-color;
         border: solid 2px $a11y-color;
     }
+    hr {
+        border: 1.5px solid $a11y-color;
+    } 
 }
 
 p {
@@ -108,12 +149,22 @@ p {
     line-height: 1.5;
     font-weight: 400;
 }
+
 .lead {
     padding-top: 4em;
     font-weight:600;
     font-size: 18px;
 }
+.red { 
+color: red;
+font-weight: 500;
+}
 
+.code {
+    background-color: #eeeeee;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    color: black;
+}
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 
@@ -203,17 +254,17 @@ main {
     position: relative;
     margin-top: 91px; /* size of banner  + navbar */
     margin-bottom: 40px; /* to leave some room above the footer */
+    padding-left: 30px;
+    padding-right: 30px;
     @media only screen and (min-width: 490px) { 
         font-size: 18px;
     }
 
    // this is to avoid the line of text to be too long to read on big screens. Max 1200px (as it's for me) and same white space on both side of it
-    p, h1, h2, ul {
+    p, h1, h2, ul, details {
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
-        padding-left: 30px;
-        padding-right: 30px;
         // avoid difference of spacing between words while reading which can be a strain on the eye
         text-align: left;
     }
@@ -242,13 +293,6 @@ main {
 
     ul {
         line-height: 1.5;
-        padding-left: 60px;
-        @media only screen and (min-width: 768px) { 
-            padding-left: 90px;
-        }
-        @media only screen and (min-width: 992px) { 
-            padding-left: 120px; 
-        }
     }
 
     a.plain-color { 
@@ -281,13 +325,6 @@ main {
         background: #cccccc;
         color: #1a1a1a;
     }
-}
-
-.work {
-    text-transform: uppercase;
-    padding-top: 3em;
-    color: #5a5a5a; 
-
 }
 
 
@@ -399,5 +436,4 @@ button:hover, button:focus {
 .margin-top-2 {
     margin-top: 2em;
 }
-
 
