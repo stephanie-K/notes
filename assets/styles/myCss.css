@@ -10,6 +10,8 @@ body {
   color: #5a5a5a;
   min-height: 100%;
   position: relative; }
+  body hr {
+    margin: 2em 0; }
 
 body.home header {
   background-color: #941100; }
@@ -24,6 +26,8 @@ body.home button {
 body.home button:hover, body.home button:focus {
   color: #941100;
   border: solid 2px #941100; }
+body.home hr {
+  border: 1.5px solid #941100; }
 
 body.ux header {
   background-color: #800080; }
@@ -38,6 +42,8 @@ body.ux button {
 body.ux button:hover, body.ux button:focus {
   color: #800080;
   border: solid 2px #800080; }
+body.ux hr {
+  border: 1.5px solid #800080; }
 
 body.dev header {
   background-color: #06609c; }
@@ -55,14 +61,21 @@ body.dev button:hover, body.dev button:focus {
 body.dev summary {
   font-weight: 500;
   color: white;
-  background-color: #06609c;
   padding: 5px 0;
   margin-bottom: 1em;
   padding-left: 1em; }
-body.dev details p {
+body.dev summary.css-color {
+  background-color: #440e4c; }
+body.dev summary.dev-color {
+  background-color: #06609c; }
+body.dev summary.js-color {
+  background-color: #0f4c0e; }
+body.dev details p, body.dev details ul {
   margin: 0.5em 0; }
+  @media only screen and (min-width: 490px) {
+    body.dev details p, body.dev details ul {
+      font-size: 16px; } }
 body.dev details hr {
-  margin: 2em 0;
   border: 1.5px solid #06609c; }
 
 body.a11y header {
@@ -78,6 +91,8 @@ body.a11y button {
 body.a11y button:hover, body.a11y button:focus {
   color: #218341;
   border: solid 2px #218341; }
+body.a11y hr {
+  border: 1.5px solid #218341; }
 
 p {
   padding-top: 0;
@@ -97,8 +112,9 @@ p {
   font-weight: 500; }
 
 .code {
-  background-color: #dddddd;
-  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New; }
+  background-color: #eeeeee;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  color: black; }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 header {
@@ -202,14 +218,7 @@ main {
     main p {
       font-size: 18px; } }
   main ul {
-    line-height: 1.5;
-    padding-left: 60px; }
-    @media only screen and (min-width: 768px) {
-      main ul {
-        padding-left: 90px; } }
-    @media only screen and (min-width: 992px) {
-      main ul {
-        padding-left: 120px; } }
+    line-height: 1.5; }
   main a.plain-color {
     color: #5a5a5a;
     font-weight: 500;

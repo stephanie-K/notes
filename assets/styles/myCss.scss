@@ -3,6 +3,8 @@ $home-color: #941100 ;
 $ux-color: #800080 ;
 $dev-color: #06609c;
 $a11y-color: rgb(33, 131, 65); 
+$css-color: #440e4c;
+$js-color: #0f4c0e;
 
 html{
     position: relative;
@@ -14,6 +16,9 @@ body {
     color: #5a5a5a; 
     min-height: 100%;
     position: relative;
+    hr {
+        margin: 2em 0;
+    } 
 }
 body.home {
     header {
@@ -35,6 +40,9 @@ body.home {
         color: $home-color;
         border: solid 2px $home-color;
     }
+    hr {
+        border: 1.5px solid $home-color;
+    } 
 }
 body.ux {
     header {
@@ -56,6 +64,9 @@ body.ux {
         color: $ux-color;
         border: solid 2px $ux-color;
     }
+    hr {
+        border: 1.5px solid $ux-color;
+    } 
 }
 body.dev {
     header {
@@ -80,20 +91,29 @@ body.dev {
     summary {
         font-weight: 500;
         color: white;
-        background-color: $dev-color;
         padding: 5px 0;
-        //text-align: center;
         margin-bottom: 1em;
         padding-left: 1em;
     }
+    summary.css-color {
+        background-color: $css-color;
+    }
+    summary.dev-color {
+        background-color:  $dev-color;
+    }
+    summary.js-color {
+        background-color: $js-color;
+    }
     details  {
-        p {
+        p, ul {
             margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
         }
         hr {
-            margin: 2em 0;
             border: 1.5px solid $dev-color;
-        }
+        }      
     }
 }
 body.a11y {
@@ -116,6 +136,9 @@ body.a11y {
         color: $a11y-color;
         border: solid 2px $a11y-color;
     }
+    hr {
+        border: 1.5px solid $a11y-color;
+    } 
 }
 
 p {
@@ -138,8 +161,9 @@ font-weight: 500;
 }
 
 .code {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    color: black;
 }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
@@ -269,13 +293,6 @@ main {
 
     ul {
         line-height: 1.5;
-        padding-left: 60px;
-        @media only screen and (min-width: 768px) { 
-            padding-left: 90px;
-        }
-        @media only screen and (min-width: 992px) { 
-            padding-left: 120px; 
-        }
     }
 
     a.plain-color { 
@@ -419,5 +436,4 @@ button:hover, button:focus {
 .margin-top-2 {
     margin-top: 2em;
 }
-
 
