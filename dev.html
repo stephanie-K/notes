@@ -75,7 +75,55 @@
           
           <details>
             <summary class="dev-color">Chrome Dev Tools</summary>
-            <p class="red">notes to add here</p>
+            <p>The DevTools provide web developers deep access into the internals of the browser and their web application. Use the DevTools to efficiently track down layout issues, set JavaScript breakpoints, and get insights for code optimization.</p>
+            <h3>Accessing the DevTools</h3>
+            <p>There are several useful shortcuts for opening the DevTools:<br>
+                Use Ctrl+Shift+I (or Cmd+Opt+I on Mac) to open the DevTools.<br>
+                Use Ctrl+Shift+J (or Cmd+Opt+J on Mac) to open the DevTools and bring focus to the Console.<br>
+                Use Ctrl+Shift+C (or Cmd+Shift+C on Mac) to open the DevTools in Inspect Element mode, or toggle Inspect Element mode if the DevTools are already open.
+            </p>
+            <p>To get an extra console window, type 'esc'. In the menu on the right, there is 'rendering and search options which are very useful<br>
+                In Network, when looking at load time, you might want to tick 'disable cache'<br>
+                On the performance tab, you can record, it gives a lot of information about what is happening when loading a page.<br>
+                To search sources (pictures etc...) select the 'source' tab, then command P for a mac (ctrl P for a PC)<br>
+                To search within code source:  ctrl shit F (cmd opt F for mac)<br>
+                Go to a line in a source file: ctrl G (cmd L for mac)<br>
+                Selecting element sin the console: $('div') returns the first, $$('p') returns them all<br>
+            </p>
+            <h3>Device mode</h3>
+            <p>DevTools includes a powerful mode for developing mobile friendly pages. This video from Google goes through most of its main features such as screen resizing, touch emulation and bad network connections simulator.</p>
+            <p><a href="https://www.youtube.com/watch?v=FrAZWiMWRa4" target="_blank" rel="noopener">https://www.youtube.com/watch?v=FrAZWiMWRa4</a></p>
+            <h3>Device emulation sensors</h3>
+            <p>Another cool feature of Device Mode is the option to simulate mobile devices' sensors like touch screens and accelerometers. You can even spoof your geographic location. The feature is located in the bottom part of the Elements tab under Emulation -> Sensors.</p>
+            <h3>Color Picker</h3>
+            <p>When selecting a color in the Styles editor you can click on the color preview and a picker will pop up. While the color picker is opened, if you hover over your page, your mouse pointer will transform into a magnifying glass for selecting colors with pixel accuracy.</p>
+            <p>DevTools has a feature that simulates <strong>CSS states like :hover and :focus</strong> on elements, making it easy to style them. It is available from the CSS editor.</p>
+            <h3>Change color format</h3>
+            <p>Use Shift + Click on the color preview to alter between rgba, hsl and hexadecimal formatting.</p>
+            <h3>Change for no Javascript: </h3>
+            <p>menu 3 dots on the right, then settings (F1) on the left, debugger</p>
+            <h3>No internet or low broadband: </h3>
+            <ul>
+              <li>responsive, and then menu 3 dots and Add Network Throttling</li>
+              <li>or settings like above and Throttling with specific values,</li>
+              <li>or in Network</li>
+            </ul>
+            <a href="assets/images/dev/chrome1.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/dev/chrome1.png"/></a>
+            <h3>accessibility:</h3>
+            <p>chrome tools, last top section is Audit, include accessibility</p>
+            <a href="assets/images/dev/chrome2.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/chrome2.png"/></a>
+            <h3>More on the subject:</h3>
+            <p><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener">https://developers.google.com/web/tools/chrome-devtools/</a></p>
+            <p><a href="https://tutorialzine.com/2015/03/15-must-know-chrome-devtools-tips-tricks" target="_blank" rel="noopener">https://tutorialzine.com/2015/03/15-must-know-chrome-devtools-tips-tricks</a></p>
+            <p><a href="https://developer.chrome.com/devtools/index" target="_blank" rel="noopener">https://developer.chrome.com/devtools/index</a></p>
+            <p><a href="https://developers.google.com/web/tools/chrome-devtools/network-performance/" target="_blank" rel="noopener">https://developers.google.com/web/tools/chrome-devtools/network-performance/</a></p>
+            <p><a href="https://stories.jotform.com/how-to-use-chrome-devtools-like-a-pro-b9bd414870e3" target="_blank" rel="noopener">https://stories.jotform.com/how-to-use-chrome-devtools-like-a-pro-b9bd414870e3</a></p>
+            <p><a href="https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2" target="_blank" rel="noopener">https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2</a></p>
+            <p>Use $_ to reference the return value of the previous operation executed in the Console<br>
+                Select an element and press cmd-shift-p (or ctrl-shift-p in Windows) to open the Command Menu, and select Capture node screenshot.<br>
+                To write commands that span over multiple lines in the Console, press shift-enter. Once you’re ready, press enter at the end of the script to execute it<br>
+                Instead of writing again and again a variable name or an expression you are going to check a lot during a debug session, add it to the Watch Expression list.
+            </p>
           </details>
 
         
@@ -90,14 +138,14 @@
             <p><span class ="red">$ is the same as jQuery, </span>so $ is a shortcut, so it tells we're accessing the Jquery library jQuery works in set: use a selector (# or . in quotes)  and than changes things.</p>
             <p>CSS: pseudo class reflect a specific state of an element: :hover :first-child ....</p>
             <p>jQuery.com library to makes the most of Javascript functions, lots of plugging for interactive webapps - <strong>it's a layer above javascript mostly used to manipulate the DOM</strong> (Document Object Model) easily. We can select / modify elements, attach event handlers and work with form.</p>
-            <em>When downloading JQuery, make sure it's the minified version (production one and not the development one) to avoid long uploading time for your page.</em>
-            <em>to add in the html: &lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt; or if you have downloaded the file: &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;</em>
-            <p>to select an element in the document: $(document).ready(function() { blabla;});</p>
-            <p>$('#name of div).property etc...</p>
-            <p>$('.name of class). etc....</p>
+            <p>When downloading JQuery, make sure it's the minified version (production one and not the development one) to avoid long uploading time for your page.</p>
+            <p>to add in the html: <span class="code">&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;</span> or if you have downloaded the file: &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;</p>
+            <p>to select an element in the document: <span class="code">$(document).ready(function() { blabla;});</span></p>
+            <p><span class="code">$('#name of div).property</span> etc...</p>
+            <p><span class="code">$('.name of class). </span> etc....</p>
             <p>regex, get , animation, fade etc..</p>
             <p>jqueryui.com for widgets (just call like above):</p>
-            <p>&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js""&gt;&lt;/script&gt;</p>
+            <p><span class="code">&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js""&gt;&lt;/script&gt;</span></p>
             <p>draggables, reziable, droppable, accordion (each div fold) and sortables (to move elements on screen).</p>
             <p>jQuery component, web app on the client side</p>
             <p>jQuery UI is above and deals with: effects, widgets, themes, date pickers, menu, progress bars, plugins...</p>
@@ -173,7 +221,7 @@
             <p><a href="https://github.com/joshbuchea/HEAD#apple-ios" target="_blank" rel="noopener">What to find in the &lt;head&gt;</a></p>
             <hr>
             <h3>hidden</h3>
-            <p>Form variables. These fields should not be rendered and provide a means for servers to store state information with a form. This will be passed back to the server when the form is submitted, using the name/value pair defined by the corresponding attributes. This is a work around for the statelessness of HTTP. Another approach is to use HTTP "Cookies".</p>
+            <p>Form variables. These fields should not be rendered and provide a mean for servers to store state information with a form. This will be passed back to the server when the form is submitted, using the name/value pair defined by the corresponding attributes. This is a work around for the statelessness of HTTP. Another approach is to use HTTP "Cookies".</p>
             <p><span class="code">&lt;input type=hidden name=customerid value="c2415-345-8563"&gt;</span></p>
             <hr>
             <h3>HTML infographic</h3>
@@ -245,7 +293,8 @@
 
   <p></p>
 </details>
-
+<p><a href="" target="_blank" rel="noopener"></a></p>
+<p><a href="" target="_blank" rel="noopener"></a><strong></strong></p>
 <a href="assets/images/dev/bem.png" target="_blank" rel="noopener"><img class ="img-three-quarters-width" src="assets/images/dev/bem.png"/></a>
 
 -->

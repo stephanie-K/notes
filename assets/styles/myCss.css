@@ -70,10 +70,10 @@ body.dev summary.dev-color {
   background-color: #06609c; }
 body.dev summary.js-color {
   background-color: #0f4c0e; }
-body.dev details p, body.dev details ul {
+body.dev details p, body.dev details ul, body.dev details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
-    body.dev details p, body.dev details ul {
+    body.dev details p, body.dev details ul, body.dev details em {
       font-size: 16px; } }
 body.dev details hr {
   border: 1.5px solid #06609c; }
