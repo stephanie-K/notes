@@ -284,6 +284,14 @@ main {
             font-size: 24px;
         }
     }
+    h3 {
+        font-size: 18px;
+        padding: 1em 0 0 0;
+        margin: 0;
+        @media only screen and (min-width: 490px) {
+            font-size: 20px;
+        }
+    }
 
     p {
         @media only screen and (min-width: 490px) {

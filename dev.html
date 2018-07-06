@@ -126,6 +126,67 @@
             </p>
           </details>
 
+          <details>
+            <summary class="css-color">CSS - Animation and transitions</summary>
+            <p>Cascading Style Sheets - 3 ways to modify the format, 3 type of selectors:<br>
+                the <strong>tag</strong>body, the <strong>class</strong> .special, or the <strong>id</strong> (should be unique) #message
+            </p>
+            <p>if only two values then top and bottom same and left and right same<br>
+                padding adds to the width and height, it puts some space within the div so the text is not too close from the edges.<br>
+                border, add to the div size (it's a line, with a size px, a style and a radius<br>
+                <strong>px</strong> is an absolute size. <strong>em</strong> is a relative size.  1.3em means a third larger than whatever came before it.
+            </p>
+            <p><strong>Best practice</strong> is to set one fixed size (for the body for example, in px) and then to use relative size for the rest (div) using em.</p>
+            <p>to make a circle: radius should be half the weight and width.<br>
+                to add an image to a boxed text:<br>
+                <span class="code">.boxed { background-image:url (fries.jpg); } </span> will automatically repeat the image (can be changed by changing the background-repeat property)
+                </p>
+            <p><strong>External CSS file</strong>keep it seperate so it's easier to see and prevent the browser having to load it each time. Stylesheets needs to be kept small and neat, better when in a external file (minify CSS) to avoid long loading time for the page (usually, once loaded, it's usually kept in the cache to speed up things</p>
+            <p><a href="assets/images/dev/CSS-boxe.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/dev/CSS-boxe.png"/></a></p>
+            <hr>
+            <h3>Transistion and animations</h3>
+            <p><a href="https://app.pluralsight.com/library/courses/css-animation-with-transition-and-transform/table-of-contents" target="_blank" rel="noopener">On Pluralsight</a></p>
+            <p><strong>transition-duration</strong></p>
+            <p><span class="code">initial state<br>							
+                .box {<br>				
+                height: 100px;<br>							
+                width: 100px;	<br>					
+                background-color: red;<br>					
+                -webkit-transition-transition-property: background-color;<br>		
+                -moz-transition-transition-property: background-color;<br>
+                -o-transition-transition-property: background-color;<br>
+                -mz-transition-transition-property: background-color;<br>
+                transition-property: background-color;<br>
+                transition-duration: 1s;<br>
+                }
+                </span></p>
+            <p><span class="code">final state<br>
+                .box: hover {<br>
+                height: 100px;	<br>	
+                width: 100px;<br>
+                background-color: blue;<br>
+                }
+              </span></p>
+              <p><span class="code">vendor prefixes<br>
+                webkit // Chrome safari<br>
+                moz // firefox	<br>	
+                o // opera<br>
+                ms // IE<br>
+                }
+              </span></p>
+              <p><span class="red">Caniuse.com</span> to make sure you can use a transition</p>
+              <p><strong>Shorthand: </strong>one property name and the rest after: (just like border for example, instead of border-right, border-style 
+                width...color...some can be required, other are optional
+              </p>
+              <hr>
+              <h3>CSS Transform</h3>
+              <p>CSS transforms allow you to translate, rotate, scale, and skew elements.<br>
+                  <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank" rel="noopener">https://www.w3schools.com/css/css3_2dtransforms.asp</a><br>
+                  A transformation is an effect that lets an element change shape, size and position.<br>
+                  skew (), scale(), rotate (), translate ()<br>
+                  timing functions: ease, linear, case-in case-out, case-in-out
+                  </p>
+          </details>
         
           <details>
             <summary class="js-color">jQuery</summary>
@@ -167,7 +228,82 @@
 
           <details>
             <summary class="js-color">JavaScript - Guidelines</summary>
-            <p class="red">notes to add here</p>
+            <h3>Strict mode</h3>
+            <p>Strict mode should always be invoked in your javascript </p>
+            <h3>Naming Conventions</h3>
+            <p>Variable names should always use camel case e.g. <span class="code">locationsLength</span><br> 
+                Const (constants) names should always use uppercase e.g. <span class="code">PI</span><br>
+                Constructors names should always use title case e.g. <span class="code">Person</span><br>
+                Use sensible and descriptive names for functions and variables. Conversely, if the name is too long due to you trying to describe what the function does, then consider abstracting some functionality out into other functions.
+            </p>
+            <h3>DRY/WET code</h3>
+            <p>You should always abstract out your functionality until the level of seperation reaches a logically end. e.g. checkPersonsNameAgeAndHeight() could be:<br>
+                <span class="code">function checkPerson(person) {<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; checkName(person)<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; checkAge(person)<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;  checkHeight(person)<br>
+                }<br></span>
+                if there is a logical reason to abstract these functions anymore then do so.<br>
+                Abstraction is to avoid a <strong>WET (write everything twice)</strong> codebase. If it is written twice, then put it in a function and call it twice. We want a <strong>DRY(dont repeat yourself)</strong> codebase. Abstraction is your friend.
+                </p>
+            <h3>String quotes</h3>
+            <p>You can use either a " or a ' to surround your string literals. Please stick to one in your code to aid readability. It is recommended to use single quotes ' to surround your string literals so that you are able to use double quotes " in any strings that may be building elements and the like. </p>
+            <h3>Comparisons</h3>
+            <p>Always use triple equals when doing comparisons. Double equals compare the value of the things being compared and not the types. This is a more robust way of comparing things as type coersion is avoided and you are in control of what is truly being compared.</p>
+            <h3>Variable/function hoisting</h3>
+            <p>Variable and function hoisting is when the compiler reorders all your variable declarations and function declaration to be at the top of the current scope (i.e. in the current function). If this is not thought about when writing code, it can lead to unexpected results due to variable being declared before you expect them to be.
+                As a safety measure (and also for organisational reasons), declare your vars, and functions at the top of the scope. This does not mean that you must assign a value to these variables when they are declared, values can be assigned later. e.g.
+                </p>
+            <p>Variable declarations are hoisted, but assignments are not. All function definitions are hoisted, so you should put them at the top anyway.</p>
+            <h3>Group var statements</h3>
+            <p>group all your var statements at the top of the function scope using the comma-delimiting declaration syntax. it saves on file size and is just as readable.</p>
+            <p><span class="code">(function runAPPIIFE() {<br>
+                var x, // description of what this is for<br>
+                y, // description of what this is for<br>
+                foo = 'foo', // description of what this is for<br>
+                bar, // description of what this is for<br>
+                index = 0; // description of what this is for<br>
+            })();
+            </span></p>
+            <h3>Semi-colons</h3>
+            <p>Always use semi-colons! Omitting semi-colons can (and will) lead to unexpected behaviour in your code.</p>
+            <h3>Curly braces</h3>
+            <p>use curly braces even writing code blocks that make them optional. e.g.</p>
+            <p><span class="code">if(x === y) {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;z = 10;<br>
+            }
+            </span></p>
+            <h3>Anonymous functions</h3>
+            <p>Always give your functions a name. </p>
+            <h3>Comments</h3>
+            <p>If it is not immediately obvious how something works at first glance, then comment your code. </p>
+            <h3>Separation of concerns</h3>
+            <p>Never use javascript to directly apply any representational changes. Use CSS in your separate style sheet to style the element differently and then use javascript to apply the class needed. This will ensure that any styling changes only need to be done in the CSS files and nowhere else.</p>
+            <h3>Avoid excessive nesting</h3>
+            <p>If statements within if statements within for loops... This can be avoided by abstracting your functionality in to multiple smaller modules or functions that deal with each task within the code.</p>
+            <h3>Creating objects and arrays</h3>
+            <p>creating an empty object? use {} and dont use new Object();<br>
+                creating an empty array? use [] and dont use new Array();<br>
+                When creating an object with key value pairs, always put your keys in single quotes. This is to avoid any keyword/reserved word clashes.<br>
+                </p>
+            <h3><span class="red">Ternary statements</span></h3>
+            <p>If you need to assign a value to a variable, and that value changes depending on another, then use a ternary statement to do the assignment.<br>
+                <span class="code">var isAllowed = (age > 18) ? "yes": "no";</span><br>
+                The benefit of a ternary is that it is less code, and you can do a declaration and condition-dependant assignment on one line. The first statement after the question mark (the "yes") is what will be assigned if the preceding condition evaluates to true, the second statement (the "no") is what will be assigned if the condition evaluates to false.
+                </p>
+            <p>Checking to see if something is truthy can simply be done like this:<br>
+                <span class="code">var duration = x || 4;</span><br>
+                This is checking if the x variable has a truthy value, if it does, assign it to duration, else assign 4 to duration. If you need to assign 0 to duration, then this approach would not work as 0 is a falsy value and therefore it would fall through to the 4 being assigned to duration.
+                </p>
+            <p>You can also use this syntax to do an inline-if statement:<br>
+                <span class="code">var duration = hasDuration && x;</span><br>
+                This checks to see if hasDuration is a truthy value, if it is, then it falls through to the next part and assigns the value of x to duration
+                </p>
+            <h3>Loops</h3>
+            <p>Don't declare variables (where possible - should be 99% of cases) in the loop block itself. Declare them outside of the loop. If iterating through the length of an array, cache the array length in a variable and use that in the loop declaration, this will speed it up.</p>
+            <h3>Sanitise your inputs and parameters</h3>
+            <p>Always assume that the data being fed in to a function is wrong and do the appropriate checks on it to make sure it won't break when run. <strong>Always check for null and undefined values.</strong></p>
+
           </details>
 
           <details>
@@ -179,6 +315,10 @@
           <details>
             <summary class="js-color">JavaScript - Promises</summary>
             <p><a href="https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html" target="_blank" rel="noopener">We have a problem with promises</a></p>
+            <p>Promises are a pattern that greatly simplifies asynchronous programming by making the code look synchronous and avoid problems associated with callbacks.</p>
+            <p>A Promise is an object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.<br>
+                We create a promise when a certain task’s completion time is uncertain or too long.
+            </p>
             <p class="red">notes to add here</p>
           </details>
 
@@ -191,6 +331,7 @@
           <details>
             <summary class="dev-color">Responsive Design</summary>
             <p><a href="https://www.codecademy.com/courses/learn-responsive-design" target="_blank" rel="noopener">On Codecademy</a></p>
+            <a href="assets/images/dev/screens-sizes.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/screens-sizes.png"/></a>
             <p class="red">notes to add here</p>
           </details>
 
@@ -204,7 +345,6 @@
             <h3>EJS</h3>
             <a href="assets/images/dev/ejs1.png" target="_blank" rel="noopener"><img class ="half-width" src="assets/images/dev/ejs1.png"/></a>
             <a href="assets/images/dev/ejs2.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/ejs2.png"/></a>
-            <p class="red">notes to add here</p>
           </details>
 
           <details>
@@ -224,11 +364,89 @@
             <p>Form variables. These fields should not be rendered and provide a mean for servers to store state information with a form. This will be passed back to the server when the form is submitted, using the name/value pair defined by the corresponding attributes. This is a work around for the statelessness of HTTP. Another approach is to use HTTP "Cookies".</p>
             <p><span class="code">&lt;input type=hidden name=customerid value="c2415-345-8563"&gt;</span></p>
             <hr>
+            <h3>HTML - forms</h3>
+            <p><span class="code">&lt;form method="post" action="http//....where to submit the form ..."&gt; ...... &lt;/form&gt;<br>
+              &lt;label for="name of the control"&gt;text of the label &lt;/label&gt;</span><br>
+              Best practice is to create a label for any input we have, better for any user as it explains what you need and might format better depending on the device/browser, plus, for accessibility, this will help screen readers.<br>
+              The <strong>name attribute</strong> (for input, text area, select...) will be useful once the server is trying to access things from the form. To group two control, give them the same name attribute (will be transmitted by a GET)
+              </p>
+              <p><a href="http://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener">On W3schools</a></p>
+            <hr>
             <h3>HTML infographic</h3>
             <a href="assets/images/dev/htmlinfographics.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/dev/htmlinfographics.png"/></a>
             <hr>
             <h3>JSON</h3>
             <p><a href="https://spacetelescope.github.io/understanding-json-schema/" target="_blank" rel="noopener">Understanding the JSON Schema</a></p>
+            <p>JSON Schema is a powerful tool for validating the structure of JSON data.</p>
+            <p>Here are two representations: <br>
+            <span class="code">{<br>
+              &nbsp;&nbsp;  "name": "George Washington",<br>
+              &nbsp;&nbsp; "birthday": "February 22, 1732",<br>
+              &nbsp;&nbsp;  "address": "Mount Vernon, Virginia, United States"<br>
+              }<br>
+              {<br>
+                &nbsp;&nbsp;  "first_name": "George",<br>
+                &nbsp;&nbsp;"last_name": "Washington",<br>
+                &nbsp;&nbsp;"birthday": "1732-02-22",<br>
+                &nbsp;&nbsp;"address": {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;  "street_address": "3200 Mount Vernon Memorial Highway",<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;"city": "Mount Vernon",<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;"state": "Virginia",<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;"country": "United States"<br>
+                  &nbsp;&nbsp;}<br>
+              }<br>
+              </span>
+              Here is the JSON schema fragment which describes how the second one is structured:<br>
+              <span class="code">{	<br>
+                &nbsp;&nbsp;  "type": "object",<br>
+                &nbsp;&nbsp;  "properties": {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;  "first_name": { "type": "string" },<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;  "last_name": { "type": "string" },<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;  "birthday": { "type": "string", "format": "date-time" },<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;  "address": {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "type": "object", <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "properties": {<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"street_address": { "type": "string" },<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "city": { "type": "string" },<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "state": { "type": "string" },<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "country": { "type" : "string" }<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                      &nbsp;&nbsp;}<br>
+                }<br>
+                </span>
+            </p>
+            <p>You may have noticed that the JSON Schema itself is written in JSON. It is data itself, not a computer program. It’s just a declarative format for “describing the structure of other data”.</p>
+            <p>In that link above, guidance about combining different structure to get a complex schema.</p>
+            <hr>
+            <h3>Layout</h3>
+            <p><strong>Positioning:</strong><br>
+                Block elements: <span class="code">&lt;p&gt; &lt;div&gt; &lt;blockquote&gt; &lt;ul&gt; &lt;ol&gt;</span>  the next element will be placed under it<br>
+                in-line elements: <span class="code">&lt;span&gt; &lt;input&gt; &lt;button&gt; &lt;strong&gt; &lt;em&gt;</span> the next element will be place next to it.<br>
+                <strong>This default positioning (static) can be changed to: Absolute, relative and fixed.</strong><br>
+                <strong>Absolute:</strong> gives the distances from the document, not the actual window.<br>
+                <strong>Fixed:</strong> gives the distance from the browser window, not the document.<br>
+                <strong>Relative:</strong> how far from the previous/parent elements.
+                </p>
+            <hr>
+            <h3>PHP = server side scripting language = hypertext processor</h3>
+            <p>HTML, CSS and javascript happen on the computer, interpreted there.
+                PHP is a server side language. Server side = back end (business logic) this is sending email, saving info to a database.
+            </p>
+            <p><strong>php.net is a good resource.</strong></p>
+            <p>make a folder php, and in it index.php<br>
+                &lt;?php code php; ?&gt;<br>
+                echo 'text to appear';<br>
+                This can be a way to protect your code as it won't be visible for the user.
+            </p>
+            <p>php.ini is a file where the server will look to see if you have anything special setting in place</p>
+            <p>Tip: to get errors in our PHP code while building the website, use the php.ini with content:</p>
+            <p>displayerror = on<br>
+                display<br>
+                once the code is good, remove the ini file to prevent other people to access our code.<br>
+                variable start with $<br>
+                $test="I'm a variable"; echo $test;
+                </p>
             <hr>
             <h3>Placeholder</h3>
             <p><a href="https://www.smashingmagazine.com/2018/06/placeholder-attribute/" target="_blank" rel="noopener">Using the placeholder attribute</a></p>
@@ -254,6 +472,18 @@
                 <li>a set of profiles (utilizing all of the above)</li>
                 <li>the single most important use case that SAML addresses is web browser single sign-on (SSO). Single sign-on is relatively easy to accomplish within a security domain (using cookies, for example) but extending SSO across security domains is more difficult and resulted in the proliferation of non-interoperable proprietary technologies. Hence the SAML Web Browser SSO profile was specified and standardized. (For comparison, the more recent OpenID Connect protocol[2] is an alternative approach to browser SSO.)</li>
               </ul>  
+            <hr>
+            <h3>SEO - Search Engine Optimisation</h3>
+            <p>Search engines only look at text and words in the html files. They look at the headings and the structures.<br>
+                Make sure the title is good and short (in the header). Use the meta tags with: name ="description" content=" what the page is about ..."<br>
+                name="keywords" content=" 5 to 7 keywords separated by comas"<br>
+                add an alt property to all image of the side that are meaningful to my page.<br>
+                &lt;img alt="French fries" src="fries.jpg"/&gt;<br>
+                <strong>page ranking:</strong> the more high quality website link to my website makes my ranking go up.<br>
+                Then submit the page to search engines.<br>
+                Search engine also check site maps. This gives an indications on how often you site changes and google or other search engine might take this into account to check your website.<br>
+                Keeping the sitemap updated can be done automatically. (sitemap generator)
+            </p>
             <hr>
             <h3>View vs redirect</h3>
             <p>In the same controller just content then view. Redirect URL to the controller which will do the work.<br>

@@ -214,6 +214,13 @@ main {
     @media only screen and (min-width: 490px) {
       main h2 {
         font-size: 24px; } }
+  main h3 {
+    font-size: 18px;
+    padding: 1em 0 0 0;
+    margin: 0; }
+    @media only screen and (min-width: 490px) {
+      main h3 {
+        font-size: 20px; } }
   @media only screen and (min-width: 490px) {
     main p {
       font-size: 18px; } }
