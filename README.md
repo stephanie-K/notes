@@ -2,7 +2,7 @@
 This website will help to organise my notes in:
 - UX
 - Accessibility
-- Development
+- Frontend Development
 
 this is just for me
 
