@@ -24,48 +24,37 @@ body.home {
     header {
         background-color: $home-color;
     } 
-    a {
+    a, h1, h2, h3 {
         color: $home-color;
     }
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2, h3 {
-        color: $home-color;
-    }
-    button {
-        background-color: $home-color;
-    }
-    button:hover, button:focus {
-        color: $home-color;
-        border: solid 2px $home-color;
-    }
     hr {
-        border: 1.5px solid $home-color;
+        border: 1px solid $home-color;
     } 
 }
 body.ux {
     header {
         background-color: $ux-color;
     }
-    a {
+    a, h1, h2, h3 {
         color: $ux-color;
     }
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2, h3 {
-        color: $ux-color;
-    }
-    button {
+    a.button {
         background-color: $ux-color;
+        color: white;
     }
-    button:hover, button:focus {
+    a.button:hover, a.button:focus {
         color: $ux-color;
+        background-color: #ffffff;
         border: solid 2px $ux-color;
     }
     hr {
-        border: 1.5px solid $ux-color;
+        border: 1px solid $ux-color;
     } 
 }
 body.dev {
@@ -81,15 +70,8 @@ body.dev {
     h1, h2, h3 {
         color: $dev-color;
     }
-    button {
-        background-color: $dev-color;
-    }
-    button:hover, button:focus {
-        color: $dev-color;
-        border: solid 2px $dev-color;
-    }
     summary {
-        font-weight: 500;
+        font-weight: 300;
         color: white;
         padding: 5px 0;
         margin-bottom: 1em;
@@ -112,7 +94,7 @@ body.dev {
             }
         }
         hr {
-            border: 1.5px solid $dev-color;
+            border: 1px solid $dev-color;
         }      
     }
 }
@@ -120,25 +102,41 @@ body.a11y {
     header {
         background-color: $a11y-color;
     }
-    a {
+    a, h1, h2, h3  {
         color: $a11y-color;
     }
     a:hover, a:focus {
         color: #5a5a5a;
     }
-    h1, h2, h3 {
-        color: $a11y-color;
-    }
-    button {
+    a.button {
         background-color: $a11y-color;
+        color: white;
     }
-    button:hover, button:focus {
+    a.button:hover, a.button:focus {
         color: $a11y-color;
+        background-color: #ffffff;
         border: solid 2px $a11y-color;
     }
     hr {
-        border: 1.5px solid $a11y-color;
+        border: 1px solid $a11y-color;
     } 
+    summary{
+        font-weight: 300;
+        color: white;
+        padding: 5px 0;
+        margin-bottom: 1em;
+        padding-left: 1em;
+        background-color:#373737; // $a11y-color;
+        max-width: 10em;
+    }
+    details  {
+        p, ul, em {
+            margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
+        }  
+    }
 }
 
 p {
@@ -400,6 +398,9 @@ footer {
 .img-one-quarter-width {
     width: 25%;
 }
+.img-one-third-width {
+    width: 33%;
+}
 .img-half-width {
     width: 50%;
 }
@@ -410,23 +411,26 @@ footer {
     width: 100%;
 }
 
-button {
-    color : #ffffff;
+a.button {
+    //color : #ffffff;
     text-transform: uppercase;
-    padding: 10px 12px;
+    padding: 5px 7px;
     text-decoration: none;
     ::selection {
         background: #ffffff;
         color: #5a5a5a;
     }
 }
-button:hover, button:focus {
-    background-color: #ffffff;
-    padding: 8px 10px;
+a.button:hover, a.button:focus {
+    //background-color: #ffffff;
+    padding: 3px 5px;
     ::selection {
         background: #ffffff;
         color: #5a5a5a;
     }
+}
+p a.button {
+    font-size: 14px;
 }
 
 .warning  {
