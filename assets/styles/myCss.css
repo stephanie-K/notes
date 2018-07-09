@@ -11,7 +11,7 @@ body {
   min-height: 100%;
   position: relative; }
   body hr {
-    margin: 2em 0; }
+    margin: 1em 0 0.5em 0; }
 
 body.home header {
   background-color: #941100; }
@@ -216,7 +216,7 @@ main {
         font-size: 24px; } }
   main h3 {
     font-size: 18px;
-    padding: 1em 0 0 0;
+    padding: 0.4em 0 0.2em 0;
     margin: 0; }
     @media only screen and (min-width: 490px) {
       main h3 {
