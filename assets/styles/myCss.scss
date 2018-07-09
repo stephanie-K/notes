@@ -12,13 +12,20 @@ html{
 body {
     margin: 0;
     font-family: Roboto,Helvetica,Arial,sans-serif; /* Roboto Condensed for titles */
-    font-size: 16px;
     color: #5a5a5a; 
     min-height: 100%;
     position: relative;
     hr {
         margin: 1em 0 0.5em 0;
     } 
+    p, ul, em, a {
+        font-size: 16px;
+    }
+    details {
+        p, ul, em, a {
+            font-size: 16px;
+        }
+    }
 }
 body.home {
     header {
@@ -59,9 +66,8 @@ body.ux {
     summary{
         font-weight: 300;
         color: white;
-        padding: 5px 0;
+        padding: 5px 0 5px 1em;
         margin-bottom: 1em;
-        padding-left: 1em;
         background-color:#373737;
         max-width: 10em;
     }
@@ -72,6 +78,13 @@ body.ux {
                 font-size: 16px;
             }
         }  
+    }
+    h2 {
+        color: white;
+        background-color: $ux-color;
+        font-weight: 300;
+        text-align: center;
+
     }
 }
 body.dev {
@@ -94,6 +107,10 @@ body.dev {
         margin-bottom: 1em;
         padding-left: 1em;
     }
+    summary.top-color {
+        background-color:#373737;
+        max-width: 17em;
+    }
     summary.css-color {
         background-color: $css-color;
     }
@@ -106,9 +123,6 @@ body.dev {
     details  {
         p, ul, em {
             margin: 0.5em 0;
-            @media only screen and (min-width: 490px) { 
-                font-size: 16px;
-            }
         }
         hr {
             border: 1px solid $dev-color;
@@ -159,7 +173,6 @@ body.a11y {
 p {
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 16px;
     text-align: justify;
     line-height: 1.5;
     font-weight: 400;
@@ -177,8 +190,12 @@ font-weight: 500;
 
 .code {
     background-color: #eeeeee;
+    padding: 5px 0;
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
     color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    ;
 }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
@@ -271,12 +288,9 @@ main {
     margin-bottom: 40px; /* to leave some room above the footer */
     padding-left: 30px;
     padding-right: 30px;
-    @media only screen and (min-width: 490px) { 
-        font-size: 18px;
-    }
 
    // this is to avoid the line of text to be too long to read on big screens. Max 1200px (as it's for me) and same white space on both side of it
-    p, h1, h2, ul, details {
+    p, h1, h2, h3, ul, details, hr {
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
@@ -285,39 +299,23 @@ main {
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 20px;
         padding-top: 2em;
         text-transform: uppercase;
         @media only screen and (min-width: 490px) {
-            font-size: 26px;
+            font-size: 22px;
         }
     }
-    h2 {
-        font-size: 20px;
-        padding-top: 1.5em;
-        @media only screen and (min-width: 490px) {
-            font-size: 24px;
-        }
-    }
-    h3 {
+    h2, h3 { // h3 is the same a h2 - but only used in UX where h2 is different
         font-size: 18px;
         padding: 0.4em 0 0.2em 0;
-        margin: 0;
         @media only screen and (min-width: 490px) {
             font-size: 20px;
         }
     }
-
-    p {
-        @media only screen and (min-width: 490px) {
-            font-size: 18px;
-        }
-    }
-
     ul {
         line-height: 1.5;
     }
-
     a.plain-color { 
         color: #5a5a5a; 
         font-weight: 500;

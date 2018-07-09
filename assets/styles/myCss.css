@@ -6,12 +6,15 @@ body {
   margin: 0;
   font-family: Roboto,Helvetica,Arial,sans-serif;
   /* Roboto Condensed for titles */
-  font-size: 16px;
   color: #5a5a5a;
   min-height: 100%;
   position: relative; }
   body hr {
     margin: 1em 0 0.5em 0; }
+  body p, body ul, body em, body a {
+    font-size: 16px; }
+  body details p, body details ul, body details em, body details a {
+    font-size: 16px; }
 
 body.home header {
   background-color: #941100; }
@@ -40,9 +43,8 @@ body.ux hr {
 body.ux summary {
   font-weight: 300;
   color: white;
-  padding: 5px 0;
+  padding: 5px 0 5px 1em;
   margin-bottom: 1em;
-  padding-left: 1em;
   background-color: #373737;
   max-width: 10em; }
 body.ux details p, body.ux details ul, body.ux details em {
@@ -50,6 +52,11 @@ body.ux details p, body.ux details ul, body.ux details em {
   @media only screen and (min-width: 490px) {
     body.ux details p, body.ux details ul, body.ux details em {
       font-size: 16px; } }
+body.ux h2 {
+  color: white;
+  background-color: #800080;
+  font-weight: 300;
+  text-align: center; }
 
 body.dev header {
   background-color: #06609c; }
@@ -65,6 +72,9 @@ body.dev summary {
   padding: 5px 0;
   margin-bottom: 1em;
   padding-left: 1em; }
+body.dev summary.top-color {
+  background-color: #373737;
+  max-width: 17em; }
 body.dev summary.css-color {
   background-color: #440e4c; }
 body.dev summary.dev-color {
@@ -73,9 +83,6 @@ body.dev summary.js-color {
   background-color: #0f4c0e; }
 body.dev details p, body.dev details ul, body.dev details em {
   margin: 0.5em 0; }
-  @media only screen and (min-width: 490px) {
-    body.dev details p, body.dev details ul, body.dev details em {
-      font-size: 16px; } }
 body.dev details hr {
   border: 1px solid #06609c; }
 
@@ -111,7 +118,6 @@ body.a11y details p, body.a11y details ul, body.a11y details em {
 p {
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 16px;
   text-align: justify;
   line-height: 1.5;
   font-weight: 400; }
@@ -127,8 +133,11 @@ p {
 
 .code {
   background-color: #eeeeee;
+  padding: 5px 0;
   font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
-  color: black; }
+  color: black;
+  font-size: 14px;
+  line-height: 1.5; }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 header {
@@ -207,37 +216,24 @@ main {
   /* to leave some room above the footer */
   padding-left: 30px;
   padding-right: 30px; }
-  @media only screen and (min-width: 490px) {
-    main {
-      font-size: 18px; } }
-  main p, main h1, main h2, main ul, main details {
+  main p, main h1, main h2, main h3, main ul, main details, main hr {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
     text-align: left; }
   main h1 {
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 2em;
     text-transform: uppercase; }
     @media only screen and (min-width: 490px) {
       main h1 {
-        font-size: 26px; } }
-  main h2 {
-    font-size: 20px;
-    padding-top: 1.5em; }
-    @media only screen and (min-width: 490px) {
-      main h2 {
-        font-size: 24px; } }
-  main h3 {
+        font-size: 22px; } }
+  main h2, main h3 {
     font-size: 18px;
-    padding: 0.4em 0 0.2em 0;
-    margin: 0; }
+    padding: 0.4em 0 0.2em 0; }
     @media only screen and (min-width: 490px) {
-      main h3 {
+      main h2, main h3 {
         font-size: 20px; } }
-  @media only screen and (min-width: 490px) {
-    main p {
-      font-size: 18px; } }
   main ul {
     line-height: 1.5; }
   main a.plain-color {
