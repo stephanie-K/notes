@@ -56,6 +56,23 @@ body.ux {
     hr {
         border: 1px solid $ux-color;
     } 
+    summary{
+        font-weight: 300;
+        color: white;
+        padding: 5px 0;
+        margin-bottom: 1em;
+        padding-left: 1em;
+        background-color:#373737;
+        max-width: 10em;
+    }
+    details  {
+        p, ul, em {
+            margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
+        }  
+    }
 }
 body.dev {
     header {

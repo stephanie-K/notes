@@ -37,6 +37,19 @@ body.ux a.button:hover, body.ux a.button:focus {
   border: solid 2px #800080; }
 body.ux hr {
   border: 1px solid #800080; }
+body.ux summary {
+  font-weight: 300;
+  color: white;
+  padding: 5px 0;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  background-color: #373737;
+  max-width: 10em; }
+body.ux details p, body.ux details ul, body.ux details em {
+  margin: 0.5em 0; }
+  @media only screen and (min-width: 490px) {
+    body.ux details p, body.ux details ul, body.ux details em {
+      font-size: 16px; } }
 
 body.dev header {
   background-color: #06609c; }
