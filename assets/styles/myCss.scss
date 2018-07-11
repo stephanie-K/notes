@@ -17,6 +17,7 @@ body {
     position: relative;
     hr {
         margin: 1em 0 0.5em 0;
+        border:0;
     } 
     p, ul, em, a {
         font-size: 16px;
@@ -38,7 +39,7 @@ body.home {
         color: #5a5a5a;
     }
     hr {
-        border: 1px solid $home-color;
+        border-top: 1px solid $home-color;
     } 
 }
 body.ux {
@@ -61,7 +62,7 @@ body.ux {
         border: solid 2px $ux-color;
     }
     hr {
-        border: 1px solid $ux-color;
+        border-top: 1px solid $ux-color;
     } 
     summary{
         font-weight: 300;
@@ -125,7 +126,7 @@ body.dev {
             margin: 0.5em 0;
         }
         hr {
-            border: 1px solid $dev-color;
+            border-top: 1px solid $dev-color;
         }      
     }
 }
@@ -149,7 +150,7 @@ body.a11y {
         border: solid 2px $a11y-color;
     }
     hr {
-        border: 1px solid $a11y-color;
+        border-top: 1px solid $a11y-color;
     } 
     summary{
         font-weight: 300;

@@ -10,7 +10,8 @@ body {
   min-height: 100%;
   position: relative; }
   body hr {
-    margin: 1em 0 0.5em 0; }
+    margin: 1em 0 0.5em 0;
+    border: 0; }
   body p, body ul, body em, body a {
     font-size: 16px; }
   body details p, body details ul, body details em, body details a {
@@ -23,7 +24,7 @@ body.home a, body.home h1, body.home h2, body.home h3 {
 body.home a:hover, body.home a:focus {
   color: #5a5a5a; }
 body.home hr {
-  border: 1px solid #941100; }
+  border-top: 1px solid #941100; }
 
 body.ux header {
   background-color: #800080; }
@@ -39,7 +40,7 @@ body.ux a.button:hover, body.ux a.button:focus {
   background-color: #ffffff;
   border: solid 2px #800080; }
 body.ux hr {
-  border: 1px solid #800080; }
+  border-top: 1px solid #800080; }
 body.ux summary {
   font-weight: 300;
   color: white;
@@ -84,7 +85,7 @@ body.dev summary.js-color {
 body.dev details p, body.dev details ul, body.dev details em {
   margin: 0.5em 0; }
 body.dev details hr {
-  border: 1px solid #06609c; }
+  border-top: 1px solid #06609c; }
 
 body.a11y header {
   background-color: #218341; }
@@ -100,7 +101,7 @@ body.a11y a.button:hover, body.a11y a.button:focus {
   background-color: #ffffff;
   border: solid 2px #218341; }
 body.a11y hr {
-  border: 1px solid #218341; }
+  border-top: 1px solid #218341; }
 body.a11y summary {
   font-weight: 300;
   color: white;
