@@ -19,11 +19,11 @@ body {
         margin: 1em 0 0.5em 0;
         border:0;
     } 
-    p, ul, em, a {
+    p, ul, ol, em, a {
         font-size: 16px;
     }
     details {
-        p, ul, em, a {
+        p, ul, ol, em, a {
             font-size: 16px;
         }
     }
@@ -73,7 +73,7 @@ body.ux {
         max-width: 10em;
     }
     details  {
-        p, ul, em {
+        p, ul, ol, em {
             margin: 0.5em 0;
             @media only screen and (min-width: 490px) { 
                 font-size: 16px;
@@ -122,7 +122,7 @@ body.dev {
         background-color: $js-color;
     }
     details  {
-        p, ul, em {
+        p, ul, ol, em {
             margin: 0.5em 0;
         }
         hr {
@@ -162,7 +162,7 @@ body.a11y {
         max-width: 10em;
     }
     details  {
-        p, ul, em {
+        p, ul, ol, em {
             margin: 0.5em 0;
             @media only screen and (min-width: 490px) { 
                 font-size: 16px;
@@ -291,7 +291,7 @@ main {
     padding-right: 30px;
 
    // this is to avoid the line of text to be too long to read on big screens. Max 1200px (as it's for me) and same white space on both side of it
-    p, h1, h2, h3, ul, details, hr {
+    p, h1, h2, h3, ul, ol, details, hr {
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
@@ -314,7 +314,7 @@ main {
             font-size: 20px;
         }
     }
-    ul {
+    ul, ol {
         line-height: 1.5;
     }
     a.plain-color { 

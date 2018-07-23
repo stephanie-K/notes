@@ -12,9 +12,9 @@ body {
   body hr {
     margin: 1em 0 0.5em 0;
     border: 0; }
-  body p, body ul, body em, body a {
+  body p, body ul, body ol, body em, body a {
     font-size: 16px; }
-  body details p, body details ul, body details em, body details a {
+  body details p, body details ul, body details ol, body details em, body details a {
     font-size: 16px; }
 
 body.home header {
@@ -48,10 +48,10 @@ body.ux summary {
   margin-bottom: 1em;
   background-color: #373737;
   max-width: 10em; }
-body.ux details p, body.ux details ul, body.ux details em {
+body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
-    body.ux details p, body.ux details ul, body.ux details em {
+    body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
       font-size: 16px; } }
 body.ux h2 {
   color: white;
@@ -82,7 +82,7 @@ body.dev summary.dev-color {
   background-color: #06609c; }
 body.dev summary.js-color {
   background-color: #0f4c0e; }
-body.dev details p, body.dev details ul, body.dev details em {
+body.dev details p, body.dev details ul, body.dev details ol, body.dev details em {
   margin: 0.5em 0; }
 body.dev details hr {
   border-top: 1px solid #06609c; }
@@ -110,10 +110,10 @@ body.a11y summary {
   padding-left: 1em;
   background-color: #373737;
   max-width: 10em; }
-body.a11y details p, body.a11y details ul, body.a11y details em {
+body.a11y details p, body.a11y details ul, body.a11y details ol, body.a11y details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
-    body.a11y details p, body.a11y details ul, body.a11y details em {
+    body.a11y details p, body.a11y details ul, body.a11y details ol, body.a11y details em {
       font-size: 16px; } }
 
 p {
@@ -217,7 +217,7 @@ main {
   /* to leave some room above the footer */
   padding-left: 30px;
   padding-right: 30px; }
-  main p, main h1, main h2, main h3, main ul, main details, main hr {
+  main p, main h1, main h2, main h3, main ul, main ol, main details, main hr {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -235,7 +235,7 @@ main {
     @media only screen and (min-width: 490px) {
       main h2, main h3 {
         font-size: 20px; } }
-  main ul {
+  main ul, main ol {
     line-height: 1.5; }
   main a.plain-color {
     color: #5a5a5a;
