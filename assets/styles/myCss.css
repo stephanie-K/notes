@@ -127,6 +127,9 @@ p {
   padding-top: 2em;
   font-weight: 600;
   font-size: 18px; }
+  .lead em {
+    font-size: 18px;
+    font-weight: 500; }
 
 .red {
   color: red;
