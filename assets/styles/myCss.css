@@ -84,8 +84,15 @@ body.dev summary.js-color {
   background-color: #0f4c0e; }
 body.dev details p, body.dev details ul, body.dev details ol, body.dev details em {
   margin: 0.5em 0; }
-body.dev details hr {
+body.dev hr {
   border-top: 1px solid #06609c; }
+body.dev .inverted {
+  background-color: #06609c;
+  color: white;
+  font-weight: 400;
+  padding: 5px 0;
+  margin-top: 2em;
+  text-align: center; }
 
 body.a11y header {
   background-color: #218341; }
