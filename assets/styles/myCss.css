@@ -321,15 +321,27 @@ footer {
 
 .img-one-quarter-width {
   width: 25%; }
+  @media only screen and (max-width: 489px) {
+    .img-one-quarter-width {
+      width: 100%; } }
 
 .img-one-third-width {
   width: 33%; }
+  @media only screen and (max-width: 489px) {
+    .img-one-third-width {
+      width: 100%; } }
 
 .img-half-width {
   width: 50%; }
+  @media only screen and (max-width: 489px) {
+    .img-half-width {
+      width: 100%; } }
 
 .img-three-quarters-width {
   width: 75%; }
+  @media only screen and (max-width: 489px) {
+    .img-three-quarters-width {
+      width: 100%; } }
 
 .img-full-width {
   width: 100%; }
