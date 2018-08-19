@@ -18,13 +18,13 @@ body {
     font-size: 16px; }
 
 body.home header {
-  background-color: #941100; }
+  background-color: #373737; }
 body.home a, body.home h1, body.home h2, body.home h3 {
-  color: #941100; }
+  color: #373737; }
 body.home a:hover, body.home a:focus {
   color: #5a5a5a; }
 body.home hr {
-  border-top: 1px solid #941100; }
+  border-top: 1px solid #373737; }
 
 body.ux header {
   background-color: #800080; }
@@ -47,7 +47,8 @@ body.ux summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 10em; }
+  max-width: 10em;
+  max-width: 17em; }
 body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -286,9 +287,9 @@ footer {
     footer {
       padding: 10px 0 10px 40px; } }
   footer a.home-style {
-    color: #941100;
+    color: #373737;
     padding: 5px;
-    border: solid 1px #941100; }
+    border: solid 1px #373737; }
   footer a.ux-style {
     color: #800080;
     padding: 5px;

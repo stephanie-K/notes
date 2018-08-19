@@ -1,8 +1,9 @@
 /*  all my CSS here */
-$home-color: #941100 ;
+$home-color: #373737;
 $ux-color: #800080 ;
 $dev-color: #06609c;
 $a11y-color: rgb(33, 131, 65); 
+$tech-color: #941100 ;
 $css-color: #440e4c;
 $js-color: #0f4c0e;
 
@@ -71,6 +72,7 @@ body.ux {
         margin-bottom: 1em;
         background-color:#373737;
         max-width: 10em;
+        max-width: 17em;
     }
     details  {
         p, ul, ol, em {
