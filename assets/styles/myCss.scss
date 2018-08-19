@@ -181,6 +181,54 @@ body.a11y {
     }
 }
 
+body.tech {
+    header {
+        background-color: $tech-color;
+    }
+    a, h1, h2, h3 {
+        color: $tech-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    a.button {
+        background-color: $tech-color;
+        color: white;
+    }
+    a.button:hover, a.button:focus {
+        color: $tech-color;
+        background-color: #ffffff;
+        border: solid 2px $tech-color;
+    }
+    hr {
+        border-top: 1px solid $tech-color;
+    } 
+    summary{
+        font-weight: 300;
+        color: white;
+        padding: 5px 0 5px 1em;
+        margin-bottom: 1em;
+        background-color:#373737;
+        max-width: 10em;
+        max-width: 17em;
+    }
+    details  {
+        p, ul, ol, em {
+            margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
+        }  
+    }
+    h2 {
+        color: white;
+        background-color: $tech-color;
+        font-weight: 300;
+        text-align: center;
+
+    }
+}
+
 p {
     padding-top: 0;
     padding-bottom: 0;
@@ -251,7 +299,7 @@ nav {
     height: 40px;
     background-color: #e3e3e3 ;
     border-bottom: solid 4px #e3e3e3 ;
-    a.ux-color, a.dev-color, a.a11y-color {
+    a.ux-color, a.dev-color, a.a11y-color, a.tech-color{
         float: left;
         display: block;
         text-align: center;
@@ -283,6 +331,10 @@ nav {
         color: $a11y-color;
         font-weight: 500 ;
     }
+    .on-the-page.tech-color {
+        color: $tech-color;
+        font-weight: 500 ;
+    }
     a.ux-color:hover, a.ux-color.focus {
         border-bottom: solid 4px $ux-color;
     }
@@ -291,6 +343,9 @@ nav {
     }
     a.a11y-color:hover, a.a11y-color:focus {
         border-bottom: solid 4px $a11y-color;
+    }
+    a.tech-color:hover, a.tech-color.focus {
+        border-bottom: solid 4px $tech-color;
     }
 }
 
@@ -403,6 +458,11 @@ footer {
         color: $a11y-color;
         padding: 5px;
         border: solid 1px $a11y-color;
+    }
+    a.tech-style {
+        color: $tech-color;
+        padding: 5px;
+        border: solid 1px $tech-color;
     }
 }
 .to-right {
