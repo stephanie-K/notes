@@ -2,8 +2,10 @@
 $home-color: #373737;
 $ux-color: #800080 ;
 $dev-color: #06609c;
-$a11y-color: rgb(33, 131, 65); 
+$a11y-color: #218341; 
 $tech-color: #941100 ;
+$ur-color:  #935300 ;
+$con-color:  #614397 ;
 $css-color: #440e4c;
 $js-color: #0f4c0e;
 
@@ -222,6 +224,101 @@ body.tech {
     }
 }
 
+body.ur {
+    header {
+        background-color: $ur-color;
+    }
+    a, h1, h2, h3 {
+        color: $ur-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    a.button {
+        background-color: $ur-color;
+        color: white;
+    }
+    a.button:hover, a.button:focus {
+        color: $ur-color;
+        background-color: #ffffff;
+        border: solid 2px $ur-color;
+    }
+    hr {
+        border-top: 1px solid $ur-color;
+    } 
+    summary{
+        font-weight: 300;
+        color: white;
+        padding: 5px 0 5px 1em;
+        margin-bottom: 1em;
+        background-color:#373737;
+        max-width: 10em;
+        max-width: 17em;
+    }
+    details  {
+        p, ul, ol, em {
+            margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
+        }  
+    }
+    h2 {
+        color: white;
+        background-color: $ur-color;
+        font-weight: 300;
+        text-align: center;
+
+    }
+}
+body.con {
+    header {
+        background-color: $con-color;
+    }
+    a, h1, h2, h3 {
+        color: $con-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    a.button {
+        background-color: $con-color;
+        color: white;
+    }
+    a.button:hover, a.button:focus {
+        color: $con-color;
+        background-color: #ffffff;
+        border: solid 2px $con-color;
+    }
+    hr {
+        border-top: 1px solid $con-color;
+    } 
+    summary{
+        font-weight: 300;
+        color: white;
+        padding: 5px 0 5px 1em;
+        margin-bottom: 1em;
+        background-color:#373737;
+        max-width: 10em;
+        max-width: 17em;
+    }
+    details  {
+        p, ul, ol, em {
+            margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
+        }  
+    }
+    h2 {
+        color: white;
+        background-color: $con-color;
+        font-weight: 300;
+        text-align: center;
+
+    }
+}
+
 p {
     padding-top: 0;
     padding-bottom: 0;
@@ -292,7 +389,7 @@ nav {
     height: 40px;
     background-color: #e3e3e3 ;
     border-bottom: solid 4px #e3e3e3 ;
-    a.ux-color, a.dev-color, a.a11y-color, a.tech-color{
+    a.ux-color, a.dev-color, a.a11y-color, a.tech-color, a.con-color, a.ur-color{
         float: left;
         display: block;
         text-align: center;
@@ -304,12 +401,18 @@ nav {
         /* for very small screen */
         @media only screen and (max-width: 313px) {
             padding: 12px 10px;
+            font-size: 16px;
         } 
-        @media only screen and (min-width: 490px) { 
-            font-size: 20px;
+        @media only screen and (max-width: 498px) { 
+            font-size: 18px;
             height: 20px ;
-            padding: 10px 30px;
+            padding: 10px 20px;
         }
+         @media only screen and (min-width: 590px) { 
+             font-size: 20px;
+             height: 20px ;
+             padding: 10px 30px;
+         }
     }
 
     .on-the-page.dev-color {
@@ -328,6 +431,14 @@ nav {
         color: $tech-color;
         font-weight: 500 ;
     }
+    .on-the-page.con-color {
+        color: $con-color;
+        font-weight: 500 ;
+    }
+    .on-the-page.ur-color {
+        color: $ur-color;
+        font-weight: 500 ;
+    }
     a.ux-color:hover, a.ux-color.focus {
         border-bottom: solid 4px $ux-color;
     }
@@ -339,6 +450,12 @@ nav {
     }
     a.tech-color:hover, a.tech-color.focus {
         border-bottom: solid 4px $tech-color;
+    }
+    a.ur-color:hover, a.ur-color:focus {
+        border-bottom: solid 4px $ur-color;
+    }
+    a.con-color:hover, a.con-color.focus {
+        border-bottom: solid 4px $con-color;
     }
 }
 
@@ -456,6 +573,16 @@ footer {
         color: $tech-color;
         padding: 5px;
         border: solid 1px $tech-color;
+    }
+    a.ur-style {
+        color: $ur-color;
+        padding: 5px;
+        border: solid 1px $ur-color;
+    }
+    a.con-style {
+        color: $con-color;
+        padding: 5px;
+        border: solid 1px $con-color;
     }
 }
 .to-right {

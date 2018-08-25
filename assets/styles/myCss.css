@@ -153,6 +153,74 @@ body.tech details p, body.tech details ul, body.tech details ol, body.tech detai
     body.tech details p, body.tech details ul, body.tech details ol, body.tech details em {
       font-size: 16px; } }
 
+body.ur header {
+  background-color: #935300; }
+body.ur a, body.ur h1, body.ur h2, body.ur h3 {
+  color: #935300; }
+body.ur a:hover, body.ur a:focus {
+  color: #5a5a5a; }
+body.ur a.button {
+  background-color: #935300;
+  color: white; }
+body.ur a.button:hover, body.ur a.button:focus {
+  color: #935300;
+  background-color: #ffffff;
+  border: solid 2px #935300; }
+body.ur hr {
+  border-top: 1px solid #935300; }
+body.ur summary {
+  font-weight: 300;
+  color: white;
+  padding: 5px 0 5px 1em;
+  margin-bottom: 1em;
+  background-color: #373737;
+  max-width: 10em;
+  max-width: 17em; }
+body.ur details p, body.ur details ul, body.ur details ol, body.ur details em {
+  margin: 0.5em 0; }
+  @media only screen and (min-width: 490px) {
+    body.ur details p, body.ur details ul, body.ur details ol, body.ur details em {
+      font-size: 16px; } }
+body.ur h2 {
+  color: white;
+  background-color: #935300;
+  font-weight: 300;
+  text-align: center; }
+
+body.con header {
+  background-color: #614397; }
+body.con a, body.con h1, body.con h2, body.con h3 {
+  color: #614397; }
+body.con a:hover, body.con a:focus {
+  color: #5a5a5a; }
+body.con a.button {
+  background-color: #614397;
+  color: white; }
+body.con a.button:hover, body.con a.button:focus {
+  color: #614397;
+  background-color: #ffffff;
+  border: solid 2px #614397; }
+body.con hr {
+  border-top: 1px solid #614397; }
+body.con summary {
+  font-weight: 300;
+  color: white;
+  padding: 5px 0 5px 1em;
+  margin-bottom: 1em;
+  background-color: #373737;
+  max-width: 10em;
+  max-width: 17em; }
+body.con details p, body.con details ul, body.con details ol, body.con details em {
+  margin: 0.5em 0; }
+  @media only screen and (min-width: 490px) {
+    body.con details p, body.con details ul, body.con details ol, body.con details em {
+      font-size: 16px; } }
+body.con h2 {
+  color: white;
+  background-color: #614397;
+  font-weight: 300;
+  text-align: center; }
+
 p {
   padding-top: 0;
   padding-bottom: 0;
@@ -214,7 +282,7 @@ nav {
   height: 40px;
   background-color: #e3e3e3;
   border-bottom: solid 4px #e3e3e3; }
-  nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color {
+  nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
     float: left;
     display: block;
     text-align: center;
@@ -225,10 +293,16 @@ nav {
     padding: 12px 20px;
     /* for very small screen */ }
     @media only screen and (max-width: 313px) {
-      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color {
-        padding: 12px 10px; } }
-    @media only screen and (min-width: 490px) {
-      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color {
+      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
+        padding: 12px 10px;
+        font-size: 16px; } }
+    @media only screen and (max-width: 498px) {
+      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
+        font-size: 18px;
+        height: 20px;
+        padding: 10px 20px; } }
+    @media only screen and (min-width: 590px) {
+      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
         font-size: 20px;
         height: 20px;
         padding: 10px 30px; } }
@@ -244,6 +318,12 @@ nav {
   nav .on-the-page.tech-color {
     color: #941100;
     font-weight: 500; }
+  nav .on-the-page.con-color {
+    color: #614397;
+    font-weight: 500; }
+  nav .on-the-page.ur-color {
+    color: #935300;
+    font-weight: 500; }
   nav a.ux-color:hover, nav a.ux-color.focus {
     border-bottom: solid 4px #800080; }
   nav a.dev-color:hover, nav a.dev-color:focus {
@@ -252,6 +332,10 @@ nav {
     border-bottom: solid 4px #218341; }
   nav a.tech-color:hover, nav a.tech-color.focus {
     border-bottom: solid 4px #941100; }
+  nav a.ur-color:hover, nav a.ur-color:focus {
+    border-bottom: solid 4px #935300; }
+  nav a.con-color:hover, nav a.con-color.focus {
+    border-bottom: solid 4px #614397; }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
 main {
@@ -340,6 +424,14 @@ footer {
     color: #941100;
     padding: 5px;
     border: solid 1px #941100; }
+  footer a.ur-style {
+    color: #935300;
+    padding: 5px;
+    border: solid 1px #935300; }
+  footer a.con-style {
+    color: #614397;
+    padding: 5px;
+    border: solid 1px #614397; }
 
 .to-right {
   float: right;
