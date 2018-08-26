@@ -623,6 +623,12 @@ footer {
         width: 100%;
     }
 }
+.img-two-thirds-width {
+    width: 66%;
+    @media only screen and (max-width: 489px) { 
+        width: 100%;
+    }
+}
 .img-three-quarters-width {
     width: 75%;
     @media only screen and (max-width: 489px) { 
