@@ -304,6 +304,7 @@ nav {
     @media only screen and (min-width: 590px) {
       nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
         font-size: 20px;
+        height: 20px;
         padding: 10px 30px; } }
   nav .on-the-page.dev-color {
     color: #06609c;
