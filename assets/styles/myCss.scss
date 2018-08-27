@@ -115,6 +115,9 @@ body.dev {
     summary.top-color {
         background-color:#373737;
         max-width: 17em;
+        @media only screen and (max-width: 489px) { 
+           max-width: 100%;
+        }
     }
     summary.css-color {
         background-color: $css-color;
@@ -397,13 +400,10 @@ nav {
         font-weight: 400 ;
         text-decoration: none;
         height: 16px;
-        padding: 12px 20px;
-        /* for very small screen */
-        @media only screen and (max-width: 313px) {
-            padding: 12px 10px;
-            font-size: 16px;
-        } 
-        @media only screen and (max-width: 498px) { 
+        font-size: 16px;
+        padding: 12px 10px;
+        /* for bigger screens */
+        @media only screen and (min-width: 400px) { 
             font-size: 18px;
             height: 20px ;
             padding: 10px 20px;
