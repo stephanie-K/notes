@@ -74,8 +74,22 @@
           <details>
             <summary class="js-color">Angular - React - Vue</summary>
             <p><a href="assets/images/dev/notes/chose React Vue Angular.pdf" target="_blank" rel="noopener"><strong>Choosing the Right Javascript Framework for your next Web Application</strong></a></p>
+            <p class="lead">Angular</p>
             <p><a href="assets/images/dev/notes/Angular-notes.pdf" target="_blank" rel="noopener"><strong>my Angular notes on PDF</strong></a></p>
+            <p class="lead">React</p>
             <p><a href="assets/images/dev/notes/React-notes.pdf" target="_blank" rel="noopener"><strong>my React notes on PDF</strong></a></p>
+            <p class="lead">Vue</p>
+            <p><a href="https://app.pluralsight.com/library/courses/vuejs-getting-started/table-of-contents" target="_blank" rel="noopener"><strong>Course Pluralsight</strong></a></p>
+            <p><strong>Declarative bindings:</strong></p>
+            <ul>
+              <li>simplify development</li>
+              <li>remove the burden of managing the DOM</li>
+              <li>updates happen automatically</li>
+              <li>super small, library as well, so easy to download and access</li>
+            </ul>
+            <p><a href="assets/images/dev/vue.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/vue.png"></a></p>
+
+
           </details>
 
           <details>
@@ -352,6 +366,66 @@
           </details>
 
           <details>
+            <summary class="dev-color">PWA - Progressive Web App</summary>
+            <p>
+              Some links to check:
+              <ul>
+                <li><a href="https://developers.google.com/web/updates/2018/05/beyond-spa" target="_blank" rel="noopener">Beyond SPAs: alternative architectures for your PWA</a></li>
+                <li><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener">Progressive Web apps</a></li>
+                <li><a href="https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0" target="_blank" rel="noopener">Your First Progressive Web App</a></li>
+                <li><a href="https://alistapart.com/article/going-offline" target="_blank" rel="noopener">Going offline</a></li>
+                <li><a href="https://alistapart.com/article/yes-that-web-project-should-be-a-pwa?utm_source=frontendfocus&utm_medium=email" target="_blank" rel="noopener">Yes that web project should be a PWA</a></li>
+                <li><a href="https://medium.freecodecamp.org/progressive-web-apps-bridging-the-gap-between-web-and-mobile-apps-a08c76e3e768" target="_blank" rel="noopener">Progressive Web Apps: Bridging the gap between web and mobile apps</a></li>
+                <li><a href="https://medium.com/@firt/progressive-web-apps-on-ios-are-here-d00430dee3a7" target="_blank" rel="noopener">Progressive Web Apps on iOS are here </a></li>
+                <li><a href="https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955" target="_blank" rel="noopener">Progressive Web Apps on iOS are here </a></li>
+              </ul>
+            </p>
+
+            <p class="lead">Service workers</p>
+            <p><a href="https://serviceworke.rs/" target="_blank" rel="noopener">Mozilla - service worker</a></p>
+            <p><a href="https://developers.google.com/web/fundamentals/primers/service-workers/" target="_blank" rel="noopener">Google- service workers</a></p>
+            <p>A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction. Today, they already include features like <strong>push notifications</strong> and <strong>background sync.</strong> In the future, service workers might support other things like periodic sync or geofencing.</p>
+            <p>The reason this is such an exciting API is that it allows you to support <strong>offline experiences,</strong> giving developers complete control over the experience.</p>
+            <p>Things to note about a service worker:</p>
+            <ul>
+              <li>it's a JavaScript Worker, so <strong>it can't access the DOM directly</strong>. Instead, a service worker can communicate with the pages it controls by responding to messages sent via the postMessage interface, and those pages can manipulate the DOM if needed</li>
+              <li>service worker is a programmable network proxy, allowing you to control how network requests from your page are handled</li>
+              <li>it's terminated when not in use, and restarted when it's next needed, so <strong>you cannot rely on global state</strong> within a service worker's <span class="code">onfetch</span> and <span class="code">onmessage</span> handlers. If there is information that you need to persist and reuse across restarts, service workers do have access to the IndexedDB API</li>
+              <li>service workers make extensive use of promises</li>
+            </ul>
+            <p>After the activation step, <strong>the service worker will control all pages that fall under its scope</strong>, though the page that registered the service worker for the first time won't be controlled until it's loaded again. <strong>Once a service worker is in control, it will be in one of two states: either the service worker will be terminated to save memory, or it will handle fetch and message events that occur when a network request or message is made from your page</strong>.</p>
+            <p><a href="assets/images/dev/service-worker.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/dev/service-worker.png"/></a></p>
+            <p>Using service worker you can hijack connections, fabricate, and filter responses. Powerful stuff. While you would use these powers for good, a man-in-the-middle might not. To avoid this, <strong>you can only register service workers on pages served over HTTPS</strong>, so we know the service worker the browser receives hasn't been tampered with during its journey through the network.</p>
+            <p><strong>Register a service worker</strong><br>
+              To install a service worker you need to kick start the process by registering it in your page. This tells the browser where your service worker JavaScript file lives.
+            </p>
+            <p><strong>Install a service worker</strong><br>
+              After a controlled page kicks off the registration process, let's shift to the point of view of the service worker script, which handles the install event.<br>
+              For the most basic example, you need to define a callback for the install event and decide which files you want to cache.<br>
+              Inside of our install callback, we need to take the following steps:
+            </p>
+            <ol>
+              <li>open a cache</li>
+              <li>cache your files</li>
+              <li>confirm whether all the required assets are cached or not</li>
+            </ol>
+            <p>If all the files are successfully cached, then the service worker will be installed. If any of the files fail to download, then the install step will fail. This allows you to rely on having all the assets that you defined, but does mean you need to be careful with the list of files you decide to cache in the install step. <strong>Defining a long list of files will increase the chance that one file may fail to cache</strong>, leading to your service worker not getting installed.</p>
+            <p><strong>Cache and return requests</strong><br>
+              After a service worker is installed and the user navigates to a different page or refreshes, the service worker will begin to receive fetch events, an example of which is below.
+            </p>
+            <p><strong>Update a service worker</strong>
+              There will be a point in time where your service worker will need updating. When that time comes, you'll need to follow these steps:
+            </p>
+            <ol>
+              <li>update your service worker JavaScript file. When the user navigates to your site, the browser tries to redownload the script file that defined the service worker in the background. If there is even a byte's difference in the service worker file compared to what it currently has, it considers it new</li>
+              <li>your new service worker will be started and the install event will be fired</li>
+              <li>at this point the old service worker is still controlling the current pages so the new service worker will enter a waiting state</li>
+              <li>when the currently open pages of your site are closed, the old service worker will be killed and the new service worker will take control</li>
+              <li>once your new service worker takes control, its activate event will be fired</li>
+            </ol>
+          </details>
+
+          <details>
             <summary class="dev-color">Rest API</summary>
             <p><strong>API:</strong>  application programming interface = a way to provide a system with a programmatic means to access specific data or functionality from another system.</p>
             <p><strong>A RESTful API</strong> -- also referred to as a RESTful web service -- is based on representational state transfer (REST) technology, an architectural style and approach to communications often used in web services development.</p>
@@ -368,8 +442,6 @@
               Hashes play a role in security systems where they're used to ensure that transmitted messages have not been tampered with. The sender generates a hash of the message, encrypts it, and sends it with the message itself. The recipient then decrypts both the message and the hash, produces another hash from the received message, and compares the two hashes. If they're the same, there is a very high probability that the message was transmitted intact.
               Hashing is also a common method of accessing data records.
             </p>
-           
- 
           </details>
 
           <details>
@@ -518,20 +590,6 @@
               </ul>
             </p>
             <p>Solution: Move the placeholder content above the input, but below the label</p>
-            <hr>
-
-            <h2>Progressive Web App</h2>
-            <p>
-              Some articles to check on that:
-              <ul>
-                <li><a href="https://serviceworke.rs/" target="_blank" rel="noopener">Mozilla - service worker</a></li>
-                <li><a href="https://developers.google.com/web/updates/2018/05/beyond-spa" target="_blank" rel="noopener">Beyond SPAs: alternative architectures for your PWA</a></li>
-                <li><a href="https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0" target="_blank" rel="noopener">Your First Progressive Web App</a></li>
-                <li><a href="https://alistapart.com/article/going-offline" target="_blank" rel="noopener">Going offline</a></li>
-                <li><a href="https://medium.freecodecamp.org/progressive-web-apps-bridging-the-gap-between-web-and-mobile-apps-a08c76e3e768" target="_blank" rel="noopener">Progressive Web Apps: Bridging the gap between web and mobile apps</a></li>
-                <li><a href="https://medium.com/@firt/progressive-web-apps-on-ios-are-here-d00430dee3a7" target="_blank" rel="noopener">Progressive Web Apps on iOS are here </a></li>
-              </ul>
-            </p>
             <hr>
 
             <h2>Redux</h2>
