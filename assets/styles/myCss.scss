@@ -73,8 +73,10 @@ body.ux {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 10em;
-        max-width: 17em;
+        max-width: 20em;
+    }
+    summary.ux-color {
+        background-color: $ux-color;
     }
     details  {
         p, ul, ol, em {
@@ -174,7 +176,7 @@ body.a11y {
         margin-bottom: 1em;
         padding-left: 1em;
         background-color:#373737; // $a11y-color;
-        max-width: 10em;
+        max-width: 17em;
     }
     details  {
         p, ul, ol, em {
@@ -214,7 +216,6 @@ body.tech {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 10em;
         max-width: 17em;
     }
     details  {
@@ -255,7 +256,6 @@ body.ur {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 10em;
         max-width: 17em;
     }
     details  {
@@ -302,7 +302,6 @@ body.con {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 10em;
         max-width: 17em;
     }
     details  {
@@ -606,36 +605,42 @@ footer {
     padding-right: 40px;
 }
 .img-one-quarter-width {
-    width: 25%;
+    vertical-align: top;
+    width: 24%;
     @media only screen and (max-width: 489px) { 
         width: 100%;
     }
 }
 .img-one-third-width {
+    vertical-align: top;
     width: 33%;
     @media only screen and (max-width: 489px) { 
         width: 100%;
     }
 }
 .img-half-width {
+    vertical-align: top;
     width: 50%;
     @media only screen and (max-width: 489px) { 
         width: 100%;
     }
 }
 .img-two-thirds-width {
+    vertical-align: top;
     width: 66%;
     @media only screen and (max-width: 489px) { 
         width: 100%;
     }
 }
 .img-three-quarters-width {
+    vertical-align: top;
     width: 75%;
     @media only screen and (max-width: 489px) { 
         width: 100%;
     }
 }
 .img-full-width {
+    vertical-align: top;
     width: 100%;
 }
 

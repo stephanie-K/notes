@@ -47,8 +47,9 @@ body.ux summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 10em;
-  max-width: 17em; }
+  max-width: 20em; }
+body.ux summary.ux-color {
+  background-color: #800080; }
 body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -120,7 +121,7 @@ body.a11y summary {
   margin-bottom: 1em;
   padding-left: 1em;
   background-color: #373737;
-  max-width: 10em; }
+  max-width: 17em; }
 body.a11y details p, body.a11y details ul, body.a11y details ol, body.a11y details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -148,7 +149,6 @@ body.tech summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 10em;
   max-width: 17em; }
 body.tech details p, body.tech details ul, body.tech details ol, body.tech details em {
   margin: 0.5em 0; }
@@ -177,7 +177,6 @@ body.ur summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 10em;
   max-width: 17em; }
 body.ur details p, body.ur details ul, body.ur details ol, body.ur details em {
   margin: 0.5em 0; }
@@ -211,7 +210,6 @@ body.con summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 10em;
   max-width: 17em; }
 body.con details p, body.con details ul, body.con details ol, body.con details em {
   margin: 0.5em 0; }
@@ -451,36 +449,42 @@ footer {
   padding-right: 40px; }
 
 .img-one-quarter-width {
-  width: 25%; }
+  vertical-align: top;
+  width: 24%; }
   @media only screen and (max-width: 489px) {
     .img-one-quarter-width {
       width: 100%; } }
 
 .img-one-third-width {
+  vertical-align: top;
   width: 33%; }
   @media only screen and (max-width: 489px) {
     .img-one-third-width {
       width: 100%; } }
 
 .img-half-width {
+  vertical-align: top;
   width: 50%; }
   @media only screen and (max-width: 489px) {
     .img-half-width {
       width: 100%; } }
 
 .img-two-thirds-width {
+  vertical-align: top;
   width: 66%; }
   @media only screen and (max-width: 489px) {
     .img-two-thirds-width {
       width: 100%; } }
 
 .img-three-quarters-width {
+  vertical-align: top;
   width: 75%; }
   @media only screen and (max-width: 489px) {
     .img-three-quarters-width {
       width: 100%; } }
 
 .img-full-width {
+  vertical-align: top;
   width: 100%; }
 
 a.button {
