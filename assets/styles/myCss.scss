@@ -45,6 +45,18 @@ body.home {
     hr {
         border-top: 1px solid $home-color;
     } 
+    summary{
+        font-weight: 300;
+        color: white;
+        padding: 5px 0 5px 1em;
+        margin-bottom: 1em;
+        background-color:#373737;
+        max-width: 10em;
+    }
+    a.red {
+        color : #C30918 ;
+        font-weight: bold;
+    }
 }
 body.ux {
     header {

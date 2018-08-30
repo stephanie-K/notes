@@ -25,6 +25,16 @@ body.home a:hover, body.home a:focus {
   color: #5a5a5a; }
 body.home hr {
   border-top: 1px solid #373737; }
+body.home summary {
+  font-weight: 300;
+  color: white;
+  padding: 5px 0 5px 1em;
+  margin-bottom: 1em;
+  background-color: #373737;
+  max-width: 10em; }
+body.home a.red {
+  color: #C30918;
+  font-weight: bold; }
 
 body.ux header {
   background-color: #800080; }
