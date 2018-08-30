@@ -3,11 +3,12 @@ $home-color: #373737;
 $ux-color: #800080 ;
 $dev-color: #06609c;
 $a11y-color: #218341; 
-$tech-color: #941100 ;
+$tech-color: #941100 ; $other-color: #2509c5;
 $ur-color:  #935300 ;
 $con-color:  #614397 ;
 $css-color: #440e4c;
 $js-color: #0f4c0e;
+
 
 html{
     position: relative;
@@ -195,6 +196,12 @@ body.tech {
     a, h1, h2, h3 {
         color: $tech-color;
     }
+    span.other {
+        color:$other-color;
+    }
+    a.other, h2.other {
+        color:$other-color;
+    }
     a:hover, a:focus {
         color: #5a5a5a;
     }
@@ -207,8 +214,21 @@ body.tech {
         background-color: #ffffff;
         border: solid 2px $tech-color;
     }
+
+    a.button-other {
+        background-color: $other-color;
+        color: white;
+    }
+    a.button-other:hover, a.button-other:focus {
+        color: $other-color;
+        background-color: #ffffff;
+        border: solid 2px $other-color;
+    }
     hr {
         border-top: 1px solid $tech-color;
+    } 
+    hr.other {
+        border-top: 1px solid $other-color;
     } 
     summary{
         font-weight: 300;
@@ -402,12 +422,12 @@ nav {
         font-size: 16px;
         padding: 12px 10px;
         /* for bigger screens */
-        @media only screen and (min-width: 400px) { 
+        @media only screen and (min-width: 455px) { 
             font-size: 18px;
             height: 20px ;
             padding: 10px 20px;
         }
-         @media only screen and (min-width: 590px) { 
+         @media only screen and (min-width: 600px) { 
              font-size: 20px;
              height: 20px ;
              padding: 10px 30px;

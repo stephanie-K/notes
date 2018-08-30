@@ -132,6 +132,10 @@ body.tech header {
   background-color: #941100; }
 body.tech a, body.tech h1, body.tech h2, body.tech h3 {
   color: #941100; }
+body.tech span.other {
+  color: #2509c5; }
+body.tech a.other, body.tech h2.other {
+  color: #2509c5; }
 body.tech a:hover, body.tech a:focus {
   color: #5a5a5a; }
 body.tech a.button {
@@ -141,8 +145,17 @@ body.tech a.button:hover, body.tech a.button:focus {
   color: #941100;
   background-color: #ffffff;
   border: solid 2px #941100; }
+body.tech a.button-other {
+  background-color: #2509c5;
+  color: white; }
+body.tech a.button-other:hover, body.tech a.button-other:focus {
+  color: #2509c5;
+  background-color: #ffffff;
+  border: solid 2px #2509c5; }
 body.tech hr {
   border-top: 1px solid #941100; }
+body.tech hr.other {
+  border-top: 1px solid #2509c5; }
 body.tech summary {
   font-weight: 300;
   color: white;
@@ -294,12 +307,12 @@ nav {
     font-size: 16px;
     padding: 12px 10px;
     /* for bigger screens */ }
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: 455px) {
       nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
         font-size: 18px;
         height: 20px;
         padding: 10px 20px; } }
-    @media only screen and (min-width: 590px) {
+    @media only screen and (min-width: 600px) {
       nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
         font-size: 20px;
         height: 20px;
