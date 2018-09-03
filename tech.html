@@ -421,8 +421,50 @@
 
             <a name="goo"></a>
             <h2>Google Analytics</h2>
-            <p><a href="https://analytics.google.com/analytics/academy/course/6" target="_blank" rel="noopener"><strong>https://analytics.google.com/analytics/academy/course/6</strong></a></p>
+            <p><a href="https://analytics.google.com/analytics/academy/" target="_blank" rel="noopener"><strong>Learn analytics with free online courses</strong></a></p>
             <p><a href="https://resources.mygov.scot/guidelines/analytics/" target="_blank" rel="noopener"><strong>GOV.SCOT Performance reporting: web analytics setup</strong></a></p>
+            <p>Google Analytics is a platform that collects data and compiles it into useful reports.</p>
+            <p><strong>Tracking a Website</strong><br>
+                To track a website, you first have to create a Google Analytics account. Then you need to <strong>add a small piece of Javascript tracking code to each page on your site immediately after the opening &lt;head&gt; tag</strong>. Every time a user visits a webpage, the tracking code will collect anonymous information about how that user interacted with the page.
+            </p>
+            <p>Keep in mind that every time a page loads, the tracking code will collect and send updated information about the user’s activity. Google Analytics groups this activity into a period of time called a “session.” 
+                <strong>A session begins when a user navigates to a page that includes the Google Analytics tracking code</strong>. A session ends after 30 minutes of inactivity. If the user returns to a page after a session ends, a new session will begin.
+            </p>
+            <p class="margin-top-2"><strong>Processing and Reporting</strong><br>
+                When the tracking code collects data, it packages that information up and sends it to Google Analytics to be processed into reports. 
+                When Analytics processes data, it aggregates and organizes the data based on particular criteria like whether a user’s device is mobile or desktop, or which browser they’re using.<br>                    
+                But there are also configuration settings that allow you to customize how that data is processed. For example, <strong>you might want to apply a filter</strong> to make sure your data doesn’t include any internal company traffic, or only includes data from a particular country or region that’s important to your business.
+            </p>
+            <p><span class="red">Once Analytics processes the data, it’s stored in a database where it can’t be changed</span>. So remember, when you set up your configuration, don’t exclude any data you think you might want to analyse later. Once the data has been processed and stored in the database, it will appear in Google Analytics as reports.</p>
+            <p class="margin-top-2">
+                <strong>The Analytics account structure</strong><br>
+                All of your Google Analytics accounts can be grouped under an “Organization,” which is optional. This allows you to manage multiple Google Analytics accounts under one grouping.
+            </p>
+            <p><a href="assets/images/tech/GA-account-structure.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/tech/GA-account-structure.png"/></a></p>
+            <p>When you create <strong>an account,</strong> you also automatically create an account,<strong>an account,</strong>and, within that property, <strong>a view </strong>for that account. But each Analytics account can have multiple properties and each property can have multiple views.</p>
+            <p>Each Google Analytics account has at least one “property.” <strong>Each property can collect data independently of each other</strong> using a unique tracking ID that appears in your tracking code.<br>
+                You may assign multiple properties to each account, so you can collect data from different websites, mobile applications, or other digital assets associated with your business.
+            </p>
+            <p>Just as each account can have multiple “properties,” each property can have multiple “views.” <strong>You can use a feature called Filters in your configuration settings to determine what data you want to include in the reports for each view.</strong></p>
+            <p>The view level also lets you set Google Analytics <strong>“Goals”</strong>. Goals are a valuable way to track conversions, or business objectives, from your website. A goal could be how many users signed up for an email newsletter, or how many users purchased a product.</p>
+            <p><strong>Important things to note about views: </strong></p>
+            <ul>
+                <li>new views only include data from the date the view was created and onwards. When you create a new view, it will not include past data</li>
+                <li>if you delete a view, only administrators can recover that view within a limited amount of time (35 days). Otherwise, the view will be permanently deleted</li>
+            </ul>
+            <p><strong>User Permissions</strong><br>
+                You can assign permissions to other users at the account, property, or view level. Each level inherits permissions from the level above it.
+            </p>
+            <p class="margin-top-2">By clicking “Admin”, Google Analytics lets you set user permissions for: “managing users,” “edit,” “collaborate,” or “read and analyze”:</p>
+            <ul>
+                <li>“Managing users” lets users add or remove user access to the account, property, or view</li>
+                <li>“Edit” lets users make changes to the configuration settings</li>
+                <li>“Collaborate” allows users to share things like dashboards or certain measurement settings</li>
+                <li>“Read and Analyze” lets users view data, analyze reports, and create dashboards, but restricts them from making changes to the settings or adding new users</li>    
+            </ul>
+            <p><span class="warning">ongoing course - more to come</span></p>
+
+            
             <p><a href="#" class="button">top</a></p>
             <hr>
 
