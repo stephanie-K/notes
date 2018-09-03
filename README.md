@@ -5,7 +5,7 @@ This website is to organise my notes on various subjects:
 - **Accessibility**     (more notes to add from one IDF ongoing course)
 - **Frontend Development**     (done)
 - **Content**     (more to add once I've read Sarah Richards' book and 'Content Strategy for the web') 
-- **Technologies**     (notes on google analytics to add once tutorial finished)
+- **Technologies**     (done)
 
 This is just for me
 
