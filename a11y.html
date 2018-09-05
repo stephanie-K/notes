@@ -128,7 +128,7 @@
                <li><a href="#pdf">PDF- Word - assistive technologies users</a></li>
                <li><a href="#responsive">Responsive Web Design</a></li>
                <li><a href="#screenread">Screen Readers</a></li>
-               <li><a href="#real">Testing with real people</a></li>
+               <li><a href="#test">Accessibility Testing</a></li>
                <li><a href="#univer">Universal design</a></li>
              </ul>
             </details>
@@ -201,17 +201,20 @@
             <p>Accessibility impact SEO: the better the experience (time on site) and less barriers is considered good by algorithms (like google)</p>
             <p>Trying to navigate a site after a poor night sleep, or after a beer can put you in a good place to test how cognitively impaired people might be ;)</p>
             <p> checkers are good but do not replace testing: constrast (contrast checker tool WCAG 2), colour blind checkers (Vischeck). Sometimes, they raise issue that are not that important so you don't need to fix all.</p>
-            <p class="lead"><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0" target="_blank" rel="noopener"><strong>WCAG Web Content Acessibility Guidelines</strong></a></p>
+            <p class="lead"><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0" target="_blank" rel="noopener"><strong>WCAG Web Content Accessibility Guidelines</strong></a></p>
             <ul>
               <li><strong>perceivable: </strong>information and user interface components must be presented to users in ways they can see or hear</li>
-              <li><strong>operable: </strong>UI components and navigation must be designed so that users can interact with them and they can support assistive tehcnologies such as screen readers</li>
+              <li><strong>operable: </strong>UI components and navigation must be designed so that users can interact with them and they can support assistive technologies such as screen readers</li>
               <li><strong>understandable: </strong>information and the operation of the UI must communicate clearly and consistently so that the content is readable</li>
-              <li><strong>robust: </strong>content must be written so that it can be interpreted reliably by a wide variety of user agents, including assistives tehcnologies</li>
+              <li><strong>robust: </strong>content must be written so that it can be interpreted reliably by a wide variety of user agents, including assistives technologies</li>
             </ul>
             
             <p class="lead">Compliance requirement A, AA, AAA</p>
             <p>AA is the standard most used. A is low (essential for basic accessibility), AA is moderate and AAA is the highest (Gold standard).</p>
             
+            <p class="lead">Non text web content guide</p>
+            <p><a href="assets/images/a11y/non-text-web-content.png" target="_blank" rel="noopener"><img class ="img-two-thirds-width" src="assets/images/a11y/non-text-web-content.png"/></a></p>
+
             <p class="lead">Inclusive Design strategies and tactics</p>
             <p>AT= Assistive Technology or Access Technology</p>
             <p>Inclusive Design is an ideal approach for designing for universal access. To get it right, you need to incorporate real people in the design, including:</p>
@@ -267,41 +270,6 @@
             I WANT headings to be identified as actual headings<br>
             SO THAT I can navigate the web page by heading and understand the page's structure.</p>
             <p class="margin-top-2"><strong>Triangulated approach</strong>: use all the methods together: checkers, guidelines (WCAG), user access testing and retest user tool</p>
-            
-            <p class="lead">Accessibility testing</p>
-            <p>Type of testing</p>
-            <ul>
-              <li><strong>usability testing</strong>: Think Aloud, task based, any device, any location, open discovery of issues</li>
-              <li><strong>accessibility testing</strong>: Think Aloud, Assistive Tech (user's device and configurations) Chair's side quite often in their home; open discovery of issues</li>
-              <li><strong>code level testing</strong>: testing for code efficiency, errors, guidelines; code de-bugging</li>
-              <li><strong>QA/ User Acceptance testing</strong>: testing for what has been designed vs what users need</li>
-            </ul>
-            <p>Users often have a confort zone within their own settings for assistive technologies, that's why it's important to use their own devices when testing. It's critical as not doing this will affects your results.</p>
-
-            <p>For accessibility testing, you follow the same best practice as for usability testing (think aloud, gather metrics, success rate, time on task, errors/ confusions, subjective satisfaction) but also <strong>read everything out loud for the users</strong>: tasks, subjective satisfaction questionnaire</p>
-            <p>A.T. by disability type:</p>
-            <ul>
-              <li><strong>blind</strong>: screen readers, keyboard</li>
-              <li><strong>mobility</strong>: speech input, alternative input device (head pointer, single switch device, motion tracking), keyboard</li>
-              <li><strong>cognitive</strong>: none</li>
-              <li><strong>Deaf + HOH</strong>: closed captioning, speech input</li>
-              <li><strong>low vision</strong>: magnifiers, keyboard</li>
-            </ul>
-            
-            <p class="lead">What to include in accesibility testing scope:</p>
-            <ul>
-              <li>test for keyboard accessibility</li>
-              <li>tab focusability and tab order</li>
-              <li>keyboard functionality</li>
-              <li>keyboard functionality with screen reader</li>
-              <li>make sure you can tab through, go back and move with arrow keys</li>
-            </ul>
-            <p>You also need to be ready, have Braille format if needed, or a sign language interpreter, a friend or family for example. </p>
-            <p><strong>Formative testing</strong>: form your decisions. Goal is to understand issues and problem areas to fix. Use to fix code and to conduct accessible QA.</p>
-            <p><strong>Summative testing</strong>: sums up metrics. Goal is to gather metrics and understand user performance against task success (eg compared to a control group eg users without disabilities). Use to certify compliance or to tease of 3rd party software accessibility.</p>
-            <p class="margin-top-2">A major difference with usability testing is because of the poor state of accessibility, users can not always verify or troubleshoot like a user without disabilities. This can lead to accidental skipping or a task or UI element you are trying to have the user evaluate. This means more delicate moderation is needed. "Can you check that last thing again?", "Can you try that one more time for me?". also, things move more quickly and intensely during an accessibility Test, that YOU might be overwhelmed and miss an observation! Use your discretion if conducting summative tests (so you do not bias your data). Good moderation technique is important, as with usability testing.</p>
-            <p class="lead">Non text web content guide</p>
-            <p><a href="assets/images/a11y/non-text-web-content.png" target="_blank" rel="noopener"><img class ="img-two-thirds-width" src="assets/images/a11y/non-text-web-content.png"/></a></p>
 
             <p><a href="#" class="button">top</a></p>
             <hr>
@@ -418,11 +386,42 @@
             <p><a href="#" class="button">top</a></p>
             <hr>
             
-            <a name="real"></a>
-            <h2>Testing with real people</h2>
-            <p><a href="https://medium.theuxblog.com/danger-testing-accessibility-with-real-people-4515f72db648" target="_blank" rel="noopener"><strong>On Medium</strong></a></p>
-            <p></p>
-            <p></p>
+            <a name="test"></a>
+            <h2>Accessibility Testing</h2>
+            <p><a href="https://medium.theuxblog.com/danger-testing-accessibility-with-real-people-4515f72db648" target="_blank" rel="noopener"><strong>On Medium - Testing with real people</strong></a></p>
+            <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all?r=stephanie-krus" target="_blank" rel="noopener"><strong>IDF course - How to design for all</strong></a></p>
+            <p>Type of testing</p>
+            <ul>
+              <li><strong>usability testing</strong>: Think Aloud, task based, any device, any location, open discovery of issues</li>
+              <li><strong>accessibility testing</strong>: Think Aloud, Assistive Tech (user's device and configurations) Chair's side quite often in their home; open discovery of issues</li>
+              <li><strong>code level testing</strong>: testing for code efficiency, errors, guidelines; code de-bugging</li>
+              <li><strong>QA/ User Acceptance testing</strong>: testing for what has been designed vs what users need</li>
+            </ul>
+            <p>Users often have a comfort zone within their own settings for assistive technologies, that's why it's important to use their own devices when testing. It's critical as not doing this will affects your results.</p>
+
+            <p>For accessibility testing, you follow the same best practice as for usability testing (think aloud, gather metrics, success rate, time on task, errors/ confusions, subjective satisfaction) but also <strong>read everything out loud for the users</strong>: tasks, subjective satisfaction questionnaire</p>
+            
+            <p class="lead">A.T. by disability type:</p>
+            <ul>
+              <li><strong>blind</strong>: screen readers, keyboard</li>
+              <li><strong>mobility</strong>: speech input, alternative input device (head pointer, single switch device, motion tracking), keyboard</li>
+              <li><strong>cognitive</strong>: none</li>
+              <li><strong>Deaf + HOH</strong>: closed captioning, speech input</li>
+              <li><strong>low vision</strong>: magnifiers, keyboard</li>
+            </ul>
+            
+            <p class="lead">What to include in accesibility testing scope:</p>
+            <ul>
+              <li>test for keyboard accessibility</li>
+              <li>tab focusability and tab order</li>
+              <li>keyboard functionality</li>
+              <li>keyboard functionality with screen reader</li>
+              <li>make sure you can tab through, go back and move with arrow keys</li>
+            </ul>
+            <p>You also need to be ready, have Braille format if needed, or a sign language interpreter, a friend or family for example. </p>
+            <p><strong>Formative testing</strong>: form your decisions. Goal is to understand issues and problem areas to fix. Use to fix code and to conduct accessible QA.</p>
+            <p><strong>Summative testing</strong>: sums up metrics. Goal is to gather metrics and understand user performance against task success (eg compared to a control group eg users without disabilities). Use to certify compliance or to tease of 3rd party software accessibility.</p>
+            <p class="margin-top-2">A major difference with usability testing is because of the poor state of accessibility, users can not always verify or troubleshoot like a user without disabilities. This can lead to accidental skipping or a task or UI element you are trying to have the user evaluate. This means more delicate moderation is needed. "Can you check that last thing again?", "Can you try that one more time for me?". also, things move more quickly and intensely during an accessibility Test, that YOU might be overwhelmed and miss an observation! Use your discretion if conducting summative tests (so you do not bias your data). Good moderation technique is important, as with usability testing.</p>
             <p><a href="#" class="button">top</a></p>
             <hr>
 
