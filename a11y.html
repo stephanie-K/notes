@@ -149,6 +149,39 @@
             <p><a href="https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939" target="_blank" rel="noopener"><strong>Writing CSS</strong></a></p>
             <p><a href="https://medium.com/alistapart/writing-html-with-accessibility-in-mind-a62026493412" target="_blank" rel="noopener"><strong>Writing HTML</strong></a></p>
             <p><a href="https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9" target="_blank" rel="noopener"><strong>Writing JavaScript</strong></a></p>
+            <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all" target="_blank" rel="noopener"><strong>How to design for all - IDF course chapter 3</strong></a></p>
+
+            <p>HTML5, CSS + Aria</p>
+            <p>HTML has historically lacked some key semantic markers, such as the ability to designate sections of the page as the header, navigation, main content and footer. <br>
+            With HTML5, these designations are possible, using the new elements for it: header, nav, main, and footer.<br>
+            Similar functionality is available using the ARIA (Accessible Rich Internet Application) attributes role="banner", role="navigation" and role="contentinfo"
+            </p>
+            <p>ARIA provides a way to specify roles for documents areas and more. The available Document Landmark Roles are: </p>
+            <ul>
+              <li>banner: site-orientated content, such as the name of the website, title of the page, and or logo</li>
+              <li>navigation: the area that contains the navigation links for the document or website</li>
+              <li>main: the main or central content of the doucment</li>
+              <li>search: this section contains the search functionality for the website</li>
+              <li>article: stand alone content that makes sense out of context from the rest of the document. Example might be blog posting, a comment on a blog, a forum post, etc... Specifically, a blog posting might be identified as an article and individual blog comments might also be marked up with a role of article within that blog posting</li>
+              <li>complementary: supporting content for the main content</li>
+              <li>contentinfo: informational child content, such as footnotes, copyrights, links to privacy statement, links to preferences and so on.</li>
+            </ul>
+            <p><a href="assets/images/a11y/aria1.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/a11y/aria1.png"/></a></p>
+            <p><strong>Keyboard</strong></p>
+            <p>Try tabbing through and make sure, space bar (selecting), arrows keys, enter work as expected, that the tab order is logical, and focus indicator is always visible to sighted keyboard users, provide proper heading structure and ARIA landmarks.</p>
+            <p>Note that an &lt;a&gt; element is only keyboard accessible when it has a non empty href attribute</p>
+            <p>outline: 0 kills keyboard accessibility</p>
+            <p>Watch out for conflicts with A.T. by staying clear from the following types of assignments:</p>
+            <ul>
+              <li>Caps Lock + any other combination of Keys</li>
+              <li>insert + any other combination of other Keys</li>
+              <li>scroll Lock + any other combination of other Keys</li>
+              <li>macOS only: Control+Option + any other combination of other Keys</li>
+            </ul>
+            <p>If in doubt, mimic the standard desktop behaviour of the control you are creating.</p>
+            <p><a href="https://webaim.org/techniques/keyboard/" target="_blank" rel="noopener"><strong>Keyboard Accessibility WebAIM</strong></a></p>
+            <p><a href="assets/images/a11y/keyboard1.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/a11y/keyboard1.png"/></a></p>
+
             <p><a href="#" class="button">top</a></p>
             <hr>
 
@@ -182,7 +215,7 @@
 
             <a name="idf"></a>
             <h2>How to design for all - IDF course</h2>
-            <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all?r=stephanie-krus" target="_blank" rel="noopener"><strong>How to design for all - IDF course</strong></a></p>
+            <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all" target="_blank" rel="noopener"><strong>How to design for all - IDF course</strong></a></p>
             <p>10 Principles of Accessibility for Web and Mobile Design<br>
               <ul>
                 <li>blind gets 80% of accessibility issues (includes low vision and colour blindness)</li>
@@ -521,7 +554,7 @@
             <a name="test"></a>
             <h2>Accessibility Testing</h2>
             <p><a href="https://medium.theuxblog.com/danger-testing-accessibility-with-real-people-4515f72db648" target="_blank" rel="noopener"><strong>On Medium - Testing with real people</strong></a></p>
-            <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all?r=stephanie-krus" target="_blank" rel="noopener"><strong>IDF course - How to design for all</strong></a></p>
+            <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all" target="_blank" rel="noopener"><strong>IDF course - How to design for all - chapter 6</strong></a></p>
             <p>Type of testing</p>
             <ul>
               <li><strong>usability testing</strong>: Think Aloud, task based, any device, any location, open discovery of issues</li>
@@ -576,7 +609,7 @@
             <p><a href="#" class="button">top</a></p>
             <hr>
     
-        <p><span class="warning">under construction</span></p>
+
       </main>
       
       <footer>  
@@ -593,7 +626,7 @@
 </html>
 
 <!--
-
+  <p><span class="warning">under construction</span></p>
   <details>
     <summary></summary>
     <p></p>
