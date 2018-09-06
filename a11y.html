@@ -183,7 +183,6 @@
             <a name="idf"></a>
             <h2>How to design for all - IDF course</h2>
             <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all?r=stephanie-krus" target="_blank" rel="noopener"><strong>How to design for all - IDF course</strong></a></p>
-            <p><span class="warning">ongoing course</span></p>
             <p>10 Principles of Accessibility for Web and Mobile Design<br>
               <ul>
                 <li>blind gets 80% of accessibility issues (includes low vision and colour blindness)</li>
@@ -271,6 +270,128 @@
             SO THAT I can navigate the web page by heading and understand the page's structure.</p>
             <p class="margin-top-2"><strong>Triangulated approach</strong>: use all the methods together: checkers, guidelines (WCAG), user access testing and retest user tool</p>
 
+            <p class="lead">Meeting Accessibility Design</p>
+            <p>Your <strong>visual bias</strong> is your biggest blocker:</p>
+            <ul>
+              <li><strong>semantics:</strong> word, descriptions, confirmations, errors</li>
+              <li><strong>interactions:</strong> animations micro-interactions</li>
+              <li><strong>place:</strong> location on screen, movement, meaning from states (like hover on/off)</li>
+            </ul>
+            <p>Other bias:</p>
+            <ul>
+              <li><strong>mouse heavy</strong> bias (requires mouse to use easily) - a lot of user only use their keyboard</li>
+              <li><strong>colour only</strong> bias  (error message only in red text)</li>
+            </ul>
+            <p class="margin-top-2">Design phase, think of:</p>
+            <ul>
+              <li>typography, colour contrast, link visibility and target size, label proximity</li>
+              <li>and then look at: predictable and consistent navigation, visual focus indicator, blocks of content being separated and distinct from each other</li>
+            </ul>
+            <p>Design content by blocks</p>
+            <ul>
+              <li>organise content into blocks (grouping)</li>
+              <li>identify the value/purpose of each block</li>
+              <li>determine the best order for blocks to be read be screen reader</li>
+              <li>large blocks will contain smaller block (define each + relationships)</li>
+              <li>document block ordering (for visual design / coding later)</li>
+            </ul>
+            <p>Think accessible layout - determine the following focus points and movements:</p>
+            <ul>
+              <li>the order in which elements receive focus</li>
+              <li>the way in which elements are grouped</li>
+              <li>where focus moves when the element in focus disappears</li>
+              <li>clarify where the focus exists through a combination of visual indicators and accessibility text</li>
+            </ul>
+            <p>Prioritising content</p>
+            <ul>
+              <li>weigh by Persona need/priority</li>
+              <li>identify your metadata (Headers, Headings, Images)</li>
+              <li>push interruptible elements out of flow: widget (print, share, email etc) or eg cross-promotional stories or tools should not interrupt a story even if they appears in the body of the page</li>
+              <li>structure the flow by context (not visual layout - but by how much sense it makes)</li>
+              <li>develop a quick Accessibility "style guide" early (Blocks, Order, Flow rationale)</li>
+            </ul>
+            <p>Design for focusability</p>
+            <ul>
+              <li>the ability to access essential UI elements without a mouse</li>
+              <li>a layout schema for UX designers to map the content priorities on a page</li>
+              <li>a navigation aid to allow smooth flow and reduce audio clutter or unnecessary screen reader overhead (or loopy navigation)</li>
+              <li>CSS keyboard killer, never do: focus {outline:0;}</li>
+              <li>good contrast</li>
+              <li>complementary shape and size to the element</li>
+              <li>colour scheme is complementary, but also stands out</li>
+              <li>doesn't need to be the same for all elements</li>
+              <li>animations help users track focus movement</li>
+              <li>should degrade gracefully (be visible on older browser)</li>
+              <li>should be the same across browsers</li>
+            </ul>
+            <p>Focus design tips:</p>
+            <ul>
+              <li><strong>list out focusable elements:</strong> How many variations of each do you have? If there are primary and secondary buttons that use different colours, will the same focus indicator work for both of them?</li>
+              <li><strong>think about your colour scheme:</strong> Are you using a callout / highlight colour? Would that colour work well for focus? of not, is there a different colour that would?</li>
+              <li><strong>mirror your hover states:</strong> in a lot of cases, a good focus state might be the same as the hover state. If your hover state is obvious, consider using that as a focus indication as well</li>
+              <li><strong>custom style your focus:</strong> it's generally a good idea to replace the native browser focus style for all elements with a custom style so that focus indicators are consistent across browser</li>
+            </ul>
+            <p class="lead">Website and Web application issues and tips</p>
+            <ul>
+              <li>assign active images first (CTA, verb/action labels, buttons vs links)</li>
+              <li>then static images and decorative last</li>
+              <li>classic no no: More..., clcik here, learn more, this, links to close to one another</li>
+              <li>rule of thumb: if you're using a keyboard, anyhting you interact with should have a visible focus</li>
+              <li>if using a coloured background, choose one which is single, solid colour, rather than texture or patterned</li>
+              <li>the colour of your background does not matter as much as the contrast between the background and the text</li>
+              <li>make sure your chosen colour scheme may be over-ridden by the browser settings if necessary</li>
+              <li>avoid italic text as this can appear 'wobbly' on screen</li>
+              <li>capitalisation of a sentence should be avoided</li>
+              <li>primary things should be visible, secondary should be shown on hover - note that Hovers can be distracting for users with cognitive or mobility impairment</li>
+              <li>small texts should have a contrast ratio of at least 4.5:1 against its background</li>
+              <li>large texts (at 14pt bold / 18pt regular and up) should have a contrast ratio of at least 3:1 (unless it's a decorative logo)</li>
+              <li>label visual UI elements - this is a common mistake. Screen readers user need to know which UI elements are tappable on screen. To enable screen reader to read the name of components out loud, add the contentDescription attribute to components such as buttons, icons, and tabs containing icons that have no visible text</li>
+            </ul>
+            <p class="margin-top-2">Mobile Accessibility Issues and Tips</p>
+            <ul>
+              <li>same as for desktop: labelling UI, grouping content, creating easy-to-follow navigation, using adequate colour contrast, using cues other than colours </li>
+              <li>making touch target large (44-48px)</li>
+              <li>presenting media content (control, toggle, subtitles or alt format)</li>
+              <li>support large font on apps: iOS use built in Zoom & magnifier feature, on android the font size and font display size only work on Android 7 and up</li>
+              <li>bluetooth keyboard issues: some devices have no physical keyboard, and no easy way to pair one </li>
+              <li>infinte scrolling: furstrating for keyboard users - don't implement it</li>
+            </ul>
+            <p><a href="assets/images/a11y/androidaccess.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/a11y/androidaccess.png"/></a></p>
+            <p class="margin-top-1">
+              <a href="assets/images/a11y/iosaccess1.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/a11y/iosaccess1.png"/></a>
+              <a href="assets/images/a11y/iosaccess2.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/a11y/iosaccess2.png"/></a>
+            </p>
+            <p class="margin-top-2">
+                <a href="assets/images/a11y/control1.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/a11y/control1.png"/></a>
+                <a href="assets/images/a11y/control2.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/a11y/control2.png"/></a>
+              </p>
+
+              <p class="lead">VR/AR</p>
+              <p>The following will also be important for any user</p>
+              <p><a href="assets/images/a11y/VR1.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/a11y/VR1.png"/></a></p>
+              <p><strong>Accessibility tips for VR/AR</strong></p>
+              <ul>
+                <li>avoid height bias (mobility impairements) eg wheelchair, can't reach table. Don't require a lot of body movement</li>
+                <li>avoid visual bias (highlight affordances)</li>
+                <li>avoid cognitive bias (gamers get that you have to play to find UI's, most people do not)</li>
+              </ul>
+              <p class="lead">Elderly and Senior Users</p>
+              <ul>
+                <li>they tend to read more (rely on instruction for context and cues)</li>
+                <li>scrolling behaviour is limited (unfamiliar)</li>
+                <li>require large fonts, and high contrast</li>
+                <li>are error and mistake phobic</li>
+                <li>get lost when troubleshooting is required</li>
+                <li>take longer to learn new applications or devices</li>
+                <li>take longer to complete tasks</li>
+                <li>use different search strategies</li>
+                <li>perfom worse on tasks relying on memory</li>
+                <li>are more distractible</li>
+                <li>have a harder time dealing with errors</li>
+                <li>make more erratic or accidental movements with the pointer</li>
+                <li>make more input errors</li>
+                <li>have more trouble hitting on-screen targets</li>
+              </ul>
             <p><a href="#" class="button">top</a></p>
             <hr>
           
@@ -291,7 +412,7 @@
             <p>There is a strong business case for accessibility: studies show that accessible websites have better search results, they reach a bigger audience, they’re SEO friendly, have faster download times, they encourage good coding practices, and they always have better usability.</p>
             <ol>
                 <li><strong>add enough colour contrast: </strong>According to the W3C, the contrast ratio between text and its background should be at least 4.5 to 1 (conformance level AA.) The ratios become more forgiving with larger and heavier fonts since they’re easier to read at lower contrast. If your type is at least 18 pt or 14 pt bold, the minimum contrast ratio drops to 3 to 1</li>
-                <li><strong>don’t use color alone to make critical information understandable: </strong>Try to use an indicator other than color such as text labels or patterns. When showing errors on the screen, don’t rely on colored text alone, add an icon or include a title to the message. Consider adding a visual cue such as font weight or underline text style to linked text in a paragraph, so the links stand out.</li>
+                <li><strong>don’t use colour alone to make critical information understandable: </strong>Try to use an indicator other than color such as text labels or patterns. When showing errors on the screen, don’t rely on colored text alone, add an icon or include a title to the message. Consider adding a visual cue such as font weight or underline text style to linked text in a paragraph, so the links stand out.</li>
                 <li><strong>have clear focus indicators : </strong>People with visual and motoric disabilities should be able to navigate without a mouse or trackpad. Created focus indicators that are straight forward and obvious for all so that regardless of your level of ability, you can use a website or apps with clarity.</li>
                 <li><strong>use labels or instructions with form fields and inputs: </strong>Always help people understand what they should do and write in a form. It’s best if labels don’t go away, even when the person is filling an input; people should never lose context with what they’re writing. People who use screen readers usually navigate through a form using the Tab key to jump through the form controls. The &lt;label&gt; elements are read for each form control. Any non-label text, as placeholder text, is usually skipped over.</li>
                 <li><strong>write useful alternative text for your images and other non-text content: </strong>Try to describe what’s happening in the image, and how it matters to the story, rather than just saying something like “picture,” context is everything.<br>
@@ -344,6 +465,17 @@
             <h2>PDF and Word - assistive technologies users</h2>
             <p><a href="https://gds.blog.gov.uk/2018/07/16/why-gov-uk-content-should-be-published-in-html-and-not-pdf/" target="_blank" rel="noopener">Why GOV.UK content should be published in HTML and not PDF</a></p>
             <p><a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/accessible-pdfs" target="_blank" rel="noopener">About PDF</a></p>
+            <p>Problems with PDF:</p>
+            <ul>
+              <li>most are not accessible</li>
+              <li>simple layout help, simple tagging too!</li>
+              <li>lack of alt text and poor heading are very common</li>
+              <li>like plain English, PDF access is taken for granted</li>
+              <li>outsource PDF markup if you do not have an authoring strategy</li>
+              <li> they need, structure (headings header, footer etc..) metadata (Main lang etc...), navigation, links with description, styles (h1 h2 etc...) images (alt) </li>
+            </ul>      
+            <p><a href="assets/images/a11y/pdfcheckers.png" target="_blank" rel="noopener"><img class ="img-one-half-width" src="assets/images/a11y/pdfcheckers.png"/></a></p>
+
             <p><a href="https://accessibility.blog.gov.uk/2018/03/20/why-accessibility-testing-with-real-users-is-so-important/" target="_blank" rel="noopener"><strong>Why testing with real user is so important</strong></a></p>
             <p>Once an assistive technology user can find a rhythm that works for them, they tend to stick to it. For Dragon users this often means <strong>dictating their speech into a single long Word document</strong>, where it is easy to see and edit, and then transferring it into the various dialogue boxes in their web browser.</p>
             <p>For JAWS users a dossier of case material prepared and saved into PDF was far easier to read than piecemeal material in various formats under a host of different tabs.</p>
