@@ -181,7 +181,23 @@
             <p>If in doubt, mimic the standard desktop behaviour of the control you are creating.</p>
             <p><a href="https://webaim.org/techniques/keyboard/" target="_blank" rel="noopener"><strong>Keyboard Accessibility WebAIM</strong></a></p>
             <p><a href="assets/images/a11y/keyboard1.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/a11y/keyboard1.png"/></a></p>
+            <p class="margin-top-2"><strong>Focusability</strong> = sensible structure, to reduce the tab overhead to remove the fatigue. Needs to be decided ahead of the design</p>
+            <p>Focus = directing keyboard events to a selected element</p>
+            <p>If non-interactive = no need to add focusability, if there are interactive controls = add focus</p>
+            <p>Focus is the visual and physical result of making commonly used keys active.It help users stay (focused) on tasks.</p>
+            <p>Focus assignment:</p>
+            <ul>
+              <li>direct focus: direct to content, to support the user's task. Otherwise screen reader will read what's behind on overlay / pop up etc...</li>
+              <li>retain focus: focus rings can be unpredictable so devs assign (outline: none , don't do this!) instead try: focus-ring (new CSS selector) differentiates mouse + keyboard focus</li>
+              <li>prevent focus: use inert attribute (user won't be able to access</li>
+            </ul>
 
+            <p class="margin-top-2"><a href="https://www.w3.org/WAI/tutorials/forms/grouping/" target="_blank" rel="noopener"><strong>On forms grouping</strong></a></p>
+            <p><a href="https://www.w3.org/WAI/tutorials/forms/instructions/" target="_blank" rel="noopener"><strong>On forms instructions</strong></a></p>
+            <p><a href="assets/images/a11y/tables.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/a11y/tables"/></a></p>
+            <p class="margin-top-2"><a href="https://webaim.org/techniques/aria/#dynamic" target="_blank" rel="noopener"><strong>Dynamic content</strong></a></p>
+            <p><a href="https://www.w3.org/WAI/tutorials/carousels/" target="_blank" rel="noopener"><strong>Carousels</strong></a></p>
+            
             <p><a href="#" class="button">top</a></p>
             <hr>
 
@@ -197,6 +213,8 @@
             <p>For devs, there is a link to a github repo for this:<br>
               <a href="https://github.com/alphagov/accessible-autocomplete" target="_blank" rel="noopener"><strong>https://github.com/alphagov/accessible-autocomplete</strong></a>
             </p>
+            <p>Another good link to check:</p>
+            <a href="https://haltersweb.github.io/Accessibility/autocomplete.html" target="_blank" rel="noopener"><strong>https://haltersweb.github.io/Accessibility/autocomplete.html</strong></a>
             <p><a href="#" class="button">top</a></p>
             <hr>
 
