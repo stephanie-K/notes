@@ -1,256 +1,194 @@
 /* this is where I have all my JS functions */
 
-/*
-Details Element Polyfill 2.0.2
-Copyright © 2018 Javan Makhmali
- */
-(function() {}.call(this),
-  function() {
-    var t, e, n, r, u, o, i, a, l, s, c, d;
-    (s = {
-      element: (function() {
-        var t, e, n, r, u;
-        return (
-          (e = document.createElement("details")),
-          "open" in e
-            ? ((e.innerHTML = "<summary>a</summary>b"),
-              e.setAttribute("style", "position: absolute; left: -9999px"),
-              (r = null != (u = document.body) ? u : document.documentElement),
-              r.appendChild(e),
-              (t = e.offsetHeight),
-              (e.open = !0),
-              (n = e.offsetHeight),
-              r.removeChild(e),
-              t !== n)
-            : !1
-        );
-      })(),
-      toggleEvent: (function() {
-        var t;
-        return (t = document.createElement("details")), "ontoggle" in t;
-      })()
-    }),
-      (s.element && s.toggleEvent) ||
-        ((i = function() {
-          return document.head.insertAdjacentHTML(
-            "afterbegin",
-            '<style>@charset"UTF-8";details:not([open])>*:not(summary){display:none;}details>summary{display:block;}details>summary::before{content:"\u25ba";padding-right:0.3rem;font-size:0.6rem;cursor:default;}details[open]>summary::before{content:"\u25bc";}</style>'
-          );
-        }),
-        (o = function() {
-          var t, e, n, r;
-          return (
-            (e = document.createElement("details").constructor.prototype),
-            (r = e.setAttribute),
-            (n = e.removeAttribute),
-            (t = Object.getOwnPropertyDescriptor(e, "open")),
-            Object.defineProperties(e, {
-              open: {
-                get: function() {
-                  var e;
-                  return "DETAILS" === this.tagName
-                    ? this.hasAttribute("open")
-                    : null != t && null != (e = t.get)
-                      ? e.call(this)
-                      : void 0;
-                },
-                set: function(e) {
-                  var n;
-                  return "DETAILS" === this.tagName
-                    ? (e
-                        ? this.setAttribute("open", "")
-                        : this.removeAttribute("open"),
-                      e)
-                    : null != t && null != (n = t.set)
-                      ? n.call(this, e)
-                      : void 0;
-                }
-              },
-              setAttribute: {
-                value: function(t, e) {
-                  return d(
-                    this,
-                    (function(n) {
-                      return function() {
-                        return r.call(n, t, e);
-                      };
-                    })(this)
-                  );
-                }
-              },
-              removeAttribute: {
-                value: function(t) {
-                  return d(
-                    this,
-                    (function(e) {
-                      return function() {
-                        return n.call(e, t);
-                      };
-                    })(this)
-                  );
-                }
-              }
-            })
-          );
-        }),
-        (a = function() {
-          return r(function(t) {
-            var e;
-            return (
-              (e = t.querySelector("summary")),
-              t.hasAttribute("open")
-                ? (t.removeAttribute("open"),
-                  e.setAttribute("aria-expanded", !1))
-                : (t.setAttribute("open", ""),
-                  e.setAttribute("aria-expanded", !0))
-            );
-          });
-        }),
-        (u = function() {
-          var e, n, r, u, o;
-          for (
-            u = document.querySelectorAll("summary"), e = 0, n = u.length;
-            n > e;
-            e++
-          )
-            (o = u[e]), t(o);
-          return "undefined" != typeof MutationObserver &&
-            null !== MutationObserver
-            ? ((r = new MutationObserver(function(e) {
-                var n, r, u, i, a;
-                for (i = [], r = 0, u = e.length; u > r; r++)
-                  (n = e[r].addedNodes),
-                    i.push(
-                      (function() {
-                        var e, r, u;
-                        for (u = [], e = 0, r = n.length; r > e; e++)
-                          (a = n[e]),
-                            "DETAILS" === a.tagName &&
-                            (o = a.querySelector("summary"))
-                              ? u.push(t(o, a))
-                              : u.push(void 0);
-                        return u;
-                      })()
-                    );
-                return i;
-              })),
-              r.observe(document.documentElement, {
-                subtree: !0,
-                childList: !0
-              }))
-            : document.addEventListener("DOMNodeInserted", function(e) {
-                return "SUMMARY" === e.target.tagName ? t(e.target) : void 0;
-              });
-        }),
-        (t = function(t, e) {
-          return (
-            null == e && (e = n(t, "DETAILS")),
-            t.setAttribute("aria-expanded", e.hasAttribute("open")),
-            t.hasAttribute("tabindex") || t.setAttribute("tabindex", "0"),
-            t.hasAttribute("role") ? void 0 : t.setAttribute("role", "button")
-          );
-        }),
-        (l = function() {
-          var t;
-          return "undefined" != typeof MutationObserver &&
-            null !== MutationObserver
-            ? ((t = new MutationObserver(function(t) {
-                var e, n, r, u, o, i;
-                for (o = [], n = 0, r = t.length; r > n; n++)
-                  (u = t[n]),
-                    (i = u.target),
-                    (e = u.attributeName),
-                    "DETAILS" === i.tagName && "open" === e
-                      ? o.push(c(i))
-                      : o.push(void 0);
-                return o;
-              })),
-              t.observe(document.documentElement, {
-                attributes: !0,
-                subtree: !0
-              }))
-            : r(function(t) {
-                var e;
-                return (
-                  (e = t.getAttribute("open")),
-                  setTimeout(function() {
-                    return t.getAttribute("open") !== e ? c(t) : void 0;
-                  }, 1)
-                );
-              });
-        }),
-        (e = function(t) {
-          return !(
-            t.defaultPrevented ||
-            t.altKey ||
-            t.ctrlKey ||
-            t.metaKey ||
-            t.shiftKey ||
-            t.target.isContentEditable
-          );
-        }),
-        (r = function(t) {
-          return (
-            addEventListener(
-              "click",
-              function(r) {
-                var u, o;
-                return e(r) &&
-                  r.which <= 1 &&
-                  (u = n(r.target, "SUMMARY")) &&
-                  "DETAILS" ===
-                    (null != (o = u.parentElement) ? o.tagName : void 0)
-                  ? t(u.parentElement)
-                  : void 0;
-              },
-              !1
-            ),
-            addEventListener(
-              "keydown",
-              function(r) {
-                var u, o, i;
-                return e(r) &&
-                  (13 === (o = r.keyCode) || 32 === o) &&
-                  (u = n(r.target, "SUMMARY")) &&
-                  "DETAILS" ===
-                    (null != (i = u.parentElement) ? i.tagName : void 0)
-                  ? (t(u.parentElement), r.preventDefault())
-                  : void 0;
-              },
-              !1
-            )
-          );
-        }),
-        (n = (function() {
-          return "function" == typeof Element.prototype.closest
-            ? function(t, e) {
-                return t.closest(e);
-              }
-            : function(t, e) {
-                for (; t; ) {
-                  if (t.tagName === e) return t;
-                  t = t.parentNode;
-                }
-              };
-        })()),
-        (c = function(t) {
-          var e;
-          return (
-            (e = document.createEvent("Events")),
-            e.initEvent("toggle", !0, !1),
-            t.dispatchEvent(e)
-          );
-        }),
-        (d = function(t, e) {
-          var n, r;
-          return (
-            (n = t.getAttribute("open")),
-            (r = e()),
-            t.getAttribute("open") !== n && c(t),
-            r
-          );
-        }),
-        s.element || (i(), o(), a(), u()),
-        s.element && !s.toggleEvent && l());
-  }.call(this),
-  function() {}.call(this));
+//-----------------------------------------------------------------polyfill for details summaries pattern for IE -------------------------------------//
+// <details> polyfill
+// http://caniuse.com/#feat=details
+
+// FF Support for HTML5's <details> and <summary>
+// https://bugzilla.mozilla.org/show_bug.cgi?id=591737
+
+// http://www.sitepoint.com/fixing-the-details-element/
+
+(function () {
+    'use strict'
+  
+    var NATIVE_DETAILS = typeof document.createElement('details').open === 'boolean'
+  
+    // Add event construct for modern browsers or IE
+    // which fires the callback with a pre-converted target reference
+    function addEvent (node, type, callback) {
+      if (node.addEventListener) {
+        node.addEventListener(type, function (e) {
+          callback(e, e.target)
+        }, false)
+      } else if (node.attachEvent) {
+        node.attachEvent('on' + type, function (e) {
+          callback(e, e.srcElement)
+        })
+      }
+    }
+  
+    // Handle cross-modal click events
+    function addClickEvent (node, callback) {
+      // Prevent space(32) from scrolling the page
+      addEvent(node, 'keypress', function (e, target) {
+        if (target.nodeName === 'SUMMARY') {
+          if (e.keyCode === 32) {
+            if (e.preventDefault) {
+              e.preventDefault()
+            } else {
+              e.returnValue = false
+            }
+          }
+        }
+      })
+      // When the key comes up - check if it is enter(13) or space(32)
+      addEvent(node, 'keyup', function (e, target) {
+        if (e.keyCode === 13 || e.keyCode === 32) { callback(e, target) }
+      })
+      addEvent(node, 'mouseup', function (e, target) {
+        callback(e, target)
+      })
+    }
+  
+    // Get the nearest ancestor element of a node that matches a given tag name
+    function getAncestor (node, match) {
+      do {
+        if (!node || node.nodeName.toLowerCase() === match) {
+          break
+        }
+        node = node.parentNode
+      } while (node)
+  
+      return node
+    }
+  
+    // Create a started flag so we can prevent the initialisation
+    // function firing from both DOMContentLoaded and window.onload
+    var started = false
+  
+    // Initialisation function
+    function addDetailsPolyfill (list) {
+      // If this has already happened, just return
+      // else set the flag so it doesn't happen again
+      if (started) {
+        return
+      }
+      started = true
+  
+      // Get the collection of details elements, but if that's empty
+      // then we don't need to bother with the rest of the scripting
+      if ((list = document.getElementsByTagName('details')).length === 0) {
+        return
+      }
+  
+      // else iterate through them to apply their initial state
+      var n = list.length
+      var i = 0
+      for (i; i < n; i++) {
+        var details = list[i]
+  
+        // Save shortcuts to the inner summary and content elements
+        details.__summary = details.getElementsByTagName('summary').item(0)
+        details.__content = details.getElementsByTagName('div').item(0)
+  
+        // If the content doesn't have an ID, assign it one now
+        // which we'll need for the summary's aria-controls assignment
+        if (!details.__content.id) {
+          details.__content.id = 'details-content-' + i
+        }
+  
+        // Add ARIA role="group" to details
+        details.setAttribute('role', 'group')
+  
+        // Add role=button to summary
+        details.__summary.setAttribute('role', 'button')
+  
+        // Add aria-controls
+        details.__summary.setAttribute('aria-controls', details.__content.id)
+  
+        // Set tabIndex so the summary is keyboard accessible for non-native elements
+        // http://www.saliences.com/browserBugs/tabIndex.html
+        if (!NATIVE_DETAILS) {
+          details.__summary.tabIndex = 0
+        }
+  
+        // Detect initial open state
+        var openAttr = details.getAttribute('open') !== null
+        if (openAttr === true) {
+          details.__summary.setAttribute('aria-expanded', 'true')
+          details.__content.setAttribute('aria-hidden', 'false')
+        } else {
+          details.__summary.setAttribute('aria-expanded', 'false')
+          details.__content.setAttribute('aria-hidden', 'true')
+          if (!NATIVE_DETAILS) {
+            details.__content.style.display = 'none'
+          }
+        }
+  
+        // Create a circular reference from the summary back to its
+        // parent details element, for convenience in the click handler
+        details.__summary.__details = details
+  
+        // If this is not a native implementation, create an arrow
+        // inside the summary
+        if (!NATIVE_DETAILS) {
+          var twisty = document.createElement('i')
+  
+          if (openAttr === true) {
+            twisty.className = 'arrow arrow-open'
+            twisty.appendChild(document.createTextNode('\u25bc'))
+          } else {
+            twisty.className = 'arrow arrow-closed'
+            twisty.appendChild(document.createTextNode('\u25ba'))
+          }
+  
+          details.__summary.__twisty = details.__summary.insertBefore(twisty, details.__summary.firstChild)
+          details.__summary.__twisty.setAttribute('aria-hidden', 'true')
+        }
+      }
+  
+      // Define a statechange function that updates aria-expanded and style.display
+      // Also update the arrow position
+      function statechange (summary) {
+        var expanded = summary.__details.__summary.getAttribute('aria-expanded') === 'true'
+        var hidden = summary.__details.__content.getAttribute('aria-hidden') === 'true'
+  
+        summary.__details.__summary.setAttribute('aria-expanded', (expanded ? 'false' : 'true'))
+        summary.__details.__content.setAttribute('aria-hidden', (hidden ? 'false' : 'true'))
+  
+        if (!NATIVE_DETAILS) {
+          summary.__details.__content.style.display = (expanded ? 'none' : '')
+  
+          var hasOpenAttr = summary.__details.getAttribute('open') !== null
+          if (!hasOpenAttr) {
+            summary.__details.setAttribute('open', 'open')
+          } else {
+            summary.__details.removeAttribute('open')
+          }
+        }
+  
+        if (summary.__twisty) {
+          summary.__twisty.firstChild.nodeValue = (expanded ? '\u25ba' : '\u25bc')
+          summary.__twisty.setAttribute('class', (expanded ? 'arrow arrow-closed' : 'arrow arrow-open'))
+        }
+  
+        return true
+      }
+  
+      // Bind a click event to handle summary elements
+      addClickEvent(document, function (e, summary) {
+        if (!(summary = getAncestor(summary, 'summary'))) {
+          return true
+        }
+        return statechange(summary)
+      })
+    }
+  
+    // Bind two load events for modern and older browsers
+    // If the first one fires it will set a flag to block the second one
+    // but if it's not supported then the second one will fire
+    addEvent(document, 'DOMContentLoaded', addDetailsPolyfill)
+    addEvent(window, 'load', addDetailsPolyfill)
+  })()
+  
