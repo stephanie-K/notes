@@ -107,10 +107,9 @@ body.ux {
         background-color: $ux-color;
         font-weight: 300;
         text-align: center;
-        @media only screen and (max-width: 489px) { 
+                @media only screen and (max-width: 489px) { 
             width: 100%;
          }
-
     }
 }
 body.a11y {
@@ -634,13 +633,12 @@ main {
 }
 
 
-/* for details pattern for IE */
+/* for details pattern for IE ? */
 
 details {
     display: block;
     clear: both;
     border-left-width: 5px;
-    
   }
   
   details summary {
@@ -650,67 +648,11 @@ details {
     margin-bottom: 0.26316em;
   }
   
-//   details .arrow {
-//     margin-right: .35em;
-//     font-style: normal;
-//   }
-  
-// class de la div dans details sur govuk */
-/* 
- <details class="panel-border-narrow">
-          <summary  class="margin-top-1">
-            <span class="summary">Can't remember your email address?</span>
-          </summary>
-          <div class="panel panel-border-narrow">
-            <p>Call the helpline for assistance.</p>
-              {% include "includes/contact_phone.html" %}
-          </div>
-        </details>
-*/
- /* .panel {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    clear: both;
-    // border-left-style: solid;
-    // border-color: #bfc1c3;
-    padding: 0.78947em;
-    margin-bottom: 0.78947em;
+  details .arrow {
+    margin-right: .35em;
+    font-style: normal;
   }
   
-  .panel :first-child {
-    margin-top: 0;
-  }
-  
-  .panel :only-child,
-  .panel :last-child {
-    margin-bottom: 0;
-  }
-
-.panel-border-narrow {
-    border-left-width: 5px;
-  }
-  
-//   .form-group .panel-border-narrow {
-//     float: left;
-//     width: 100%;
-//     padding-bottom: 0;
-//   }
-  
-//   .form-group .panel-border-narrow:first-child {
-//     margin-top: 10px;
-//   }
-  
-//   .form-group .panel-border-narrow:last-child {
-//     margin-top: 10px;
-//     margin-bottom: 0;
-//   }
-  
-//   .inline .panel-border-narrow {
-//     margin-top: 10px;
-//     margin-bottom: 0;
-//   }
-*/
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 
 footer {
