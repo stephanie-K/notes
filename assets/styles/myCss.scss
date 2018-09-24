@@ -51,7 +51,7 @@ body.home {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 10em;
+        width: 10em;
     }
     a.red {
         color : #C30918 ;
@@ -86,7 +86,10 @@ body.ux {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 20em;
+        width: 20em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
     }
     summary.ux-color {
         background-color: $ux-color;
@@ -104,6 +107,9 @@ body.ux {
         background-color: $ux-color;
         font-weight: 300;
         text-align: center;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
 
     }
 }
@@ -136,7 +142,10 @@ body.a11y {
         margin-bottom: 1em;
         padding-left: 1em;
         background-color:#373737; // $a11y-color;
-        max-width: 17em;
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
     }
     details  {
         p, ul, ol, em {
@@ -195,7 +204,10 @@ body.tech {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 17em;
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
     }
     details  {
         p, ul, ol, em {
@@ -235,7 +247,10 @@ body.ur {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 17em;
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
     }
     summary.ur-color {
         background-color: $ur-color;
@@ -284,7 +299,10 @@ body.con {
         padding: 5px 0 5px 1em;
         margin-bottom: 1em;
         background-color:#373737;
-        max-width: 17em;
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
     }
     details  {
         p, ul, ol, em {
@@ -376,9 +394,9 @@ body.dev {
         margin-bottom: 1em;
         padding-left: 1em;
         background-color:#373737;
-        max-width: 17em;
+        width: 17em;
         @media only screen and (max-width: 489px) { 
-           max-width: 100%;
+           width: 100%;
         }
     }
     details  {
@@ -616,11 +634,13 @@ main {
 }
 
 
-/* for details pattern for IE
+/* for details pattern for IE */
 
 details {
     display: block;
     clear: both;
+    border-left-width: 5px;
+    
   }
   
   details summary {

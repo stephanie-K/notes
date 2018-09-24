@@ -31,7 +31,7 @@ body.home summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 10em; }
+  width: 10em; }
 body.home a.red {
   color: #C30918;
   font-weight: bold; }
@@ -57,7 +57,10 @@ body.ux summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 20em; }
+  width: 20em; }
+  @media only screen and (max-width: 489px) {
+    body.ux summary {
+      width: 100%; } }
 body.ux summary.ux-color {
   background-color: #800080; }
 body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
@@ -70,6 +73,9 @@ body.ux h2 {
   background-color: #800080;
   font-weight: 300;
   text-align: center; }
+  @media only screen and (max-width: 489px) {
+    body.ux h2 {
+      width: 100%; } }
 
 body.a11y header {
   background-color: #218341; }
@@ -93,7 +99,10 @@ body.a11y summary {
   margin-bottom: 1em;
   padding-left: 1em;
   background-color: #373737;
-  max-width: 17em; }
+  width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.a11y summary {
+      width: 100%; } }
 body.a11y details p, body.a11y details ul, body.a11y details ol, body.a11y details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -134,7 +143,10 @@ body.tech summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 17em; }
+  width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.tech summary {
+      width: 100%; } }
 body.tech details p, body.tech details ul, body.tech details ol, body.tech details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -162,7 +174,10 @@ body.ur summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 17em; }
+  width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.ur summary {
+      width: 100%; } }
 body.ur summary.ur-color {
   background-color: #935300; }
 body.ur details p, body.ur details ul, body.ur details ol, body.ur details em {
@@ -197,7 +212,10 @@ body.con summary {
   padding: 5px 0 5px 1em;
   margin-bottom: 1em;
   background-color: #373737;
-  max-width: 17em; }
+  width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.con summary {
+      width: 100%; } }
 body.con details p, body.con details ul, body.con details ol, body.con details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -256,10 +274,10 @@ body.dev summary {
   margin-bottom: 1em;
   padding-left: 1em;
   background-color: #373737;
-  max-width: 17em; }
+  width: 17em; }
   @media only screen and (max-width: 489px) {
     body.dev summary {
-      max-width: 100%; } }
+      width: 100%; } }
 body.dev details p, body.dev details ul, body.dev details ol, body.dev details em {
   margin: 0.5em 0; }
 body.dev summary.css-color {
@@ -442,26 +460,18 @@ main {
     background: #cccccc;
     color: #1a1a1a; }
 
-/* for details pattern for IE
-
+/* for details pattern for IE */
 details {
-    display: block;
-    clear: both;
-  }
-  
-  details summary {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    margin-bottom: 0.26316em;
-  }
-  
-//   details .arrow {
-//     margin-right: .35em;
-//     font-style: normal;
-//   }
-  
-// class de la div dans details sur govuk */
+  display: block;
+  clear: both;
+  border-left-width: 5px; }
+
+details summary {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0.26316em; }
+
 /* 
  <details class="panel-border-narrow">
           <summary  class="margin-top-1">
