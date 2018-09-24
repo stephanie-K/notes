@@ -467,7 +467,6 @@ details {
   border-left-width: 5px; }
 
 details summary {
-  display: inline-block;
   cursor: pointer;
   position: relative;
   margin-bottom: 0.26316em; }
