@@ -1,11 +1,15 @@
 /*  all my CSS here */
+@font-face {
+  font-family: "OpenDyslexic";
+  font-weight: 400;
+  src: url("../fonts/OpenDyslexic-Regular.otf"); }
 html {
   position: relative; }
 
 body {
   margin: 0;
   font-family: Roboto,Helvetica,Arial,sans-serif;
-  /* Roboto Condensed for titles */
+  /* Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
   color: #5a5a5a;
   min-height: 100%;
   position: relative; }
