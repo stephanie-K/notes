@@ -290,6 +290,9 @@ body.ur {
         background-color:#373737;
         max-width: 17em;
     }
+    summary.ur-color {
+        background-color: $ur-color;
+    }
     details  {
         p, ul, ol, em {
             margin: 0.5em 0;
