@@ -107,59 +107,6 @@ body.ux {
 
     }
 }
-body.dev {
-    header {
-        background-color: $dev-color;
-    }
-    a {
-        color: $dev-color;
-    }
-    a:hover, a:focus {
-        color: #5a5a5a;
-    }
-    h1, h2, h3 {
-        color: $dev-color;
-    }
-    summary {
-        font-weight: 300;
-        color: white;
-        padding: 5px 0;
-        margin-bottom: 1em;
-        padding-left: 1em;
-    }
-    summary.top-color {
-        background-color:#373737;
-        max-width: 17em;
-        @media only screen and (max-width: 489px) { 
-           max-width: 100%;
-        }
-    }
-    summary.css-color {
-        background-color: $css-color;
-    }
-    summary.dev-color {
-        background-color:  $dev-color;
-    }
-    summary.js-color {
-        background-color: $js-color;
-    }
-    details  {
-        p, ul, ol, em {
-            margin: 0.5em 0;
-        }
-    }
-    hr {
-        border-top: 1px solid $dev-color;
-    }     
-    .inverted {
-        background-color: $dev-color;
-        color: white;
-        font-weight: 400;
-        padding: 5px 0;
-        margin-top: 2em;
-        text-align: center;
-    }
-}
 body.a11y {
     header {
         background-color: $a11y-color;
@@ -353,6 +300,112 @@ body.con {
         font-weight: 300;
         text-align: center;
 
+    }
+}
+
+body.dev {
+    header {
+        background-color: $dev-color;
+    }
+    a {
+        color: $dev-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    a.button {
+        background-color: $dev-color;
+        color: white;
+    }
+    h1, h3 {
+        color: $dev-color;
+    }
+    div {
+        h2 {
+            color: white;
+            font-weight: 300;
+            text-align: center; 
+            text-transform: uppercase;
+        }
+    }
+    div.js-color {
+        h2 {
+            background: $js-color;
+        }
+        h3 {
+            color: $js-color;
+        }
+        a {
+            color:$js-color;
+        }
+        a.button {
+            background-color: $js-color;
+            color: white;
+        }
+        hr {
+            border-top: 1px solid $js-color;
+        } 
+    }
+    div.css-color {
+        h2 {
+            background: $css-color;
+        }
+        h3 {
+            color: $css-color;
+        }
+        a {
+            color:$css-color;
+        }
+        a.button {
+            background-color: $css-color;
+            color: white;
+        }
+        hr {
+            border-top: 1px solid $css-color;
+        } 
+    }
+    div.dev-color {
+        h2 {
+            background: $dev-color;
+        }
+    }
+    summary {
+        font-weight: 300;
+        color: white;
+        padding: 5px 0;
+        margin-bottom: 1em;
+        padding-left: 1em;
+        background-color:#373737;
+        max-width: 17em;
+        @media only screen and (max-width: 489px) { 
+           max-width: 100%;
+        }
+    }
+    details  {
+        p, ul, ol, em {
+            margin: 0.5em 0;
+        }
+    }
+    summary.css-color {
+        background-color: $css-color;
+    }
+    summary.dev-color {
+        background-color:  $dev-color;
+    }
+    summary.js-color {
+        background-color: $js-color;
+    }
+
+    hr {
+        border-top: 1px solid $dev-color;
+    }     
+    .inverted {
+        background-color: $dev-color;
+        color: white;
+        font-weight: 400;
+        padding: 5px 0;
+        margin-top: 2em;
+        text-align: center;
     }
 }
 

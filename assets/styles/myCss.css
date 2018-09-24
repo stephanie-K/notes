@@ -71,44 +71,6 @@ body.ux h2 {
   font-weight: 300;
   text-align: center; }
 
-body.dev header {
-  background-color: #06609c; }
-body.dev a {
-  color: #06609c; }
-body.dev a:hover, body.dev a:focus {
-  color: #5a5a5a; }
-body.dev h1, body.dev h2, body.dev h3 {
-  color: #06609c; }
-body.dev summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0;
-  margin-bottom: 1em;
-  padding-left: 1em; }
-body.dev summary.top-color {
-  background-color: #373737;
-  max-width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.dev summary.top-color {
-      max-width: 100%; } }
-body.dev summary.css-color {
-  background-color: #440e4c; }
-body.dev summary.dev-color {
-  background-color: #06609c; }
-body.dev summary.js-color {
-  background-color: #0f4c0e; }
-body.dev details p, body.dev details ul, body.dev details ol, body.dev details em {
-  margin: 0.5em 0; }
-body.dev hr {
-  border-top: 1px solid #06609c; }
-body.dev .inverted {
-  background-color: #06609c;
-  color: white;
-  font-weight: 400;
-  padding: 5px 0;
-  margin-top: 2em;
-  text-align: center; }
-
 body.a11y header {
   background-color: #218341; }
 body.a11y a, body.a11y h1, body.a11y h2, body.a11y h3 {
@@ -245,6 +207,75 @@ body.con h2 {
   color: white;
   background-color: #614397;
   font-weight: 300;
+  text-align: center; }
+
+body.dev header {
+  background-color: #06609c; }
+body.dev a {
+  color: #06609c; }
+body.dev a:hover, body.dev a:focus {
+  color: #5a5a5a; }
+body.dev a.button {
+  background-color: #06609c;
+  color: white; }
+body.dev h1, body.dev h3 {
+  color: #06609c; }
+body.dev div h2 {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase; }
+body.dev div.js-color h2 {
+  background: #0f4c0e; }
+body.dev div.js-color h3 {
+  color: #0f4c0e; }
+body.dev div.js-color a {
+  color: #0f4c0e; }
+body.dev div.js-color a.button {
+  background-color: #0f4c0e;
+  color: white; }
+body.dev div.js-color hr {
+  border-top: 1px solid #0f4c0e; }
+body.dev div.css-color h2 {
+  background: #440e4c; }
+body.dev div.css-color h3 {
+  color: #440e4c; }
+body.dev div.css-color a {
+  color: #440e4c; }
+body.dev div.css-color a.button {
+  background-color: #440e4c;
+  color: white; }
+body.dev div.css-color hr {
+  border-top: 1px solid #440e4c; }
+body.dev div.dev-color h2 {
+  background: #06609c; }
+body.dev summary {
+  font-weight: 300;
+  color: white;
+  padding: 5px 0;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  background-color: #373737;
+  max-width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.dev summary {
+      max-width: 100%; } }
+body.dev details p, body.dev details ul, body.dev details ol, body.dev details em {
+  margin: 0.5em 0; }
+body.dev summary.css-color {
+  background-color: #440e4c; }
+body.dev summary.dev-color {
+  background-color: #06609c; }
+body.dev summary.js-color {
+  background-color: #0f4c0e; }
+body.dev hr {
+  border-top: 1px solid #06609c; }
+body.dev .inverted {
+  background-color: #06609c;
+  color: white;
+  font-weight: 400;
+  padding: 5px 0;
+  margin-top: 2em;
   text-align: center; }
 
 p {

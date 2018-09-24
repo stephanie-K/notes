@@ -37,7 +37,7 @@
           <h1>Notes on DEV</h1>
 
           <details>
-              <summary class="top-color"><span>Sources - Regular reads</span></summary>
+              <summary><span>Sources - Regular reads</span></summary>
               <div>
                 <uL>
                   <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
@@ -49,7 +49,7 @@
           </details>
 
           <details>
-              <summary class="top-color"><span>How it started - Beginner's advice</span></summary>
+              <summary><span>How it started - Beginner's advice</span></summary>
               <div>
                 <uL>
                   <li><a href="https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525" target="_blank" rel="noopener">CSS</a></li>
@@ -65,7 +65,7 @@
           </details>
 
           <details>
-              <summary class="top-color"><span>GOV.UK links</span></summary>
+              <summary><span>GOV.UK links</span></summary>
               <div>
                 <uL>
                   <li><a href="https://www.gov.uk/service-manual/technology/how-to-test-frontend-performance" target="_blank" rel="noopener">How to test frontend performance</a></li>
@@ -78,15 +78,53 @@
           </details>
 
           <details>
-            <summary class="js-color">Angular - React - Vue</summary>
-            <div>
+              <summary><span>Quick Access</span></summary>
+                  <div>
+                      <ul>
+                          <li><a href="#angular">Angular - React - Vue</a></li>
+                          <li><a href="#bem">BEM</a></li>
+                          <li><a href="#chr">Chrome Dev Tools</a></li>
+                          <li><a href="#css">CSS - Animations and transitions</a></li>
+                          <li><a href="#jq">jQuery</a></li>
+                          <li><a href="#js">JavaScript</a></li>
+                          <li><a href="#jsbest">Javascript - Best Practices</a></li>
+                          <li><a href="#jsgui">Javascript - Guidelines</a></li>
+                          <li><a href="#jsobj">JavaScript - Objects and Prototypes</a></li>
+                          <li><a href="#jspro">JavaScript - Promises</a></li>
+                          <li><a href="#pwa">PWA - Progressive Web App</a></li>
+                          <li><a href="#api">Rest API</a></li>
+                          <li><a href="#sass">SASS</a></li>
+                          <li><a href="#temp">Templating languages for JS</a></li>
+                          
+                          <p class="lead">Miscellaneous</p>
+                          <li><a href="#csfr">Dependency injection</a></li>
+                          <li><a href="#head">Head tag</a></li>
+                          <li><a href="#hid">Hidden</a></li>
+                          <li><a href="#html1">HTML - forms</a></li>
+                          <li><a href="#html2">HTML infographics</a></li>
+                          <li><a href="#json">JSON</a></li>
+                          <li><a href="#lay">Layout</a></li>
+                          <li><a href="#list">List number style - how to change it</a></li>
+                          <li><a href="#php">PHP = server side scripting language = hypertext processor</a></li>
+                          <li><a href="#pla">Placeholder</a></li>
+                          <li><a href="#redux">Redux</a></li>
+                          <li><a href="#saml">SAML - Security Assertion Markup Language</a></li>
+                          <li><a href="#spa">Single page application</a></li>
+                          <li><a href="#view">View vs Redirect</a></li>
+                          <li><a href="#dom">Virtual DOM</a></li>
+                          <li><a href="#z">Z-index</a></li>
+                      </ul>
+                  </div>
+          </details>
+
+
+          <div class="js-color">
+            <a name="angular"></a>
+            <h2>Angular - React - Vue</h2>
               <p><a href="assets/images/dev/notes/chose React Vue Angular.pdf" target="_blank" rel="noopener"><strong>Choosing the Right Javascript Framework for your next Web Application</strong></a></p>
-              <p class="lead">Angular</p>
-              <p><a href="assets/images/dev/notes/Angular-notes.pdf" target="_blank" rel="noopener"><strong>my Angular notes on PDF</strong></a></p>
-              <p class="lead">React</p>
-              <p><a href="assets/images/dev/notes/React-notes.pdf" target="_blank" rel="noopener"><strong>my React notes on PDF</strong></a></p>
-              <p class="lead">Vue</p>
-              <p><a href="https://app.pluralsight.com/library/courses/vuejs-getting-started/table-of-contents" target="_blank" rel="noopener"><strong>Course Pluralsight</strong></a></p>
+              <p><strong>Angular: </strong><a href="assets/images/dev/notes/Angular-notes.pdf" target="_blank" rel="noopener"><strong>my Angular notes on PDF</strong></a></p>
+              <p><strong>React: </strong><a href="assets/images/dev/notes/React-notes.pdf" target="_blank" rel="noopener"><strong>my React notes on PDF</strong></a></p>
+              <p><strong>Vue: </strong><a href="https://app.pluralsight.com/library/courses/vuejs-getting-started/table-of-contents" target="_blank" rel="noopener"><strong>Course Pluralsight</strong></a></p>
               <p><strong>Declarative bindings:</strong></p>
               <ul>
                 <li>simplify development</li>
@@ -95,12 +133,12 @@
                 <li>super small, library as well, so easy to download and access</li>
               </ul>
               <p><a href="assets/images/dev/vue.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/vue.png"></a></p>
-            </div>
-          </details>
+              <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <details>
-            <summary class="css-color">BEM</summary>
-            <div>
+          <div class="css-color">
+              <a name="bem"></a>
+            <h2>BEM</h2>
               <p><a href="http://getbem.com/introduction/" target="_blank" rel="noopener"><strong>Block Elements and Modifiers</strong></a></p>
               <p><a href="https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849" target="_blank" rel="noopener"><strong>Naming conventions</strong></a></p>
               <p>On smaller brochure sites, how you organize your styles isn’t usually a big concern. You get in there, write some CSS, or maybe even some SASS. You compile it all into a single stylesheet with SASS’s production settings, and then you aggregate it to get all the stylesheets from modules into a nice tidy package.</p>
@@ -108,25 +146,25 @@
               <p>There are plenty of methodologies out there aiming to reduce the CSS footprint, organize cooperation among programmers and maintain large CSS codebases.<br>
                 No matter what methodology you choose to use in your projects, you will benefit from the advantages of more structured CSS and UI. Some styles are less strict and more flexible, while others are easier to understand and adapt in a team.</p>
               <a href="assets/images/dev/bem.png" target="_blank" rel="noopener"><img class ="img-three-quarters-width" src="assets/images/dev/bem.png"/></a>
-              <h2>Benefits</h2>
+              <h3>Benefits</h3>
               <p><strong>Modularity: </strong>Block styles are never dependent on other elements on a page, so you will never experience problems from cascading.</p>
               <p><strong>Reusability: </strong>You also get the ability to transfer blocks from your finished projects to new ones.<br>
               Composing independent blocks in different ways, and reusing them intelligently, reduces the amount of CSS code that you will have to maintain.<br>
               With a set of style guidelines in place, you can build a library of blocks, making your CSS super effective.
               </p>
               <p><strong>Structure: </strong>BEM methodology gives your CSS code a solid structure that remains simple and easy to understand.</p>
-              <h2>Naming</h2>
+              <h3>Naming</h3>
               <p><a href="http://getbem.com/naming/" target="_blank" rel="noopener"><strong>See here</strong></a></p>
               <p>Element two underscore, and modifier: two dashes</p>
               <a href="assets/images/dev/bem-example.png" target="_blank" rel="noopener"><img class ="img-three-quarters-width" src="assets/images/dev/bem-example.png"/></a>
-            </div>
-          </details>
-          
-          <details>
-            <summary class="dev-color">Chrome Dev Tools</summary>
-            <div>
+              <p><a href="#" class="button">top</a></p>
+          </div>
+
+          <div class="dev-color">
+              <a name="chr"></a>
+            <h2>Chrome Dev Tools</h2>
               <p>The DevTools provide web developers deep access into the internals of the browser and their web application. Use the DevTools to efficiently track down layout issues, set JavaScript breakpoints, and get insights for code optimization.</p>
-              <h2>Accessing the DevTools</h2>
+              <h3>Accessing the DevTools</h3>
               <p>There are several useful shortcuts for opening the DevTools:<br>
                   Use Ctrl+Shift+I (or Cmd+Opt+I on Mac) to open the DevTools.<br>
                   Use Ctrl+Shift+J (or Cmd+Opt+J on Mac) to open the DevTools and bring focus to the Console.<br>
@@ -140,29 +178,29 @@
                   Go to a line in a source file: ctrl G (cmd L for mac)<br>
                   Selecting element sin the console: $('div') returns the first, $$('p') returns them all<br>
               </p>
-              <h2>Device mode</h2>
+              <h3>Device mode</h3>
               <p>DevTools includes a powerful mode for developing mobile friendly pages. This video from Google goes through most of its main features such as screen resizing, touch emulation and bad network connections simulator.</p>
               <p><a href="https://www.youtube.com/watch?v=FrAZWiMWRa4" target="_blank" rel="noopener">https://www.youtube.com/watch?v=FrAZWiMWRa4</a></p>
-              <h2>Device emulation sensors</h2>
+              <h3>Device emulation sensors</h3>
               <p>Another cool feature of Device Mode is the option to simulate mobile devices' sensors like touch screens and accelerometers. You can even spoof your geographic location. The feature is located in the bottom part of the Elements tab under Emulation -> Sensors.</p>
-              <h2>Color Picker</h2>
+              <h3>Color Picker</h3>
               <p>When selecting a color in the Styles editor you can click on the color preview and a picker will pop up. While the color picker is opened, if you hover over your page, your mouse pointer will transform into a magnifying glass for selecting colors with pixel accuracy.</p>
               <p>DevTools has a feature that simulates <strong>CSS states like :hover and :focus</strong> on elements, making it easy to style them. It is available from the CSS editor.</p>
-              <h2>Change color format</h2>
+              <h3>Change color format</h3>
               <p>Use Shift + Click on the color preview to alter between rgba, hsl and hexadecimal formatting.</p>
-              <h2>Change for no Javascript: </h2>
+              <h3>Change for no Javascript: </h3>
               <p>menu 3 dots on the right, then settings (F1) on the left, debugger</p>
-              <h2>No internet or low broadband: </h2>
+              <h3>No internet or low broadband: </h3>
               <ul>
                 <li>responsive, and then menu 3 dots and Add Network Throttling</li>
                 <li>or settings like above and Throttling with specific values,</li>
                 <li>or in Network</li>
               </ul>
               <a href="assets/images/dev/chrome1.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/dev/chrome1.png"/></a>
-              <h2>accessibility:</h2>
+              <h3>accessibility:</h3>
               <p>chrome tools, last top section is Audit, include accessibility</p>
               <a href="assets/images/dev/chrome2.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/chrome2.png"/></a>
-              <h2>More on the subject:</h2>
+              <h3>More on the subject:</h3>
               <p><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener">https://developers.google.com/web/tools/chrome-devtools/</a></p>
               <p><a href="https://tutorialzine.com/2015/03/15-must-know-chrome-devtools-tips-tricks" target="_blank" rel="noopener">https://tutorialzine.com/2015/03/15-must-know-chrome-devtools-tips-tricks</a></p>
               <p><a href="https://developer.chrome.com/devtools/index" target="_blank" rel="noopener">https://developer.chrome.com/devtools/index</a></p>
@@ -174,12 +212,12 @@
                   To write commands that span over multiple lines in the Console, press shift-enter. Once you’re ready, press enter at the end of the script to execute it<br>
                   Instead of writing again and again a variable name or an expression you are going to check a lot during a debug session, add it to the Watch Expression list.
               </p>
-            </div>
-          </details>
+              <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <details>
-            <summary class="css-color">CSS - Animation and transitions</summary>
-            <div>
+          <div class="css-color">
+              <a name="css"></a>
+            <h2>CSS - Animation and transitions</h2>
               <p>Cascading Style Sheets - 3 ways to modify the format, 3 type of selectors:<br>
                 the <strong>tag</strong>body, the <strong>class</strong> .special, or the <strong>id</strong> (should be unique) #message
             </p>
@@ -196,7 +234,7 @@
             <p><strong>External CSS file</strong>keep it seperate so it's easier to see and prevent the browser having to load it each time. Stylesheets needs to be kept small and neat, better when in a external file (minify CSS) to avoid long loading time for the page (usually, once loaded, it's usually kept in the cache to speed up things</p>
             <p><a href="assets/images/dev/CSS-boxe.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/dev/CSS-boxe.png"/></a></p>
             <hr>
-            <h2>Transistion and animations</h2>
+            <h3>Transistion and animations</h3>
             <p><a href="https://app.pluralsight.com/library/courses/css-animation-with-transition-and-transform/table-of-contents" target="_blank" rel="noopener">On Pluralsight</a></p>
             <p><strong>transition-duration</strong></p>
             <p><span class="code">initial state<br>							
@@ -231,19 +269,19 @@
                 width...color...some can be required, other are optional
               </p>
               <hr>
-              <h2>CSS Transform</h2>
+              <h3>CSS Transform</h3>
               <p>CSS transforms allow you to translate, rotate, scale, and skew elements.<br>
                   <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank" rel="noopener">https://www.w3schools.com/css/css3_2dtransforms.asp</a><br>
                   A transformation is an effect that lets an element change shape, size and position.<br>
                   skew (), scale(), rotate (), translate ()<br>
                   timing functions: ease, linear, case-in case-out, case-in-out
               </p>
-            </div>
-          </details>
-        
-          <details>
-            <summary class="js-color">jQuery</summary>
-            <div>
+              <p><a href="#" class="button">top</a></p>
+          </div>
+
+          <div class="js-color">
+              <a name="jq"></a>
+            <h2>jQuery</h2>
               <p><a href="https://app.pluralsight.com/library/courses/jquery-getting-started/table-of-contents" target="_blank" rel="noopener"><strong>Pluralsight</strong></a></p>
               <p><a href="http://api.jquery.com/" target="_blank" rel="noopener"><strong>http://api.jquery.com/</strong></a></p>
               <p><a href="https://app.pluralsight.com/library/courses/jqueryui/table-of-contents" target="_blank" rel="noopener"><strong>Pluralsight for jQuery UI</strong></a></p>
@@ -265,39 +303,39 @@
               <p>jQuery component, web app on the client side</p>
               <p>jQuery UI is above and deals with: effects, widgets, themes, date pickers, menu, progress bars, plugins...</p>
               <p>above: customs libraries</p>
-            </div>
-          </details>
+            <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <details>
-            <summary class="js-color">JavaScript</summary>
-            <div>
+          <div class="js-color">
+              <a name="js"></a>
+            <h2>JavaScript</h2>
               <p><a href="https://medium.freecodecamp.org/learn-these-javascript-fundamentals-and-become-a-better-developer-2a031a0dc9cf" target="_blank" rel="noopener"><strong>Freecodecamp - fundamentals of JS</strong></a></p>
               <p><a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener"><strong>https://github.com/airbnb/javascript</strong></a></p>
               <p><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" rel="noopener"><strong>Kyle Simpsons books on JS</strong></a></p>
               <p><a href="assets/images/dev/notes/JS-notes.pdf" target="_blank" rel="noopener"><strong>my notes on PDF</strong></a></p>
-            </div>
-          </details>
+            <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <details>
-            <summary class="js-color">JavaScript - Best practices</summary>
-            <div>
+          <div class="js-color">
+              <a name="jsbest"></a>
+            <h2>JavaScript - Best practices</h2>
               <p><a href="https://app.pluralsight.com/player?course=javascript-best-practices&author=jonathan-mills&name=javascript-best-practices-m0&clip=0&mode=live" target="_blank" rel="noopener">On Pluralsight</a></p>
               <p><a href="assets/images/dev/notes/Js-best-practices.pdf" target="_blank" rel="noopener"><strong>my notes on PDF</strong></a></p>
-            </div>
-          </details>
+            <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <details>
-            <summary class="js-color">JavaScript - Guidelines</summary>
-            <div>
-              <h2>Strict mode</h2>
+          <div class="js-color">
+              <a name="jsgui"></a>
+            <h2>JavaScript - Guidelines</h2>
+              <h3>Strict mode</h3>
               <p>Strict mode should always be invoked in your javascript </p>
-              <h2>Naming Conventions</h2>
+              <h3>Naming Conventions</h3>
               <p>Variable names should always use camel case e.g. <span class="code">locationsLength</span><br> 
                   Const (constants) names should always use uppercase e.g. <span class="code">PI</span><br>
                   Constructors names should always use title case e.g. <span class="code">Person</span><br>
                   Use sensible and descriptive names for functions and variables. Conversely, if the name is too long due to you trying to describe what the function does, then consider abstracting some functionality out into other functions.
               </p>
-              <h2>DRY/WET code</h2>
+              <h3>DRY/WET code</h3>
               <p>You should always abstract out your functionality until the level of seperation reaches a logically end. e.g. checkPersonsNameAgeAndHeight() could be:<br>
                   <span class="code">function checkPerson(person) {<br>
                      &nbsp;&nbsp;&nbsp;&nbsp; checkName(person)<br>
@@ -307,16 +345,16 @@
                   if there is a logical reason to abstract these functions anymore then do so.<br>
                   Abstraction is to avoid a <strong>WET (write everything twice)</strong> codebase. If it is written twice, then put it in a function and call it twice. We want a <strong>DRY(dont repeat yourself)</strong> codebase. Abstraction is your friend.
                   </p>
-              <h2>String quotes</h2>
+              <h3>String quotes</h3>
               <p>You can use either a " or a ' to surround your string literals. Please stick to one in your code to aid readability. It is recommended to use single quotes ' to surround your string literals so that you are able to use double quotes " in any strings that may be building elements and the like. </p>
-              <h2>Comparisons</h2>
+              <h3>Comparisons</h3>
               <p>Always use triple equals when doing comparisons. Double equals compare the value of the things being compared and not the types. This is a more robust way of comparing things as type coersion is avoided and you are in control of what is truly being compared.</p>
-              <h2>Variable/function hoisting</h2>
+              <h3>Variable/function hoisting</h3>
               <p>Variable and function hoisting is when the compiler reorders all your variable declarations and function declaration to be at the top of the current scope (i.e. in the current function). If this is not thought about when writing code, it can lead to unexpected results due to variable being declared before you expect them to be.
                   As a safety measure (and also for organisational reasons), declare your vars, and functions at the top of the scope. This does not mean that you must assign a value to these variables when they are declared, values can be assigned later. e.g.
                   </p>
               <p>Variable declarations are hoisted, but assignments are not. All function definitions are hoisted, so you should put them at the top anyway.</p>
-              <h2>Group var statements</h2>
+              <h3>Group var statements</h3>
               <p>group all your var statements at the top of the function scope using the comma-delimiting declaration syntax. it saves on file size and is just as readable.</p>
               <p><span class="code">(function runAPPIIFE() {<br>
                   var x, // description of what this is for<br>
@@ -326,28 +364,28 @@
                   index = 0; // description of what this is for<br>
               })();
               </span></p>
-              <h2>Semi-colons</h2>
+              <h3>Semi-colons</h3>
               <p>Always use semi-colons! Omitting semi-colons can (and will) lead to unexpected behaviour in your code.</p>
-              <h2>Curly braces</h2>
+              <h3>Curly braces</h3>
               <p>use curly braces even writing code blocks that make them optional. e.g.</p>
               <p><span class="code">if(x === y) {<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;z = 10;<br>
               }
               </span></p>
-              <h2>Anonymous functions</h2>
+              <h3>Anonymous functions</h3>
               <p>Always give your functions a name. </p>
-              <h2>Comments</h2>
+              <h3>Comments</h3>
               <p>If it is not immediately obvious how something works at first glance, then comment your code. </p>
-              <h2>Separation of concerns</h2>
+              <h3>Separation of concerns</h3>
               <p>Never use javascript to directly apply any representational changes. Use CSS in your separate style sheet to style the element differently and then use javascript to apply the class needed. This will ensure that any styling changes only need to be done in the CSS files and nowhere else.</p>
-              <h2>Avoid excessive nesting</h2>
+              <h3>Avoid excessive nesting</h3>
               <p>If statements within if statements within for loops... This can be avoided by abstracting your functionality in to multiple smaller modules or functions that deal with each task within the code.</p>
-              <h2>Creating objects and arrays</h2>
+              <h3>Creating objects and arrays</h3>
               <p>creating an empty object? use {} and dont use new Object();<br>
                   creating an empty array? use [] and dont use new Array();<br>
                   When creating an object with key value pairs, always put your keys in single quotes. This is to avoid any keyword/reserved word clashes.<br>
                   </p>
-              <h2><span class="red">Ternary statements</span></h2>
+              <h3><span class="red">Ternary statements</span></h3>
               <p>If you need to assign a value to a variable, and that value changes depending on another, then use a ternary statement to do the assignment.<br>
                   <span class="code">var isAllowed = (age > 18) ? "yes": "no";</span><br>
                   The benefit of a ternary is that it is less code, and you can do a declaration and condition-dependant assignment on one line. The first statement after the question mark (the "yes") is what will be assigned if the preceding condition evaluates to true, the second statement (the "no") is what will be assigned if the condition evaluates to false.
@@ -360,25 +398,24 @@
                   <span class="code">var duration = hasDuration && x;</span><br>
                   This checks to see if hasDuration is a truthy value, if it is, then it falls through to the next part and assigns the value of x to duration
                   </p>
-              <h2>Loops</h2>
+              <h3>Loops</h3>
               <p>Don't declare variables (where possible - should be 99% of cases) in the loop block itself. Declare them outside of the loop. If iterating through the length of an array, cache the array length in a variable and use that in the loop declaration, this will speed it up.</p>
-              <h2>Sanitise your inputs and parameters</h2>
+              <h3>Sanitise your inputs and parameters</h3>
               <p>Always assume that the data being fed in to a function is wrong and do the appropriate checks on it to make sure it won't break when run. <strong>Always check for null and undefined values.</strong></p>
-            </div>
-          </details>
+            <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <details>
-            <summary class="js-color">JavaScript - Objects and Prototypes</summary>
-            <div>
+          <div class="js-color">
+              <a name="jsobj"></a>
+            <h2>JavaScript - Objects and Prototypes</h2>
               <p><a href="https://app.pluralsight.com/player?course=javascript-objects-prototypes&author=jim-cooper&name=javascript-objects-prototypes-m1&clip=0&mode=live" target="_blank" rel="noopener">On Pluralsight</a></p>
               <p><a href="assets/images/dev/notes/JS-Obj-and-proto-notes.pdf" target="_blank" rel="noopener"><strong>my notes on PDF</strong></a></p>
-            </div>
-          </details>
+            <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <a name="api"></a>
-          <details>
-            <summary class="js-color">JavaScript - Promises</summary>
-            <div>
+          <div class="js-color">
+          <a name="jspro"></a>
+            <h2>JavaScript - Promises</h2>
               <p><a href="https://codeburst.io/a-simple-guide-to-es6-promises-d71bacd2e13a" target="_blank" rel="noopener">https://codeburst.io/a-simple-guide-to-es6-promises-d71bacd2e13a</a></p>
               <p><a href="https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html" target="_blank" rel="noopener"><strong>We have a problem with promises</strong></a></p>
               <p>Promises are a pattern that greatly simplifies asynchronous programming by making the code look synchronous and avoid problems associated with callbacks.</p>
@@ -386,12 +423,12 @@
                   We create a promise when a certain task’s completion time is uncertain or too long.
               </p>
               <p><a href="assets/images/dev/notes/promises-notes.pdf" target="_blank" rel="noopener"><strong>my notes on PDF</strong></a></p>
-            </div>
-          </details>
+              <p><a href="#" class="button">top</a></p>
+          </div>
 
-          <details>
-            <summary class="dev-color">PWA - Progressive Web App</summary>
-            <div>
+          <div class="dev-color">
+            <a name="pwa"></a>
+            <h2>PWA - Progressive Web App</h2>
               <p>
                 Some links to check:
                 <ul>
@@ -448,13 +485,12 @@
                 <li>when the currently open pages of your site are closed, the old service worker will be killed and the new service worker will take control</li>
                 <li>once your new service worker takes control, its activate event will be fired</li>
               </ol>
+              <p><a href="#" class="button">top</a></p>
             </div>
-          </details>
-
-   
-          <details>
-            <summary class="dev-color">Rest API</summary>
-            <div>
+  
+            <div class="dev-color">
+              <a name="api"></a>
+            <h2>Rest API</h2>
               <p><strong>API:</strong>  application programming interface = a way to provide a system with a programmatic means to access specific data or functionality from another system.</p>
               <p><strong>A RESTful API</strong> -- also referred to as a RESTful web service -- is based on representational state transfer (REST) technology, an architectural style and approach to communications often used in web services development.</p>
               <p>REST technology is generally preferred to the more robust Simple Object Access Protocol (SOAP) technology because REST leverages less bandwidth, making it more suitable for internet usage. <strong>An API for a website is code that allows two software programs to communicate with each another.</strong> The API spells out the proper way for a developer to write a program requesting services from an operating system or other application.</p>
@@ -470,40 +506,42 @@
                 Hashes play a role in security systems where they're used to ensure that transmitted messages have not been tampered with. The sender generates a hash of the message, encrypts it, and sends it with the message itself. The recipient then decrypts both the message and the hash, produces another hash from the received message, and compares the two hashes. If they're the same, there is a very high probability that the message was transmitted intact.
                 Hashing is also a common method of accessing data records.
               </p>
+              <p><a href="#" class="button">top</a></p>
             </div>
-          </details>
-
-          <details>
-            <summary class="css-color">SASS</summary>
-            <div>
+  
+            <div class="css-color">
+                <a name="sass"></a>
+            <h2>SASS</h2>
               <p><a href="https://www.codecademy.com/learn/learn-sass" target="_blank" rel="noopener">Codecademy (3hours)</a></p>
               <p><a href="assets/images/dev/notes/SASS-notes.pdf" target="_blank" rel="noopener"><strong>my notes on PDF</strong></a></p>
+              <p><a href="#" class="button">top</a></p>
             </div>
-          </details>
-          
-          <details>
-            <summary class="js-color">Templating languages for JS</summary>
-            <div>
+  
+            <div class="js-color">
+                <a name="temp"></a>
+            <h2>Templating languages for JS</h2>
               <p><a href="http://handlebarsjs.com/" target="_blank" rel="noopener"><strong>HandlebarsJS</strong></a></p>
               <p><a href="https://github.com/wycats/handlebars.js#differences-between-handlebarsjs-and-mustache" target="_blank" rel="noopener"><strong>Differences between HandlebarsJS and Mustache</strong></a></p>
               <p><a href="https://github.com/janl/mustache.js" target="_blank" rel="noopener"><strong>Mustache</strong></a></p>
               <p><a href="http://mustache.github.io/mustache.5.html" target="_blank" rel="noopener"><strong>http://mustache.github.io/mustache.5.html</strong></a></p>
               <p><a href="http://ejs.co/" target="_blank" rel="noopener"><strong>EJS - Effective JavaScript Templating</strong></a></p>
               <hr>
-              <h2>EJS</h2>
+              <h3>EJS</h3>
               <p><a href="https://medium.freecodecamp.org/how-to-use-ejs-templating-in-a-node-js-application-ea9347a96c65" target="_blank" rel="noopener"><strong>How to use EJS in a nodeJS application</strong></a></p>
               <a href="assets/images/dev/ejs1.png" target="_blank" rel="noopener"><img class ="half-width" src="assets/images/dev/ejs1.png"/></a>
               <a href="assets/images/dev/ejs2.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/dev/ejs2.png"/></a>
             </div>
           </details>
-
+          
           <h1 class="inverted">Miscellaneous</h1>
-
-            <h2>CSFR</h2>
+            <a name="csfr"></a>
+            <h3>CSFR</h3>
             <p><a href="https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project" target="_blank" rel="noopener"><strong>Cross Site Request Forgery</strong></a></p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
 
-            <h2>Dependency injection</h2>
+            <h3>Dependency injection</h3>
+            <a name="inj"></a>
             <p>In software engineering, dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object. A dependency is an object that can be used (a service). An injection is the passing of a dependency to a dependent object (a client) that would use it. The service is made part of the client's state. Passing the service to the client, rather than allowing a client to build or find the service, is the fundamental requirement of the pattern.</p>
             <p>The intent behind dependency injection is to decouple objects to the extent that no client code has to be changed simply because an object it depends on needs to be changed to a different one.</p>
             <p>Reasons for using Dependency Injection:</p>
@@ -512,27 +550,41 @@
               <li><strong>easier unit testing</strong>: Instead of using hardcoded dependencies you can pass them into the module you would like to use. With this pattern in most cases, you don't have to use modules like proxyquire</li>
               <li><strong>faster development</strong>: With dependency injection, after the interfaces are defined it is easy to work without any merge conflicts</li>
             </ul>
+            <p><a href="#" class="button">top</a></p>
             <hr>
 
-            <h2>Head tag</h2>
+            <a name="head"></a>
+            <h3>Head tag</h3>
             <p><a href="https://github.com/joshbuchea/HEAD#apple-ios" target="_blank" rel="noopener">What to find in the &lt;head&gt;</a></p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
-            <h2>Hidden</h2>
+
+            <a name="hid"></a>
+            <h3>Hidden</h3>
             <p>Form variables. These fields should not be rendered and provide a mean for servers to store state information with a form. This will be passed back to the server when the form is submitted, using the name/value pair defined by the corresponding attributes. This is a work around for the statelessness of HTTP. Another approach is to use HTTP "Cookies".</p>
             <p><span class="code">&lt;input type=hidden name=customerid value="c2415-345-8563"&gt;</span></p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
-            <h2>HTML - forms</h2>
+
+            <a name="html1"></a>
+            <h3>HTML - forms</h3>
             <p><span class="code">&lt;form method="post" action="http//....where to submit the form ..."&gt; ...... &lt;/form&gt;<br>
               &lt;label for="name of the control"&gt;text of the label &lt;/label&gt;</span><br>
               Best practice is to create a label for any input we have, better for any user as it explains what you need and might format better depending on the device/browser, plus, for accessibility, this will help screen readers.<br>
               The <strong>name attribute</strong> (for input, text area, select...) will be useful once the server is trying to access things from the form. To group two control, give them the same name attribute (will be transmitted by a GET)
               </p>
               <p><a href="http://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener">On W3schools</a></p>
-            <hr>
-            <h2>HTML infographic</h2>
+              <p><a href="#" class="button">top</a></p>
+              <hr>
+  
+            <a name="html2"></a>
+            <h3>HTML infographic</h3>
             <p><a href="assets/images/dev/htmlinfographics.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/dev/htmlinfographics.png"/></a></p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
-            <h2>JSON</h2>
+
+            <a name="json"></a>
+            <h3>JSON</h3>
             <p><a href="https://spacetelescope.github.io/understanding-json-schema/" target="_blank" rel="noopener">Understanding the JSON Schema</a></p>
             <p>JSON Schema is a powerful tool for validating the structure of JSON data.</p>
             <p>Here are two representations: <br>
@@ -575,8 +627,11 @@
             </p>
             <p>You may have noticed that the JSON Schema itself is written in JSON. It is data itself, not a computer program. It’s just a declarative format for “describing the structure of other data”.</p>
             <p>In that link above, guidance about combining different structure to get a complex schema.</p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
-            <h2>Layout</h2>
+
+            <a name="lay"></a>
+            <h3>Layout</h3>
             <p><strong>Positioning:</strong><br>
                 Block elements: <span class="code">&lt;p&gt; &lt;div&gt; &lt;blockquote&gt; &lt;ul&gt; &lt;ol&gt;</span>  the next element will be placed under it<br>
                 in-line elements: <span class="code">&lt;span&gt; &lt;input&gt; &lt;button&gt; &lt;strong&gt; &lt;em&gt;</span> the next element will be place next to it.<br>
@@ -585,11 +640,17 @@
                 <strong>Fixed:</strong> gives the distance from the browser window, not the document.<br>
                 <strong>Relative:</strong> how far from the previous/parent elements.
                 </p>
-            <hr>
-            <h2>list number style - how to change it</h2>
+                <p><a href="#" class="button">top</a></p>
+                <hr>
+    
+            <a name="list"></a>
+            <h3>list number style - how to change it</h3>
             <p><a href="https://css-tricks.com/custom-list-number-styling/" target="_blank" rel="noopener">CSS tricks</a></p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
-            <h2>PHP = server side scripting language = hypertext processor</h2>
+
+            <a name="php"></a>
+            <h3>PHP = server side scripting language = hypertext processor</h3>
             <p>HTML, CSS and javascript happen on the computer, interpreted there.
                 PHP is a server side language. Server side = back end (business logic) this is sending email, saving info to a database.
             </p>
@@ -602,14 +663,16 @@
             <p>php.ini is a file where the server will look to see if you have anything special setting in place</p>
             <p>Tip: to get errors in our PHP code while building the website, use the php.ini with content:</p>
             <p>displayerror = on<br>
-                display<br>
-                once the code is good, remove the ini file to prevent other people to access our code.<br>
-                variable start with $<br>
-                $test="I'm a variable"; echo $test;
-                </p>
+            display<br>
+            once the code is good, remove the ini file to prevent other people to access our code.<br>
+            variable start with $<br>
+            $test="I'm a variable"; echo $test;
+            </p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
 
-            <h2>Placeholder</h2>
+            <a name="pla"></a>
+            <h3>Placeholder</h3>
             <p><a href="https://www.smashingmagazine.com/2018/06/placeholder-attribute/" target="_blank" rel="noopener">Using the placeholder attribute</a></p>
             <p>
               The placeholder attribute:
@@ -623,9 +686,11 @@
               </ul>
             </p>
             <p>Solution: Move the placeholder content above the input, but below the label</p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
 
-            <h2>Redux</h2>
+            <a name="redux"></a>
+            <h3>Redux</h3>
             <p><a href="https://redux.js.org/introduction/motivation" target="_blank" rel="noopener">Redux.js - motivation</a></p>
             <p>As the requirements for JavaScript single-page applications have become increasingly complicated, our code must manage more state than ever before. This state can include server responses and cached data, as well as locally created data that has not yet been persisted to the server. UI state is also increasing in complexity, as we need to manage active routes, selected tabs, spinners, pagination controls, and so on.</p>
             <p>Managing this ever-changing state is hard. If a model can update another model, then a view can update a model, which updates another model, and this, in turn, might cause another view to update. At some point, you no longer understand what happens in your app as you have lost control over the when, why, and how of its state. When a system is opaque and non-deterministic, it's hard to reproduce bugs or add new features.</p>
@@ -636,9 +701,11 @@
               <li><strong>state is read-only</strong> - The only way to change the state is to emit an action, an object describing what happened</li>
               <li><strong>changes are made with pure functions</strong> - To specify how the state tree is transformed by actions, you write pure reducers</li>
             </ul>
+            <p><a href="#" class="button">top</a></p>
             <hr>
 
-            <h2>SAML - Security Assertion Markup Language</h2>
+            <a name="saml"></a>
+            <h3>SAML - Security Assertion Markup Language</h3>
             <p>It's an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. Beyond what its name suggests, SAML is each of the following:</p>
               <ul>
                 <li>an XML-based markup language (for assertions etc.)</li>
@@ -647,22 +714,28 @@
                 <li>a set of profiles (utilizing all of the above)</li>
                 <li>the single most important use case that SAML addresses is web browser single sign-on (SSO). Single sign-on is relatively easy to accomplish within a security domain (using cookies, for example) but extending SSO across security domains is more difficult and resulted in the proliferation of non-interoperable proprietary technologies. Hence the SAML Web Browser SSO profile was specified and standardized. (For comparison, the more recent OpenID Connect protocol[2] is an alternative approach to browser SSO.)</li>
               </ul>  
-            <hr>
-
-            <h2>Single page application</h2>
+              <p><a href="#" class="button">top</a></p>
+              <hr>
+  
+              <a name="spa"></a>
+            <h3>Single page application</h3>
             <p><a href="https://hackernoon.com/architecting-single-page-applications-b842ea633c2e" target="_blank" rel="noopener">The 4 Layers of Single Page Applications You Need to Know</a></p>
             <p><a href="https://vuejsdevelopers.com/2017/12/18/single-page-application-ux/" target="_blank" rel="noopener">UX of single page application</a></p>
             <p><a href="assets/images/dev/notes/spa-notes.pdf" target="_blank" rel="noopener"><strong>my notes on PDF</strong></a></p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
 
-            <h2>View vs redirect</h2>
+            <a name="view"></a>
+            <h3>View vs redirect</h3>
             <p>In the same controller just content then view. Redirect URL to the controller which will do the work.<br>
               When you return a view you are responding to a uri. For example, when someone access the /about uri you respond by returning a view.<br>
               A redirect is actually changing the uri which means you actually invoke another controller's method. The norm is to return a View when you use a GET request and to Redirect somewhere after you've sent a POST request.
             </p>
+            <p><a href="#" class="button">top</a></p>
             <hr>
 
-            <h2>Virtual DOM</h2>
+            <a name="dom"></a>
+            <h3>Virtual DOM</h3>
             <p><a href="http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/" target="_blank" rel="noopener">The difference between virtual DOM and DOM</a></p>
             <p><a href="https://www.codecademy.com/articles/react-virtual-dom" target="_blank" rel="noopener">Codecademy - React virtual DOM</a></p>
             <p>The HTML DOM is always tree-structured - which is allowed by the structure of HTML document. This is cool because we can traverse trees fairly easily. Unfortunately, easily doesn’t mean quickly here.<br>
@@ -672,16 +745,11 @@
               Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.<br>
               The Virtual DOM is an abstraction of the HTML DOM. It is lightweight and detached from the browser-specific implementation details. Since the DOM itself was already an abstraction, the virtual DOM is, in fact, an abstraction of an abstraction.
               </p>
-            <hr>
-
-            <h2>View vs redirect</h2>
-            <p>In the same controller just content then view. Redirect URL to the controller which will do the work.<br>
-              When you return a view you are responding to a uri. For example, when someone access the /about uri you respond by returning a view.<br>
-              A redirect is actually changing the uri which means you actually invoke another controller's method. The norm is to return a View when you use a GET request and to Redirect somewhere after you've sent a POST request.
-            </p>
-            <hr>
-
-            <h2>Z-index</h2>
+              <p><a href="#" class="button">top</a></p>
+              <hr>
+  
+              <a name="z"></a>
+            <h3>Z-index</h3>
             <p><a href="https://medium.freecodecamp.org/z-index-explained-how-to-stack-elements-using-css-7c5aa0f179b3" target="_blank" rel="noopener">Z-index explained</a></p>
             <p>A non-positioned element is an element with the default position value static. A positioned element is an element with any other position value. Examples of other values are: absolute, relative, sticky or fixed.</p>
             <p><strong>Z-index only works with positioned elements.</strong></p>
@@ -689,8 +757,6 @@
             <p>An element with a z-index value other than auto forms a new stacking context.  And it affects how its child elements are being displayed.</p>
             <p>It is possible to change the stacking order of child elements. However, their <strong>z-index only has a meaning within that stacking context.</strong></p>
             <p>There are several other properties that cause elements to form stacking contexts. Some examples are: filter, opacity, and transform.</p>
-            
-
 
         </main>
       
