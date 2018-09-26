@@ -339,6 +339,11 @@ body.dev {
         background-color: $dev-color;
         color: white;
     }
+    a.button:hover, a.button:focus {
+        color: $dev-color;
+        background-color: #ffffff;
+        border: solid 2px $dev-color;
+    }
     h1, h3 {
         color: $dev-color;
     }
@@ -364,6 +369,11 @@ body.dev {
             background-color: $js-color;
             color: white;
         }
+        a.button:hover, a.button:focus {
+            color: $js-color;
+            background-color: #ffffff;
+            border: solid 2px $js-color;
+        }
         hr {
             border-top: 1px solid $js-color;
         } 
@@ -381,6 +391,11 @@ body.dev {
         a.button {
             background-color: $css-color;
             color: white;
+        }
+        a.button:hover, a.button:focus {
+            color: $css-color;
+            background-color: #ffffff;
+            border: solid 2px $css-color;
         }
         hr {
             border-top: 1px solid $css-color;

@@ -240,6 +240,10 @@ body.dev a:hover, body.dev a:focus {
 body.dev a.button {
   background-color: #06609c;
   color: white; }
+body.dev a.button:hover, body.dev a.button:focus {
+  color: #06609c;
+  background-color: #ffffff;
+  border: solid 2px #06609c; }
 body.dev h1, body.dev h3 {
   color: #06609c; }
 body.dev div h2 {
@@ -256,6 +260,10 @@ body.dev div.js-color a {
 body.dev div.js-color a.button {
   background-color: #0f4c0e;
   color: white; }
+body.dev div.js-color a.button:hover, body.dev div.js-color a.button:focus {
+  color: #0f4c0e;
+  background-color: #ffffff;
+  border: solid 2px #0f4c0e; }
 body.dev div.js-color hr {
   border-top: 1px solid #0f4c0e; }
 body.dev div.css-color h2 {
@@ -267,6 +275,10 @@ body.dev div.css-color a {
 body.dev div.css-color a.button {
   background-color: #440e4c;
   color: white; }
+body.dev div.css-color a.button:hover, body.dev div.css-color a.button:focus {
+  color: #440e4c;
+  background-color: #ffffff;
+  border: solid 2px #440e4c; }
 body.dev div.css-color hr {
   border-top: 1px solid #440e4c; }
 body.dev div.dev-color h2 {
