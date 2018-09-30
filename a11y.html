@@ -136,6 +136,7 @@
                   <li><a href="#emails">Emails</a></li>
                   <li><a href="#idf">How to design for all (IDF course)</a></li>
                   <li><a href="#inc">Inclusive Design</a></li>
+                  <li><a href="#men">Accessibility menus</a></li>
                   <li><a href="#pdf">PDF- Word - assistive technologies users</a></li>
                   <li><a href="#responsive">Responsive Web Design</a></li>
                   <li><a href="#screenread">Screen Readers</a></li>
@@ -574,6 +575,27 @@
            <p><a href="#" class="button">top</a></p>
             <hr>
 
+            <a name="men"></a>
+            <h2>Accessibility menus</h2>
+            <p><a href="http://www.bbc.co.uk/accessibility/" target="_blank" rel="noopener"><strong>BBC - My web my way</strong></a></p>
+            <p><a href="http://www.craigabbott.co.uk/" target="_blank" rel="noopener">An example on a blog: http://www.craigabbott.co.uk/</a></p>
+            <p><a href="http://reciteme.com/user-guide" target="_blank" rel="noopener"><strong>Recite me</strong></a></p>
+            <p>From the google accessibility group - Veronika Jermolina :</p>
+            <p>
+              I tested Recite Me toolbar with users with diverse needs in the past (including dyslexia, vision and motor impairments). The overall recommendation to the client was not to use it as it took control away from users, while not adding any benefits. This was despite us recognising that the intention behind the toolbar was to help as many users as possible. <br>
+              From memory:</p>
+              <ul>
+              <li>Participants didn’t think / know to enable the toolbar as they didn’t see the label or didn't think it applied to them. Participants also didn’t know how to exit the tool once enabled and felt lack of control</li>
+              <li>Participants didn’t know what to expect before clicking / activating a button as icons didn’t make sense (both visually and to screen reader users)</li>
+              <li>The resulting change to the page sometimes made the experience worse (e.g. colour contrast combinations, loss of visual effects like button borders…)</li>
+              <li>There were issues around keyboard access, including enabling the toolbar</li>
+              </ul>
+            <p>Note that Recite Me may have made changes since I tested it about 2 years ago.<br>
+              My experience is that people with access needs require technologies to help them access all information, not just on one website. Saying that, solutions like Recite Me could work in some instances where users with diverse needs require regular access to a website. 
+            </p>
+            <p><a href="#" class="button">top</a></p>
+            <hr>
+
             <a name="pdf"></a>
             <h2>PDF and Word - assistive technologies users</h2>
             <p><a href="https://gds.blog.gov.uk/2018/07/16/why-gov-uk-content-should-be-published-in-html-and-not-pdf/" target="_blank" rel="noopener">Why GOV.UK content should be published in HTML and not PDF</a></p>
@@ -611,6 +633,27 @@
                   When we tested with assistive technology users, we found them struggling with overly complex screens, missing key pieces of information and struggling to download and open documents.<br>
                   We found exactly the same thing when we tested with people who weren’t using assistive technology. <br>
                   <span class="red">Testing with people who use assistive technology can be a quick and effective way of identifying issues that affect all users.</span>
+              </p>
+
+              <p class="lead">Alternative to PDF, from google group - Fritz Von Runte </p>
+              <p>
+                  <strong>Markup:</strong><br>
+                  HTML is a type of markup. A markup is basically a text with notes and rules - indentation, bold (or emphasis), title, quotations, etc.<br>
+                  CSS is a list of styles. It tells the browser the font, font-size, spacing, colours, etc.<br>       
+                  For those used to Microsoft Word, the concept of style is not too foreign. It’s just a set of rules that define the layout of the document.<br>
+                  A PDF - when it has text inside - uses a form of markup very similar to HTML called XML. And it uses styles too, although in a way that’s less effective for humans to edit and more effective to maintain every single detail exactly the same, regardless of resolution/size etc…<br>                  
+                  The reason PDF prints what you see in the screen is because what you see in the screen is a digital form of how it’s going to look on paper. It’s build for paper.<br>                   
+                  PDF, although being a digital file, is NOT suitable for what some of us call Digital (digital transformation, etc..) Because mainly it is like paper but online.<br>                   
+                  HTML and CSS can do many many things, like animations for example. But the main thing it tries to be is a legible and flexible text document. Flexible as in it should work not matter how you tried to use it. One can read a HTML in a smartwatch or in a big digital billboard (Piccadilly Circus/Shibuya/Times Square style). PDFs not so much.<br>                   
+                  HTML and CSS share the responsibilities of making a document accessible.<br>                   
+                  CSS, for example, will define font size and its proportions (line-height, spacing, etc). Also colours and contrast, all very important for accessibility. HTML helps screen readers, navigation, tips for images and descriptions. Content-wise HTML rules. In terms of how it looks, CSS is the king.<br> <br>                  
+                  <strong>Looking the same on paper as it does on a screen:</strong><br>                   
+                  If one wants a HTML+CSS combo with very strict rules that will make whatever is on the screen to be transposed exactly the same when printed, that is possible. But that is possibly an under-utilisation of its flexibility.<br>
+                  I’d suggest that if it need to look in a particular way when printed, that this design would be translated to CSS with the tag @media print. This way, when printed the document should look exactly like this particular layout. In parallel to this tag and its rules, the design could have a more flexible set of rules for the screen with the tag @media screen - making it accessible and visible in any device.<br><br>                  
+                  Some examples are: <br>
+                  A <a href="https://alistapart.com/article/goingtoprint" target="_blank" rel="noopener">great article</a> about HTML + CSS for printing - Pro-tip, try printing that page yourself <br>                
+                  <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank" rel="noopener">Accessibility in HTML</a><br>                   
+                  <a href="https://mediaqueri.es/nw/" target="_blank" rel="noopener">Media Queries</a> (website with TONS of examples of how the information on a website can be displayed differently, using these tags I’ve spoke about<br>
               </p>
               <p><a href="#" class="button">top</a></p>
             <hr>
