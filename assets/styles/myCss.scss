@@ -36,6 +36,17 @@ body {
             font-size: 16px;
         }
     }
+    summary{
+        font-weight: 300;
+        color: white;
+        padding: 5px 25px 5px 1em;
+        margin-bottom: 1em;
+        background-color:#373737;
+        width: 10em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
+    }
 }
 body.home {
     header {
@@ -50,17 +61,12 @@ body.home {
     hr {
         border-top: 1px solid $home-color;
     } 
-    summary{
-        font-weight: 300;
-        color: white;
-        padding: 5px 0 5px 1em;
-        margin-bottom: 1em;
-        background-color:#373737;
-        width: 10em;
-    }
     a.red {
         color : #C30918 ;
         font-weight: bold;
+    }
+    summary{
+        width: 7em;
     }
 }
 body.ux {
@@ -86,15 +92,7 @@ body.ux {
         border-top: 1px solid $ux-color;
     } 
     summary{
-        font-weight: 300;
-        color: white;
-        padding: 5px 0 5px 1em;
-        margin-bottom: 1em;
-        background-color:#373737;
-        width: 20em;
-        @media only screen and (max-width: 489px) { 
-            width: 100%;
-         }
+        width: 17em;
     }
     summary.ux-color {
         background-color: $ux-color;
@@ -139,18 +137,6 @@ body.a11y {
     hr {
         border-top: 1px solid $a11y-color;
     } 
-    summary{
-        font-weight: 300;
-        color: white;
-        padding: 5px 0;
-        margin-bottom: 1em;
-        padding-left: 1em;
-        background-color:#373737; // $a11y-color;
-        width: 17em;
-        @media only screen and (max-width: 489px) { 
-            width: 100%;
-         }
-    }
     details  {
         p, ul, ol, em {
             margin: 0.5em 0;
@@ -202,17 +188,6 @@ body.tech {
     hr.other {
         border-top: 1px solid $other-color;
     } 
-    summary{
-        font-weight: 300;
-        color: white;
-        padding: 5px 0 5px 1em;
-        margin-bottom: 1em;
-        background-color:#373737;
-        width: 17em;
-        @media only screen and (max-width: 489px) { 
-            width: 100%;
-         }
-    }
     details  {
         p, ul, ol, em {
             margin: 0.5em 0;
@@ -246,15 +221,7 @@ body.ur {
         border-top: 1px solid $ur-color;
     } 
     summary{
-        font-weight: 300;
-        color: white;
-        padding: 5px 0 5px 1em;
-        margin-bottom: 1em;
-        background-color:#373737;
         width: 17em;
-        @media only screen and (max-width: 489px) { 
-            width: 100%;
-         }
     }
     summary.ur-color {
         background-color: $ur-color;
@@ -298,15 +265,7 @@ body.con {
         border-top: 1px solid $con-color;
     } 
     summary{
-        font-weight: 300;
-        color: white;
-        padding: 5px 0 5px 1em;
-        margin-bottom: 1em;
-        background-color:#373737;
         width: 17em;
-        @media only screen and (max-width: 489px) { 
-            width: 100%;
-         }
     }
     details  {
         p, ul, ol, em {
@@ -407,16 +366,7 @@ body.dev {
         }
     }
     summary {
-        font-weight: 300;
-        color: white;
-        padding: 5px 0;
-        margin-bottom: 1em;
-        padding-left: 1em;
-        background-color:#373737;
         width: 17em;
-        @media only screen and (max-width: 489px) { 
-           width: 100%;
-        }
     }
     details  {
         p, ul, ol, em {

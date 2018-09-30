@@ -20,6 +20,16 @@ body {
     font-size: 16px; }
   body details p, body details ul, body details ol, body details em, body details a {
     font-size: 16px; }
+  body summary {
+    font-weight: 300;
+    color: white;
+    padding: 5px 25px 5px 1em;
+    margin-bottom: 1em;
+    background-color: #373737;
+    width: 10em; }
+    @media only screen and (max-width: 489px) {
+      body summary {
+        width: 100%; } }
 
 body.home header {
   background-color: #373737; }
@@ -29,16 +39,11 @@ body.home a:hover, body.home a:focus {
   color: #5a5a5a; }
 body.home hr {
   border-top: 1px solid #373737; }
-body.home summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0 5px 1em;
-  margin-bottom: 1em;
-  background-color: #373737;
-  width: 10em; }
 body.home a.red {
   color: #C30918;
   font-weight: bold; }
+body.home summary {
+  width: 7em; }
 
 body.ux header {
   background-color: #800080; }
@@ -56,15 +61,7 @@ body.ux a.button:hover, body.ux a.button:focus {
 body.ux hr {
   border-top: 1px solid #800080; }
 body.ux summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0 5px 1em;
-  margin-bottom: 1em;
-  background-color: #373737;
-  width: 20em; }
-  @media only screen and (max-width: 489px) {
-    body.ux summary {
-      width: 100%; } }
+  width: 17em; }
 body.ux summary.ux-color {
   background-color: #800080; }
 body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
@@ -96,17 +93,6 @@ body.a11y a.button:hover, body.a11y a.button:focus {
   border: solid 2px #218341; }
 body.a11y hr {
   border-top: 1px solid #218341; }
-body.a11y summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0;
-  margin-bottom: 1em;
-  padding-left: 1em;
-  background-color: #373737;
-  width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.a11y summary {
-      width: 100%; } }
 body.a11y details p, body.a11y details ul, body.a11y details ol, body.a11y details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -141,16 +127,6 @@ body.tech hr {
   border-top: 1px solid #941100; }
 body.tech hr.other {
   border-top: 1px solid #2509c5; }
-body.tech summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0 5px 1em;
-  margin-bottom: 1em;
-  background-color: #373737;
-  width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.tech summary {
-      width: 100%; } }
 body.tech details p, body.tech details ul, body.tech details ol, body.tech details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -173,15 +149,7 @@ body.ur a.button:hover, body.ur a.button:focus {
 body.ur hr {
   border-top: 1px solid #935300; }
 body.ur summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0 5px 1em;
-  margin-bottom: 1em;
-  background-color: #373737;
   width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.ur summary {
-      width: 100%; } }
 body.ur summary.ur-color {
   background-color: #935300; }
 body.ur details p, body.ur details ul, body.ur details ol, body.ur details em {
@@ -211,15 +179,7 @@ body.con a.button:hover, body.con a.button:focus {
 body.con hr {
   border-top: 1px solid #614397; }
 body.con summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0 5px 1em;
-  margin-bottom: 1em;
-  background-color: #373737;
   width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.con summary {
-      width: 100%; } }
 body.con details p, body.con details ul, body.con details ol, body.con details em {
   margin: 0.5em 0; }
   @media only screen and (min-width: 490px) {
@@ -284,16 +244,7 @@ body.dev div.css-color hr {
 body.dev div.dev-color h2 {
   background: #06609c; }
 body.dev summary {
-  font-weight: 300;
-  color: white;
-  padding: 5px 0;
-  margin-bottom: 1em;
-  padding-left: 1em;
-  background-color: #373737;
   width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.dev summary {
-      width: 100%; } }
 body.dev details p, body.dev details ul, body.dev details ol, body.dev details em {
   margin: 0.5em 0; }
 body.dev summary.css-color {
