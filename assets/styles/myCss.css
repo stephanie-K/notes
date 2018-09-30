@@ -18,8 +18,11 @@ body {
     border: 0; }
   body p, body ul, body ol, body em, body a {
     font-size: 16px; }
-  body details p, body details ul, body details ol, body details em, body details a {
-    font-size: 16px; }
+  body details p, body details ul, body details ol, body details em {
+    margin: 0.5em 0; }
+    @media only screen and (min-width: 490px) {
+      body details p, body details ul, body details ol, body details em {
+        font-size: 16px; } }
   body summary {
     font-weight: 300;
     color: white;
@@ -29,7 +32,7 @@ body {
     width: 10em; }
     @media only screen and (max-width: 489px) {
       body summary {
-        width: 100%; } }
+        width: 90%; } }
 
 body.home header {
   background-color: #373737; }
@@ -44,6 +47,9 @@ body.home a.red {
   font-weight: bold; }
 body.home summary {
   width: 7em; }
+  @media only screen and (max-width: 489px) {
+    body.home summary {
+      width: 90%; } }
 
 body.ux header {
   background-color: #800080; }
@@ -62,13 +68,11 @@ body.ux hr {
   border-top: 1px solid #800080; }
 body.ux summary {
   width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.ux summary {
+      width: 90%; } }
 body.ux summary.ux-color {
   background-color: #800080; }
-body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
-  margin: 0.5em 0; }
-  @media only screen and (min-width: 490px) {
-    body.ux details p, body.ux details ul, body.ux details ol, body.ux details em {
-      font-size: 16px; } }
 body.ux h2 {
   color: white;
   background-color: #800080;
@@ -93,11 +97,6 @@ body.a11y a.button:hover, body.a11y a.button:focus {
   border: solid 2px #218341; }
 body.a11y hr {
   border-top: 1px solid #218341; }
-body.a11y details p, body.a11y details ul, body.a11y details ol, body.a11y details em {
-  margin: 0.5em 0; }
-  @media only screen and (min-width: 490px) {
-    body.a11y details p, body.a11y details ul, body.a11y details ol, body.a11y details em {
-      font-size: 16px; } }
 
 body.tech header {
   background-color: #941100; }
@@ -127,11 +126,6 @@ body.tech hr {
   border-top: 1px solid #941100; }
 body.tech hr.other {
   border-top: 1px solid #2509c5; }
-body.tech details p, body.tech details ul, body.tech details ol, body.tech details em {
-  margin: 0.5em 0; }
-  @media only screen and (min-width: 490px) {
-    body.tech details p, body.tech details ul, body.tech details ol, body.tech details em {
-      font-size: 16px; } }
 
 body.ur header {
   background-color: #935300; }
@@ -150,13 +144,11 @@ body.ur hr {
   border-top: 1px solid #935300; }
 body.ur summary {
   width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.ur summary {
+      width: 90%; } }
 body.ur summary.ur-color {
   background-color: #935300; }
-body.ur details p, body.ur details ul, body.ur details ol, body.ur details em {
-  margin: 0.5em 0; }
-  @media only screen and (min-width: 490px) {
-    body.ur details p, body.ur details ul, body.ur details ol, body.ur details em {
-      font-size: 16px; } }
 body.ur h2 {
   color: white;
   background-color: #935300;
@@ -180,11 +172,9 @@ body.con hr {
   border-top: 1px solid #614397; }
 body.con summary {
   width: 17em; }
-body.con details p, body.con details ul, body.con details ol, body.con details em {
-  margin: 0.5em 0; }
-  @media only screen and (min-width: 490px) {
-    body.con details p, body.con details ul, body.con details ol, body.con details em {
-      font-size: 16px; } }
+  @media only screen and (max-width: 489px) {
+    body.con summary {
+      width: 90%; } }
 body.con h2 {
   color: white;
   background-color: #614397;
@@ -211,6 +201,11 @@ body.dev div h2 {
   font-weight: 300;
   text-align: center;
   text-transform: uppercase; }
+body.dev summary {
+  width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.dev summary {
+      width: 90%; } }
 body.dev div.js-color h2 {
   background: #0f4c0e; }
 body.dev div.js-color h3 {
@@ -243,10 +238,6 @@ body.dev div.css-color hr {
   border-top: 1px solid #440e4c; }
 body.dev div.dev-color h2 {
   background: #06609c; }
-body.dev summary {
-  width: 17em; }
-body.dev details p, body.dev details ul, body.dev details ol, body.dev details em {
-  margin: 0.5em 0; }
 body.dev summary.css-color {
   background-color: #440e4c; }
 body.dev summary.dev-color {
@@ -447,12 +438,25 @@ details .arrow {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   details {
     margin-top: 20px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  summary {
+    width: 17em; } }
+  @media only screen and (-ms-high-contrast: active) and (max-width: 489px), only screen and (-ms-high-contrast: none) and (max-width: 489px) {
+    summary {
+      width: 90%; } }
+
 /* for Edge */
 @supports (-ms-ime-align: auto) {
   details {
     margin-top: 20px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  summary {
+    width: 17em; }
+    @media only screen and (max-width: 489px) {
+      summary {
+        width: 90%; } } }
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
   height: 30px;

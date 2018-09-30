@@ -31,10 +31,13 @@ body {
     p, ul, ol, em, a {
         font-size: 16px;
     }
-    details {
-        p, ul, ol, em, a {
-            font-size: 16px;
-        }
+    details  {
+        p, ul, ol, em {
+            margin: 0.5em 0;
+            @media only screen and (min-width: 490px) { 
+                font-size: 16px;
+            }
+        }  
     }
     summary{
         font-weight: 300;
@@ -44,7 +47,7 @@ body {
         background-color:#373737;
         width: 10em;
         @media only screen and (max-width: 489px) { 
-            width: 100%;
+            width: 90%;
          }
     }
 }
@@ -67,6 +70,9 @@ body.home {
     }
     summary{
         width: 7em;
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
     }
 }
 body.ux {
@@ -93,17 +99,12 @@ body.ux {
     } 
     summary{
         width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
     }
     summary.ux-color {
         background-color: $ux-color;
-    }
-    details  {
-        p, ul, ol, em {
-            margin: 0.5em 0;
-            @media only screen and (min-width: 490px) { 
-                font-size: 16px;
-            }
-        }  
     }
     h2 {
         color: white;
@@ -137,14 +138,6 @@ body.a11y {
     hr {
         border-top: 1px solid $a11y-color;
     } 
-    details  {
-        p, ul, ol, em {
-            margin: 0.5em 0;
-            @media only screen and (min-width: 490px) { 
-                font-size: 16px;
-            }
-        }  
-    }
 }
 
 body.tech {
@@ -188,14 +181,6 @@ body.tech {
     hr.other {
         border-top: 1px solid $other-color;
     } 
-    details  {
-        p, ul, ol, em {
-            margin: 0.5em 0;
-            @media only screen and (min-width: 490px) { 
-                font-size: 16px;
-            }
-        }  
-    }
 }
 
 body.ur {
@@ -222,17 +207,12 @@ body.ur {
     } 
     summary{
         width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
     }
     summary.ur-color {
         background-color: $ur-color;
-    }
-    details  {
-        p, ul, ol, em {
-            margin: 0.5em 0;
-            @media only screen and (min-width: 490px) { 
-                font-size: 16px;
-            }
-        }  
     }
     h2 {
         color: white;
@@ -266,14 +246,9 @@ body.con {
     } 
     summary{
         width: 17em;
-    }
-    details  {
-        p, ul, ol, em {
-            margin: 0.5em 0;
-            @media only screen and (min-width: 490px) { 
-                font-size: 16px;
-            }
-        }  
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
     }
     h2 {
         color: white;
@@ -313,6 +288,12 @@ body.dev {
             text-align: center; 
             text-transform: uppercase;
         }
+    }
+    summary {
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
     }
     div.js-color {
         h2 {
@@ -363,14 +344,6 @@ body.dev {
     div.dev-color {
         h2 {
             background: $dev-color;
-        }
-    }
-    summary {
-        width: 17em;
-    }
-    details  {
-        p, ul, ol, em {
-            margin: 0.5em 0;
         }
     }
     summary.css-color {
@@ -629,6 +602,12 @@ details {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    summary {
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
+    }
  }
 /* for Edge */
 @supports (-ms-ime-align:auto) {
@@ -636,6 +615,12 @@ details {
             margin-top: 20px;
             margin-bottom: 20px;
           
+    }
+    summary {
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
     }
 }
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
