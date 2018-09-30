@@ -451,8 +451,8 @@ details .arrow {
 
   /* backslash-9 removes ie11+ & old Safari 4 */ }
 /*   IE 10 and above */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .ie10up details {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  details {
     margin-top: 20px;
     margin-bottom: 20px; } }
 /* for Edge */
