@@ -603,14 +603,13 @@ main {
 }
 
 
-/* for details pattern for IE ? */
+/* for details pattern for IE  from GOV.UK */
 
 details {
     display: block;
     clear: both;
     border-left-width: 5px;
   }
-  
 
   details summary {
     //display: inline-block;
@@ -623,7 +622,34 @@ details {
     margin-right: .35em;
     font-style: normal;
   }
-  
+ /* hacks for the details patterns: https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/#Microsoft_Edge */
+  /* for IE 9 and 10 */
+  @media screen and (min-width:0\0) {
+    .ie910 {
+        details {
+            margin-top: 20px\9;
+            margin-bottom: 20px\9;
+          }
+    } /* backslash-9 removes ie11+ & old Safari 4 */
+}
+/*   IE 10 and above */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ie10up {
+        details {
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+    }
+}
+/* for Edge */
+@supports (-ms-ime-align:auto) {
+    .selector {
+        details {
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+    }
+}
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 
 footer {
