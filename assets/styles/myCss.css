@@ -443,13 +443,6 @@ details .arrow {
   font-style: normal; }
 
 /* hacks for the details patterns: https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/#Microsoft_Edge */
-/* for IE 9 and 10 */
-@media screen and (min-width: 0\0) {
-  .ie910 details {
-    margin-top: 20px\9;
-    margin-bottom: 20px\9; }
-
-  /* backslash-9 removes ie11+ & old Safari 4 */ }
 /*   IE 10 and above */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   details {
@@ -457,7 +450,7 @@ details .arrow {
     margin-bottom: 20px; } }
 /* for Edge */
 @supports (-ms-ime-align: auto) {
-  .selector details {
+  details {
     margin-top: 20px;
     margin-bottom: 20px; } }
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
