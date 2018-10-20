@@ -61,6 +61,15 @@ body.home {
     a:hover, a:focus {
         color: #5a5a5a;
     }
+    a.button {
+        background-color: $home-color;
+        color: white;
+    }
+    a.button:hover, a.button:focus {
+        color: $home-color;
+        background-color: #ffffff;
+        border: solid 2px $home-color;
+    }
     hr {
         border-top: 1px solid $home-color;
     } 
@@ -69,7 +78,6 @@ body.home {
         font-weight: bold;
     }
     summary{
-        width: 7em;
         @media only screen and (max-width: 489px) { 
             width: 90%;
          }

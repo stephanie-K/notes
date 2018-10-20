@@ -40,16 +40,21 @@ body.home a, body.home h1, body.home h2, body.home h3 {
   color: #373737; }
 body.home a:hover, body.home a:focus {
   color: #5a5a5a; }
+body.home a.button {
+  background-color: #373737;
+  color: white; }
+body.home a.button:hover, body.home a.button:focus {
+  color: #373737;
+  background-color: #ffffff;
+  border: solid 2px #373737; }
 body.home hr {
   border-top: 1px solid #373737; }
 body.home a.red {
   color: #C30918;
   font-weight: bold; }
-body.home summary {
-  width: 7em; }
-  @media only screen and (max-width: 489px) {
-    body.home summary {
-      width: 90%; } }
+@media only screen and (max-width: 489px) {
+  body.home summary {
+    width: 90%; } }
 
 body.ux header {
   background-color: #800080; }
