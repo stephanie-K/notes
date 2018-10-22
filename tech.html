@@ -300,6 +300,8 @@
 
             <a name="her"></a>
             <h2>Heroku</h2>
+            <p><a href="https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku" target="_blank" rel="noopener"><strong>GOVUK - Publishing on the web (Heroku)</strong></a></p>
+            <p><a href="https://designnotes.blog.gov.uk/2016/05/13/archiving-versions-of-a-prototype/" target="_blank" rel="noopener"><strong>How to archive prototypes- using git tags</strong></a></p>
             <p>Heroku is a platform as a service PaaS, build on Amazon Web Services (AWS). A wide variety of buildpacks are available depending on the language you are using and the version of that language.If your language is not available, you have the option to build your own buildpack.<br>
             On the resources tab from the dashboard you can add adds-on. From the config tab, you have a maintenance screen set up.</p>
             <p><a href="assets/images/tech/heroku-cli.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/tech/heroku-cli.png"/></a></p>
@@ -307,7 +309,29 @@
             <p><a href="assets/images/tech/heroku-proc.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/tech/heroku-proc.png"/></a></p>
             <p><a href="assets/images/tech/heroku-pipeline.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/tech/heroku-pipeline.png"/></a></p>
             <p>To create a pipeline, go to personal apps, then in the New dropdown, select, Create new pipeline. If you have a pipeline, you don't want to deploy automatically via git, you want to promote your code first.</p>
-            <p><a href="https://designnotes.blog.gov.uk/2016/05/13/archiving-versions-of-a-prototype/" target="_blank" rel="noopener"><strong>How to archive prototypes</strong></a></p>
+            
+            <p class="lead">With the prototype tool kit</p>
+            <p>to see the logs on Heroku <br>
+                <span class="code">heroku logs --tail --app erc-proto01</span>
+            </p>
+            <p>need to configure a username and password<br>
+                <span class="code">heroku config:set USERNAME=the_username --app erc-proto01</span><br>
+                <span class="code">heroku config:set PASSWORD=password --app erc-proto01</span>
+            </p>
+            <p>to make archives version of release:
+                <span class="code">git tag name_of_tag -m "message we want to give" or simply</span><br>
+                <span class="code">git tag name_of_tag</span><br>
+                <span>then</span><br>
+                <span class="code">git push --tags</span><br>
+                <span>deploy to heroku</span><br>
+                <span>create a new heroku app:</span><br>
+                <span class="code">heroku apps:create erc-prototype-v0 -r erc-v0</span><br>
+                <span>deploy the prototype version to the new new heroku app:</span><br>
+                <span class="code">git push erc-v0 master</span><br>
+                <span>can then be seen here: https://erc-prototype-v0.herokuapp.com/ - need to set password and username again</span><br>
+            </p>
+            <p>to list the tags: <span class="code">git tag -n</span></p>
+
             <p><a href="" target="_blank" rel="noopener"><strong></strong></a></p>
             <p><a href="#" class="button">top</a></p>
             <hr>
