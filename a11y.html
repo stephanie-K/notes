@@ -141,6 +141,7 @@
                   <li><a href="#emails">Emails</a></li>
                   <li><a href="#idf">How to design for all (IDF course)</a></li>
                   <li><a href="#inc">Inclusive Design</a></li>
+                  <li><a href="#link">Links</a></li>
                   <li><a href="#men">Accessibility menus</a></li>
                   <li><a href="#pdf">PDF- Word - assistive technologies users</a></li>
                   <li><a href="#responsive">Responsive Web Design</a></li>
@@ -148,6 +149,7 @@
                   <li><a href="#menu">Settings Menu</a></li>
                   <li><a href="#test">Accessibility Testing</a></li>
                   <li><a href="#univer">Universal design</a></li>
+                  <li><a href="#update">Updating a page</a></li>
                   <li><a href="#chat">Accessible Webchat</a></li>
                 </ul>
               </div>
@@ -625,6 +627,19 @@
            <p><a href="#" class="button">top</a></p>
             <hr>
 
+            <a name="link"></a>
+            <h2>Links</h2>
+            <p><a href="https://designnotes.blog.gov.uk/2016/11/28/removing-the-external-link-icon-from-gov-uk/" target="_blank" rel="noopener"><strong>Removing the external link icon from GOV.UK</strong></a></p>
+            <p>You can indicate that the link goes to an external site (which is good) but there are times when it can be useful to give the user more info, within the link like you suggest below. <br>
+            a href="http://www.some_gov.uk">Apply online for PIP on the Government website /a <br>
+            This way on focus the screen reader (SR) user will know the purpose of the link and its destination. <br>
+              If you want to go: (a href="http://www.some_gov.uk")Apply for PIP online (gov.uk) (/a )<br>
+              Thats good - again, what is contained within the (a href="#")( /a) will be announced on focus including the content of the brackets. Or this is good also.<br> 
+              (a href="http://www.some_gov.uk")Apply for PIP online (external site)(/a)</p>
+            <p><a href="#" class="button">top</a></p>
+            <hr>
+
+
             <a name="men"></a>
             <h2>Accessibility menus</h2>
             <p><a href="http://www.bbc.co.uk/accessibility/" target="_blank" rel="noopener"><strong>BBC - My web my way</strong></a></p>
@@ -786,6 +801,17 @@
             </ol>
             <p><a href="assets/images/a11y/universal.jpg" target="_blank" rel="noopener"><img class ="img-three-quarters-width" src="assets/images/a11y/universal.jpg"/></a></p>
             <p><em>Author/Copyright holder: Center for Universal Design, NC State. 2011. Copyright terms and license: All rights reserved.</em></p>
+            <p><a href="#" class="button">top</a></p>
+            <hr>
+
+            <a name="update"></a>
+            <h2>Updating a page</h2>
+            <p>From the google group. How to tell a screen reader user that a page is taking a while to update?<br>
+              Using an aria-live region, containing an appropriate message ? <br>
+              If we have an aria-live region containing a message e.g. "We are updating the search results. Please do not refresh the page." then we presumably need a similar message to tell them when this process is complete.<br>
+              What happens in the case of the results being refreshed so quickly that the two messages are too close together? it could be awkward and not optimised for the user listening.
+            </p>
+            <p>using aria-live=”polite” for the loading messages and aria-live=”assertive” for the completion message could work.</p>
             <p><a href="#" class="button">top</a></p>
             <hr>
     
