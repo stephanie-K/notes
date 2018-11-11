@@ -524,6 +524,13 @@ footer {
   height: 400px;
   padding-right: 40px; }
 
+.img-one-tenth-width {
+  vertical-align: top;
+  width: 10%; }
+  @media only screen and (max-width: 489px) {
+    .img-one-tenth-width {
+      width: 100%; } }
+
 .img-one-quarter-width {
   vertical-align: top;
   width: 24%; }
@@ -562,6 +569,10 @@ footer {
 .img-full-width {
   vertical-align: top;
   width: 100%; }
+
+@media only screen and (max-width: 550px) {
+  iframe, video {
+    width: 100%; } }
 
 a.button {
   text-transform: uppercase;
