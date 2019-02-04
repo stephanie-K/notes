@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>Service Design - my notes - Stéphanie</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Name of web application (only should be used if the website is used as an app) -->
+    <meta name="description" content="Stéphanie KRUS - Notes">
+    <link rel="icon" href="assets/favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="assets/styles/myCss.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <!--STYLES END-->
+  </head>
+
+   <body class="sd">
+
+      <header>
+        <a href="index.html"><img src="assets/images/icons/notes-icon.png" alt="profile picture"/></a>
+        <h1 class="plain-color">Les notes de Stéphanie</h1>
+      </header>
+
+      <nav>
+          <a href="a11y.html" class="a11y-color">A11Y</a>
+          <a href="UX.html" class="ux-color">UX</a>
+          <a href="#" class="on-the-page sd-color">SD</a>
+          <a href="con.html" class="con-color">CON</a>
+          <a href="ur.html" class="ur-color">UR</a>
+          <a href="tech.html" class="tech-color">TECH</a>
+          <a href="dev.html" class="dev-color">DEV</a>
+      </nav>
+
+      <main>
+        <h1>Notes on Service Design</h1>
+
+        <details>
+            <summary><span>Sources</span></summary>
+            <div>
+                <uL>
+                    <li><a href="https://medium.com/touchpoint" target="_blank" rel="noopener">Medium Touch point</a></li>
+                    <li><a href="https://wearesnook.com/" target="_blank" rel="noopener">We are Snook</a></li>
+                    <li><a href="https://www.service-design-network.org/" arget="_blank" rel="noopener">Service Design Network</a></li>
+                    <li><a href="https://boagworld.com/digital-strategy/service-design/" target="_blank" rel="noopener">Service Design: What Is It, What Does It Involve and Should You Care?</a></li>
+                    <li><a href="https://www.ideo.com/blog/3-tips-to-help-you-prototype-a-service" target="_blank" rel="noopener">3 Tips to Help You Prototype a Service</a></li>
+                </uL>
+            </div>
+        </details>
+
+        <details>
+            <summary><span>GOV.UK and GOV.SCOT sources</span></summary>
+            <div>
+                <uL>
+                    <li><a href="https://www.gov.uk/guidance/government-design-principles" target="_blank" rel="noopener">GOV.UK - Government design principles</a></li>
+                    <li><a href="https://resources.mygov.scot/design-standards/" target="_blank" rel="noopener">mygov.scot - Design standards</a></li>
+                    <li><a href="https://resources.mygov.scot/standards/digital-first/" target="_blank" rel="noopener">Digital First Service Standard - 22 criteria</a> or as a <a href="assets/images/ux/dfss-poster-feb-17.pdf" target="_blank" rel="noopener">pdf poster</a></li>
+                    <li><a href="https://insidegovuk.blog.gov.uk/2018/02/07/how-we-approached-service-mapping/" target="_blank" rel="noopener">Blog govuk - How we approached service mapping</a></li>
+                    <li><a href="https://gds.blog.gov.uk/2017/11/30/building-end-to-end-services-into-gov-uk/" target="_blank" rel="noopener">Blog govuk - Building end-to-end services into GOV.UK</a></li>
+                    <li><a href="https://userresearch.blog.gov.uk/2018/08/06/how-we-researched-the-definition-of-a-service" target="_blank" rel="noopener">GOVUK - How we researched the definition of a service</a></li>
+        
+                </uL>
+            </div>
+        </details>
+
+
+        <details>
+        <summary><span>Quick Access</span></summary>
+            <div>
+                <ul>
+                    <li><a href="#auth">Authentication</a></li>
+                    <li><a href="#be">Behaviours - Behavioural Economics</a></li>
+                    <li><a href="#case">Case Studies</a></li>
+                    <li><a href="#kid">Children</a></li>
+                    <li><a href="#cul">Cultural differences</a></li>
+                    <li><a href="#curse">Curse of knowledge</a></li>
+                    <li><a href="#dls">Design Language System</a></li>
+                    <li><a href="#ds">Design System</a></li>
+                    <li><a href="#do">Do make me think</a></li>
+                    <li><a href="#dd">Double diamond process</a></li>
+                    <li><a href="#evan">Evangelisation</a></li>
+                    <li><a href="#form">Forms</a></li>
+                    <li><a href="#fb">Forms builder</a></li>
+                    <li><a href="#game">Gamification</a></li>
+                    <li><a href="#gender">Gender</a></li>                 
+                    <li><a href="#hick">Hick's Law: Making the choice easier for users</a></li>
+                    <li><a href="#ikea">IKEA effect</a></li>
+                    <li><a href="#inver">Inverted pyramid / Progressive disclosure</a></li>
+                    <li><a href="#life">Lifecycle for UX</a></li>
+                    <li><a href="#loss">Loss aversion</a></li>
+                    <li><a href="#maslow">Maslow's pyramid of needs</a></li>
+                    <li><a href="#metric">Metrics</a></li>
+                    <li><a href="#truth">The Moment of truth</a></li>
+                    <li><a href="#nui">Natural User Interface</a></li>
+                    <li><a href="#okr">OKR</a></li>
+                    <li><a href="#plan">Planning and Discovery methods</a></li>
+                    <li><a href="#reward">Reward systems</a></li>
+                    <li><a href="#userflow">User Flows</a></li>
+                    <li><a href="#wire">Wireframe</a></li>
+                    </ul>
+            </div>
+        </details>            
+
+        <h2>General</h2>
+    
+        <p><a href="https://blog.prototypr.io/9-principles-of-service-design-3486a097b10e" target="_blank" rel="noopener"><strong>9 Principles of Service Design</strong></a></p>
+        <p>According to Nielsen Norman, service design is: The activity of planning and organizing a business’s resources (people, props, and processes) in order to (1) directly improve the employee’s experience, and (2) indirectly, the customer’s experience.</p>
+        <p>An interface is not a service. A product is not a service. A service is not a physical object and cannot be possessed.</p>
+        <p>9 basic categories or ways in which organizations can improve service design.</p>
+        <ul>
+            <li>NOT placing the business needs before the user’s needs</li>
+            <li>NOT making it hard to achieve the goal</li>
+            <li>personalising the service</li>
+            <li>before you even knew you needed it</li>
+            <li>the follow-up</li>
+            <li>mitigating the wait</li>
+            <li>Peak-end Rule (in memory, we remember the peak and ending of an experience in greater detail)</li>
+            <li>the runaround (being passed from one person/thing to the next)</li>
+            <li>duplicate efforts</li>
+        </ul>
+        <p>In short, the user experience is an entire ecosystem extending far beyond the boundaries of an interface or product. Service is part of that ecosystem. And to adequately address service design, we must map the experience to identify systemic failures along with organizational policies resulting in a poor experience for the user.</p>
+        <p class="lead"><a href="https://blog.prototypr.io/service-design-and-ux-design-whats-the-difference-508c41c65217" target="_blank" rel="noopener"><strong>Service Design and UX Design - what's the difference</strong></a></p>
+        <p>Service designers aim to:</p>
+        <ul>
+            <li>understand thoroughly the service proposition of the organisation or company in question</li>
+            <li>discern the needs of all the stakeholders and actors in a service — both customers and service providers</li>
+            <li>map out the service through a service ecology, service blueprint, and user journeys</li>
+            <li>co-create possible solutions or improvements by collaborating with service stakeholders</li>
+            <li>prototype and pilot new service experiences with real customers and staff</li>
+            <li>zoom in and out constantly between the details of individual touchpoints and the design of the overall service</li>
+        </ul>
+        <p>Service design starts by looking to make improvement in people, processes, assets and culture. That then indirectly goes on to influence the customer experience.</p>
+        <p><a href="assets/images/ux/service.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/service.png"/></a></p>
+        <p class="lead">15 principles for service design</p>
+        <p><a href="https://www.fastcompany.com/90214914/amazon-airbnb-and-asos-are-all-investing-in-this-one-simple-design-idea" target="_blank" rel="noopener">Amazon, Airbnb, and Asos are all investing in this one simple design idea</a></p>
+        <p>A good service should:</p>
+        <ul>
+            <li>let a user do what they set out to do</li>
+            <li>be easy to find</li>
+            <li>clearly explain it's purpose</li>
+            <li>set the expectations a user has of it</li>
+            <li>be agnostic of organisational structures</li>
+            <li>require as few steps as possible to complete a task</li>
+            <li>be consistent</li>
+            <li>have no dead ends</li>
+            <li>be usable by everyone, equally</li>
+            <li>respond to change quickly</li>
+            <li>work in a way that is familiar</li>
+            <li>encourage the right behaviour in users (and designers)</li>
+            <li>clearly explain why a decision has been made</li>
+            <li>make it easy to get human assistance</li>
+            <li>require no prior knowledge to use</li>
+        </ul>
+
+    
+        <p class="lead">Service Design in Scottish Local Government</p>
+        <p>
+            <a href="assets/images/ux/service-cycle.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/ux/service-cycle.png"/></a>
+            <a href="assets/images/ux/service-lifecycle.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/ux/service-lifecycle.png"/></a>
+            <a href="assets/images/ux/service-scottish-approach-what.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/ux/service-scottish-approach-what.png"/></a>
+            <a href="assets/images/ux/service-scottish-approach-why.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/ux/service-scottish-approach-why.png"/></a>
+        </p>
+        <p>Too often, we start with the problem already defined internally, or worse start with the solution already defined</p>
+
+
+    <hr>
+
+    <a name="auth"></a>
+    <h3>Authentication</h3>
+    <p><a href="https://medium.com/ux-immersion-interactions/focusing-on-what-our-users-shouldn-t-focus-on-9999dbec7ca1" target="_blank" rel="noopener"><strong>Focusing On What Our Users Shouldn’t Focus On</strong></a></p>
+    <p>Authentication steals the focus of the user. The user is no longer focused on accomplishing their intended goal. They are solely focused on convincing the application to let them in.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+    <a name="be"></a>
+    <h3>Behavioural Economics</h3>
+    <p><a href="https://uxplanet.org/the-top-5-behavioural-economics-principles-for-designers-ea22a16a4020" target="_blank" rel="noopener"><strong>The Top 5 Behavioural Economics Principles for Designers</strong></a></p>
+    <p>Anchoring - Defaulting - Friction costs - Ostrich effect - social proof</p>
+
+    <p class="lead">Don't make me think - Steve Krug:</p>
+    <p><strong>Satisficing</strong>: when user scan a page, they look at the available options but most of the time they chose the first reasonable option, not the best one.</p>
+    <p><strong>We don't figure out how things work, we muddle through</strong>:<br>
+        For most of us, it doesn't matter how things work, as long as we can use them. It's not for lack of intelligence but for lack of caring. In the great scheme of things, it's just non important to us.<br>
+        If we find something that works, we stick to it. Once we find something that works no matter how badly, we tend not to look for a better way. We'll use a better way if we stumble across one, but we seldom look for one.<br>
+        Muddling tends to be inefficient and error prone though.
+    </p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+    <a name="case"></a>
+    <h3>Case Studies</h3>
+    <p><a href="https://www.interaction-design.org/literature/article/how-to-write-the-beginning-of-your-ux-case-study" target="_blank" rel="noopener"><strong>How to write one</strong></a></p>
+    <p><strong>Examples of case studies:</strong></p>
+    <p><a href="https://medium.freecodecamp.org/after-teaching-myself-to-program-i-wanted-another-challenge-so-i-redesigned-tumblr-69ca39f62bad" target="_blank" rel="noopener">Tumblr</a></p>
+    <p><a href="https://medium.com/sketch-app-sources/slack-iphone-redesign-concept-30a6d1a80365" target="_blank" rel="noopener">Slack iPhone</a></p>
+    <p><a href="https://medium.com/@philipmorton/switching-to-bulb-a-detailed-ux-review-bad81981473c" target="_blank" rel="noopener">Switching to Bulb – a detailed UX review</a></p>
+    <p><a href="https://uxdesign.cc/ui-ux-case-study-dealsdate-8cbe2bf17320" target="_blank" rel="noopener"></a></p>
+    <p><a href="https://uxdesign.cc/ui-ux-case-study-dealsdate-8cbe2bf17320" target="_blank" rel="noopener">UI/UX case study: Dealsdate</a></p>
+    <p><a href="https://uxdesign.cc/charity-website-a-ux-case-study-209071f1622b" target="_blank" rel="noopener">Charity website: a UX case study</a></p>
+    <p><a href="https://uxdesign.cc/ikea-ux-case-study-2d6f3a9dfad7" target="_blank" rel="noopener">Ikea</a></p>
+    <p><a href="https://medium.com/the-u-s-digital-service/moving-the-u-s-passport-renewal-experience-online-a038e5d174ba" target="_blank" rel="noopener">Moving the U.S. Passport Renewal Experience Online</a></p>
+    <p><a href="https://uxdesign.cc/grab-design-challenge-case-study-food-driver-mobile-app-e5d6b65cdd30" target="_blank" rel="noopener">Designing a food delivery app for motorbike drivers — a UX case study</a></p>
+    <p><a href="https://uxdesign.cc/electric-car-sharing-a-ux-case-study-be53a80256af" target="_blank" rel="noopener">Electric car sharing — a UX case study</a></p>
+    <p><a href="https://uxdesign.cc/how-to-slack-better-3779daf576ae" target="_blank" rel="noopener">How to Slack smarter? — a UX case study</a></p>
+    <p><a href="https://uxstudioteam.com/ux-blog/find-solve-painful-problems/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BYd2pOR7jQlCHsTFo8Yld1w%3D%3D" target="_blank" rel="noopener">The 5-Step Method to Find & Solve the Most Painful Problem of Your Audience</a></p>
+    <p><a href="assets/images/ux/case-study-roadmap.jpeg" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/case-study-roadmap.jpeg"/></a></p>
+    <p></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="kid"></a>
+    <h3>Children</h3>
+    <p><a href="https://uxstudioteam.com/ux-blog/design-for-kids/" target="_blank" rel="noopener"><strong>Product Design For Kids: A UX Guide To Children’s Minds</strong></a></p>
+    <p><a href="https://www.interaction-design.org/literature/article/ideas-for-conducting-ux-research-with-children" target="_blank" rel="noopener"><strong>Ideas for Conducting UX Research with Children</strong></a></p>
+    <p><a href="https://www.nngroup.com/articles/childrens-websites-usability-issues/" target="_blank" rel="noopener"><strong>Children’s UX: Usability Issues in Designing for Young People - Nielsen Norman group</strong></a> </p>
+    <p>If you want to design a website for kids, or are developing an app for them, here are a few key points to remember:</p>
+    <ul>
+        <li>instant feedback after every action confirms their effect</li>
+        <li>don’t expect patience from them</li>
+        <li>don’t rely on copy if possible</li>
+        <li>small kids take everything literally</li>
+        <li>trust doesn’t only mean giving consistent feedback but also that their parents can rely on our product for their kids’ safety</li>
+        <li>use age groups, challenge them age-appropriately</li>
+        <li>design for kids is still paid for by parents — always take them into consideration, too</li>
+    </ul>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+
+    <a name="cul"></a>
+    <h3>Cultural differences</h3>
+    <p><a href="https://medium.com/fast-company/how-ikea-quietly-tweaks-its-design-around-the-world-be59d220e2ac" target="_blank" rel="noopener"><strong>How Ikea quietly tweaks its design around the world</strong></a></p>
+    <p>To discern the differences, the company sends its representatives into homes all over the world to talk to people, asking what their needs are, what they can afford, and how they like to shop.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="curse"></a>
+    <h3>Curse of knowledge</h3>
+    <p><a href="https://uxdesign.cc/the-purpose-of-ux-you-dont-know-what-you-don-t-know-6a94c0d30023" target="_blank" rel="noopener"><strong>The purpose of UX - you don't know what you don't know</strong></a></p>
+    <p>When something is obvious to us, it is extremely hard to know or remember what it was like without this knowledge. There is simply no way to unlearn what we know. If we extend the Curse of Knowledge to crafting user experiences, it teaches us an important lesson:<br>
+        What we know vs. what we think our users know vs. what they really know are never the same.
+        </p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+    <a name="dls"></a>
+    <h3>Design Language System</h3>
+    <p><a href="https://uxplanet.org/design-language-system-d438f4aa30e0" target="_blank" rel="noopener"><strong>Medium : Design Language System</strong></a></p>
+    <p> A Design Language System is a set of rules or guidelines that heightens the level of harmony in a digital ecosystem.</p>
+    <p>Now what is a digital ecosystem? It is nothing but interdependent group of enterprises, people or things that share a standardized digital platform for mutually beneficial purposes. To keep this ecosystem in harmony we need to understand the different groups involved, their requirements and expectations to build a wholesome design system that is scalable and efficient at the same time. This interdependent group of enterprises/people/things is where all of you (designers, developers) come in. All you should be doing is:</p>
+        <ul>
+            <li>Get everyone ready and on the same page</li>
+            <li>Collaborate at healthy intervals to curate a wholesome design language system</li>
+            <li>Keep in mind the collective desire to provide good user experience while adding to internal efficiency</li>
+        </ul>
+    <p>The Design Language System is like setting a foundation for you to build on. It’ll make the build time shorter and much more efficient. </p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="ds"></a>
+    <h3>Design System</h3>
+    <p><a href="https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969" target="_blank" rel="noopener"><strong>Everything you need to know about Design Systems</strong></a></p>
+    <p> A Design System is the single source of truth which groups all the elements that will allow the teams to design, realise and develop a product.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+    <a name="do"></a>
+    <h3>Do make me think</h3>
+    <p><a href="https://medium.com/foolproof-ux/do-make-me-think-cacd25be0458" target="_blank" rel="noopener"><strong>On Medium</strong></a></p>
+    <p>Helping people make better decisions sometimes means designing complex interactions.<br>
+        The world seems to think that the only outcome the customer is interested in is speed, but there are other outcomes we should be designing for: confidence; a sense of control; the suitability of a product or service that users need. Designers need to recognise that the flow needs moments of reflection and focus. Making the user stop and consider their decisions may add time, but — done well — it needn’t detract from a smooth sense of flow in an experience. Essential information points should not be so easily glossed over or missed, but highlighted and featured as important points of reference.
+        </p>
+    <p>There is a necessary complexity to many interactions, putting these processes online and on a phone changes the dynamic, but it doesn’t reduce the complexity, or the risk. They are complex by their very nature, requiring thought and consideration.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="dd"></a>
+    <h3>Double diamond process</h3>
+    <p><a href="https://www.thoughtworks.com/insights/blog/double-diamond" target="_blank" rel="noopener"><strong>The Double Diamond: Strategy + Execution of the Right Solution</strong></a></p>
+    <p><a href="https://medium.com/digital-experience-design/how-to-apply-a-design-thinking-hcd-ux-or-any-creative-process-from-scratch-b8786efbf812" target="_blank" rel="noopener"><strong>How to apply a design thinking, HCD, UX or any creative process from scratch</strong></a></p>
+    <p> <a href="assets/images/ux/service-design.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/service-design.png"/></a></p>
+    <p>The Double Diamond is a structured design approach to tackle challenges in four phases:</p>
+    <ol>
+        <li>Discover /Research— insight into the problem (diverging)</li>
+        <li>Define/Synthesis — the area to focus upon (converging)</li>
+        <li>Develop/ Ideation— potential solutions (diverging)</li>
+        <li>Deliver /Implementation— solutions that work (converging)</li>
+    </ol>
+    <p>Stage 1 — Doing the right thing (Diamond 1 — Discover and Define)</p>
+    <p>Stage 2 — Doing things right (Diamond 2 — Develop and Deliver)</p>
+    <br>
+    <p><strong>Another variation: understand, define, explore, create</strong></p>
+    <p> <a href="assets/images/ux/doublediamond.gif" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/doublediamond.gif"/></a></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="evan"></a>
+    <h3>Evangelisation</h3>
+    <p><a href="https://www.interaction-design.org/literature/article/5-proven-tactics-for-evangelizing-ux" target="_blank" rel="noopener"><strong>5 proven tactics for evangelising UX</strong></a></p>
+    <p><strong>Communication and making your UX work visible are a vital part of succeeding with UX.</strong> Here, we offer 5 tactics for evangelizing your UX work:</p>
+    <ul>
+        <li>Fast and Rapid Deliverables</li>
+        <li>Listening Posts</li>
+        <li>Tangible Data</li>
+        <li>Cross-company Communication</li>
+        <li>Scorecards</li>
+    </ul>
+    <p><a href="assets/images/ux/Poster_DesignPrinciples.pdf" target="_blank" rel="noopener">Posters on the design principles - GDS</a></p>
+
+    <p class="lead">Convincing your organisation about usability</p>
+    <p><a href="http://contentdesign.london/content-process/convincing-your-organisation-about-usability/" target="_blank" rel="noopener">From Sarah Richards - Content Design London</a></p>
+    <p>Ways to influence the product owners</p>
+    <ul>
+        <li><strong>number 1 rule: respect</strong> - The thing with humans is, quite often, we think other people know what we know. Or everyone remembers the way we remember. It’s simply not the case. Sometimes, people genuinely come to daft conclusions because they don’t know something or they remember a meeting in an entirely different way to us. That’s because they have different baggage they bring with them. By remembering this, you start to get an idea that someone isn’t ‘blocking’ you; they are just in a different space with different information. To get your idea across really well, you need to bridge that gap between what you think you both know and what you actually know.</li>
+        <li><strong>show, don't tell</strong> - When you are talking to someone about a new idea, have something to show. It can be bits of paper with line drawings on, little prototypes, someone else’s data that supports your idea – anything. When talking in the abstract, you are allowing people to fill in gaps in their head – they may not tell you what they are thinking but still say no. Have something tangible to look at, point at, and work out.</li>
+        <li><strong>get out of the room</strong> - Use data and show that it's not your opinion but Research, studies showing something is not right. It's harder to fight research than fight your opinion or advice</li>
+        <li><strong>use the silence</strong> - Often, if you are quiet, people just keep talking to fill the void. When they do that, they can, quite literally, talk themselves around. Don’t feel the need to speak in natural pauses. Let them do it. Sometimes, if you are bringing a new idea out of the blue, people need to think about it. Some people do that while talking. What I am saying is, give them a chance and stay  quiet. This is also the time when they tell you about all the stuff they thought you knew, or thought you didn’t need to know</li>
+    </ul>
+    <p class="lead">Collaborative design, how to make it work</p>
+    <p><iframe src="https://player.vimeo.com/video/287344636" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+    <p><a href="https://vimeo.com/287344636" target="_blank" rel="noopener">Catt Small // We're All Designers // UX Week 2018</a> from <a href="https://vimeo.com/adaptivepath">Adaptive Path</a></p>
+    <p><a href="assets/images/ux/022018-08-23uxweek-werealldesigners-180830164405.pdf" target="_blank" rel="noopener">PDF of the talk</a></p>
+    <p>Collaborative design is a great facilitation tool that helps get the best ideas on the table by engaging various different stakeholders with different perspectives.</p>
+    <p class="lead">The User Experience team of one</p>
+    <p>Building support for your work: (page 42)</p>
+    <ul>
+        <li>invite people in</li>
+        <li>make things together</li>
+        <li>truly listen</li>
+        <li>know when it's good enough</li>
+    </ul>
+    <p><strong>There is also a whole chapter from page 213: bathroom UX / Mini case studies / Peer to peer learning communities / pyramid Evangelism</strong></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="form"></a>
+    <h3>Forms</h3>
+    <p><a href="https://www.gov.uk/service-manual/design/form-structure" target="_blank" rel="noopener"><strong>GOV.UK - Structuring forms</strong></a></p>
+    <p><a href="https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f" target="_blank" rel="noopener"><strong>Designing More Efficient Forms: Structure, Inputs, Labels and Actions</strong></a></p>
+    <p><a href="https://uxdesign.cc/the-ux-behind-designing-better-forms-d6ebe7a817d2" target="_blank" rel="noopener"><strong>On UX Design</strong></a></p>
+    <p><strong>Align the sections:</strong> Alignment is nothing but arranging text in the most efficient way- allowing for efficient, effective scanning and limiting errors or missed fields. Basically, having the label text as close to the input field makes the grouping more relatable. It is easier to associate them due to their proximity.</p>
+    <p><strong>Group related fields:</strong> Grouping information into chunks is an easy way to highlight association. If the form has more than six fields, it is recommended to group them into logical sections. These steps are even more emphasised if each section is given their respective header, and are neatly arranged in a top-down order.</p>
+    <p><strong>Write clear labels:</strong> Using succinct and crisp labels. It helps the user understand what information is required in one glance. Avoid using complete sentences to explain simple questions, just one or two words generally suffice.</p>
+    <p><strong>Input field format:</strong> design the input fields in a customised manner, which explicitly shows how the information is to be fed in.</p>
+    <p><strong>Adding visual cues:</strong> Giving a few suggestions upfront is a good way to get their thoughts running. And representing these options with additional visual cues can turn out to be even better, as it requires minimal cognitive load and provides a direction of thought.</p>
+    <p><strong>Optional vs compulsory:</strong> This is a very simple trick to de-clutter a form page. Rather than mentioning ‘compulsory’ next to every header, just put an asterisk and mention the optional ones in words.</p>
+    <p><strong>CTA call to action:</strong> CTAs can either look like a solid rectangular button, or a text link. Depending on your use case, make sure that only ONE of them is the prominent one. Mention what’s going to happen once you hit on the button. This clarity is essential for great CTAs.</p>
+    <p><strong>Use colours efficiently:</strong> Colours can be cleverly used to direct the user’s attention, and add an aesthetic appeal to the design. The trick is to <strong>stick to not more than 2 main colours in the page</strong>. Just make sure to use them wisely, keeping the main goal of the form in mind.</p>
+    <p><strong>Validate the form:</strong> 3 important messages that a good form validation should convey to the user:</p>
+    <ul>
+        <li>an error has occurred. Display clearly that there is an error in the form, preferably using a red color signal to attract attention</li>
+        <li>where the error occurred: Highlighting the fields that caused the error</li>
+        <li>how the error can be repaired: Provide information on what needs to be different in order for the field to validate</li>
+    </ul>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="fb"></a>
+    <h3>Former builder</h3>
+    <p><a href="https://github.com/DEFRA/digital-form-builder" target="_blank" rel="noopener"><strong>DEFRA form builder</strong></a></p>
+    <p><a href="https://digital-form-builder.herokuapp.com/split" target="_blank" rel="noopener"><strong>to see the DEFRA form builder</strong></a></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>  
+
+    <a name="game"></a>
+    <h3>Gamification</h3>
+    <p><a href="assets/images/ux/notes_gamification.pdf" target="_blank" rel="noopener">My notes from the IDF course (19 pages)</a></p>
+    <p><strong>Gamification is the art of adding game-like elements to experiences which traditionally do not involve fun or games.</strong> As it’s a young industry, it should be easier to get a “foot in the door” of gamification companies with demand for experienced designers far outstripping supply, and that means those businesses are going to be keen to take a chance on less-experienced but well-qualified designers.</p>
+    <p>A review of the literature to date has shown a positive correlation that<strong> gamification does increase the effectiveness of the activity it is applied to</strong>. Of course, a lot depends on how gamification is used – a gamification can only work if the players find it motivating, interesting and fun. </p>
+    <p><strong>The “Player-Centered Design” approach</strong> involves using the following five steps:</p>
+    <ol>
+        <li>know your player</li>
+        <li>identify the mission</li>
+        <li>understand human motivation</li>
+        <li>apply mechanics</li>
+        <li>manage, monitor and measure</li>
+    </ol>
+    <p><a href="assets/images/ux/player-centered-Design.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/ux/player-centered-Design.png"/></a></p>
+    <p><strong>The Four Basic Principles of Fun in a Game:</strong> Goals, Rules, Feedback, Voluntary Participation</p>
+
+    <p class="lead">A SMART mission</p>
+    <p>It enables you to communicate to the gamification team not just what needs to be addressed through the project but also how you will be able to demonstrate success at the end of the project. The SMART goal-setting system is a remarkably effective tool that can help you define and fine-tune the real solution. It lets you remove all the obstacles that would otherwise lead to your arriving at false solutions.<br>
+        If you understand what the situation is and what situation is required, it should be easy to build a SMART mission which promotes the success of your gamification exercise.<br>
+        Gamification projects aren’t just about players; we also use them to achieve business results. Your gamification design team must research exactly what the business expects and ensure that everyone involved in the project focusses on these expectations throughout the design process. The idea is to create engagement with players that achieves results and return on investment. Getting the balance between fun engagement and serious results will pay off time and again for you as you progress to later gamification works in your career.
+    </p>
+    <p><a href="assets/images/ux/smart.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/ux/smart.png"/></a></p>
+    <p><a href="assets/images/ux/smart-missions.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/smart-missions.png"/></a></p>
+    <p><strong>Motivating Your Players</strong>: Platinum Rule—“Do unto others what they want done to them"</p>
+    <p><a href="assets/images/ux/motivators.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/motivators.png"/></a></p>
+    <p class="lead">Game Mechanics = reasons to play</p>
+    <p>“Game mechanics are the core of what a game truly is. They are the interactions that remain when all of the aesthetics, technology and story are stripped away.”</p>
+    <p><a href="assets/images/ux/core-loop.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/ux/core-loop.png"/></a></p>
+    <p><a href="assets/images/ux/ethics.png" target="_blank" rel="noopener"><img class ="img-two-thirds-width" src="assets/images/ux/ethics.png"/></a></p>
+
+    <p class="lead">More on this by Catt Small</p>
+    <p><a href="https://www.linkedin.com/pulse/ux-games-gamification-catt-small" target="_blank" rel="noopener"><strong>UX, games, and gamification</strong></a></p>
+    <p>Ways to make an experience feel game-like and ways to fit lessons from games into web and app experiences — when the context allows, of course:</p>
+    <ol>
+        <li><strong>Document everything</strong></li>
+        <p>In games, documentation can be used as a guiding force. Game design documentation can be short (1 page) or long (past 30 pages), but it always helps creators define game elements up front. Translating this to digital product design, this can be a document that outlines personas, user goals, and other information such as key statistics to track. This can help people who need information about current and upcoming projects to get going as quickly as possible.</p>
+        <p>If you decide to prioritize documentation, remember to write it as you go. It is more tedious to do everything at the end than to spend 15 minutes sharing updates every few days. There are lots of programs and apps you can use; InVision, Google Drive, and Basecamp are just a few. They all make it incredibly convenient to be a better communicator.</p>
+        <li><strong>Simple isn’t always best</strong></li>
+        <p>Complexity is important in games because it provides challenges for players to overcome. Game makers excel at ensuring the addition of complex features include usefulness and meaning. If every part of a game is complicated, players will quit. However, the right amount of roadblocks can make players feel accomplished when they are surpassed.</p>
+        <p>Many apps are challenging to master, but worth the reward. This effort makes users feel like pros. For example, I am a loyal Sketch user because I know the ins and outs of the product. Finding new features and shortcuts gives me a sense of accomplishment. Consider ways to do the same in your product, especially if user goals require it to support a complex set of actions.</p>
+        <li><strong>Connect through emotions and personality</strong></li>
+        <p>Journey mapping is the process of mapping out how a user in a specific scenario feels during each step of a specific set of tasks. Journey mapping an existing set of features can help designers understand where improvements can be made, and journey mapping while creating user flows for new projects enables designers to avoid potential pitfalls.<br>
+        In addition to emotions, people love personality. They want to identify with those behind the products they use and the games they play. In games, this is usually expressed through hidden secrets called easter eggs. Game designers use them to connect with players while rewarding them with a sense of accomplishment.</p>
+        <li><strong>Give feedback</strong></li>
+        <p>Responsiveness is important in games. It gives players the sense that their actions are contributing to changes shown on screen. In games, this feedback is known as “game feel” or “juice”. It is often expressed as screen shaking and changes in scale and color of objects.</p>
+        <li><strong>Be intentional</strong></li>
+        <p>Game elements shine when they are intentionally included. Users can tell when an experience is game-like as a gimmick. If you are considering the addition of game elements into your experiences, carefully think about their purpose.</p>
+    </ol>
+    <p class="lead">More on this by looking at Duolingo, Fitbit and Waze</p>
+    <p><a href="https://thenextweb.com/syndication/2018/12/22/how-fitbit-waze-duolingo-use-gamification-in-their-design/" target="_blank" rel="noopener"><strong>How apps like Fitbit, Waze, and Duolingo use gamification in their design</strong></a></p>
+    <p>5 essentials components: Goal, rules, feedback, rewards, motivation, + freedom of choice, freedom of fail</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>       
+
+    <a name="gender"></a>
+    <h3>Gender</h3>
+    <p><a href="https://uxdesign.cc/designing-forms-for-gender-diversity-and-inclusion-d8194cf1f51" target="_blank" rel="noopener"><strong>Designing forms for gender diversity and inclusion</strong></a></p>
+    <p><a href="https://blogs.gov.scot/digital/2018/07/05/sex-and-or-gender-working-together-to-get-the-question-right/" target="_blank" rel="noopener"><strong>Sex and/or gender — working together to get the question right</strong></a></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>  
+
+    <a name="hick"></a>
+    <h3>Hick's Law: Making the choice easier for users</h3>
+    <p><a href="https://www.interaction-design.org/literature/article/hick-s-law-making-the-choice-easier-for-users?r=stephanie-krus" target="_blank" rel="noopener"><strong></strong></a></p>
+    <p><a href="assets/images/ux/hicks.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/ux/hicks.png"/></a></p>
+    <p>Hick’s Law (or the Hick-Hyman Law) states that <strong>the more stimuli (or choices) users face, the longer it will take them to make a decision.</strong> For designers of all types, this presents a challenge, making it imperative to offer the most useful set of options to avoid frustrating the user. This can be vital for safety. The U.S. Navy was quick to recognize the importance of the “Keep It Simple and Straightforward” (“K.I.S.S.”) principle, which reflects Hick’s Law.</p>
+    <p>As web designers, we have an important choice to make before presenting users with the choices we hope they will select on our sites. We have to use Hick’s Law in conjunction with other design principles, especially on the landing page to make the most-desired option/s stand out.</p>
+    <p>Sometimes, there’s no avoiding complexity, especially if we’re involved with presenting a huge amount of needed information about sophisticated products or intricate services. Using Hick’s Law can help us reduce that complexity by simplifying the decision-making process for our users.</p>
+    <p>To make our designs work, we need to remember that a) the user’s time is precious, and b) a user is not obligated to stay on our site. To enhance the user experience, we should consider the following:</p>
+    <ul>
+        <li><strong>categorizing Choice</strong> – Enabling users to find items from higher categories, as if they were looking under sections in a library.</li>
+        <li><strong>obscuring Complexity</strong> – Breaking up long or complex processes into screens with fewer options.</li>
+    </ul>
+    <p>Once your website or app is live, you can use variables such as “time on site” and “page views” to understand if Hick’s law has been applied correctly.</p>
+    <p>Overall, remember that Hick’s Law is a guideline you can adapt to your design. Always try to “flip” the perspective to see the choices you want to present from the outside. Avoid flooding with options, but bear in mind the balance between users’ time and comfort zones for handling options on a page. Guiding them to select between clear options that will get them somewhere quickly (such as a shopping cart) will take the work out of the user experience and reward you both.</p>
+    <p>As a user experience designer, you have a great ally in the card-sorting method. Keep in mind that you 1) first need to find out who are your users and what they need, 2) then define the functionalities your product and service will offer to meet these needs, and 3) use methods such as card sorting to build the right categorization and labels for these categories.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="ikea"></a>
+    <h3>IKEA effect</h3>
+    <p>The IKEA effect is a cognitive bias that can influence the outcome and perceived value of products to a big degree. People tend to place high value on products they partially have created.<br>
+        The more the needs for customization and co-production are present in your target audience the more the IKEA effect is relevant for you as a designer. The effect can help you instil feelings of competence in the user when the task is completed successfully.<br>
+        The IKEA effect will create stronger bond between the user and the product. The effort that users will put into completing the product to a complete state will transform into love for that product. The subjective value will be higher in comparison to a product that hasn’t cost any effort.
+        </p>
+    <p>It is important to point out that <strong>the IKEA effect is not about putting the effort be it small or big, it is more about the completion of the task.</strong> The IKEA effect is present when <strong>the user can enjoy the completed task and the product.</strong> If the product is disassembled soon after the assembling the effect is lost.</p>
+    <p><strong>Sometimes saving the users a bit of labour could deprive them from a bit more happiness if they were to make the small effort.</strong> Think if you should decrease the user effort to zero or close to zero.</p>
+    <p>To make use of the effect we should engage people in the design and increase their sense of product ownership and brand loyalty. This way our designs will be loved more.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+
+    <a name="inver"></a>
+    <h3>Inverted pyramid / Progressive disclosure</h3>
+    <p><a href="https://uxdesign.cc/inverted-pyramids-progressive-disclosure-in-design-5b63cb54c8cb" target="_blank" rel="noopener"><strong>Inverted pyramids & progressive disclosure in Design</strong></a></p>
+    <p><a href="assets/images/ux/inverted-pyramid.jpg" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/inverted-pyramid.jpg"/></a></p>
+    <p>Inverted pyramid is method of funnelling functionality from user perspective.</p>
+    <p>Don’t mix lucrative expectations into the developing user value.</p>
+    <p>There are two reasons customers will be willing to pay for your product. One is they don’t want to bother finding it for free. Two is they genuinely want to reward you for the good work. Both scenarios involve you doing something for the people first. Users won’t buy anything unless it is of use for them.</p>
+    <p>The inverted pyramid approach helps you clear out your vision and decide what to do first. In sum, this is what it’s about:</p>
+    <ul>
+        <li>Identify yourself</li>
+        <li>Tell how you can help people</li>
+        <li>Prove it</li>
+        <li>Show you are more than that</li>
+        <li>Prove it again</li>
+    </ul>
+    <p>A lot of companies confuse what they do with what people really need.</p>
+    <p>Progressive disclosure is a motion from abstract to specific.</p>
+    <p>There is always place for complexity. The customers have to ask for it though.</p>
+    <p>The product has to speak to any user whether or not it has a history of relationship with them.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+    <a name="life"></a>
+    <h3>Lifecycle for UX</h3>
+    <p><a href="https://uxplanet.org/the-evolution-of-ux-process-methodology-47f52557178b" target="_blank" rel="noopener"><strong>The evolution of UX process methodology</strong></a></p>
+    <p><a href="https://www.toptal.com/designers/product-design/effective-design-sprint" target="_blank" rel="noopener"><strong>5 days design sprint</strong></a></p>
+    <p>Activities for each day of the week:</p>
+    <p><a href="assets/images/ux/activities.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/activities.png"/></a></p>
+    <p><a href="https://blog.prototypr.io/how-to-make-ux-and-agile-work-better-together-c4545978c39b" target="_blank" rel="noopener"><strong>Agile / UX sprint</strong></a></p>
+    <p><a href="assets/images/ux/mvp.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/mvp.png"/></a></p>
+    <p><a href="https://medium.com/@ben_ralph/how-to-stop-ux-research-being-a-blocker-225d91105de8" target="_blank" rel="noopener"><strong>Agile / UX sprint</strong></a></p>
+    <p><a href="https://www.interaction-design.org/literature/article/a-simple-introduction-to-lean-ux" target="_blank" rel="noopener"><strong>Lean UX</strong></a></p>
+    <p><strong>Lean UX - What is it?</strong><br>
+    Lean UX is focused on the experience under design and is less focused on deliverables than traditional UX. It requires a greater level of collaboration with the entire team. The core objective is to focus on obtaining feedback as early as possible so that it can be used to make quick decisions. The nature of Agile development is to work in rapid, iterative cycles and Lean UX mimics these cycles to ensure that data generated can be used in each iteration.</p>
+    <p><a href="https://medium.com/@methodsignature/is-velocity-broken-de1215dd1ea" target="_blank" rel="noopener"><strong>Is Velocity Broken?</strong></a></p>
+    <p><a href="https://uxdesign.cc/stop-delivering-software-with-agile-it-doesn-t-work-edccea3ab5d3" target="_blank" rel="noopener"><strong>Stop ‘delivering’ software with Agile — it doesn’t work</strong></a></p>
+    <p><a href="https://medium.com/user-interface-22/agile-isnt-supposed-to-be-ux-hostile-756c92fc4d5f" target="_blank" rel="noopener"><strong>Agile Isn’t Supposed To Be UX Hostile</strong></a></p>
+    <p><a href="https://medium.com/@togetherincred/5-key-phases-to-the-user-experience-design-process-76bd6f52ad71" target="_blank" rel="noopener"><strong>5 key phases to the user experience design process</strong></a></p>
+    <p><a href="assets/images/ux/key-phases.png" target="_blank" rel="noopener"><img class ="img-two-thirds-width" src="assets/images/ux/key-phases.png"/></a></p>
+
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="loss"></a>
+    <h3>Loss aversion</h3>
+    <p>Humans may be hardwired to be loss averse due to asymmetric evolutionary pressure on losses and gains: for an organism operating close to the edge of survival, the loss of a day’s food could cause death, whereas the gain of an extra day’s food would not necessarily cause an extra day of life.</p>
+    <p class="red">better definition of the concept to add here</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="maslow"></a>
+    <h3>Maslow's pyramid of needs</h3>
+    <p><a href="assets/images/ux/maslow-pyramid.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/maslow-pyramid.png"/></a></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    <a name="metric"></a>
+    <h3>Metrics</h3>
+    <p><a href="https://www.uxpin.com/studio/blog/ux-metrics-tracking/" target="_blank" rel="noopener"><strong>Which UX Metrics Should You Be Tracking?</strong></a></p>
+    <p><a href="https://www.dtelepathy.com/ux-metrics/#download" target="_blank" rel="noopener"><strong>The Heart Framework</strong></a></p>
+    <p><a href="https://medium.com/uxinthe6ix/how-we-used-the-heart-framework-to-set-the-right-ux-goals-4454df39db94" target="_blank" rel="noopener"><strong>How we used the HEART framework to set the right UX goals</strong></a></p>
+    <p><a href="https://www.interaction-design.org/literature/article/google-s-heart-framework-for-measuring-ux" target="_blank" rel="noopener"><strong>Google’s HEART Framework for Measuring UX</strong></a></p>
+    <p> <strong>HEART:</strong></p>
+    <ul>
+        <li>Hapiness</li>
+        <li>Engagement</li>
+        <li>Adoption</li>
+        <li>Retention</li>
+        <li>Task success</li>
+    </ul>
+    <p><strong>PULSE: </strong></p>
+    <ul>
+        <li>Pageviews- Number of pages viewed by a single user</li>
+        <li>Uptime- The percentage of time the website or application is accessible to users</li>
+        <li>Latency- The amount of time it takes data to travel from one location to another</li>
+        <li>Seven-day active users- The amount of unique users to interact with the site or app within the last seven days</li>
+        <li>Earnings- Revenue generated by the site or product</li>
+    </ul>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+ 
+
+    <a name="truth"></a>
+    <h3>The moment of truth</h3>
+    <p><a href="https://www.interaction-design.org/literature/article/the-moment-of-truth-build-desirable-relationships-with-users-and-customers" target="_blank" rel="noopener"><strong>The Moment of Truth - Build Desirable Relationships with Users and Customers</strong></a></p>
+    <p>A moment of truth is simply any interaction during which a customer may form an impression of your brand or product. This impression may be either positive or negative. The aim for the user experience designer is to try and ensure that moments of truth have a positive impact on the customer/user impression of the brand or product.</p>
+    <p>Moments of truth are based on interactions with your product or brand that either make or break the user or customer experience. These moments of truth can be designed by UX or CX or Service Design professionals as long as they are aware of them and are able to talk to their users and customers to find out what will work for them.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+ 
+    <a name="okr"></a>
+    <h3>OKR = Objectives and Key Results</h3>
+    <p><a href="https://www.amazon.co.uk/dp/B01BFKJA0Y/ref=cm_sw_r_cp_awdb_t1_VEbTAb8ZPKWR1" target="_blank" rel="noopener"><strong>On Amazon</strong></a></p>
+    <p><a href="https://medium.com/@mcleanonline/4-key-lessons-ive-learned-about-okrs-3f4b902ae9f8" target="_blank" rel="noopener"><strong>4 key lessons I’ve learned about OKRs</strong></a></p>
+    <p>It's a framework for defining and tracking objectives and their outcomes.</p>
+    <p>The OKR framework was created by Intel CEO Andy Grove and brought to Google by venture capitalist John Doerr and has been used by several companies including Google, LinkedIn, Twitter, and Uber.</p>
+    <p>The OKR framework aims to define company and team "objectives" along with linked and measurable "key results" to provide "a critical thinking framework and ongoing discipline that seeks to ensure employees work together, focusing their efforts to make measurable contributions." OKRs are typically set at the company, team and personal levels and may be shared across the organization with the intention of providing teams with visibility of goals with the intention to align and focus effort.</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    
+    <a name="plan"></a>
+    <h3>Planning and discovery methods</h3>
+    <p class="lead">The User Experience team of one - page 86</p>
+    <p><strong>UX questionnaire</strong>: when you start a new project. Set aside one hour to answer the following questions. Thid can feed into the project brief.</p>
+    <ul>
+        <li>Team: who's responsible, who's in charge? who has approval power, who know about the product and why decisions were madewho should be kept in the loop?</li>
+        <li>Goals: 3 to 5 is good, if more then ask the priorities</li>
+        <li>Users: who are the target users, why do they use the product, primary motivation, passion, goals</li>
+        <li>Strategy: why do people use the product, what's the vision, what's better than the competition</li>
+        <li>tasks and scenarios: primary tasks the product should support </li>
+        <li>success measures: what to track, whar define success</li>
+        <li>Key dates and milestones: any significant dealine we should know about?</li>
+        <li>Risk: any red flag I should see up front?</li>
+    </ul>
+    <p><a href="assets/images/ux/ux-questionnaire.jpg" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/ux-questionnaire.jpg"/></a></p>
+    <p><strong>UX project plan</strong>: if the project will go over a few weeks, it's probably a good thing to have, set aside 2 to 3 hours.</p>
+    <ul>
+        <li>Make sure you understand the goals of the project</li>
+        <li>Brainstorm relevant methods </li>
+        <li>Estimate duration</li>
+        <li>Place milestones</li>
+        <li>Create a simple document, doesn't have to be perfect, should be in the open if there is a dedicated space for the project</li>
+    </ul>
+    <p><a href="assets/images/ux/ux-project-plan.jpg" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/ux-project-plan.jpg"/></a></p>
+    <p><strong>Listening tour</strong>: about 5 to 8 hours, 1 hour to plan and schedule, 3 to 5 hours to interview people, and 1 to 2 hours to synthesize notes</p>
+    <p><strong>Opportunity workshop</strong>: about 3 to 4 hours, 1 to plan, 2 to conduct the workshop, 1 to document what you learn. This is a good way to quickly assess the work to be done and how to improve the user experience, what's highest priority from a business perspective, and what will have the most impact from the suer's perspective.</p>
+    <p><strong>Project brief</strong>: What are the expected outcome for this user-centered design project? - 2 to 3 hours, one to write it, and 2 to 3 to share with people (either 121 or in a group session)</p>
+    <ol>
+        <li>Determine the right building blocks for your poject brief (business needs, user needs, goals, key expectations</li>
+        <li>Write up what you know or your best guesses, into a short document</li>
+        <li>Circulate the document</li>
+        <li>Regularly revisit and make sure that you're on track</li>
+    </ol>
+    <p><strong>Strategy workshop</strong>: there's a lot to it, this is on page 108</p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+    <a name="reward">Reward systems</a>
+    <h3>Responsive design</h3>
+    <p><a href="https://uxplanet.org/the-hidden-power-of-reward-systems-in-design-78e2dd7b6bf6" target="_blank" rel="noopener"><strong>The Hidden Power of Reward Systems In Design</strong></a></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+
+    <a name="userflow"></a>
+    <h3>User Flows</h3>
+    <p><a href="https://uxdesign.cc/the-biggest-wtf-in-design-right-now-87139f367d66" target="_blank" rel="noopener"><strong>The biggest wtf in design right now</strong></a></p>
+    <p></p>
+    <p></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+
+    <a name="wire"></a>
+    <h3>Wireframe</h3>
+    <ul>
+        <li>blueprint for a site or app layout</li>
+        <li>show important functionality</li>
+        <li>conveys content type and grouping </li>
+        <li>show information hierarchy</li>
+    </ul>
+    <p>They quickly generate ideas, aids discussion, show content hierarchy and establish key functionality.<br>
+        They can be static, code-based, for layout, information architecture or wireflow. <br>
+        Static: They are quick to create, there is a variety of tools and software but wireframe are not responsive.<br>
+        code-based one are: responsive, interactive, in the browser but they can take longer to do, require coding knowledge, and might be difficult to interprete.
+        </p>
+    <p>For example below with Adobe Illustrator: show real content (Static)</p>
+    <p><a href="assets/images/ux/wireframe1.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/ux/wireframe1.png"/></a></p>
+    <p><strong>wireflow (= hydrid of flow chart + wireframe)</strong></p>
+    <p><a href="assets/images/ux/wireframe2.png" target="_blank" rel="noopener"><img class ="img-half-width" src="assets/images/ux/wireframe2.png"/></a></p>
+    <p>Balsamic, Omnigraffle, InVision, Sktech, Adobe Illustrator, Adobe Photoshop Adobe XD (static wireframe)<br>
+            Axure, Pattern Lab, GTML and CSS (code based wireframe)<br>
+            High fidelity can be harder to understand for less technical people or can be confused with the real thing.
+    </p>
+    <p><strong>Annotations: </strong><br>
+        Add labels to important features<br>
+        Explain Key functionality<br>
+        what happens in different states<br>
+        Anything that isn't self explanatory
+        </p>
+    <p><a href="assets/images/ux/wireframe3.png" target="_blank" rel="noopener"><img class ="img-one-quarter-width" src="assets/images/ux/wireframe3.png"/></a></p>
+    <p>Wireframe appear very early in the design process.<br>
+        Consideration to have: content needs, purpose, audience, fidelity, tools, annotation and documentation.<br>
+        Wireframe planning: define the main purpose, what type of information is needed, what functionality is necessary and assign priority<br>        
+        You can purchases components to make quicks wireframes: uxkits.com<br>
+        To start, you ideally need: some discovery brief, competitive analysis, UR reports, Analytics, Site maps, Technical requirements, SEO recommendations, User personas
+    </p>
+    <p class="lead">The User Experience team of one - page 178</p>
+    <p><strong>Task flows : how will the experience unfold over time</strong></p>
+    <ul>
+        <li>figure out your starting point</li>
+        <li>consider what comes next (or prior)</li>
+        <li>think about entries and exits: think of what would happen if someone abandon and come back later</li>
+        <li>add annotations: how transitions take place, things that are not self evident from looking at the task flows</li>
+        <li>keep it lightweight - post it notes are good</li>
+        <li>don't boil the ocean: create discrete flows and focus on core scenarios</li>
+        <li>use as a starting point for a clickable prototype</li>
+        <li>think multichannel, you can use experience blueprint instead</li>
+    </ul>
+    <p><strong>Wireframes</strong>: skeletal depiction of what a product should look like. Show how the whole system hangs together to create a complete, interconnected strucutre that stands together as a whole.</p>
+    <p>They are susually black and white. They illustrate touch points in a service or the different parts of a product. They focus on the basic, what navigation is available. They include notes and annotations about the behaviour of the system.</p>
+    <ul>
+        <li>create a wireframe inventory (make a list of those you think you need)</li>
+        <li>get wireframing: sequence and state / information density / grid / design principles / error messages and states</li>
+        <li>seek and listen to feedback</li>
+    </ul>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
+
+    </main>
+    
+    <footer>  
+    <a href="https://www.linkedin.com/in/stephanie-krus/" target="_blank" rel="noopener"><img class="icon" src="assets/images/icons/linkedIn-icon.jpg" alt="LinkedIn icon" title="LinkedIn profile"/></a>
+    <a href="https://www.interaction-design.org/stephanie-krus" target="_blank" rel="noopener"><img class="icon" src="assets/images/icons/idf-logo-round.png" alt="Interaction Design Foundation icon" title="IDF profile"/></a>
+    <a href="https://github.com/stephanie-K" target="_blank" rel="noopener"><img class="icon" src="assets/images/icons/github-icon.png" alt="Github" title="Github account"/></a>
+    <a href="https://stephanie.chezleskrus.com/" target="_blank" rel="noopener"><img class="icon" src="assets/images/icons/profileNBround.png" alt="my profile photo" title="go to my portfolio website"/></a>
+    <a href="https://going-green.chezleskrus.com/" target="_blank" rel="noopener"><img class="icon" src="assets/images/icons/goinggreen.png" alt="going green logo" title="go to the Going Green website"/></a>
+    <a href="assets/CV-S-Krus-Jan19.pdf" download="CV-S-KRUS.pdf"><img class="icon" src="assets/images/icons/CV-icon.png" alt="CV icon" title="Download my CV"/></a>
+    <a href="https://app.landbot.io/" target="_blank" rel="noopener"><img class="icon" src="assets/images/icons/landbot-icon.jpg" alt="medium icon" title="go to landbot"/></a>
+    <a href="https://medium.com/@stphaniekrus" target="_blank" rel="noopener"><img class="icon" src="assets/images/icons/Medium-Icon.png" alt="medium icon" title="go to my medium page"/></a>
+    <a href="#" class="to-right ux-style">TOP</a>
+    </footer>
+    <script src="assets/js/myJS.js"></script>
+  </body>
+</html>

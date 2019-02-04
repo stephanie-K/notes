@@ -8,6 +8,7 @@ $ur-color:  #935300 ;
 $con-color:  #614397 ;
 $css-color: #440e4c;
 $js-color: #0f4c0e;
+$sd-color: #bb4092;
 
 @font-face {
     font-family: "OpenDyslexic";
@@ -117,6 +118,47 @@ body.ux {
     h2 {
         color: white;
         background-color: $ux-color;
+        font-weight: 300;
+        text-align: center;
+                @media only screen and (max-width: 489px) { 
+            width: 100%;
+         }
+    }
+}
+body.sd {
+    header {
+        background-color: $sd-color;
+    }
+    a, h1, h2, h3 {
+        color: $sd-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    a.button {
+        background-color: $sd-color;
+        color: white;
+    }
+    a.button:hover, a.button:focus {
+        color: $sd-color;
+        background-color: #ffffff;
+        border: solid 2px $sd-color;
+    }
+    hr {
+        border-top: 1px solid $sd-color;
+    } 
+    summary{
+        width: 17em;
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+         }
+    }
+    summary.sd-color {
+        background-color: $sd-color;
+    }
+    h2 {
+        color: white;
+        background-color: $sd-color;
         font-weight: 300;
         text-align: center;
                 @media only screen and (max-width: 489px) { 
@@ -447,7 +489,7 @@ nav {
     height: 40px;
     background-color: #e3e3e3 ;
     border-bottom: solid 4px #e3e3e3 ;
-    a.ux-color, a.dev-color, a.a11y-color, a.tech-color, a.con-color, a.ur-color{
+    a.ux-color, a.dev-color, a.a11y-color, a.tech-color, a.con-color, a.ur-color, a.sd-color {
         float: left;
         display: block;
         text-align: center;
@@ -470,47 +512,40 @@ nav {
          }
     }
 
-    .on-the-page.dev-color {
-        color: $dev-color;
-        font-weight: 500 ;
+    .on-the-page.dev-color,  .on-the-page.ux-color, .on-the-page.a11y-color, .on-the-page.tech-color, .on-the-page.con-color, .on-the-page.ur-color, .on-the-page.sd-color  {
+        background-color: #373737;
+        border-bottom: solid 4px #373737 ;
+        color: #e3e3e3; 
     }
-    .on-the-page.ux-color {
-        color: $ux-color;
-        font-weight: 500 ;
-    }
-    .on-the-page.a11y-color {
-        color: $a11y-color;
-        font-weight: 500 ;
-    }
-    .on-the-page.tech-color {
-        color: $tech-color;
-        font-weight: 500 ;
-    }
-    .on-the-page.con-color {
-        color: $con-color;
-        font-weight: 500 ;
-    }
-    .on-the-page.ur-color {
-        color: $ur-color;
-        font-weight: 500 ;
-    }
+
+
     a.ux-color:hover, a.ux-color.focus {
+        color: $ux-color;
         border-bottom: solid 4px $ux-color;
     }
     a.dev-color:hover, a.dev-color:focus {
+        color: $dev-color;
         border-bottom: solid 4px $dev-color;
     }
     a.a11y-color:hover, a.a11y-color:focus {
+        color: $a11y-color;
         border-bottom: solid 4px $a11y-color;
     }
     a.tech-color:hover, a.tech-color.focus {
+        color: $tech-color;
         border-bottom: solid 4px $tech-color;
     }
     a.ur-color:hover, a.ur-color:focus {
+        color: $ur-color;
         border-bottom: solid 4px $ur-color;
     }
     a.con-color:hover, a.con-color.focus {
+        color: $con-color;
         border-bottom: solid 4px $con-color;
+    }
+    a.sd-color:hover, a.sd-color.focus {
+        color: $sd-color;
+        border-bottom: solid 4px $sd-color;
     }
 }
 
@@ -685,6 +720,11 @@ footer {
         color: $con-color;
         padding: 5px;
         border: solid 1px $con-color;
+    }
+    a.sd-style {
+        color: $sd-color;
+        padding: 5px;
+        border: solid 1px $sd-color;
     }
 }
 .to-right {

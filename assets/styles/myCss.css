@@ -87,6 +87,37 @@ body.ux h2 {
     body.ux h2 {
       width: 100%; } }
 
+body.sd header {
+  background-color: #bb4092; }
+body.sd a, body.sd h1, body.sd h2, body.sd h3 {
+  color: #bb4092; }
+body.sd a:hover, body.sd a:focus {
+  color: #5a5a5a; }
+body.sd a.button {
+  background-color: #bb4092;
+  color: white; }
+body.sd a.button:hover, body.sd a.button:focus {
+  color: #bb4092;
+  background-color: #ffffff;
+  border: solid 2px #bb4092; }
+body.sd hr {
+  border-top: 1px solid #bb4092; }
+body.sd summary {
+  width: 17em; }
+  @media only screen and (max-width: 489px) {
+    body.sd summary {
+      width: 90%; } }
+body.sd summary.sd-color {
+  background-color: #bb4092; }
+body.sd h2 {
+  color: white;
+  background-color: #bb4092;
+  font-weight: 300;
+  text-align: center; }
+  @media only screen and (max-width: 489px) {
+    body.sd h2 {
+      width: 100%; } }
+
 body.a11y header {
   background-color: #218341; }
 body.a11y a, body.a11y h1, body.a11y h2, body.a11y h3 {
@@ -320,7 +351,7 @@ nav {
   height: 40px;
   background-color: #e3e3e3;
   border-bottom: solid 4px #e3e3e3; }
-  nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
+  nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color, nav a.sd-color {
     float: left;
     display: block;
     text-align: center;
@@ -332,45 +363,40 @@ nav {
     padding: 12px 10px;
     /* for bigger screens */ }
     @media only screen and (min-width: 455px) {
-      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
+      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color, nav a.sd-color {
         font-size: 18px;
         height: 20px;
         padding: 10px 20px; } }
     @media only screen and (min-width: 600px) {
-      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color {
+      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color, nav a.sd-color {
         font-size: 20px;
         height: 20px;
         padding: 10px 30px; } }
-  nav .on-the-page.dev-color {
-    color: #06609c;
-    font-weight: 500; }
-  nav .on-the-page.ux-color {
-    color: #800080;
-    font-weight: 500; }
-  nav .on-the-page.a11y-color {
-    color: #218341;
-    font-weight: 500; }
-  nav .on-the-page.tech-color {
-    color: #941100;
-    font-weight: 500; }
-  nav .on-the-page.con-color {
-    color: #614397;
-    font-weight: 500; }
-  nav .on-the-page.ur-color {
-    color: #935300;
-    font-weight: 500; }
+  nav .on-the-page.dev-color, nav .on-the-page.ux-color, nav .on-the-page.a11y-color, nav .on-the-page.tech-color, nav .on-the-page.con-color, nav .on-the-page.ur-color, nav .on-the-page.sd-color {
+    background-color: #373737;
+    border-bottom: solid 4px #373737;
+    color: #e3e3e3; }
   nav a.ux-color:hover, nav a.ux-color.focus {
+    color: #800080;
     border-bottom: solid 4px #800080; }
   nav a.dev-color:hover, nav a.dev-color:focus {
+    color: #06609c;
     border-bottom: solid 4px #06609c; }
   nav a.a11y-color:hover, nav a.a11y-color:focus {
+    color: #218341;
     border-bottom: solid 4px #218341; }
   nav a.tech-color:hover, nav a.tech-color.focus {
+    color: #941100;
     border-bottom: solid 4px #941100; }
   nav a.ur-color:hover, nav a.ur-color:focus {
+    color: #935300;
     border-bottom: solid 4px #935300; }
   nav a.con-color:hover, nav a.con-color.focus {
+    color: #614397;
     border-bottom: solid 4px #614397; }
+  nav a.sd-color:hover, nav a.sd-color.focus {
+    color: #bb4092;
+    border-bottom: solid 4px #bb4092; }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
 main {
@@ -506,6 +532,10 @@ footer {
     color: #614397;
     padding: 5px;
     border: solid 1px #614397; }
+  footer a.sd-style {
+    color: #bb4092;
+    padding: 5px;
+    border: solid 1px #bb4092; }
 
 .to-right {
   float: right;
