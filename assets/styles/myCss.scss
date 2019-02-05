@@ -21,7 +21,7 @@ html{
 }
 body {
     margin: 0;
-    font-family:  Roboto,Helvetica,Arial,sans-serif; /* Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
+    font-family:  nta, Roboto,Helvetica,Arial,sans-serif; /* Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
     color: #5a5a5a; 
     min-height: 100%;
     position: relative;
@@ -41,7 +41,7 @@ body {
         }  
     }
     summary{
-        font-weight: 300;
+        font-weight: 200;
         color: white;
         padding: 5px 25px 5px 1em;
         margin-bottom: 1em;
@@ -429,7 +429,7 @@ p {
 
 .lead {
     padding-top: 2em;
-    font-weight:600;
+    font-weight:500;
     font-size: 18px;
     em {
         font-size: 18px;
@@ -471,11 +471,11 @@ header {
         font-size: 20px;
         text-align: left;
         padding-left: 70px; 
-        font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+        font-family: nta, 'Roboto Condensed', Helvetica, Arial, sans-serif;
         font-weight: 300; 
     }
     h1.plain-color {
-        color: #e3e3e3;
+        color: #ffffff; // was #e3e3e3;
     }
 }
 
@@ -515,7 +515,8 @@ nav {
     .on-the-page.dev-color,  .on-the-page.ux-color, .on-the-page.a11y-color, .on-the-page.tech-color, .on-the-page.con-color, .on-the-page.ur-color, .on-the-page.sd-color  {
         background-color: #373737;
         border-bottom: solid 4px #373737 ;
-        color: #e3e3e3; 
+        color: #ffffff ; // was #e3e3e3; 
+        font-weight: 300;
     }
 
 

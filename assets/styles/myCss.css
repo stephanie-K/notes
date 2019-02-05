@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
+  font-family: nta, Roboto,Helvetica,Arial,sans-serif;
   /* Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
   color: #5a5a5a;
   min-height: 100%;
@@ -24,7 +24,7 @@ body {
       body details p, body details ul, body details ol, body details em {
         font-size: 16px; } }
   body summary {
-    font-weight: 300;
+    font-weight: 200;
     color: white;
     padding: 5px 25px 5px 1em;
     margin-bottom: 1em;
@@ -299,7 +299,7 @@ p {
 
 .lead {
   padding-top: 2em;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px; }
   .lead em {
     font-size: 18px;
@@ -336,10 +336,10 @@ header {
     font-size: 20px;
     text-align: left;
     padding-left: 70px;
-    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-family: nta, 'Roboto Condensed', Helvetica, Arial, sans-serif;
     font-weight: 300; }
   header h1.plain-color {
-    color: #e3e3e3; }
+    color: #ffffff; }
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 nav {
@@ -375,7 +375,8 @@ nav {
   nav .on-the-page.dev-color, nav .on-the-page.ux-color, nav .on-the-page.a11y-color, nav .on-the-page.tech-color, nav .on-the-page.con-color, nav .on-the-page.ur-color, nav .on-the-page.sd-color {
     background-color: #373737;
     border-bottom: solid 4px #373737;
-    color: #e3e3e3; }
+    color: #ffffff;
+    font-weight: 300; }
   nav a.ux-color:hover, nav a.ux-color.focus {
     color: #800080;
     border-bottom: solid 4px #800080; }
