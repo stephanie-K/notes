@@ -135,9 +135,9 @@ body.a11y hr {
   border-top: 1px solid #218341; }
 
 body.tech header {
-  background-color: #941100; }
+  background-color: #394874; }
 body.tech a, body.tech h1, body.tech h2, body.tech h3 {
-  color: #941100; }
+  color: #394874; }
 body.tech span.other {
   color: #2509c5; }
 body.tech a.other, body.tech h2.other {
@@ -145,12 +145,12 @@ body.tech a.other, body.tech h2.other {
 body.tech a:hover, body.tech a:focus {
   color: #5a5a5a; }
 body.tech a.button {
-  background-color: #941100;
+  background-color: #394874;
   color: white; }
 body.tech a.button:hover, body.tech a.button:focus {
-  color: #941100;
+  color: #394874;
   background-color: #ffffff;
-  border: solid 2px #941100; }
+  border: solid 2px #394874; }
 body.tech a.button-other {
   background-color: #2509c5;
   color: white; }
@@ -159,7 +159,7 @@ body.tech a.button-other:hover, body.tech a.button-other:focus {
   background-color: #ffffff;
   border: solid 2px #2509c5; }
 body.tech hr {
-  border-top: 1px solid #941100; }
+  border-top: 1px solid #394874; }
 body.tech hr.other {
   border-top: 1px solid #2509c5; }
 
@@ -218,20 +218,20 @@ body.con h2 {
   text-align: center; }
 
 body.dev header {
-  background-color: #06609c; }
+  background-color: #17797c; }
 body.dev a {
-  color: #06609c; }
+  color: #17797c; }
 body.dev a:hover, body.dev a:focus {
   color: #5a5a5a; }
 body.dev a.button {
-  background-color: #06609c;
+  background-color: #17797c;
   color: white; }
 body.dev a.button:hover, body.dev a.button:focus {
-  color: #06609c;
+  color: #17797c;
   background-color: #ffffff;
-  border: solid 2px #06609c; }
+  border: solid 2px #17797c; }
 body.dev h1, body.dev h3 {
-  color: #06609c; }
+  color: #17797c; }
 body.dev div h2 {
   color: white;
   font-weight: 300;
@@ -273,17 +273,17 @@ body.dev div.css-color a.button:hover, body.dev div.css-color a.button:focus {
 body.dev div.css-color hr {
   border-top: 1px solid #440e4c; }
 body.dev div.dev-color h2 {
-  background: #06609c; }
+  background: #17797c; }
 body.dev summary.css-color {
   background-color: #440e4c; }
 body.dev summary.dev-color {
-  background-color: #06609c; }
+  background-color: #17797c; }
 body.dev summary.js-color {
   background-color: #0f4c0e; }
 body.dev hr {
-  border-top: 1px solid #06609c; }
+  border-top: 1px solid #17797c; }
 body.dev .inverted {
-  background-color: #06609c;
+  background-color: #17797c;
   color: white;
   font-weight: 400;
   padding: 5px 0;
@@ -381,14 +381,14 @@ nav {
     color: #800080;
     border-bottom: solid 4px #800080; }
   nav a.dev-color:hover, nav a.dev-color:focus {
-    color: #06609c;
-    border-bottom: solid 4px #06609c; }
+    color: #17797c;
+    border-bottom: solid 4px #17797c; }
   nav a.a11y-color:hover, nav a.a11y-color:focus {
     color: #218341;
     border-bottom: solid 4px #218341; }
   nav a.tech-color:hover, nav a.tech-color.focus {
-    color: #941100;
-    border-bottom: solid 4px #941100; }
+    color: #394874;
+    border-bottom: solid 4px #394874; }
   nav a.ur-color:hover, nav a.ur-color:focus {
     color: #935300;
     border-bottom: solid 4px #935300; }
@@ -514,17 +514,17 @@ footer {
     padding: 5px;
     border: solid 1px #800080; }
   footer a.dev-style {
-    color: #06609c;
+    color: #17797c;
     padding: 5px;
-    border: solid 1px #06609c; }
+    border: solid 1px #17797c; }
   footer a.a11y-style {
     color: #218341;
     padding: 5px;
     border: solid 1px #218341; }
   footer a.tech-style {
-    color: #941100;
+    color: #394874;
     padding: 5px;
-    border: solid 1px #941100; }
+    border: solid 1px #394874; }
   footer a.ur-style {
     color: #935300;
     padding: 5px;
