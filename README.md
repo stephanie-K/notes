@@ -1,6 +1,7 @@
 # My notes
 This website is to organise my notes on various subjects:
 - **UX**    
+- **Service Design**
 - **UR**   
 - **Accessibility**     
 - **Frontend Development**     
