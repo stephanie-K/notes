@@ -1,11 +1,11 @@
 # My notes
 This website is to organise my notes on various subjects:
-- **UX**    
+- **UX**   
+- **Accessibility**   
 - **Service Design**
+- **Content**  
 - **UR**   
-- **Accessibility**     
-- **Frontend Development**     
-- **Content**    
+- **Frontend Development**       
 - **Technologies**    
 
 This is just for me. More is added on a regular basis from various readings.
