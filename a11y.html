@@ -440,12 +440,13 @@
 
 
             <a name="idf"></a>
+            <div style="background-color: #efefef">
             <h2>How to design for all - IDF course</h2>
             <p><a href="https://www.interaction-design.org/courses/accessibility-how-to-design-for-all" target="_blank" rel="noopener"><strong>How to design for all - IDF course</strong></a></p>
             <p>10 Principles of Accessibility for Web and Mobile Design<br>
               <ul>
                 <li>blind gets 80% of accessibility issues (includes low vision and colour blindness)</li>
-                <li>alt text (don't need to say 'image' and only say what is relevant (also important to SEO) - keep it to 50 characters long max, if not need then do" alt="" so screen readers ignore them</li>
+                <li><a href="https://webaim.org/techniques/alttext/" target="_blank" rel="noopener"><strong>alt text</strong></a> (don't need to say 'image' and only say what is relevant (also important to SEO) - keep it to 50 characters long max, if not need then do" alt="" so screen readers ignore them</li>
                 <li>hamburger menu are usually not accessible</li>
                 <li>content placed 'out of the way' won't be found or seen</li>
                 <li>accessibility testing with users can reveal huge gaps (don't just use checkers)</li>
@@ -657,6 +658,7 @@
                 <li>make more input errors</li>
                 <li>have more trouble hitting on-screen targets</li>
               </ul>
+            </div>  
             <p><a href="#" class="button">top</a></p>
             <hr>
           
@@ -687,7 +689,7 @@
                 <li><strong>don’t use colour alone to make critical information understandable: </strong>Try to use an indicator other than color such as text labels or patterns. When showing errors on the screen, don’t rely on colored text alone, add an icon or include a title to the message. Consider adding a visual cue such as font weight or underline text style to linked text in a paragraph, so the links stand out.</li>
                 <li><strong>have clear focus indicators : </strong>People with visual and motoric disabilities should be able to navigate without a mouse or trackpad. Created focus indicators that are straight forward and obvious for all so that regardless of your level of ability, you can use a website or apps with clarity.</li>
                 <li><strong>use labels or instructions with form fields and inputs: </strong>Always help people understand what they should do and write in a form. It’s best if labels don’t go away, even when the person is filling an input; people should never lose context with what they’re writing. People who use screen readers usually navigate through a form using the Tab key to jump through the form controls. The &lt;label&gt; elements are read for each form control. Any non-label text, as placeholder text, is usually skipped over.</li>
-                <li><strong>write useful alternative text for your images and other non-text content: </strong>Try to describe what’s happening in the image, and how it matters to the story, rather than just saying something like “picture,” context is everything.<br>
+                <li><strong>write useful <a href="https://webaim.org/techniques/alttext/" target="_blank" rel="noopener"><strong>alternative text</strong></a> for your images and other non-text content: </strong>Try to describe what’s happening in the image, and how it matters to the story, rather than just saying something like “picture,” context is everything.<br>
                     If the image is purely decorative or if it creates redundancy because the surrounding context already explains the content. Then adding an empty <alt> attribute will make screen readers skip it. If you don’t write any alt text, some screen readers will read the file name to the individual. If the image is functional like a printer icon, then give the alt attribute the value of the action that will happen "print"</li>
                 <li><strong>use correct markup on your content: </strong>Headings mark where the content starts — they’re tags given to text to define its style and purpose. Headings also establish the hierarchy of the content of the page.<br>
                     Titles with big font sizes help a reader understand the order of the content better. Likewise, screen readers also use heading tags to read content. This way, people with low-vision get an overview of the page by reading each heading in a hierarchal flow.<br>
