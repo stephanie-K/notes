@@ -55,6 +55,14 @@ body.home a.red {
 @media only screen and (max-width: 489px) {
   body.home summary {
     width: 90%; } }
+body.home h2 {
+  color: white;
+  background-color: #373737;
+  font-weight: 300;
+  text-align: center; }
+  @media only screen and (max-width: 489px) {
+    body.home h2 {
+      width: 100%; } }
 
 body.ux header {
   background-color: #800080; }
