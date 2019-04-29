@@ -7,7 +7,8 @@ This website is to organise my notes on various subjects:
 - **UR**   
 - **Frontend Development**       
 - **Technologies**    
-
+- **Books notes**
+- **Conferences notes
 This is just for me. More is added on a regular basis from various readings.
 
 Can be visited here: 
