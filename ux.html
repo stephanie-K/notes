@@ -154,6 +154,14 @@
                         <li><a href="https://github.com/daviddotto/govuk-design-system-snippets"target="_blank" rel="noopener">Github: govuk-design-system-snippets</a></li>  
                         <li><a href="https://www.npmjs.com/package/radio-button-redirect"target="_blank" rel="noopener">npm - Radio Button Redirect</a></li>     
                     </uL>
+                    <p><strong>Console.log</strong>: to be done in route.js or in the layout.html file add:<br>
+                        <span class="code">
+                            {% block head%}<br>
+                            {{ data | log }}<br>
+                            {% include "includes/head.html" %}<br>
+                            {% endblock %}
+                        </span>
+                    </p>
                     <p>
                         <a href="assets/images/ux/protoype.jpg" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/ux/protoype.jpg"/></a>
                     </p>
