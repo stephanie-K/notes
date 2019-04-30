@@ -500,12 +500,19 @@ details .arrow {
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
   height: 30px;
-  padding: 10px 0 10px 20px;
+  padding: 10px;
   background-color: #373737;
   color: #ffffff; }
+  @media only screen and (min-width: 490px) {
+    footer {
+      padding: 10px 0 10px 20px; } }
   footer .icon {
-    height: 30px;
-    width: 30px; }
+    height: 27px;
+    width: 27px; }
+    @media only screen and (min-width: 490px) {
+      footer .icon {
+        height: 30px;
+        width: 30px; } }
   footer a {
     padding: 0 3px;
     font-weight: 500;
@@ -548,7 +555,7 @@ footer {
 
 .to-right {
   float: right;
-  margin-right: 20px; }
+  margin-right: 10px; }
   @media only screen and (min-width: 490px) {
     .to-right {
       margin-right: 40px; } }
