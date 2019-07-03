@@ -125,6 +125,7 @@
                         <li><a href="#digital">Digitization, Digitalization, and Digital Transformation</a></li>
                         <li><a href="#dot">Dot voting</a></li>
                         <li><a href="#fac">Facilitation</a></li>
+                        <li><a href="#git">Github</a></li>
                         <li><a href="#hir">Hiring</a></li>
                         <li><a href="#lib">Liberating Structures 1-2-4-all</a></li>
                         <li><a href="#pro">Process Modeling</a></li>
@@ -362,6 +363,65 @@
             <p><a href="assets/images/facilitation.jpeg" target="_blank" rel="noopener"><img class ="img-two-thirds-width" src="assets/images/facilitation.jpeg"/></a></p>
             <p><a href="#" class="button">top</a></p>
             <hr>
+
+            <a name="git"></a>
+            <h3>Using GitHub</h3>
+            <p><a href="http://rogerdudler.github.io/git-guide/" target="_blank" rel="noopener"><strong>Git - the simple guide - By Roger Dudler</strong></a></p>
+            <p>Your local repository consists of three "trees" maintained by git:</p>
+            <ul>
+                <li><strong>Working Directory</strong> which holds the actual files</li>
+                <li><strong>Index</strong> which acts as a staging area </li>
+                <li><strong>HEAD</strong> which points to the last commit you've made</li>
+            </ul>
+            <p>
+                <a href="assets/images/git1.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/git1.png"/></a>
+                <a href="assets/images/git2.png" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/git2.png"/></a>
+            </p>
+            <p><strong>Good practice:</strong> when you checkout a branch: 
+            <span class="code">git fetch</span> (will get all the changes on this repository<br>
+            <span class="code">git pull</span> (will bring any changes on the remote branch to your local branch<br>
+            then start your work</p>
+            <ol>
+                <li>Create a branch:			<span class="code">git branch nameOfTheBranch</span></li>
+                <li>Go to that branch: 			<span class="code">git checkout nameOfTheBranch</span></li>
+                <li>Make your changes 
+                <li>Check if I had the latest changes 	<span class="code">git status</span></li> 
+                <li>Add the changes: 			<span class="code">git add fileName or git add .</span>  (for all the files)</li>
+                <li>Or to not include a file		<span class="code">git checkout filename</span> (changes will be deleted for that file)</li>
+                <li>Commit the changes, to the Head 	<span class="code">git commit -m "yourCommitMessage"</span></li>
+                <li>Then push your changes		<span class="code">git push</span></li>
+            </ol>
+            <p>Then <strong>pull request</strong> (branch I want my code to go to on the left, my branch on the right)<br>
+            <strong>Commit message advice</strong> “use imperative – brief – ticket number”<br>
+            <strong>If master has changed since I've branched</strong>, from my branch: <span class="code">git merge origin/master</span><br>
+            <strong>To merge new branch to master, from master:</strong> <span class="code">git merge nameOfTheBranch</span></p>
+
+            <p><strong>More commands:</strong><br>
+            Create a new repository: 				<span class="code">git init</span><br>
+            Create a working copy of a local repository: 		git clone /path/to/repository</span><br>
+            If remote repository: 					<span class="code">git clone username@host:/path/to/repository</span><br>
+            Remove a file from index				<span class="code">git rm fileName</span><br>
+            Pushing the head of the local repository to remote rep: 	<span class="code">git push origin master</span><br>
+            Update the local repository with remote changes: 	<span class="code">git pull</span><br>
+            Delete a branch						<span class="code">git branch –d nameOfBranch</span><br>
+            See all branches					<span class="code">git branch</span></p>
+
+
+            <p><strong>Command line</strong>:
+            <strong>To open a git bash window</strong>, go in the folder where you want to start and click right + open Git bash here<br>
+            <strong>use Tab</strong> to complete a text in the command line<br>
+            <span class="red">If stuck in the git editor:</span> press ‘esc’ key, then type <span class="code">:q!</span><br>
+            <strong>Top arrow</strong>: hit it to view previous command, you can do it more than once<br>
+            <strong>ls</strong> will list the files in your folder<br>
+            <strong>cd nameOfTheFolder</strong> to go in that folder<br>
+            <strong>cd ..</strong> to go back up one folder<br>
+            <strong>Ctrl C</strong> to stop if git bash is blocked<br>
+            <span class="red">To avoid having to enter your password and user name:</span> <span class="code">git config --global credential.helper wincred</span></p>
+
+
+            <p><a href="#" class="button">top</a></p>
+            <hr>
+
 
 
             <a name="hir"></a>
