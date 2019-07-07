@@ -181,9 +181,10 @@
                 <ul>
                   <li><a href="#93">93% of people with disabilities don't use a wheelchair</a></li>
                   <li><a href="#code">Accessibility in mind when writing code</a></li>
+                  <li><a href="#tree">Accessibility tree</a></li>
                   <li><a href="#aria">Aria</a></li>
                   <li><a href="#auto">Auto Complete</a></li>
-                  <li><a href="#blin">Blind users</a></li>
+                  <li><a href="#blin">Blind users - Low vision</a></li>
                   <li><a href="#captcha">Captcha</a></li>
                   <li><a href="#city">Cities</a></li>
                   <li><a href="#color">Colours, contrast</a></li>
@@ -203,6 +204,7 @@
                   <li><a href="#responsive">Responsive Web Design</a></li>
                   <li><a href="#screenread">Screen Readers + blind user with phones</a></li>
                   <li><a href="#menu">Settings Menu</a></li>
+                  <li><a href="#sim">Simulations</a></li>
                   <li><a href="#social">Social Media</a></li>
                   <li><a href="#sur">Surveys</a></li>
                   <li><a href="#switch">Switch - and Switch Access Scanning</a></li>
@@ -290,6 +292,22 @@
             <p><a href="#" class="button">top</a></p>
             <hr>
 
+            <a name="tree"></a>
+            <h2>Accessibility Tree</h2>
+            <p><a href="https://hacks.mozilla.org/2019/06/how-accessibility-trees-inform-assistive-tech/" target="_blank" rel="noopener"><strong>How accessibility trees inform assistive tech</strong></a></p>
+            <p>Accessibility trees contain accessibility-related meta information for most of our HTML elements. The elements involved determine what that means, so we’ll look at some examples.</p>
+            <p>Generally, there are four things in an accessibility tree object:</p>
+            <ul>
+                <li><b>name</b>: how can we refer to this thing? For instance, a link with the text ‘Read more’ will have ‘Read more’ as its name (more on how names are computed in the <a href="https://www.w3.org/TR/accname-1.1/" target="_blank">Accessible Name and Description Computation spec</a>)</li>
+                <li><b>description</b>: how do we describe this element, if we want to add anything to the name? The description of a table could explain what kind of info that table offers.</li>
+                <li><b>role</b>: what kind of thing is it? For example, is it a button, a nav bar or a list of items?</li>
+                <li><b>state</b>: if any, does it have state? Think checked/unchecked for checkboxes, or collapsed/expanded for the `&lt;summary&gt;` element</li>
+            </ul>
+            <p>Additionally, the accessibility tree often contains information on what can be done with an element: a link can be <i>followed</i>, a text input can be <i>typed into</i>, that kind of thing.</p>
+            <p><a href="#" class="button">top</a></p>
+            <hr>
+
+
             <a name="aria"></a>
             <h2>Aria</h2>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" target="_blank" rel="noopener"><strong>ARIA Live Regions - Mozilla</strong></a></p>
@@ -330,8 +348,29 @@
             <hr>
 
             <a name="blin"></a>
-            <h2>Blind users</h2>
+            <h2>Blind users - Low vision</h2>
             <p><a href="https://medium.com/@kaylajheffernan/facilitation-tips-for-research-with-blind-users-acf7dad6554b" target="_blank" rel="noopener"><strong>Facilitation tips for research with blind users</strong></a></p>
+            <p><a href="https://go.siteimprove.com/watch-now-talks-accessibility" target="_blank" rel="noopener"><strong>Understanding How People with Low Vision Use the Internet</strong></a></p>
+            <p>Lots of people with low vision don't need assistive technology and will mange to deal with your website without but they will have a more or less good user experience if you have make sure their difficulties are taken into account.</p>
+            <p>How do they use internet:</p>
+            <ul>
+              <li>depends on the user</li>
+              <li>adjust the physical space between them and their device</li>
+              <li>adjust zoom and text settings</li>
+              <li>zoom in or magnify content</li>
+              <li>low resolution settings</li>
+              <li>some low vision users use screen readers in addition to zooming / magnifying content</li>
+            </ul>
+            <p>People with low vision often question what they see, they are not very confident. So any usuability issue feed in this lack of confidence and make it worst.</p>
+            <p>Once zoomed in, interface on a phone usually looks very busy, there's lot of clutter and things like top menu or search box gets in the way and seriously reduce what we can see. You need to leave only waht is really necessary.</p>
+            <p>Youre killing me with your ... :</p>
+            <ul>
+              <li>non responsive content (overflowing content, clipped content)</li>
+              <li>intrusive content (menu taking up halpf the screen, pop up)</li>
+              <li>competing non eseential information</li>
+              <li>long paragraphs</li>
+            </ul>
+            <p>a few quick tips for testing your website or mobile app for low vision users: test with bigger characters, or and zoom of the browser, or your system, smaller screen size too. Look at the use of space.</p>
             <p><a href="#" class="button">top</a></p>
             <hr>
 
@@ -373,6 +412,7 @@
             <a name="deaf"></a>
             <h2>Deaf and hard of hearing people</h2>
             <p><a href="https://medium.com/@sheribyrnehaber/captioning-its-time-for-a-revolt-37d37425af32" target="_blank" rel="noopener"><strong>Captioning: It’s Time for a Revolt</strong></a></p>
+            <p><a href="http://www.stagetext.org/about-stagetext/training-in-how-to-subtitle-your-own-content" target="_blank" rel="noopener"><strong>How to subtitle your online content</strong></a></p>
             <p><a href="https://developer.paciellogroup.com/blog/2017/03/sounding-out-the-web-accessibility-for-deaf-and-hard-of-hearing-people-part-2/" target="_blank" rel="noopener"><strong>Sounding out the web: accessibility for deaf and hard of hearing people</strong></a></p>
             <p class="lead">What can subtitles and text do? and not do?</p>
             <p>Subtitles or captions for hard of hearing people provide text information on the screen that is only available through sound. As well as providing a text transcription of what is being said, captions can explain which character is speaking and that, for example a telephone is ringing or a dog is barking. Text cannot however convey the tone, pitch and intonation of a voice</p>
@@ -704,6 +744,14 @@
             <p><strong>Inclusive design methods are a great addition to human-centered design methodologies. </strong></p>
             <p>Learning how people adapt to the world around them means spending time understanding their experience from their perspective.<br>
             When done well, we can recognise more than just the barriers that people encounter. We also recognise the motivations that all people have in common.</p>
+            <p><a href="https://uxplanet.org/4-ways-to-practice-inclusive-design-493830edc230" target="_blank" rel="noopener"><strong>4 Ways to Practice Inclusive Design</strong></a></p>
+            <p>Design for: </p>
+            <ul>
+              <li>human ability</li>
+              <li>situational ability</li>
+              <li>digital access</li>
+              <li>individual preferences</li>
+            </ul>
             <p><a href="https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94" target="_blank" rel="noopener"><strong>Designing for accessibility is not that hard</strong></a></p>
             <p>Digital accessibility refers to the practice of building digital content and applications that can be used by a wide range of people, including individuals who have visual, motor, auditory, speech, or cognitive disabilities.</p>
             <p>There is a strong business case for accessibility: studies show that accessible websites have better search results, they reach a bigger audience, they’re SEO friendly, have faster download times, they encourage good coding practices, and they always have better usability.</p>
@@ -893,6 +941,7 @@
             <p>Always capitalise the first letter of each word in a hashtag, this then allows screen reader software to read out each word separately. It also makes them #EasierToRead. This practice is often referred to as #CamelCase and is extremely helpful in enabling users with low vision or loss of sight engage with hashtags. </p>
             <p>Emoji/icons are perfectly ok, but like a good after-dinner brandy, they're better in moderation and served at the end</p>
             <p><a href="https://accessibility.blog.gov.uk/2017/02/08/advice-for-creating-content-that-works-well-with-screen-readers/" target="_blank" rel="noopener"><strong>How to create content that works well with screen readers</strong></a></p>
+            <p><a href="http://uncaughtreferenceerror.com/a-crash-course-to-screenreaders-for-sighted-developers/" target="_blank" rel="noopener"><strong>An Intro To Screen Reader Testing for Sighted Developers</strong></a></p>
             <p><a href="https://tink.uk/thoughts-on-screen-reader-detection/" target="_blank" rel="noopener"><strong>Thoughts on screen reader detection</strong></a></p>
             <p><a href="https://tink.uk/the-difference-between-keyboard-and-screen-reader-navigation/" target="_blank" rel="noopener"><strong>The difference between keyboard and screen reader navigation</strong></a></p>
             <p><a href="assets/images/sd/conf/Screenreader Controls V2.pdf" target="_blank" rel="noopener"><strong>screen readers controls</strong></a></p>
@@ -900,6 +949,7 @@
             <p><a href="https://www.youtube.com/watch?v=HE2R86EZPMA&feature=youtu.be" target="_blank" rel="noopener"><strong>video game to illustrate the screen readers landmarks : BingO Bakery: Headings, Landmarks, and Tabs</strong></a></p>
             <p><a href="https://medium.com/@mandy.michael/building-websites-for-safari-reader-mode-and-other-reading-apps-1562913c86c9" target="_blank" rel="noopener"><strong>Building websites for Safari Reader Mode and other reading apps</strong></a></p>
             <p><a href="https://www.youtube.com/watch?v=dEbl5jvLKGQ" target="_blank" rel="noopener"><strong>Screen Reader Demo for Digital Accessibility (below)</strong></a></p>
+           
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/dEbl5jvLKGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
             <p>Using voice over on an iPhone</p>
             <p><video width="560" height="315" controls>
@@ -916,6 +966,12 @@
             <a name="menu"></a>
             <h2>Settings menu</h2>
             <p><a href="http://reciteme.com/user-guide" target="_blank" rel="noopener"><strong>Recite me - user guide</strong></a></p>
+            <p><a href="#" class="button">top</a></p>
+            <hr>
+
+            <a name="sim"></a>
+            <h2>Simulations</h2>
+            <p><a href="https://noti.st/jkva/oJviC2/psychology-and-sociology-of-disability-simulations#saVIr3u" target="_blank" rel="noopener"><strong>Sociology and psychology of disability simulations</strong></a></p>
             <p><a href="#" class="button">top</a></p>
             <hr>
 
