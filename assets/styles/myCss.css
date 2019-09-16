@@ -577,6 +577,12 @@ footer {
     .img-one-tenth-width {
       width: 100%; } }
 
+.img-one-fifth-width {
+  width: 20%; }
+  @media only screen and (max-width: 489px) {
+    .img-one-fifth-width {
+      width: 100%; } }
+
 .img-one-quarter-width {
   vertical-align: top;
   width: 24%; }
