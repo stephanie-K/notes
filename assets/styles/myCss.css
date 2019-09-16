@@ -55,6 +55,17 @@ body.home a.red {
 @media only screen and (max-width: 489px) {
   body.home summary {
     width: 90%; } }
+body.home summary.plain {
+  color: #373737;
+  font-size: 20px;
+  font-weight: 700;
+  width: 20em;
+  padding: 0 25px 0 1em;
+  margin-bottom: 1em;
+  background-color: white; }
+  @media only screen and (max-width: 489px) {
+    body.home summary.plain {
+      width: 90%; } }
 body.home h2 {
   color: white;
   background-color: #373737;
