@@ -10,6 +10,7 @@ $con-color:  #614397 ;
 $css-color: #440e4c;
 $js-color: #0f4c0e;
 $sd-color: #bb4092;
+$dark-mode: #1e1e1e;
 
 @font-face {
     font-family: "OpenDyslexic";
@@ -25,6 +26,14 @@ body {
     font-family:  nta, Roboto,Helvetica,Arial,sans-serif; /* Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
     color: #5a5a5a; 
     min-height: 100%;
+    /*
+    
+    color: #fff; // #5a5a5a; 
+    background-color: $dark-mode; 
+    font-weight: 200 ;
+    min-height: 100%;
+    
+    */
     position: relative;
     hr {
         margin: 1em 0 0.5em 0;

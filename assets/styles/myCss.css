@@ -12,6 +12,14 @@ body {
   /* Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
   color: #5a5a5a;
   min-height: 100%;
+  /*
+  
+  color: #fff; // #5a5a5a; 
+  background-color: $dark-mode; 
+  font-weight: 200 ;
+  min-height: 100%;
+  
+  */
   position: relative; }
   body hr {
     margin: 1em 0 0.5em 0;
