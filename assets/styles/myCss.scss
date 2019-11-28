@@ -493,10 +493,13 @@ header {
     img {
         float: left;
         display: block;
-        margin-top: 5px;
-        margin-left: 5px;
+        margin: 5px 10px 0 10px;
         height: 40px;
         width : 40px;
+    }
+    .saltire {
+        width: 65px;
+        margin: 5px 10px 0 10px;
     }
     h1 {
         font-size: 20px;
