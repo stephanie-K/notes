@@ -39,7 +39,14 @@ body {
         margin: 1em 0 0.5em 0;
         border:0;
     } 
-    p, ul, ol, em, a {
+    td {
+        padding-right: 20px;
+    }
+    th {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    p, ul, ol, em, a, table {
         font-size: 16px;
     }
     details  {
@@ -61,6 +68,12 @@ body {
             width: 90%;
          }
     }
+}
+body.gaelic{
+    h3 {
+        color: $a11y-color;
+    }
+
 }
 body.home {
     header {
@@ -595,7 +608,7 @@ main {
     padding-right: 30px;
 
    // this is to avoid the line of text to be too long to read on big screens. Max 1200px (as it's for me) and same white space on both side of it
-    p, h1, h2, h3, ul, ol, details, hr {
+    p, h1, h2, h3, ul, ol, details, hr, div{
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;

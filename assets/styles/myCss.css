@@ -24,7 +24,12 @@ body {
   body hr {
     margin: 1em 0 0.5em 0;
     border: 0; }
-  body p, body ul, body ol, body em, body a {
+  body td {
+    padding-right: 20px; }
+  body th {
+    text-align: left;
+    padding-bottom: 5px; }
+  body p, body ul, body ol, body em, body a, body table {
     font-size: 16px; }
   body details p, body details ul, body details ol, body details em {
     margin: 0.5em 0; }
@@ -41,6 +46,9 @@ body {
     @media only screen and (max-width: 489px) {
       body summary {
         width: 90%; } }
+
+body.gaelic h3 {
+  color: #218341; }
 
 body.home header {
   background-color: #373737; }
@@ -437,7 +445,7 @@ main {
   /* to leave some room above the footer */
   padding-left: 30px;
   padding-right: 30px; }
-  main p, main h1, main h2, main h3, main ul, main ol, main details, main hr {
+  main p, main h1, main h2, main h3, main ul, main ol, main details, main hr, main div {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
