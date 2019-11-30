@@ -49,6 +49,8 @@ body {
 
 body.gaelic h3 {
   color: #218341; }
+body.gaelic header {
+  background-color: #373737; }
 
 body.home header {
   background-color: #373737; }
