@@ -51,6 +51,20 @@ body.gaelic h3 {
   color: #218341; }
 body.gaelic header {
   background-color: #373737; }
+body.gaelic details {
+  margin-top: 30px; }
+body.gaelic summary {
+  font-weight: 700;
+  font-size: 20px;
+  color: #218341;
+  padding: 5px 25px 5px 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  width: 10em; }
+  @media only screen and (max-width: 489px) {
+    body.gaelic summary {
+      width: 90%;
+      font-size: 18px; } }
 
 body.home header {
   background-color: #373737; }
