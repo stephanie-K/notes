@@ -360,6 +360,11 @@ p {
   color: #d4351c;
   font-weight: bold; }
 
+.hl-sd {
+  background-color: #dedede;
+  color: #bb4092;
+  font-weight: bold; }
+
 .code {
   background-color: #eeeeee;
   padding: 5px 0;
