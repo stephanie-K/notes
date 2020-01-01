@@ -504,10 +504,21 @@ color: #d4351c;
 font-weight: bold;
 }
 
-.hl-sd {
-    background-color: #dedede;
-    color: $sd-color;
-    font-weight: bold;
+.lou {
+    background-color: #1a1a1a;
+    color: #fb5b5f;    
+}
+.lou-y {
+    background-color: #1a1a1a;
+    color: #fdd73d;    
+}
+.lou-g {
+    background-color: #1a1a1a;
+    color: #01b299;    
+}
+span.lou, span.lou-y, span.lou-g {
+    padding: 3px 5px;
+    margin: 2px auto;
 }
 
 .code {
