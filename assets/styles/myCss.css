@@ -581,45 +581,6 @@ footer {
   @media only screen and (min-width: 490px) {
     footer {
       padding: 10px 0 10px 40px; } }
-  footer a.home-style {
-    color: #373737;
-    padding: 5px;
-    border: solid 1px #373737; }
-  footer a.ux-style {
-    color: #800080;
-    padding: 5px;
-    border: solid 1px #800080; }
-  footer a.dev-style {
-    color: #17797c;
-    padding: 5px;
-    border: solid 1px #17797c; }
-  footer a.a11y-style {
-    color: #218341;
-    padding: 5px;
-    border: solid 1px #218341; }
-  footer a.tech-style {
-    color: #394874;
-    padding: 5px;
-    border: solid 1px #394874; }
-  footer a.ur-style {
-    color: #935300;
-    padding: 5px;
-    border: solid 1px #935300; }
-  footer a.con-style {
-    color: #614397;
-    padding: 5px;
-    border: solid 1px #614397; }
-  footer a.sd-style {
-    color: #bb4092;
-    padding: 5px;
-    border: solid 1px #bb4092; }
-
-.to-right {
-  float: right;
-  margin-right: 10px; }
-  @media only screen and (min-width: 490px) {
-    .to-right {
-      margin-right: 40px; } }
 
 .clearfix::after {
   content: "";

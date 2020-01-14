@@ -778,53 +778,6 @@ footer {
     @media only screen and (min-width: 490px) {
         padding: 10px 0 10px 40px;
     }
-    a.home-style {
-        color: $home-color;
-        padding: 5px;
-        border: solid 1px $home-color;
-    }
-    a.ux-style {
-        color: $ux-color;
-        padding: 5px;
-        border: solid 1px $ux-color;
-    }
-    a.dev-style {
-        color: $dev-color;
-        padding: 5px;
-        border: solid 1px $dev-color;
-    }
-    a.a11y-style {
-        color: $a11y-color;
-        padding: 5px;
-        border: solid 1px $a11y-color;
-    }
-    a.tech-style {
-        color: $tech-color;
-        padding: 5px;
-        border: solid 1px $tech-color;
-    }
-    a.ur-style {
-        color: $ur-color;
-        padding: 5px;
-        border: solid 1px $ur-color;
-    }
-    a.con-style {
-        color: $con-color;
-        padding: 5px;
-        border: solid 1px $con-color;
-    }
-    a.sd-style {
-        color: $sd-color;
-        padding: 5px;
-        border: solid 1px $sd-color;
-    }
-}
-.to-right {
-    float: right;
-    margin-right: 10px;
-    @media only screen and (min-width: 490px) {
-        margin-right: 40px;
-    } 
 }
 
 .clearfix::after { // to avoid element with to-right to overflow outside a container
