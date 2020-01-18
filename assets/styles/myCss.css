@@ -406,7 +406,7 @@ header {
   header img {
     float: left;
     display: block;
-    margin: 5px 10px 0 10px;
+    margin: 5px 10px 0 0px;
     height: 40px;
     width: 40px; }
   header .saltire {
