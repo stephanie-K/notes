@@ -47,16 +47,12 @@ body {
       body summary {
         width: 90%; } }
 
-body.gaelic h3 {
-  color: #218341; }
-body.gaelic header {
-  background-color: #373737; }
 body.gaelic details {
   margin-top: 30px; }
 body.gaelic summary {
   font-weight: 700;
   font-size: 20px;
-  color: #218341;
+  color: #0064bb;
   padding: 5px 25px 5px 1em;
   margin-bottom: 1em;
   background-color: white;
@@ -65,6 +61,21 @@ body.gaelic summary {
     body.gaelic summary {
       width: 90%;
       font-size: 18px; } }
+body.gaelic header {
+  background-color: #373737; }
+body.gaelic a, body.gaelic h1, body.gaelic h2, body.gaelic h3 {
+  color: #0064bb; }
+body.gaelic a:hover, body.gaelic a:focus {
+  color: #5a5a5a; }
+body.gaelic a.button {
+  background-color: #0064bb;
+  color: white; }
+body.gaelic a.button:hover, body.gaelic a.button:focus {
+  color: #0064bb;
+  background-color: #ffffff;
+  border: solid 2px #0064bb; }
+body.gaelic hr {
+  border-top: 1px solid #0064bb; }
 
 body.home header {
   background-color: #373737; }

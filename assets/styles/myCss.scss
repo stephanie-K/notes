@@ -11,6 +11,7 @@ $css-color: #440e4c;
 $js-color: #0f4c0e;
 $sd-color: #bb4092;
 $dark-mode: #1e1e1e;
+$gaelic-color: #0064bb; // saltire
 
 @font-face {
     font-family: "OpenDyslexic";
@@ -70,19 +71,13 @@ body {
     }
 }
 body.gaelic{
-    h3 {
-        color: $a11y-color;
-    }
-    header {
-        background-color: $home-color;
-    } 
     details {
         margin-top:30px;
     }
     summary{
         font-weight: 700;
         font-size: 20px;
-        color: $a11y-color;
+        color: $gaelic-color;
         padding: 5px 25px 5px 1em;
         margin-bottom: 1em;
         background-color:white;
@@ -90,8 +85,29 @@ body.gaelic{
         @media only screen and (max-width: 489px) { 
             width: 90%;
             font-size: 18px;
-         }
+        }
     }
+    header {
+        background-color: $home-color;
+    } 
+    a, h1, h2, h3 {
+        color: $gaelic-color;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    a.button {
+        background-color: $gaelic-color;
+        color: white;
+    }
+    a.button:hover, a.button:focus {
+        color: $gaelic-color;
+        background-color: #ffffff;
+        border: solid 2px $gaelic-color;
+    }
+    hr {
+        border-top: 1px solid $gaelic-color;
+    } 
 
 }
 body.home {
