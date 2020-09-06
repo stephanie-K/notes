@@ -92,6 +92,8 @@
 
                     <p class="lead"><a href="https://github.com/ctdesign/gov-design-systems-list" target="_blank" rel="noopener"><strong>Other Design Systems:</strong></a></p>
 
+                    <li><a href="https://blogs.gov.scot/digital/2020/08/25/digital-scotland-design-system/" target="_blank" rel="noopener">Digital Scotland Design System blog post</a></li>
+                    <li><a href="https://designsystem.gov.scot/" target="_blank" rel="noopener">Design and build digital services for the Scottish Government</a></li>
                     <li><a href="https://adele.uxpin.com/" target="_blank" rel="noopener">Adele - design system comparator</a></li>
                     <li><a href="https://coop-design-system.herokuapp.com//" target="_blank" rel="noopener">Designing and building digital services for the Co‑op</a></li>
                     <li><a href="http://hmrc.github.io/assets-frontend/index.html" target="_blank" rel="noopener">HMRC Design System</a></li>
@@ -184,6 +186,7 @@
                         <li><a href="https://designnotes.blog.gov.uk/2016/05/13/archiving-versions-of-a-prototype/" target="_blank" rel="noopener">GOVUK blog: Archiving versions of a prototype</a></li>
                         <li><a href="http://chrisarmstrong.io/government-design-workflow.html" target="_blank" rel="noopener">My workflow for government design projects</a></li>
                         <li><a href="https://design-system.service.gov.uk/get-started/extending-and-modifying-components/" target="_blank" rel="noopener">Extending and modifying components in production</a></li>
+                        <li><a href="https://prototype-kit-training.cloudapps.digital/#introduction" target="_blank" rel="noopener">GOVUK Prototype training - Introduction</a></li>
                     </uL>
                     <p><strong>Console.log</strong>: to be done in route.js or in the layout.html file add:<br>
                         <span class="code">
@@ -201,6 +204,22 @@
                     <p>
                         <a href="assets/images/ux/protoype.jpg" target="_blank" rel="noopener"><img class ="img-one-third-width" src="assets/images/ux/protoype.jpg"/></a>
                     </p>
+                    <p>To deal with routing</p>
+                    <p><span class="code">
+                        router.get('/accommodation', (req, res) => {<br>
+                            let next = req.baseUrl + '/transport';<br>
+                            if (req.headers.referer.includes('check-your-answers')) {<br>
+                              next = req.baseUrl + '/check-your-answers';<br>
+                            }<br>
+                            let previous = req.baseUrl + '/';<br>
+                            res.render('accommodation', {<br>
+                              actions: {<br>
+                                save: next,<br>
+                                back: previous,<br>
+                              }<br>
+                            });<br>
+                          });
+                    </span></p>
                 </div>
             </details>
 
@@ -701,8 +720,9 @@
     <p><a href="https://medium.com/@mbimagination/best-ux-tips-for-icon-usability-30101848fc4b" target="_blank" rel="noopener"><strong>Best UX tips for icon Usability</strong></a></p>
     <p><a href="https://thenounproject.com/" target="_blank" rel="noopener"><strong>Icons for everything</strong></a></p>
     <p><a href="https://digital.nhs.uk/blog/transformation-blog/2019/icons-avoid-temptation-and-start-with-user-needs" target="_blank" rel="noopener"><strong>Icons: avoid temptation and start with user needs</strong></a></p>
-    <p><a href="https://home-office-digital-patterns.herokuapp.com/components/icons" target="_blank" rel="noopener"><strong>Icons - Home Office design</strong></a> and 
+    <p><a href="https://hodigital.blog.gov.uk/2017/08/18/good-icons-should-be-invisible/" target="_blank" rel="noopener"><strong>Icons - Home Office design - Good icons should be invisible</strong></a> and 
         <a href="https://github.com/alphagov/govuk-design-system-backlog/issues/24" target="_blank" rel="noopener"><strong>Github for it</strong></a></p>
+        <p><a href="https://www.nngroup.com/search/?q=icon" target="_blank" rel="noopener"><strong>Nielsen Norman Group Nielsen Norman Group - links about Icons</strong></a></p>
     <p>Icons are visual representation of an object, action, or idea. When icons are used correctly, they bring many UX and usability benefits</p>
     <p>To ensure good icon usability</p>
     <ul>
