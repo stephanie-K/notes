@@ -8,17 +8,15 @@ html {
 
 body {
   margin: 0;
-  font-family: nta, Roboto,Helvetica,Arial,sans-serif;
-  /* Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
+  /* font-family:  nta, Roboto,Helvetica,Arial,sans-serif; Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
+  font-family: Roboto,Helvetica,Arial,sans-serif;
   color: #5a5a5a;
   min-height: 100%;
   /*
-  
   color: #fff; // #5a5a5a; 
   background-color: $dark-mode; 
   font-weight: 200 ;
   min-height: 100%;
-  
   */
   position: relative; }
   body hr {
@@ -416,7 +414,7 @@ header {
     font-size: 20px;
     text-align: left;
     padding-left: 70px;
-    font-family: nta, 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
     font-weight: 300; }
   header h1.plain-color {
     color: #ffffff; }
