@@ -224,6 +224,14 @@
                     </span></p>
                     <p>Low-fi prototype</p>
                     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eRqUE6IHTEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <p>Hello! Does anyone if there is such a thing as tutorials about pulling data into a prototype via json?<br>
+                        Essentially you can put your data files in to app/data/ and then import them to the sesssion-data-defaults.js file<br>
+                        Here's <a href="https://github.com/DFE-Digital/register-trainee-teachers-prototype/blob/master/app/data/session-data-defaults.js" target="_blank" rel="noopener">my session-data-defaults.js</a> file session-data-defaults.js<br>
+                        Lines 1-8 you can see me use require - this is where you could instead reference your own json<br>
+                        once you've required the data blob, you need to add it to the object that gets exported (lines 61-80 in mine)<br>
+                        you might need to include the extension too - so require('./file.json')<br>
+                        Most of my data files are javascript files rather than json files, which don't need an extension<br>
+                        Example of my data files: https://github.com/DFE-Digital/register-trainee-teachers-prototype/tree/master/app/data</p>
                 </div>
             </details>
 
