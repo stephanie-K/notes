@@ -235,6 +235,14 @@
                         you might need to include the extension too - so require('./file.json')<br>
                         Most of my data files are javascript files rather than json files, which don't need an extension<br>
                         Example of my data files: https://github.com/DFE-Digital/register-trainee-teachers-prototype/tree/master/app/data</p>
+                    
+                    <p class="lead">Why the prototype kit should not be used for production code</p>
+                    <p>it would not be remotely safe to do so.<br>
+                        The kit actively does things to help prototyping that are not safe in production, and should not handle real user data. Things like automatically storing all GET and POST data.<br>
+                        The way it handles session data is also not safe.<br>
+                        Much of the code was written by non-developers (me! and others) and is not necessarily production ready.<br>
+                        Besides intentional features that cause security issues, there are likely lots of other security and privacy issues.<br>
+                        It has some tests, but is largely untested.</p>
                 </div>
             </details>
 
@@ -297,6 +305,7 @@
                     <li><a href="#smart">Smart home</a></li>              
                     <li><a href="#start">Start page</a></li>
                     <li><a href="#step">Step by step</a></li>
+                    <li><a href="#tab">Tabs</a></li>
                     <li><a href="#toa">Toast</a></li>
                     <li><a href="#tile">Tiled menu</a></li>
                     <li><a href="#time">Time out</a></li>
@@ -317,6 +326,7 @@
         <strong>Experience Designer (XD)</strong><br>
         <strong>Information Architect (IA)</strong><br>
         <a href="https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework" target="_blank" rel="noopener"><strong>Description of different roles for GDS</strong></a><br>
+        <a href="https://explore-tech.netlify.app/" target="_blank" rel="noopener"><strong>Explore Tech Roles - when not sure what role is for you</strong></a><br>
         <a href="https://www.gov.uk/government/publications/interaction-designer-role-description/interaction-designer-role-description" target="_blank" rel="noopener"><strong>Interaction Designer (IX):</strong></a> An interaction designer works out the best way to let users interact with services, in terms of both overall flow and at the level of individual design elements.<br>
         <a href="https://www.gov.uk/government/publications/service-designer-skills-they-need/service-designer-skills-they-need" target="_blank" rel="noopener"><strong>Service Designer (SD):</strong></a> A service designer is a confident and competent designer who is able to develop designs based on evidence of user needs and organisational outcomes. They can be trusted to make good decisions and can recognise when to ask for further guidance and support. They will contribute to the development of design concepts, they should be able to interpret evidence-based research and incorporate this into their work.<br>
         <strong>Experience Architect (XA) or (EA)</strong><br>
@@ -1295,6 +1305,11 @@
     <p><a href="#" class="button">top</a></p>
     <hr>
 
+    <a name="tab"></a>
+    <h3>Tabs</h3>
+    <p><a href="https://adamsilver.io/articles/avoiding-tab-styles-for-navigation/" target="_blank" rel="noopener"><strong>Avoiding tab styles for navigation</strong></a></p>
+    <p><a href="#" class="button">top</a></p>
+    <hr>
 
     <a name="tile"></a>
     <h3>Tiled menus</h3>
