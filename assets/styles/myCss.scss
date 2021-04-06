@@ -668,7 +668,7 @@ main {
     padding-right: 30px;
 
    // this is to avoid the line of text to be too long to read on big screens. Max 1200px (as it's for me) and same white space on both side of it
-    p, h1, h2, h3, ul, ol, details, hr, div{
+    p, h1, h2, h3, ul, ol, details, hr, div, blockquote{
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
@@ -773,6 +773,11 @@ details {
             width: 90%;
          }
     }
+}
+
+blockquote {
+    background-color: #f3f3f3;
+    padding: 2em;
 }
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 
