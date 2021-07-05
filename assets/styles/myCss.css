@@ -12,35 +12,29 @@ body {
   font-family: Roboto,Helvetica,Arial,sans-serif;
   color: #5a5a5a;
   min-height: 100%;
-  /*
-  color: #fff; // #5a5a5a; 
-  background-color: $dark-mode; 
-  font-weight: 200 ;
-  min-height: 100%;
-  */
   position: relative; }
   body hr {
     margin: 1em 0 0.5em 0;
     border: 0; }
   body td {
-    padding-right: 20px; }
+    padding-right: 1em; }
   body th {
     text-align: left;
-    padding-bottom: 5px; }
+    padding-bottom: 0.25em; }
   body p, body ul, body ol, body em, body a, body table {
-    font-size: 16px; }
+    font-size: 1em; }
   body details p, body details ul, body details ol, body details em {
     margin: 0.5em 0; }
     @media only screen and (min-width: 490px) {
       body details p, body details ul, body details ol, body details em {
-        font-size: 16px; } }
+        font-size: 1em; } }
   body summary {
     font-weight: 200;
     color: white;
     padding: 5px 25px 5px 1em;
     margin-bottom: 1em;
     background-color: #373737;
-    width: 10em; }
+    width: 20em; }
     @media only screen and (max-width: 489px) {
       body summary {
         width: 90%; } }
@@ -75,28 +69,28 @@ body.gaelic a.button:hover, body.gaelic a.button:focus {
 body.gaelic hr {
   border-top: 1px solid #0064bb; }
 
-body.home header {
+body.notes header {
   background-color: #373737; }
-body.home a, body.home h1, body.home h2, body.home h3 {
+body.notes a, body.notes h1, body.notes h2, body.notes h3 {
   color: #373737; }
-body.home a:hover, body.home a:focus {
+body.notes a:hover, body.notes a:focus {
   color: #5a5a5a; }
-body.home a.button {
+body.notes a.button {
   background-color: #373737;
   color: white; }
-body.home a.button:hover, body.home a.button:focus {
+body.notes a.button:hover, body.notes a.button:focus {
   color: #373737;
   background-color: #ffffff;
   border: solid 2px #373737; }
-body.home hr {
+body.notes hr {
   border-top: 1px solid #373737; }
-body.home a.red {
+body.notes a.red {
   color: #C30918;
   font-weight: bold; }
 @media only screen and (max-width: 489px) {
-  body.home summary {
+  body.notes summary {
     width: 90%; } }
-body.home summary.plain {
+body.notes summary.plain {
   color: #373737;
   font-size: 20px;
   font-weight: 700;
@@ -105,250 +99,87 @@ body.home summary.plain {
   margin-bottom: 1em;
   background-color: white; }
   @media only screen and (max-width: 489px) {
-    body.home summary.plain {
+    body.notes summary.plain {
       width: 90%; } }
-body.home h2 {
+body.notes h2 {
   color: white;
   background-color: #373737;
   font-weight: 300;
   text-align: center; }
   @media only screen and (max-width: 489px) {
-    body.home h2 {
+    body.notes h2 {
       width: 100%; } }
 
-body.ux header {
-  background-color: #800080; }
-body.ux a, body.ux h1, body.ux h2, body.ux h3 {
-  color: #800080; }
-body.ux a:hover, body.ux a:focus {
-  color: #5a5a5a; }
-body.ux a.button {
-  background-color: #800080;
-  color: white; }
-body.ux a.button:hover, body.ux a.button:focus {
-  color: #800080;
-  background-color: #ffffff;
-  border: solid 2px #800080; }
-body.ux hr {
-  border-top: 1px solid #800080; }
-body.ux summary {
-  width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.ux summary {
-      width: 90%; } }
-body.ux summary.ux-color {
-  background-color: #800080; }
-body.ux h2 {
-  color: white;
-  background-color: #800080;
-  font-weight: 300;
-  text-align: center; }
-  @media only screen and (max-width: 489px) {
-    body.ux h2 {
-      width: 100%; } }
-
-body.sd header {
-  background-color: #bb4092; }
-body.sd a, body.sd h1, body.sd h2, body.sd h3 {
-  color: #bb4092; }
-body.sd a:hover, body.sd a:focus {
-  color: #5a5a5a; }
-body.sd a.button {
-  background-color: #bb4092;
-  color: white; }
-body.sd a.button:hover, body.sd a.button:focus {
-  color: #bb4092;
-  background-color: #ffffff;
-  border: solid 2px #bb4092; }
-body.sd hr {
-  border-top: 1px solid #bb4092; }
-body.sd summary {
-  width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.sd summary {
-      width: 90%; } }
-body.sd summary.sd-color {
-  background-color: #bb4092; }
-body.sd h2 {
-  color: white;
-  background-color: #bb4092;
-  font-weight: 300;
-  text-align: center; }
-  @media only screen and (max-width: 489px) {
-    body.sd h2 {
-      width: 100%; } }
-
-body.a11y header {
-  background-color: #218341; }
-body.a11y a, body.a11y h1, body.a11y h2, body.a11y h3 {
-  color: #218341; }
-body.a11y a:hover, body.a11y a:focus {
-  color: #5a5a5a; }
-body.a11y a.button {
-  background-color: #218341;
-  color: white; }
-body.a11y a.button:hover, body.a11y a.button:focus {
-  color: #218341;
-  background-color: #ffffff;
-  border: solid 2px #218341; }
-body.a11y hr {
-  border-top: 1px solid #218341; }
-
-body.tech header {
-  background-color: #394874; }
-body.tech a, body.tech h1, body.tech h2, body.tech h3 {
-  color: #394874; }
-body.tech span.other {
-  color: #2509c5; }
-body.tech a.other, body.tech h2.other {
-  color: #2509c5; }
-body.tech a:hover, body.tech a:focus {
-  color: #5a5a5a; }
-body.tech a.button {
-  background-color: #394874;
-  color: white; }
-body.tech a.button:hover, body.tech a.button:focus {
-  color: #394874;
-  background-color: #ffffff;
-  border: solid 2px #394874; }
-body.tech a.button-other {
-  background-color: #2509c5;
-  color: white; }
-body.tech a.button-other:hover, body.tech a.button-other:focus {
-  color: #2509c5;
-  background-color: #ffffff;
-  border: solid 2px #2509c5; }
-body.tech hr {
-  border-top: 1px solid #394874; }
-body.tech hr.other {
-  border-top: 1px solid #2509c5; }
-
-body.ur header {
-  background-color: #935300; }
-body.ur a, body.ur h1, body.ur h2, body.ur h3 {
-  color: #935300; }
-body.ur a:hover, body.ur a:focus {
-  color: #5a5a5a; }
-body.ur a.button {
-  background-color: #935300;
-  color: white; }
-body.ur a.button:hover, body.ur a.button:focus {
-  color: #935300;
-  background-color: #ffffff;
-  border: solid 2px #935300; }
-body.ur hr {
-  border-top: 1px solid #935300; }
-body.ur summary {
-  width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.ur summary {
-      width: 90%; } }
-body.ur summary.ur-color {
-  background-color: #935300; }
-body.ur h2 {
-  color: white;
-  background-color: #935300;
-  font-weight: 300;
-  text-align: center; }
-
-body.con header {
-  background-color: #614397; }
-body.con a, body.con h1, body.con h2, body.con h3 {
-  color: #614397; }
-body.con a:hover, body.con a:focus {
-  color: #5a5a5a; }
-body.con a.button {
-  background-color: #614397;
-  color: white; }
-body.con a.button:hover, body.con a.button:focus {
-  color: #614397;
-  background-color: #ffffff;
-  border: solid 2px #614397; }
-body.con hr {
-  border-top: 1px solid #614397; }
-body.con summary {
-  width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.con summary {
-      width: 90%; } }
-body.con h2 {
-  color: white;
-  background-color: #614397;
-  font-weight: 300;
-  text-align: center; }
-
-body.dev header {
-  background-color: #17797c; }
-body.dev a {
-  color: #17797c; }
-body.dev a:hover, body.dev a:focus {
-  color: #5a5a5a; }
-body.dev a.button {
-  background-color: #17797c;
-  color: white; }
-body.dev a.button:hover, body.dev a.button:focus {
-  color: #17797c;
-  background-color: #ffffff;
-  border: solid 2px #17797c; }
-body.dev h1, body.dev h3 {
-  color: #17797c; }
-body.dev div h2 {
-  color: white;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase; }
-body.dev summary {
-  width: 17em; }
-  @media only screen and (max-width: 489px) {
-    body.dev summary {
-      width: 90%; } }
-body.dev div.js-color h2 {
-  background: #0f4c0e; }
-body.dev div.js-color h3 {
-  color: #0f4c0e; }
-body.dev div.js-color a {
-  color: #0f4c0e; }
-body.dev div.js-color a.button {
-  background-color: #0f4c0e;
-  color: white; }
-body.dev div.js-color a.button:hover, body.dev div.js-color a.button:focus {
-  color: #0f4c0e;
-  background-color: #ffffff;
-  border: solid 2px #0f4c0e; }
-body.dev div.js-color hr {
-  border-top: 1px solid #0f4c0e; }
-body.dev div.css-color h2 {
-  background: #440e4c; }
-body.dev div.css-color h3 {
-  color: #440e4c; }
-body.dev div.css-color a {
-  color: #440e4c; }
-body.dev div.css-color a.button {
-  background-color: #440e4c;
-  color: white; }
-body.dev div.css-color a.button:hover, body.dev div.css-color a.button:focus {
-  color: #440e4c;
-  background-color: #ffffff;
-  border: solid 2px #440e4c; }
-body.dev div.css-color hr {
-  border-top: 1px solid #440e4c; }
-body.dev div.dev-color h2 {
-  background: #17797c; }
-body.dev summary.css-color {
-  background-color: #440e4c; }
-body.dev summary.dev-color {
-  background-color: #17797c; }
-body.dev summary.js-color {
-  background-color: #0f4c0e; }
-body.dev hr {
-  border-top: 1px solid #17797c; }
-body.dev .inverted {
-  background-color: #17797c;
-  color: white;
-  font-weight: 400;
-  padding: 5px 0;
-  margin-top: 2em;
-  text-align: center; }
+body.better {
+  background-color: #2e2e2e; }
+  body.better p, body.better ul, body.better li, body.better ol, body.better span {
+    color: #d0d0d0;
+    font-weight: 300;
+    font-size: 1.2rem; }
+  body.better strong {
+    font-weight: 400; }
+  body.better header {
+    background-color: black; }
+    body.better header h1 {
+      color: #d0d0d0;
+      font-size: 1.4em; }
+  body.better nav {
+    background-color: #d0d0d0;
+    border-bottom: solid 4px #d0d0d0; }
+    body.better nav a {
+      color: black; }
+    body.better nav a:hover, body.better nav a:focus {
+      border-bottom: solid 4px #5c7829;
+      color: #5c7829; }
+    body.better nav a.on-the-page {
+      background-color: #793;
+      border-bottom: solid 4px #793;
+      color: black; }
+    body.better nav a.on-the-page:hover, body.better nav a.on-the-page :focus {
+      color: black; }
+  body.better a {
+    color: #96a873;
+    font-weight: 400; }
+  body.better a:hover, body.better a:focus {
+    color: #5c7829; }
+  body.better a.button {
+    background-color: #aaa;
+    color: black; }
+  body.better a.button:hover, body.better a.button:focus {
+    background-color: #d0d0d0;
+    border: solid 2px #d0d0d0;
+    color: black; }
+  body.better hr {
+    border-top: 1px solid #793; }
+  body.better summary {
+    background-color: #a63838;
+    color: black; }
+    body.better summary span {
+      color: black;
+      font-weight: 400; }
+    @media only screen and (max-width: 489px) {
+      body.better summary {
+        width: 90%; } }
+  body.better h1 {
+    color: black;
+    font-weight: 400; }
+    body.better h1 span {
+      color: black;
+      background-color: #793;
+      padding: 0.2em 1em;
+      font-size: 1.2em;
+      font-weight: 600; }
+  body.better h2 {
+    color: black;
+    background-color: #5c7829;
+    font-weight: 600;
+    font-size: 1.6em;
+    padding-left: 0.4em; }
+    @media only screen and (max-width: 489px) {
+      body.better h2 {
+        width: 100%; } }
+  body.better footer {
+    background-color: #5a5a5a; }
 
 p {
   padding-top: 0;
@@ -404,12 +235,9 @@ header {
   header img {
     float: left;
     display: block;
-    margin: 5px 10px 0 0px;
+    margin: 2px 10px;
     height: 40px;
     width: 40px; }
-  header .saltire {
-    width: 65px;
-    margin: 5px 10px 0 10px; }
   header h1 {
     font-size: 20px;
     text-align: left;
@@ -429,53 +257,36 @@ nav {
   height: 40px;
   background-color: #e3e3e3;
   border-bottom: solid 4px #e3e3e3; }
-  nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color, nav a.sd-color {
+  nav a {
     float: left;
     display: block;
     text-align: center;
     color: #373737;
     font-weight: 400;
     text-decoration: none;
-    height: 16px;
-    font-size: 16px;
+    height: 1em;
+    font-size: 1em;
     padding: 12px 10px;
     /* for bigger screens */ }
     @media only screen and (min-width: 455px) {
-      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color, nav a.sd-color {
+      nav a {
         font-size: 18px;
         height: 20px;
         padding: 10px 20px; } }
     @media only screen and (min-width: 600px) {
-      nav a.ux-color, nav a.dev-color, nav a.a11y-color, nav a.tech-color, nav a.con-color, nav a.ur-color, nav a.sd-color {
+      nav a {
         font-size: 20px;
         height: 20px;
         padding: 10px 30px; } }
-  nav .on-the-page.dev-color, nav .on-the-page.ux-color, nav .on-the-page.a11y-color, nav .on-the-page.tech-color, nav .on-the-page.con-color, nav .on-the-page.ur-color, nav .on-the-page.sd-color {
+  nav a:hover, nav a:focus {
+    border-bottom: solid 4px #373737;
+    color: #000000; }
+  nav a.on-the-page {
     background-color: #373737;
     border-bottom: solid 4px #373737;
-    color: #ffffff;
-    font-weight: 300; }
-  nav a.ux-color:hover, nav a.ux-color.focus {
-    color: #800080;
-    border-bottom: solid 4px #800080; }
-  nav a.dev-color:hover, nav a.dev-color:focus {
-    color: #17797c;
-    border-bottom: solid 4px #17797c; }
-  nav a.a11y-color:hover, nav a.a11y-color:focus {
-    color: #218341;
-    border-bottom: solid 4px #218341; }
-  nav a.tech-color:hover, nav a.tech-color.focus {
-    color: #394874;
-    border-bottom: solid 4px #394874; }
-  nav a.ur-color:hover, nav a.ur-color:focus {
-    color: #935300;
-    border-bottom: solid 4px #935300; }
-  nav a.con-color:hover, nav a.con-color.focus {
-    color: #614397;
-    border-bottom: solid 4px #614397; }
-  nav a.sd-color:hover, nav a.sd-color.focus {
-    color: #bb4092;
-    border-bottom: solid 4px #bb4092; }
+    color: #e3e3e3; }
+  nav a.on-the-page:hover, nav a.on-the-page :focus {
+    color: #fff; }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
 main {
