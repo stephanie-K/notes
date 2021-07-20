@@ -16,18 +16,6 @@ $text-better: #d0d0d0; //#f0f0f0;
 $link-better: #96a873 ;// #969696;
 
 
-
-$ux: #800080 ;
-$a11y: #218341; 
-$tech: #394874 ;  
-$other: #2509c5;
-$ur:  #935300 ;
-$con:  #614397 ;
-$css: #440e4c;
-$js: #0f4c0e;
-$sd: #bb4092;
-
-
 @font-face {
     font-family: "OpenDyslexic";
     font-weight: 400;
@@ -73,10 +61,161 @@ body {
         padding: 5px 25px 5px 1em;
         margin-bottom: 1em;
         background-color:$notes;
-        width: 20em;
+        width: 40em;
+        span {
+            font-family: 'Londrina Solid', sans-serif;
+            font-size: 1.8em
+        }
         @media only screen and (max-width: 489px) { 
             width: 90%;
+            span {
+                font-size: 1.4em;
+            }   
          }
+    }
+    a.button {
+        text-transform: uppercase;
+        padding: 5px 7px;
+        text-decoration: none;
+    }
+    a.button:hover, a.button:focus {
+        padding: 3px 5px;
+    
+    }
+}
+body.notes {
+    header {
+        background-color: $notes;
+    } 
+    a, h1, h2, h3 {
+        color: $notes;
+    }
+    a:hover, a:focus {
+        color: #5a5a5a;
+    }
+    a.button {
+        background-color: $notes;
+        color: white;
+    }
+    a.button:hover, a.button:focus {
+        color: $notes;
+        background-color: #ffffff;
+        border: solid 2px $notes;
+    }
+    hr {
+        border-top: 1px solid $notes;
+    } 
+    a.red {
+        color : #C30918 ;
+        font-weight: bold;
+    }
+    summary.plain {
+        color: $notes;
+        width: 20em;
+        padding: 0 25px 0 1em;
+        margin-bottom: 1em;
+        background-color:white;
+    }
+    h2 {
+        color: white;
+        background-color: $notes;
+        font-family: 'Londrina Solid', sans-serif;
+        font-weight: 300;
+        font-size: 2em;
+        padding-left: 0.4em;
+        @media only screen and (max-width: 489px) { 
+        width: 100%;
+         }
+    }
+}
+body.better {
+    background-color: $better-bg;
+    p , ul, li, ol, span {
+        color: $text-better;
+        font-weight: 300;
+        font-size:1.2rem;
+    }
+    strong {
+        font-weight:400;
+    }
+    header {
+        background-color: black;
+    }
+    nav {
+        background-color: $text-better; //#aaa;    
+        border-bottom: solid 4px $text-better; //#aaa ;
+        a {
+            color: black;
+            font-weight: 300;
+        }
+        a:hover, a:focus {
+            border-bottom: solid 4px $base1;
+            color: $base1;
+        }
+        a.on-the-page  {
+            background-color: $primary;
+            border-bottom: solid 4px $primary;
+            color: black;
+        }
+        a.on-the-page:hover,  a.on-the-page :focus {
+            color: black;
+        }
+    }
+    a{
+        color: $link-better;
+        font-weight: 400;
+    }
+    a:hover, a:focus {
+        color: $text-better;
+    }
+    a.button {
+        background-color: #aaa;
+        color: black;
+    }
+    a.button:hover, a.button:focus {
+        background-color: $text-better;
+        border: solid 2px $text-better;
+        color: black;
+    }
+    hr {
+        border-top: 1px solid $primary;
+    } 
+    summary{
+        background-color: $base2;
+        color: black;
+        span {
+            color: black;
+        }
+    }
+    h1 {
+        span {
+            color: black;
+            background-color: #793; 
+            font-family: 'Londrina Solid', sans-serif;
+            font-weight: 900;
+            padding:0.2em 1em; 
+            font-size: 1em;
+            font-weight: 600;
+            @media only screen and (max-width: 489px) { 
+                padding: 0.2em 0.5em;
+                font-size: 1.4em;
+             }
+        }
+    }
+    h2 {
+        color: black;
+        background-color: $base1;
+        font-family: 'Londrina Solid', sans-serif;
+        font-weight: 400;
+        font-size: 2em;
+        padding-left: 0.4em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+            font-size: 1.4rem;
+         }
+    }
+    footer {
+        background-color: #5a5a5a;
     }
 }
 body.gaelic{
@@ -117,155 +256,7 @@ body.gaelic{
     hr {
         border-top: 1px solid $gaelic;
     } 
-
 }
-body.notes {
-    header {
-        background-color: $notes;
-    } 
-    a, h1, h2, h3 {
-        color: $notes;
-    }
-    a:hover, a:focus {
-        color: #5a5a5a;
-    }
-    a.button {
-        background-color: $notes;
-        color: white;
-    }
-    a.button:hover, a.button:focus {
-        color: $notes;
-        background-color: #ffffff;
-        border: solid 2px $notes;
-    }
-    hr {
-        border-top: 1px solid $notes;
-    } 
-    a.red {
-        color : #C30918 ;
-        font-weight: bold;
-    }
-    summary{
-        @media only screen and (max-width: 489px) { 
-            width: 90%;
-         }
-    }
-    summary.plain {
-        color: $notes;
-        font-size: 20px;
-        font-weight: 700;
-        width: 20em;
-        padding: 0 25px 0 1em;
-        margin-bottom: 1em;
-        background-color:white;
-        @media only screen and (max-width: 489px) { 
-            width: 90%;
-         }
-    }
-    h2 {
-        color: white;
-        background-color: $notes;
-        font-weight: 300;
-        text-align: center;
-                @media only screen and (max-width: 489px) { 
-            width: 100%;
-         }
-    }
-}
-body.better {
-    background-color: $better-bg;
-    p , ul, li, ol, span {
-        color: $text-better;
-        font-weight: 300;
-        font-size:1.2rem;
-    }
-    strong {
-        font-weight:400;
-    }
-    header {
-        background-color: black;
-        h1 {
-            color: $text-better;
-            font-size: 1.4em;
-        }
-    }
-    nav {
-        background-color: $text-better; //#aaa;    
-        border-bottom: solid 4px $text-better; //#aaa ;
-        a {
-            color: black;
-        }
-        a:hover, a:focus {
-            border-bottom: solid 4px $base1;
-            color: $base1;
-        }
-        a.on-the-page  {
-            background-color: $primary;
-            border-bottom: solid 4px $primary;
-            color: black;
-        }
-        a.on-the-page:hover,  a.on-the-page :focus {
-            color: black;
-        }
-    }
-    a{
-        color: $link-better;
-        font-weight: 400;
-    }
-    a:hover, a:focus {
-        color: $base1;
-    }
-    a.button {
-        background-color: #aaa;
-        color: black;
-    }
-    a.button:hover, a.button:focus {
-        background-color: $text-better;
-        border: solid 2px $text-better;
-        color: black;
-    }
-    hr {
-        border-top: 1px solid $primary;
-    } 
-
-    summary{
-        background-color: $base2;
-        color: black;
-        span {
-            color: black;
-            font-weight: 400;
-        }
-        @media only screen and (max-width: 489px) { 
-            width: 90%;
-         }
-    }
-    h1 {
-        color: black;
-        font-weight: 400;
-        span {
-            color: black;
-            background-color: #793; 
-            padding:0.2em 1em; 
-            font-size: 1.2em;
-            font-weight: 600;
-        }
-    }
-    h2 {
-        color: black;
-        background-color: $base1;
-        font-weight: 600;
-        font-size: 1.6em;
-        //text-align: center;
-        padding-left: 0.4em;
-                @media only screen and (max-width: 489px) { 
-            width: 100%;
-         }
-    }
-    footer {
-        background-color: #5a5a5a;
-    }
-}
-
 p {
     padding-top: 0;
     padding-bottom: 0;
@@ -323,23 +314,8 @@ header {
     top: 0;
     height: 50px;
     width: 100%;
-    img {
-        float: left;
-        display: block;
-        margin: 2px 10px;
-        height: 40px;
-        width : 40px;
-    }
-
-    h1 {
-        font-size: 20px;
-        text-align: left;
-        padding-left: 70px; 
-        font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
-        font-weight: 300; 
-    }
-    h1.plain-color {
-        color: #ffffff; 
+    div {
+        border-top: 12px solid #0000;
     }
 }
 
@@ -358,7 +334,8 @@ nav {
         display: block;
         text-align: center;
         color: $notes;
-        font-weight: 400 ;
+        font-weight: 300 ;
+        font-family: 'Londrina Solid', sans-serif;
         text-decoration: none;
         height: 1em;
         font-size: 1em;
@@ -408,11 +385,12 @@ main {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 1.8em;
         padding-top: 2em;
-        text-transform: uppercase;
+        font-family: 'Londrina Solid', sans-serif;
+        font-weight: 900;
         @media only screen and (min-width: 490px) {
-            font-size: 22px;
+            font-size: 2.5em;
         }
     }
     h2, h3 { // h3 is the same a h2 - but only used in UX where h2 is different
@@ -425,31 +403,11 @@ main {
     ul, ol {
         line-height: 1.5;
     }
-    a.plain-color { 
-        color: #5a5a5a; 
-        font-weight: 500;
-        text-decoration: underline #aaaaaa;
-    }
-    a.plain-color:hover, a.plain-color:focus {
-        color: #aaaaaa;
-    }
 
     .icon {
         vertical-align: top;
         height: 40px;
         padding: 5px 10px 5px 0;
-    }
-    .icon-big {
-        vertical-align: top;
-        height: 80px;
-        padding: 5px 10px 5px 0;
-
-    }
-    .icon-very-big {
-        vertical-align: top;
-        height: 120px;
-        padding: 5px 10px 5px 0;
-
     }
     ::selection {
         background: #cccccc;
@@ -621,28 +579,6 @@ iframe, video {
     }
 }
 
-a.button {
-    //color : #ffffff;
-    text-transform: uppercase;
-    padding: 5px 7px;
-    text-decoration: none;
-    ::selection {
-        background: #ffffff;
-        color: #5a5a5a;
-    }
-}
-a.button:hover, a.button:focus {
-    //background-color: #ffffff;
-    padding: 3px 5px;
-    ::selection {
-        background: #ffffff;
-        color: #5a5a5a;
-    }
-}
-p a.button {
-    font-size: 14px;
-}
-
 .warning  {
     color : #ffffff;
     background-color: #C30918;
@@ -659,3 +595,40 @@ p a.button {
     margin-top: 2em;
 }
 
+a.tag {
+    padding: 0.2em 0.4em;
+    margin: 0.2em;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Londrina Solid', sans-serif;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+a.tag:hover, a.tag:focus, a.tag:link, a.tag:active, a.tag:visited {
+    color: #1a1a1a;
+}
+a.tag.yellow {
+    background-color: $base3;
+}
+a.tag.red {
+    background-color: #C30918;
+}
+a.tag.green {
+    background-color: $primary;
+}
+a.tag.conf {
+    background-color: #bb4092;
+}
+a.tag.bsl {
+    background-color: #dddd;
+}
+a.tag.books {
+    background-color: #935300 ;
+}
+a.tag.cyf {
+    background-color: #C30918;
+}
+a.tag.gaelic {
+    background-color: $gaelic ;
+    color: white;
+}
