@@ -68,12 +68,6 @@ body.notes hr {
 body.notes a.red {
   color: #C30918;
   font-weight: bold; }
-body.notes summary.plain {
-  color: #373737;
-  width: 20em;
-  padding: 0 25px 0 1em;
-  margin-bottom: 1em;
-  background-color: white; }
 body.notes h2 {
   color: white;
   background-color: #373737;
@@ -84,6 +78,17 @@ body.notes h2 {
   @media only screen and (max-width: 489px) {
     body.notes h2 {
       width: 100%; } }
+body.notes h3 {
+  color: black;
+  background-color: #e3e3e3;
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  padding-left: 0.4em; }
+  @media only screen and (max-width: 489px) {
+    body.notes h3 {
+      width: 100%;
+      font-size: 1.2rem; } }
 
 body.better {
   background-color: #2e2e2e; }
@@ -128,7 +133,14 @@ body.better {
     background-color: #a63838;
     color: black; }
     body.better summary span {
-      color: black; }
+      color: black;
+      font-size: 1.8em;
+      font-weight: 400; }
+    @media only screen and (max-width: 489px) {
+      body.better summary {
+        width: 90%; }
+        body.better summary span {
+          font-size: 1.4em; } }
   body.better h1 span {
     color: black;
     background-color: #793;
@@ -152,6 +164,17 @@ body.better {
       body.better h2 {
         width: 100%;
         font-size: 1.4rem; } }
+  body.better h3 {
+    color: black;
+    background-color: #d0d0d0;
+    font-family: 'Londrina Solid', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-left: 0.4em; }
+    @media only screen and (max-width: 489px) {
+      body.better h3 {
+        width: 100%;
+        font-size: 1.2rem; } }
   body.better footer {
     background-color: #5a5a5a; }
 

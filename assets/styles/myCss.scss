@@ -64,7 +64,7 @@ body {
         width: 40em;
         span {
             font-family: 'Londrina Solid', sans-serif;
-            font-size: 1.8em
+            font-size: 1.8em;
         }
         @media only screen and (max-width: 489px) { 
             width: 90%;
@@ -109,13 +109,13 @@ body.notes {
         color : #C30918 ;
         font-weight: bold;
     }
-    summary.plain {
-        color: $notes;
-        width: 20em;
-        padding: 0 25px 0 1em;
-        margin-bottom: 1em;
-        background-color:white;
-    }
+//    summary.plain {
+//        color: $notes;
+ //       width: 20em;
+ //       padding: 0 25px 0 1em;
+//        margin-bottom: 1em;
+//        background-color:white;
+ //   }
     h2 {
         color: white;
         background-color: $notes;
@@ -127,6 +127,19 @@ body.notes {
         width: 100%;
          }
     }
+    h3 {
+        color: black;
+        background-color: $notes-inverted ;
+        font-family: 'Londrina Solid', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+        padding-left: 0.4em;
+        @media only screen and (max-width: 489px) { 
+        width: 100%;
+        font-size: 1.2rem;
+         }
+    }
+
 }
 body.better {
     background-color: $better-bg;
@@ -185,7 +198,15 @@ body.better {
         color: black;
         span {
             color: black;
+            font-size: 1.8em;
+            font-weight: 400;
         }
+        @media only screen and (max-width: 489px) { 
+            width: 90%;
+            span {
+                font-size: 1.4em;
+            }   
+         }
     }
     h1 {
         span {
@@ -212,6 +233,18 @@ body.better {
         @media only screen and (max-width: 489px) { 
             width: 100%;
             font-size: 1.4rem;
+         }
+    }
+    h3 {
+        color: black;
+        background-color: $text-better;
+        font-family: 'Londrina Solid', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+        padding-left: 0.4em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+            font-size: 1.2rem;
          }
     }
     footer {
