@@ -45,6 +45,7 @@ body {
           font-size: 1.4em; } }
   body a.button {
     text-transform: uppercase;
+    font-family: 'Londrina Solid', sans-serif;
     padding: 5px 7px;
     text-decoration: none; }
   body a.button:hover, body a.button:focus {
@@ -58,7 +59,8 @@ body.notes a:hover, body.notes a:focus {
   color: #5a5a5a; }
 body.notes a.button {
   background-color: #373737;
-  color: white; }
+  color: white;
+  font-family: 'Londrina Solid', sans-serif; }
 body.notes a.button:hover, body.notes a.button:focus {
   color: #373737;
   background-color: #ffffff;
@@ -122,7 +124,8 @@ body.better {
     color: #d0d0d0; }
   body.better a.button {
     background-color: #aaa;
-    color: black; }
+    color: black;
+    font-family: 'Londrina Solid', sans-serif; }
   body.better a.button:hover, body.better a.button:focus {
     background-color: #d0d0d0;
     border: solid 2px #d0d0d0;
@@ -177,6 +180,11 @@ body.better {
         font-size: 1.2rem; } }
   body.better footer {
     background-color: #5a5a5a; }
+  body.better .lead {
+    padding-top: 2em;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #a63838; }
 
 body.gaelic details {
   margin-top: 30px; }
@@ -200,7 +208,8 @@ body.gaelic a:hover, body.gaelic a:focus {
   color: #5a5a5a; }
 body.gaelic a.button {
   background-color: #0064bb;
-  color: white; }
+  color: white;
+  font-family: 'Londrina Solid', sans-serif; }
 body.gaelic a.button:hover, body.gaelic a.button:focus {
   color: #0064bb;
   background-color: #ffffff;

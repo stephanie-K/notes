@@ -75,6 +75,7 @@ body {
     }
     a.button {
         text-transform: uppercase;
+        font-family: 'Londrina Solid', sans-serif;
         padding: 5px 7px;
         text-decoration: none;
     }
@@ -96,6 +97,7 @@ body.notes {
     a.button {
         background-color: $notes;
         color: white;
+        font-family: 'Londrina Solid', sans-serif;
     }
     a.button:hover, a.button:focus {
         color: $notes;
@@ -184,6 +186,7 @@ body.better {
     a.button {
         background-color: #aaa;
         color: black;
+        font-family: 'Londrina Solid', sans-serif;
     }
     a.button:hover, a.button:focus {
         background-color: $text-better;
@@ -250,6 +253,13 @@ body.better {
     footer {
         background-color: #5a5a5a;
     }
+    .lead {
+        padding-top: 2em;
+        font-weight: 400;
+        font-size: 1.3em;
+        color: $base2;
+
+    }
 }
 body.gaelic{
     details {
@@ -280,6 +290,7 @@ body.gaelic{
     a.button {
         background-color: $gaelic;
         color: white;
+        font-family: 'Londrina Solid', sans-serif;
     }
     a.button:hover, a.button:focus {
         color: $gaelic;
