@@ -9,7 +9,8 @@ This website is to organise my notes on various subjects:
 - **Technologies**    
 - **Books notes**
 - **Conferences notes**
-- **Gaelic notes**
+- **Gaelic / BSL notes**
+- **Design Justice / Inclusion and more**
 
 
 This is just for me. More is added on a regular basis from various readings.
