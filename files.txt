@@ -1,0 +1,85 @@
+assets/images/Covid 19 Patterns Basics .pdf
+assets/images/Evil Army - The History of Queet Characters in Videogames.pdf
+assets/images/NOBL-Story-of-Change-1.pdf
+assets/images/OCD-PlaybookDoingUserCentredDesignWorkRemotely-17March2020.pdf
+assets/images/Planning_for_the_Future_Infographic_ERC.pdf
+assets/images/Slack Etiquette Guide.pdf
+assets/images/Slack How to Organise and Name  Channels.pdf
+assets/images/UXComicsTemplatePP.pptx
+assets/images/a11y/CourseBook-Alt-Text.pdf
+assets/images/a11y/Disability-Workstream-Participation-Report.pdf
+assets/images/a11y/Emoji - a11yTO.pdf
+assets/images/a11y/Hard-Edges-Scotland-summary-report-June-2019.pdf
+assets/images/a11y/InclusiveCo-designToolkitBridgeable.pdf
+assets/images/a11y/Inclusive_Toolkit_Activities.pdf
+assets/images/a11y/OCD-Accessibility-Training-AwarenessShort.pdf
+assets/images/a11y/Olivia Labattaglia.pdf
+assets/images/a11y/Poster_GOVUK_InclusiveDesign.pdf
+assets/images/a11y/Research-who_to_include_when_.pdf
+assets/images/a11y/SCOPE_Big_Hack_Designing-for-a-range-of-disabled-users-POSTERS.pdf
+assets/images/a11y/SCULPT_Version_1.3a.pdf
+assets/images/a11y/ScotlandsCensus2022BSL.pptx
+assets/images/a11y/The Hidden Image Descriptions Making the Internet Accessible - The New York Times.pdf
+assets/images/a11y/WCAG2_1Map.pdf
+assets/images/a11y/level access-2021-Final-a11y.pdf
+assets/images/better/Building trust in co-design.pdf
+assets/images/better/Designing Hybrid Workshops workbook Nov 2021.pdf
+assets/images/better/Global-guide-Making-meetings-matter.pdf
+assets/images/better/In-person workshops.pdf
+assets/images/better/Online workshops.pdf
+assets/images/better/Pronouns.pdf
+assets/images/better/Workplace-Equality-Index-2022-awards-explainer.pdf
+assets/images/better/paid-participation-report-vfinal.pdf
+assets/images/better/reviewing-design-methods-make-more-sensitive-gender.pdf
+assets/images/con/Numeracy_and_dyscalculia_talk_for_Services_Week.pdf
+assets/images/conf/Humanly-Inclusive-remote-engagement.pdf
+assets/images/conf/Matesic_Kate_IXDStudies2-TOOLKIT.pdf
+assets/images/conf/McKercher_SDinGov_2021.pdf
+assets/images/conf/Service-to-Infrastructure-SDinGov 2021.pdf
+assets/images/conf/UCDgathering_Hidethispage_19Nov2021.pdf
+assets/images/cyf/FrontEdnFramework-are-they-accessible-Bootstrap.pdf
+assets/images/data-sharing-code-for-public-consultation.pdf
+assets/images/data_privacy_notes.pdf
+assets/images/inclusion/Horizon_Scan_Cross_Gov_Community.pptx
+assets/images/inclusion/Microsoft Teams Quick Start Guide for Meetings including external participants.pptx.pdf
+assets/images/inclusion/Microsoft Teams Quick Start Guide for accessing a meeting from outside the organisation.pdf
+assets/images/inclusion/Quick Start Guide for Teams Meetings (non calendar).pdf
+assets/images/inclusion/Teams QS.pdf
+assets/images/remote_working_and_facilitation_slides.pdf
+assets/images/sd/27112019_SAC_Presentation_v0.1.pptx
+assets/images/sd/Abolish-the-Cop-Insider-Your-Designer-Head.pdf
+assets/images/sd/Advice-for-Services-working-with-LGBTQ-Families.pdf
+assets/images/sd/Alina Achiricioaei - The evolution of SD.pdf
+assets/images/sd/Ask users for equality information _ draft _ with questions.pdf
+assets/images/sd/AskAServiceDesigner_ServiceDesignGlossary_Downloadable_1_.pdf
+assets/images/sd/DeveloperDesignGuide.pdf
+assets/images/sd/GDA Inclusive co-design a how to guide.pdf
+assets/images/sd/IntroductionToSystemicDesignToolkit.pdf
+assets/images/sd/Keynote-Closing-Designing-Gov-Transformation.pptx
+assets/images/sd/Masterclass-Session-1_-_Designing-Collaborations-for-Urgent-Courageous-Change_-Presentation-.pdf
+assets/images/sd/Masterclass-Session-2_Aligning-on-Priorities-When-Everything-Is-Important_-Presentation-.pdf
+assets/images/sd/Masterclass-Session-3_Steering-Diverse-Partners-Toward-Cohesive-Action_Presentation.pdf
+assets/images/sd/Non-binary-guidance.pdf
+assets/images/sd/OCD_-_SAtSD_Presentation_20mins.pdf
+assets/images/sd/Poster_GovernmentDesignPrinciples.pdf
+assets/images/sd/Pronouns.pdf
+assets/images/sd/SNK-Presentation Queer Service Design.pdf
+assets/images/sd/SopraSteria-Career-Framework.pdf
+assets/images/sd/SystemicDesignToolkit_Templates.01.pdf
+assets/images/sd/conf/BarrierCards.pdf
+assets/images/sd/conf/Hiring - Service Design in Government.pptx
+assets/images/sd/conf/SDinGov_mental_wellbeing-SNOOK.pptx
+assets/images/sd/ethnic-name.pdf
+assets/images/sd/experiencemap.pdf
+assets/images/sd/who-we-are-in-plain english.pptx
+assets/images/tech/A-Guide-for-Ethical-Data-Science-Final-Oct-2019.pdf
+assets/images/tech/An_introduction_to_artificial_intelligence_and_machine_learning.pdf
+assets/images/tech/An_introduction_to_robotic_process_automation.pdf
+assets/images/tech/Handout_for_AI_in_Gov.pdf
+assets/images/ur/DOTI_North_-_Ross_McCulloch_-_Focus_on_‘why’_not_‘how’_-_June_2019.pdf
+assets/images/ur/Design-for-Cognitive-Bias-Resources-Sheet.pdf
+assets/images/ur/Making design research work remotely [Shared version].pdf
+assets/images/ur/Spotify.Design Worksheet - Ethics Assessment.pdf
+assets/images/ux/516_whats_new_in_authentication.pdf
+assets/images/ux/GOV flow kit V0.1.pdf
+assets/images/ux/twg-how-people-use-their-devices-2016.pdf
