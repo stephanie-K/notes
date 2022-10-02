@@ -214,7 +214,7 @@ body.better {
     h1 {
         span {
             color: black;
-            background-color: #793; 
+            background-color: $base3 ; //#793; 
             font-family: 'Londrina Solid', sans-serif;
             font-weight: 900;
             padding:0.2em 1em; 
@@ -323,19 +323,17 @@ color: #d4351c;
 font-weight: bold;
 }
 
-.lou {
-    background-color: #1a1a1a;
-    color: #fb5b5f;    
+span.lou {
+    color: #fb5b5f !important;    
 }
-.lou-y {
-    background-color: #1a1a1a;
-    color: #fdd73d;    
+span.lou-y {
+    color: #fdd73d !important;    
 }
-.lou-g {
-    background-color: #1a1a1a;
-    color: #01b299;    
+span.lou-g {
+    color: #01b299 !important;    
 }
 span.lou, span.lou-y, span.lou-g {
+    background-color: #1a1a1a;
     padding: 3px 5px;
     margin: 2px auto;
 }
