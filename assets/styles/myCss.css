@@ -289,8 +289,11 @@ nav {
     text-decoration: none;
     height: 1em;
     font-size: 1em;
-    padding: 12px 10px;
+    padding: 12px 9px;
     /* for bigger screens */ }
+    @media only screen and (min-width: 362px) {
+      nav a {
+        padding: 12px 10px; } }
     @media only screen and (min-width: 455px) {
       nav a {
         font-size: 18px;
