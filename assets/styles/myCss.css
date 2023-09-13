@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  /* font-family:  Roboto,Helvetica,Arial,sans-serif; Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
+  /* font-family:  nta, Roboto,Helvetica,Arial,sans-serif; Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
   font-family: Roboto,Helvetica,Arial,sans-serif;
   color: #5a5a5a;
   min-height: 100%;
@@ -178,6 +178,17 @@ body.better {
       body.better h3 {
         width: 100%;
         font-size: 1.2rem; } }
+  body.better h4 {
+    color: black;
+    background-color: #b7b327;
+    font-family: 'Londrina Solid', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-left: 0.4em; }
+    @media only screen and (max-width: 489px) {
+      body.better h4 {
+        width: 100%;
+        font-size: 1rem; } }
   body.better footer {
     background-color: #5a5a5a; }
   body.better .lead {

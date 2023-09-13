@@ -250,6 +250,18 @@ body.better {
             font-size: 1.2rem;
          }
     }
+    h4 {
+        color: black;
+        background-color: $base3;
+        font-family: 'Londrina Solid', sans-serif;
+        font-weight: 400;
+        font-size: 1.2em;
+        padding-left: 0.4em;
+        @media only screen and (max-width: 489px) { 
+            width: 100%;
+            font-size: 1rem;
+         }
+    }
     footer {
         background-color: #5a5a5a;
     }
