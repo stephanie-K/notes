@@ -1,9 +1,14 @@
 /*  all my CSS here */
+@font-face {
+  font-family: "OpenDyslexic";
+  font-weight: 400;
+  src: url("../fonts/OpenDyslexic-Regular.otf"); }
 html {
   position: relative; }
 
 body {
   margin: 0;
+  /* font-family:  nta, Roboto,Helvetica,Arial,sans-serif; Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
   font-family: Roboto,Helvetica,Arial,sans-serif;
   color: #5a5a5a;
   min-height: 100%;
@@ -20,10 +25,9 @@ body {
     font-size: 1em; }
   body details p, body details ul, body details ol, body details em {
     margin: 0.5em 0; }
-
-@media only screen and (min-width: 490px) {
-  body details p, body details ul, body details ol, body details em {
-    font-size: 1em; } }
+    @media only screen and (min-width: 490px) {
+      body details p, body details ul, body details ol, body details em {
+        font-size: 1em; } }
   body summary {
     font-weight: 200;
     color: white;
@@ -32,17 +36,16 @@ body {
     background-color: #373737;
     width: 40em; }
     body summary span {
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Londrina Solid', sans-serif;
       font-size: 1.8em; }
-
-@media only screen and (max-width: 489px) {
-  body summary {
-    width: 90%; }
-    body summary span {
-      font-size: 1.4em; } }
+    @media only screen and (max-width: 489px) {
+      body summary {
+        width: 90%; }
+        body summary span {
+          font-size: 1.4em; } }
   body a.button {
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Londrina Solid', sans-serif;
     padding: 5px 7px;
     text-decoration: none; }
   body a.button:hover, body a.button:focus {
@@ -50,54 +53,44 @@ body {
 
 body.notes header {
   background-color: #373737; }
-
 body.notes a, body.notes h1, body.notes h2, body.notes h3 {
   color: #373737; }
-
 body.notes a:hover, body.notes a:focus {
   color: #5a5a5a; }
-
 body.notes a.button {
   background-color: #373737;
   color: white;
-  font-family: 'Oswald', sans-serif; }
-
+  font-family: 'Londrina Solid', sans-serif; }
 body.notes a.button:hover, body.notes a.button:focus {
   color: #373737;
   background-color: #ffffff;
   border: solid 2px #373737; }
-
 body.notes hr {
   border-top: 1px solid #373737; }
-
 body.notes a.red {
   color: #C30918;
   font-weight: bold; }
-
 body.notes h2 {
   color: white;
   background-color: #373737;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 300;
   font-size: 2em;
   padding-left: 0.4em; }
-
-@media only screen and (max-width: 489px) {
-  body.notes h2 {
-    width: 100%; } }
-
+  @media only screen and (max-width: 489px) {
+    body.notes h2 {
+      width: 100%; } }
 body.notes h3 {
   color: black;
   background-color: #e3e3e3;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 400;
   font-size: 1.5em;
   padding-left: 0.4em; }
-
-@media only screen and (max-width: 489px) {
-  body.notes h3 {
-    width: 100%;
-    font-size: 1.2rem; } }
+  @media only screen and (max-width: 489px) {
+    body.notes h3 {
+      width: 100%;
+      font-size: 1.2rem; } }
 
 body.better {
   background-color: #2e2e2e; }
@@ -114,7 +107,7 @@ body.better {
     border-bottom: solid 4px #d0d0d0; }
     body.better nav a {
       color: black;
-      font-weight: 400; }
+      font-weight: 300; }
     body.better nav a:hover, body.better nav a:focus {
       border-bottom: solid 4px #5c7829;
       color: #5c7829; }
@@ -132,7 +125,7 @@ body.better {
   body.better a.button {
     background-color: #aaa;
     color: black;
-    font-family: 'Oswald', sans-serif; }
+    font-family: 'Londrina Solid', sans-serif; }
   body.better a.button:hover, body.better a.button:focus {
     background-color: #d0d0d0;
     border: solid 2px #d0d0d0;
@@ -145,62 +138,57 @@ body.better {
     body.better summary span {
       color: black;
       font-size: 1.8em;
-      font-weight: 700; }
-
-@media only screen and (max-width: 489px) {
-  body.better summary {
-    width: 90%; }
-    body.better summary span {
-      font-size: 1.4em; } }
+      font-weight: 400; }
+    @media only screen and (max-width: 489px) {
+      body.better summary {
+        width: 90%; }
+        body.better summary span {
+          font-size: 1.4em; } }
   body.better h1 span {
     color: black;
     background-color: #b7b327;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Londrina Solid', sans-serif;
     font-weight: 900;
     padding: 0.2em 1em;
     font-size: 1em;
-    font-weight: 700; }
-
-@media only screen and (max-width: 489px) {
-  body.better h1 span {
-    padding: 0.2em 0.5em;
-    font-size: 1.4em; } }
+    font-weight: 600; }
+    @media only screen and (max-width: 489px) {
+      body.better h1 span {
+        padding: 0.2em 0.5em;
+        font-size: 1.4em; } }
   body.better h2 {
     color: black;
     background-color: #5c7829;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+    font-family: 'Londrina Solid', sans-serif;
+    font-weight: 400;
     font-size: 2em;
     padding-left: 0.4em; }
-
-@media only screen and (max-width: 489px) {
-  body.better h2 {
-    width: 100%;
-    font-size: 1.4rem; } }
+    @media only screen and (max-width: 489px) {
+      body.better h2 {
+        width: 100%;
+        font-size: 1.4rem; } }
   body.better h3 {
     color: black;
     background-color: #d0d0d0;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+    font-family: 'Londrina Solid', sans-serif;
+    font-weight: 400;
     font-size: 1.5em;
     padding-left: 0.4em; }
-
-@media only screen and (max-width: 489px) {
-  body.better h3 {
-    width: 100%;
-    font-size: 1.2rem; } }
+    @media only screen and (max-width: 489px) {
+      body.better h3 {
+        width: 100%;
+        font-size: 1.2rem; } }
   body.better h4 {
     color: black;
     background-color: #b7b327;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+    font-family: 'Londrina Solid', sans-serif;
+    font-weight: 400;
     font-size: 1.2em;
     padding-left: 0.4em; }
-
-@media only screen and (max-width: 489px) {
-  body.better h4 {
-    width: 100%;
-    font-size: 1rem; } }
+    @media only screen and (max-width: 489px) {
+      body.better h4 {
+        width: 100%;
+        font-size: 1rem; } }
   body.better footer {
     background-color: #5a5a5a; }
   body.better .lead {
@@ -211,7 +199,6 @@ body.better {
 
 body.gaelic details {
   margin-top: 30px; }
-
 body.gaelic summary {
   font-weight: 700;
   font-size: 20px;
@@ -220,31 +207,24 @@ body.gaelic summary {
   margin-bottom: 1em;
   background-color: white;
   width: 30em; }
-
-@media only screen and (max-width: 489px) {
-  body.gaelic summary {
-    width: 90%;
-    font-size: 18px; } }
-
+  @media only screen and (max-width: 489px) {
+    body.gaelic summary {
+      width: 90%;
+      font-size: 18px; } }
 body.gaelic header {
   background-color: #373737; }
-
 body.gaelic a, body.gaelic h1, body.gaelic h2, body.gaelic h3 {
   color: #0064bb; }
-
 body.gaelic a:hover, body.gaelic a:focus {
   color: #5a5a5a; }
-
 body.gaelic a.button {
   background-color: #0064bb;
   color: white;
-  font-family: 'Oswald', sans-serif; }
-
+  font-family: 'Londrina Solid', sans-serif; }
 body.gaelic a.button:hover, body.gaelic a.button:focus {
   color: #0064bb;
   background-color: #ffffff;
   border: solid 2px #0064bb; }
-
 body.gaelic hr {
   border-top: 1px solid #0064bb; }
 
@@ -315,29 +295,26 @@ nav {
     display: block;
     text-align: center;
     color: #373737;
-    font-weight: 400;
-    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-family: 'Londrina Solid', sans-serif;
     text-decoration: none;
     height: 1em;
     font-size: 1em;
     padding: 12px 9px;
     /* for bigger screens */ }
-
-@media only screen and (min-width: 362px) {
-  nav a {
-    padding: 12px 10px; } }
-
-@media only screen and (min-width: 455px) {
-  nav a {
-    font-size: 18px;
-    height: 20px;
-    padding: 10px 20px; } }
-
-@media only screen and (min-width: 600px) {
-  nav a {
-    font-size: 20px;
-    height: 20px;
-    padding: 10px 30px; } }
+    @media only screen and (min-width: 362px) {
+      nav a {
+        padding: 12px 10px; } }
+    @media only screen and (min-width: 455px) {
+      nav a {
+        font-size: 18px;
+        height: 20px;
+        padding: 10px 20px; } }
+    @media only screen and (min-width: 600px) {
+      nav a {
+        font-size: 20px;
+        height: 20px;
+        padding: 10px 30px; } }
   nav a:hover, nav a:focus {
     border-bottom: solid 4px #373737;
     color: #000000; }
@@ -365,19 +342,17 @@ main {
   main h1 {
     font-size: 1.8em;
     padding-top: 2em;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Londrina Solid', sans-serif;
     font-weight: 900; }
-
-@media only screen and (min-width: 490px) {
-  main h1 {
-    font-size: 2.5em; } }
+    @media only screen and (min-width: 490px) {
+      main h1 {
+        font-size: 2.5em; } }
   main h2, main h3 {
     font-size: 18px;
     padding: 0.4em 0 0.2em 0; }
-
-@media only screen and (min-width: 490px) {
-  main h2, main h3 {
-    font-size: 20px; } }
+    @media only screen and (min-width: 490px) {
+      main h2, main h3 {
+        font-size: 20px; } }
   main ul, main ol {
     line-height: 1.5; }
   main .icon {
@@ -409,24 +384,24 @@ details .arrow {
   details {
     margin-top: 20px;
     margin-bottom: 20px; }
+
   summary {
     width: 17em; } }
-
-@media only screen and (-ms-high-contrast: active) and (max-width: 489px), only screen and (-ms-high-contrast: none) and (max-width: 489px) {
-  summary {
-    width: 90%; } }
+  @media only screen and (-ms-high-contrast: active) and (max-width: 489px), only screen and (-ms-high-contrast: none) and (max-width: 489px) {
+    summary {
+      width: 90%; } }
 
 /* for Edge */
 @supports (-ms-ime-align: auto) {
   details {
     margin-top: 20px;
     margin-bottom: 20px; }
+
   summary {
     width: 17em; }
-  @media only screen and (max-width: 489px) {
-    summary {
-      width: 90%; } } }
-
+    @media only screen and (max-width: 489px) {
+      summary {
+        width: 90%; } } }
 blockquote {
   background-color: #f3f3f3;
   padding: 2em; }
@@ -437,26 +412,23 @@ footer {
   padding: 10px;
   background-color: #373737;
   color: #ffffff; }
-
-@media only screen and (min-width: 490px) {
-  footer {
-    padding: 10px 0 10px 20px; } }
+  @media only screen and (min-width: 490px) {
+    footer {
+      padding: 10px 0 10px 20px; } }
   footer .icon {
     height: 27px;
     width: 27px; }
-
-@media only screen and (min-width: 490px) {
-  footer .icon {
-    height: 30px;
-    width: 30px; } }
+    @media only screen and (min-width: 490px) {
+      footer .icon {
+        height: 30px;
+        width: 30px; } }
   footer a {
     padding: 0 3px;
     font-weight: 500;
     text-decoration: none; }
-
-@media only screen and (min-width: 490px) {
-  footer {
-    padding: 10px 0 10px 40px; } }
+  @media only screen and (min-width: 490px) {
+    footer {
+      padding: 10px 0 10px 40px; } }
 
 .clearfix::after {
   content: "";
@@ -471,65 +443,57 @@ footer {
 .img-one-tenth-width {
   vertical-align: top;
   width: 10%; }
-
-@media only screen and (max-width: 489px) {
-  .img-one-tenth-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-one-tenth-width {
+      width: 100%; } }
 
 .img-one-fifth-width {
   width: 20%; }
-
-@media only screen and (max-width: 489px) {
-  .img-one-fifth-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-one-fifth-width {
+      width: 100%; } }
 
 .img-one-quarter-width {
   vertical-align: top;
   width: 24%; }
-
-@media only screen and (max-width: 489px) {
-  .img-one-quarter-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-one-quarter-width {
+      width: 100%; } }
 
 .img-one-third-width {
   vertical-align: top;
   width: 32%; }
-
-@media only screen and (max-width: 489px) {
-  .img-one-third-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-one-third-width {
+      width: 100%; } }
 
 .img-two-fifths-width {
   vertical-align: top;
   width: 40%; }
-
-@media only screen and (max-width: 489px) {
-  .img-two-fifths-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-two-fifths-width {
+      width: 100%; } }
 
 .img-half-width {
   vertical-align: top;
   width: 49%; }
-
-@media only screen and (max-width: 489px) {
-  .img-half-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-half-width {
+      width: 100%; } }
 
 .img-two-thirds-width {
   vertical-align: top;
   width: 65%; }
-
-@media only screen and (max-width: 489px) {
-  .img-two-thirds-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-two-thirds-width {
+      width: 100%; } }
 
 .img-three-quarters-width {
   vertical-align: top;
   width: 74%; }
-
-@media only screen and (max-width: 489px) {
-  .img-three-quarters-width {
-    width: 100%; } }
+  @media only screen and (max-width: 489px) {
+    .img-three-quarters-width {
+      width: 100%; } }
 
 .img-full-width {
   vertical-align: top;
@@ -558,7 +522,7 @@ a.tag {
   margin: 0.2em;
   font-size: 1.2em;
   font-weight: 300;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Londrina Solid', sans-serif;
   color: #1a1a1a;
   text-decoration: none; }
 
@@ -580,9 +544,6 @@ a.tag.conf {
 a.tag.bsl {
   background-color: #dddd; }
 
-  a.tag.white {
-    background-color: #999; }
-
 a.tag.books {
   background-color: #935300; }
 
@@ -592,3 +553,5 @@ a.tag.cyf {
 a.tag.gaelic {
   background-color: #0064bb;
   color: white; }
+
+/*# sourceMappingURL=myCss.css.map */
