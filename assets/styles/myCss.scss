@@ -16,18 +16,12 @@ $text-better: #d0d0d0; //#f0f0f0;
 $link-better: #96a873 ;// #969696;
 
 
-@font-face {
-    font-family: "OpenDyslexic";
-    font-weight: 400;
-    src: url("../fonts/OpenDyslexic-Regular.otf");
-  }
 
 html{
     position: relative;
 }
 body {
     margin: 0;
-    /* font-family:  nta, Roboto,Helvetica,Arial,sans-serif; Roboto Condensed for titles  - sinon OpenDyslexic when I have the option */
     font-family:  Roboto,Helvetica,Arial,sans-serif; 
     color: #5a5a5a; 
     min-height: 100%;
@@ -63,7 +57,7 @@ body {
         background-color:$notes;
         width: 40em;
         span {
-            font-family: 'Londrina Solid', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 1.8em;
         }
         @media only screen and (max-width: 489px) { 
@@ -75,7 +69,7 @@ body {
     }
     a.button {
         text-transform: uppercase;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         padding: 5px 7px;
         text-decoration: none;
     }
@@ -97,7 +91,7 @@ body.notes {
     a.button {
         background-color: $notes;
         color: white;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
     }
     a.button:hover, a.button:focus {
         color: $notes;
@@ -121,7 +115,7 @@ body.notes {
     h2 {
         color: white;
         background-color: $notes;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-weight: 300;
         font-size: 2em;
         padding-left: 0.4em;
@@ -132,7 +126,7 @@ body.notes {
     h3 {
         color: black;
         background-color: $notes-inverted ;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-weight: 400;
         font-size: 1.5em;
         padding-left: 0.4em;
@@ -186,7 +180,7 @@ body.better {
     a.button {
         background-color: #aaa;
         color: black;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
     }
     a.button:hover, a.button:focus {
         background-color: $text-better;
@@ -215,7 +209,7 @@ body.better {
         span {
             color: black;
             background-color: $base3 ; //#793; 
-            font-family: 'Londrina Solid', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-weight: 900;
             padding:0.2em 1em; 
             font-size: 1em;
@@ -229,7 +223,7 @@ body.better {
     h2 {
         color: black;
         background-color: $base1;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-weight: 400;
         font-size: 2em;
         padding-left: 0.4em;
@@ -241,7 +235,7 @@ body.better {
     h3 {
         color: black;
         background-color: $text-better;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-weight: 400;
         font-size: 1.5em;
         padding-left: 0.4em;
@@ -253,7 +247,7 @@ body.better {
     h4 {
         color: black;
         background-color: $base3;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-weight: 400;
         font-size: 1.2em;
         padding-left: 0.4em;
@@ -302,7 +296,7 @@ body.gaelic{
     a.button {
         background-color: $gaelic;
         color: white;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
     }
     a.button:hover, a.button:focus {
         color: $gaelic;
@@ -389,7 +383,7 @@ nav {
         text-align: center;
         color: $notes;
         font-weight: 300 ;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         text-decoration: none;
         height: 1em;
         font-size: 1em;
@@ -444,7 +438,7 @@ main {
     h1 {
         font-size: 1.8em;
         padding-top: 2em;
-        font-family: 'Londrina Solid', sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-weight: 900;
         @media only screen and (min-width: 490px) {
             font-size: 2.5em;
@@ -657,7 +651,7 @@ a.tag {
     margin: 0.2em;
     font-size: 1.2em;
     font-weight: 300;
-    font-family: 'Londrina Solid', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #1a1a1a;
     text-decoration: none;
 }
